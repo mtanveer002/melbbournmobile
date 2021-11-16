@@ -1,0 +1,221 @@
+/* here you can put your own css to customize and override the theme */
+
+.panel-default>.panel-heading {
+    color: #333;
+    background-color: #f5f5f5;
+    border-color: #ddd;
+    height: 34px !important;
+}
+
+.origin_services {
+
+    border-color: #28D094 !important;
+
+}
+
+.origin_services3 {
+
+    border-color: #2091eb !important;
+
+}
+
+.origin_services4 {
+
+    border-color: #f8475e !important;
+
+}
+
+.margin-5{
+   
+   margin-left:5px
+
+}
+
+.content-form-page input.form-control {
+    border-color: #dbdbdb;
+    color: #090909 !important;
+    font: 14px Arial, sans-serif;
+    border-radius: 0;
+}
+
+.card-style {
+    display: block;
+    background-color: #fff;
+    width: 737px;
+    margin: 20px 0px;
+    box-shadow: 1px 1px 8px #999;
+    cursor: pointer;
+}
+.card-img {
+    height: 133px;
+    width: 177px;
+}
+.media-heading {
+    margin-top: 17px;
+    margin-left: 9px;
+    color: #444;
+    font-weight: bolder;
+}
+
+.media-heading1 {
+
+    margin-top: 16px;
+    position: relative;
+    left: 10px;
+    font-weight: bold;
+
+}
+
+.members {
+
+    margin-top: 4px;
+    color: #999;
+    margin-left: 12px;
+    float: left;
+
+}
+
+.btn-part {
+
+     display: inline-block;
+     margin: 10px;
+     float: right;
+
+ }
+ .badge {
+
+     display: inline-block;
+     background: #00C853;
+     float: right;
+     padding: 7px;
+     border-radius: 50px;
+     margin: 10px;
+
+ }
+ .content-form-page .btn {
+    margin-right: 11px;
+    font-weight: bold;
+    font-size: 13px;
+    /* padding: 7px 12px 6px; */
+    color: black;
+    background-color: #ffcb00;
+    width: 120px;
+    height: 32px;
+    /* position: relative; */
+    border-radius: -31px;
+}
+
+.small, small {
+    font-size: 105%;
+    /* margin-top: 22px; */
+}
+
+.boundry{
+  color: #0606f3;
+}
+
+
+h5.media-heading2 {
+    margin-left: 11px;
+    font-size: 12px;
+}
+
+#setup{
+  
+    width: 93%;
+    margin-left: -2px;
+
+}
+
+.sort_by_label{
+        /* margin-top: 12px !important; */
+    position: relative;
+    /* padding-top: 76px; */
+    top: 8px;
+    left: 6px;
+    font-size: 14px;
+}
+
+button.btn.btn-success {
+
+    color: #fffbfb;
+    background-color: #5cb85c;
+    border-color: #4cae4c;
+
+}
+
+button.btn.btn-info {
+
+    color: #fffbfb;
+    background-color: #5bc0de;
+    border-color: #46b8da;
+
+}
+
+button.btn.btn-primary {
+ color: #fffbfb;
+    background-color: #337ab7;
+    border-color: #2e6da4;
+}
+
+.check
+{
+    opacity:0.5;
+    color:#996;
+    
+}
+
+.excell{
+  
+  width: 116% !important;
+
+}
+
+
+.air_rate_details{
+
+    position: relative;
+    top: -38px;
+
+}
+
+span.required.danger {
+
+    color: red;
+
+}
+
+td.total1 {
+
+    background-color: black !important;
+    color: white;
+    font-size: 19px;
+
+}
+
+th.total.text-center {
+    text-align: center !important;
+}
+
+.filter{
+        margin-top: 9px;
+}
+
+span.danger_required {
+    color: red;
+}
+
+
+
+.check_card{
+   
+    color: red !important;
+    font-size: 27px !important;
+    
+
+}
+
+.active_button{
+
+ border-color: #f9051c !important;
+}

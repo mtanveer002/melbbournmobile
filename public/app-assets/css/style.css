@@ -1,0 +1,137 @@
+.carrier-box {
+    display: flex;
+    padding: 15px;
+    background: white;
+}
+.carriers {
+    border: 1px solid #dedede;
+    margin-bottom: 10px;
+    border-radius: 10px;
+}
+.carrier-img {
+    width: 25%;
+    padding: 0px 10px;
+}
+.carrier-img img{
+    width: 85%;
+    object-fit: contain;
+    height: 130px;
+}
+.carrier-details {
+    width: 60%;
+    padding: 15px;
+}
+.carrier-details .name {
+    font-size: 20px;
+    font-weight: 700;
+    color: #333;
+}
+.carrier-info {
+    display: flex;
+}
+.carrier-details .carrier-info .info {
+    padding: 0px 20px;
+    text-align: center;
+    border-left: 1px solid #dedede;
+    color: #939393 !important;
+    font-size: 12px;
+}
+.carrier-details .carrier-info .info:first-child {
+    border-left: none;
+    padding-left: 0px;
+}
+.carrier-details .carrier-info .info p {
+    font-size: 14px;
+    margin-bottom: 0px;
+}
+.carrier-details .carrier-info .info .bold {
+    font-weight: 600;
+    text-transform: uppercase;
+    font-size: 14px;
+    margin-bottom: 10px;
+}
+.carrier-rate {
+    text-align: center;
+    width: 15%;
+}
+.carrier-rate .rate-text {
+    font-size: 20px;
+    font-weight: 700;
+    padding-top: 40px;
+}
+.carrier-rate .view-details {
+    background: #03a9f4;
+    padding: 7px 15px;
+    border-radius: 20px;
+    color: #fff;
+    margin-bottom: 0px;
+    cursor: pointer;
+}
+.number-input {
+  padding: 10px !important;
+}
+/* Extra small devices (phones, 600px and down) */
+@media only screen and (max-width: 600px) {
+}
+@media only screen and (max-width: 991px) {
+  .carrier-box {
+      display: block;
+  }
+  .carrier-img {
+    width: 100%;
+    text-align: center;
+  }
+  .carrier-details {
+    width: 100%;
+    padding: 0px;
+    text-align: center;
+  }
+  .carrier-info {
+    display: block;
+  }
+  .carrier-details .carrier-info .info {
+    padding: 10px !important;
+    width: 44%;
+    display: inline-block;
+    border: 1px solid #dedede !important;
+    margin: 5px;
+    border-radius: 10px;
+  }
+  .carrier-rate {
+    width: 100%;
+  }
+  .carrier-rate .rate-text {
+    font-size: 35px;
+    padding-top: 10px;
+  }
+  .carrier-rate .view-details {
+    width: 140px;
+    margin: 0 auto;
+  }
+  .carrier-details .service b {
+    float: left;
+  }
+  .carrier-details .service {
+      text-align: right;
+  }
+}
+
+/* Small devices (portrait tablets and large phones, 600px and up) */
+@media only screen and (min-width: 600px) {
+
+}
+
+/* Medium devices (landscape tablets, 768px and up) */
+@media only screen and (min-width: 768px) {
+
+}
+
+/* Large devices (laptops/desktops, 992px and up) */
+@media only screen and (min-width: 992px) {
+
+}
+
+/* Extra large devices (large laptops and desktops, 1200px and up) */
+@media only screen and (min-width: 1200px) {
+
+}
