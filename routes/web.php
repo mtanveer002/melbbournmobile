@@ -1,7 +1,13 @@
 <?php
 
+use App\Models\File;
 use Illuminate\Support\Facades\Auth;
 use Illuminate\Support\Facades\Route;
+use Illuminate\Support\Facades\Storage;
+use App\Http\Controllers\HomeController;
+use App\Http\Controllers\Admin\ProfileController;
+
+
 
 /*
 |--------------------------------------------------------------------------
@@ -18,10 +24,26 @@ Route::get('/', function () {
     return view('welcome');
 });
 
-Auth::routes();
-
-Route::get('/home', [App\Http\Controllers\HomeController::class, 'index'])->name('home');
 
 Auth::routes();
+Route::get('/dashboard', function () {
+    return view('admin.layouts.page');
+})->middleware('auth');
 
-Route::get('/home', [App\Http\Controllers\HomeController::class, 'index'])->name('home');
+
+Route::prefix('admin')->as('admin.')->middleware(['auth'])->group(function() {
+    
+    Route::resource('profile', ProfileController::class)->only('index', 'store');;
+});
+
+
+
+
+
+//image
+Route::get('media/get/{file}', function (File $file) {
+    if (!Storage::exists($file->getStoragePath())) {
+        abort(404, 'Resource Not Found');
+    }
+    return Storage::response($file->getStoragePath(), $file->name);
+})->name('media.get');

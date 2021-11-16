@@ -4,12 +4,12 @@
         <div>
             <li class="dropdown dropdown-user nav-item">
                 <a class="dropdown-toggle nav-link dropdown-user-link" href="#" data-toggle="dropdown">
-                    <span class="mr-1 user-name text-bold-700">name</span>
-                    <span class="avatar avatar-online">image </span>
+                    <span class="mr-1 user-name text-bold-700">{{ auth()->user()->name }}</span>
+                    <span class="avatar avatar-online"> <img src="{{ auth()->user()->getImage() }}" alt=""> </span>
                 </a>
     
                 <div class="dropdown-menu dropdown-menu-right">
-                    <a class="dropdown-item" href=""><i class="ft-user"></i>
+                    <a class="dropdown-item" href="{{ route('admin.profile.index') }}"><i class="ft-user"></i>
                         Edit Profile
                     </a>
                     <div class="dropdown-divider"> </div>
