@@ -47,13 +47,13 @@ class User extends Authenticatable
 
     public function image()
     {
-        return $this->belongsTo(File::class, 'image_id');
+        return $this->belongsTo(File::class, 'brand_img');
     }
 
      public function getImage()
     {
         if ( ! $this->image || ! Storage::exists($this->image->getStoragePath())){
-            return asset('app-assets/images/avatar.jpg');
+            return asset('backend/images/avatar/avatar-2.png');
         }
         
         return $this->image->getPath();

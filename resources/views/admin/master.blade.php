@@ -6,7 +6,7 @@
         <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=0, minimal-ui">
         <meta name="description" content="Modern admin is super flexible, powerful, clean &amp; modern responsive bootstrap 4 admin template with unlimited possibilities with bitcoin dashboard.">
 
-        <title>Dashboard Expreco</title>
+        <title>MMPR Dashboard</title>
         <livewire:styles>
         @include('admin.layouts.css')
         @stack('css')
@@ -36,6 +36,7 @@
         @include('admin.layouts.footer')
 
         @include('admin.layouts.js')
+        @include('admin.layouts.toaster')
         <livewire:scripts>
 
         @stack('js')

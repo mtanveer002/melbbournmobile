@@ -11,6 +11,22 @@
                     </span>
                 </a>
             </li>
+            <li class=" nav-item">
+                <a href="{{ route('admin.brands.index')}}">
+                    <i class="la la-mobile"></i>
+                    <span class="menu-title" data-i18n="nav.dash.main">
+                        Brands
+                    </span>
+                </a>
+            </li>
+            <li class=" nav-item">
+                <a href="/dashboard">
+                    <i class="la la-mobile"></i>
+                    <span class="menu-title" data-i18n="nav.dash.main">
+                        Modals
+                    </span>
+                </a>
+            </li>
         </ul>
     </div>
 </div>

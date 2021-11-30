@@ -4,7 +4,7 @@ use App\Models\File;
 use Illuminate\Support\Facades\Auth;
 use Illuminate\Support\Facades\Route;
 use Illuminate\Support\Facades\Storage;
-use App\Http\Controllers\HomeController;
+use App\Http\Controllers\Admin\BrandsController;
 use App\Http\Controllers\Admin\ProfileController;
 
 
@@ -33,7 +33,8 @@ Route::get('/dashboard', function () {
 
 Route::prefix('admin')->as('admin.')->middleware(['auth'])->group(function() {
     
-    Route::resource('profile', ProfileController::class)->only('index', 'store');;
+    Route::resource('profile', ProfileController::class)->only('index', 'store');
+    Route::resource('brands', BrandsController::class);
 });
 
 
