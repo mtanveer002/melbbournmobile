@@ -8,8 +8,7 @@ use Illuminate\Support\Facades\Storage;
 use App\Http\Controllers\Admin\BrandsController;
 use App\Http\Controllers\Admin\IssueController;
 use App\Http\Controllers\Admin\ProfileController;
-
-
+use App\Http\Controllers\Website\WebsiteController;
 
 /*
 |--------------------------------------------------------------------------
@@ -22,9 +21,8 @@ use App\Http\Controllers\Admin\ProfileController;
 |
 */
 
-Route::get('/', function () {
-    return view('welcome');
-});
+Route::get('/', [WebsiteController::class, 'index'])->name('index.home');
+Route::get('/aboutus', [WebsiteController::class, 'aboutus'])->name('about.us');
 
 
 Auth::routes();
