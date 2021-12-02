@@ -57,6 +57,8 @@
                         <div class="text-danger">{{$message}}</div>
                     @enderror
                     <button type="submit" class="btn btn-success float-right">Update Issue</button>
+                    <a  class="btn btn-danger float-right" href="{{route('admin.issues.index')}}">Cancel</a>
+
                 </form>
                </div>
             </div>
