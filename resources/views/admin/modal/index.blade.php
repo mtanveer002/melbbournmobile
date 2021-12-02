@@ -66,7 +66,7 @@
                     @enderror
                     <div class="mb-1">
                     <label for="modal_name" class="form-label">Name</label>
-                    <input type="text" class="form-control" id="modal" name="modal_name" required>
+                    <input type="text" class="form-control" id="modal" name="modal_name" required placeholder="Brand Name">
                     </div>
                     @error('modal_name')
                         <div class="text-danger">{{$message}}</div>

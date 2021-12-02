@@ -37,21 +37,21 @@
                     @enderror
                     <div class="mb-1">
                     <label for="issue" class="form-label">Issue</label>
-                    <input type="text" class="form-control" id="modal" name="issue" required>
+                    <input type="text" class="form-control" id="modal" name="issue" required placeholder="Issue Name">
                     </div>
                     @error('issue')
                         <div class="text-danger">{{$message}}</div>
                     @enderror
                     <div class="mb-1">
                         <label for="price" class="form-label">Price</label>
-                        <input type="number" class="form-control" id="price" name="price" >
+                        <input type="number" class="form-control" id="price" name="price" placeholder="Issue Price">
                     </div>
                     @error('price')
                         <div class="text-danger">{{$message}}</div>
                     @enderror
                     <div class="mb-1">
                         <label for="Description" class="form-label">Description</label>
-                        <input type="text" class="form-control" id="description" name="description" >
+                        <input type="text" class="form-control" id="description" name="description" placeholder="Issue Description">
                     </div>
                     @error('description')
                         <div class="text-danger">{{$message}}</div>

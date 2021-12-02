@@ -52,7 +52,7 @@
                     @csrf
                     <div class="mb-1">
                     <label for="brand_name" class="form-label">Name</label>
-                    <input type="text" class="form-control" id="brand" name="brand">
+                    <input type="text" class="form-control" id="brand" name="brand" required placeholder="Brand Name">
                     </div>
                     @error('brand')
                         <div class="text-danger">{{$message}}</div>
