@@ -16,11 +16,8 @@ class CreateBrandModalsTable extends Migration
         Schema::create('brand_modals', function (Blueprint $table) {
             $table->id();
             $table->bigInteger('brand_id');
-            $table->bigInteger('modal_img')->nullable();
             $table->string('name');
-            $table->string('issues')->nullable();
-            $table->string('price')->nullable();
-            $table->string('descriptions')->nullable();
+            $table->bigInteger('modal_img')->nullable();
             $table->timestamps();
         });
     }

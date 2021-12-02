@@ -20,7 +20,7 @@
                 </a>
             </li>
             <li class=" nav-item">
-                <a href="/dashboard">
+                <a href="{{route('admin.modals.index')}}">
                     <i class="la la-mobile"></i>
                     <span class="menu-title" data-i18n="nav.dash.main">
                         Modals

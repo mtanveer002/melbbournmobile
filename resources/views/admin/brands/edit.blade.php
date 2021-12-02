@@ -9,8 +9,9 @@
         <div class="row">
             <div class="col-md-8 col-sm-12 ">
                 <div class="card border border-primary p-1">          
-                <form action="{{ route('admin.brands.store')}}" method="POST" enctype="multipart/form-data">
+                <form action="{{ route('admin.brands.update',$brands->id)}}" method="POST" enctype="multipart/form-data">
                     @csrf
+                    @method('put')
                     <div class="mb-1">
                     <label for="brand_name" class="form-label">Name</label>
                     <input type="text" class="form-control" id="brand" name="brand" value="{{$brands->brand}}">

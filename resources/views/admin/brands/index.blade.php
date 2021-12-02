@@ -1,13 +1,14 @@
 @extends('admin.master')
 @section('content')
 
-<div class="card">
-    <div class="card-header">
-        <h1>Brands</h1>
-    </div>
-   <div class="card-body">
-        <div class="row">
-            <div class="col-md-8 col-sm-12">
+<div class="container">
+    <div class="row">
+        <div class="col-8">
+            <div class="card">
+                <div class="card-header">
+                    <h1>All Brands</h1>
+                </div>
+               <div class="card-body">
                 <table class="table">
                     <thead>
                         <tr>
@@ -20,11 +21,11 @@
                     <tbody> @php $i =1; @endphp
                         @foreach ($brands as $brand)
                             <tr>
-                                <td>{{ $i++}}</td>
+                                <td>{{ $loop->iteration }}</td>
                                 <td>{{ $brand->brand}}</td>
-                                <td>  <img src="{{ $brand->getImage() }}" alt="" style="width: 80px; height:80px"> </td>
+                                <td>  <img src="{{ $brand->getImage() }}" alt="" style="width: 100px; height:110px"> </td>
                                 <td>
-                                    <form  action="" method="POST" enctype="multipart/form-data">
+                                    <form  action="{{ route('admin.brands.destroy',$brand->id)}}" method="POST" enctype="multipart/form-data">
                                         @csrf
                                         @method('DELETE')
                                         <a href="{{route('admin.brands.edit', $brand->id)}}" class="btn-sm btn btn-success"><i class="fa fa-edit"></i></a>
@@ -35,10 +36,18 @@
                         @endforeach
                     </tbody>
                 </table>
+                <div class="d-flex">
+                    {!! $brands->links() !!}
+                </div>
+               </div>
             </div>
-            <div class="col-md-4 col-sm-12 ">
-                <div class="card border border-primary p-1">
-                    <h3 >Add Brands</h3>            
+        </div>
+        <div class="col-4">
+            <div class="card">
+                <div class="card-header">
+                    <h1>Add Brands</h1>
+                </div>
+               <div class="card-body">
                 <form action="{{ route('admin.brands.store')}}" method="POST" enctype="multipart/form-data">
                     @csrf
                     <div class="mb-1">
@@ -57,10 +66,12 @@
                     @enderror
                     <button type="submit" class="btn btn-success float-right">Add Brands</button>
                 </form>
-                </div>
+               </div>
             </div>
         </div>
     </div>
 </div>
+
+
 
 @endsection

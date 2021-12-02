@@ -2,8 +2,11 @@
 
 namespace App\Http\Controllers\Admin;
 
-use App\Http\Controllers\Controller;
+use App\Models\File;
 use Illuminate\Http\Request;
+use App\Models\Admin\BrandModal;
+use App\Http\Controllers\Controller;
+use App\Models\Admin\Brand;
 
 class BrandModalController extends Controller
 {
@@ -14,7 +17,9 @@ class BrandModalController extends Controller
      */
     public function index()
     {
-        //
+        $modals = BrandModal::paginate(5);
+        $brands = Brand::all();
+        return view('admin.modal.index', compact('modals', 'brands'));
     }
 
     /**
@@ -35,7 +40,30 @@ class BrandModalController extends Controller
      */
     public function store(Request $request)
     {
-        //
+        
+        $validated = $request->validate([
+            'brand' => 'required',
+            'modal_img' => 'required|image|mimes:jpeg,png,jpg,gif,svg|max:2048',
+            
+        ]);
+
+        if(request()->hasFile('modal_img')){
+            $image =  File::uploadFile(request()->file('modal_img'));
+           
+        }
+
+        $modals = new BrandModal();
+        $modals->brand_id = $request->brand;
+        $modals->name = $request->modal_name;
+        $modals->modal_img = $image->id;
+        $modals->save();
+
+        $notification = array(
+            'message' => 'Modal Add Successfully',
+            'alert-type' => 'success'
+        );
+
+        return redirect()->back()->with($notification);
     }
 
     /**
@@ -57,7 +85,9 @@ class BrandModalController extends Controller
      */
     public function edit($id)
     {
-        //
+        $modals = BrandModal::findOrFail($id);
+        $brands = Brand::all();
+        return view('admin.modal.edit', compact('modals', 'brands'));
     }
 
     /**
@@ -69,7 +99,35 @@ class BrandModalController extends Controller
      */
     public function update(Request $request, $id)
     {
-        //
+        $validated = $request->validate([
+            'brand' => 'required',
+            'modal_img' => 'required|image|mimes:jpeg,png,jpg,gif,svg|max:2048',
+            
+        ]);
+
+        $modals =  BrandModal::find($id);
+                
+        if(request()->hasFile('modal_img')){
+
+            $oldimg = File::where('id', $modals->modal_img)->get();
+            foreach($oldimg as $img){
+            File::deleteFile($img);
+            $img->delete();
+            }
+
+            $image = File::uploadFile(request()->file('modal_img'));
+            $modals->modal_img =  $image->id;
+
+        }       
+            $modals->brand = $request->brand;
+            $modals->update();
+
+            $notification = array(
+                'message' => 'Brand Update Successfully',
+                'alert-type' => 'success'
+            );
+    
+            return redirect()->route('admin.modals.index')->with($notification);
     }
 
     /**

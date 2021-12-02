@@ -16,7 +16,7 @@ class BrandsController extends Controller
      */
     public function index()
     {
-        $brands = Brand::all();
+        $brands = Brand::paginate(5);
         return view('admin.brands.index', compact('brands'));
     }
 
@@ -39,7 +39,7 @@ class BrandsController extends Controller
     public function store(Request $request)
     {
         $validated = $request->validate([
-            'brand' => 'required|unique:brands|min:4',
+            'brand' => 'required|unique:brands|min:2',
             'brand_img' => 'required|image|mimes:jpeg,png,jpg,gif,svg|max:2048',
             
         ]);
@@ -96,26 +96,26 @@ class BrandsController extends Controller
     public function update(Request $request, $id)
     {
         $validated = $request->validate([
-            'brand' => 'required|min:4',
-            'brand_img' => 'required|image|mimes:jpeg,png,jpg,gif,svg|max:2048',
+            'brand' => 'required|min:2',
+            'brand_img' => 'image|mimes:jpeg,png,jpg,gif,svg|max:2048',
             
         ]);
 
-       
         $brands =  Brand::find($id);
-            if(request()->hasFile('brand_img')){
-                $image = File::uploadFile(request()->file('brand_img'));
+                
+        if(request()->hasFile('brand_img')){
 
-                $oldimg = File::where('id', $brands->brand_img)->get();
-                foreach($oldimg as $img){
-                    File::deleteFile($img);
-                    $img->delete();
-                }
+            $oldimg = File::where('id', $brands->brand_img)->get();
+            foreach($oldimg as $img){
+            File::deleteFile($img);
+            $img->delete();
             }
 
-       
+            $image = File::uploadFile(request()->file('brand_img'));
+            $brands->brand_img =  $image->id;
+
+        }       
             $brands->brand = $request->brand;
-            $brands->brand_img = $image->id;
             $brands->update();
 
             $notification = array(
@@ -123,7 +123,7 @@ class BrandsController extends Controller
                 'alert-type' => 'success'
             );
     
-            return redirect()->back()->with($notification);
+            return redirect()->route('admin.brands.index')->with($notification);
     }
 
     /**
@@ -134,6 +134,19 @@ class BrandsController extends Controller
      */
     public function destroy($id)
     {
-        //
+        $brands = Brand::find($id);
+        $oldimg = File::where('id', $brands->brand_img)->get();
+                foreach($oldimg as $img){
+                    File::deleteFile($img);
+                    $img->delete();
+                }
+        $brands->delete();
+
+        $notification = array (
+            'message' => 'Brand Data Delete Successfully',
+            'alert-type' => 'info'
+        );
+        return redirect()->route('admin.brands.index')->with($notification);
     }
+    
 }
