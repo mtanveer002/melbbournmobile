@@ -9,7 +9,7 @@
                     <h1>Create Issues</h1>
                 </div>
                <div class="card-body">
-                <form action="{{ route('admin.issues.store')}}" method="POST" enctype="multipart/form-data">
+                <form action="{{ route('admin.issues.update',$issues->id)}}" method="POST" enctype="multipart/form-data">
                     @csrf
                     <div class="mb-1">
                         <label for="brand" class="form-label">Brand</label>
