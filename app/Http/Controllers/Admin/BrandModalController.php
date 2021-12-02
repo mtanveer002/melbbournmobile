@@ -101,7 +101,7 @@ class BrandModalController extends Controller
     {
         $validated = $request->validate([
             'brand' => 'required',
-            'modal_img' => 'required|image|mimes:jpeg,png,jpg,gif,svg|max:2048',
+            
             
         ]);
 
@@ -118,12 +118,13 @@ class BrandModalController extends Controller
             $image = File::uploadFile(request()->file('modal_img'));
             $modals->modal_img =  $image->id;
 
-        }       
-            $modals->brand = $request->brand;
+        }
+            $modals->brand_id = $request->brand;       
+            $modals->name = $request->modal;
             $modals->update();
 
             $notification = array(
-                'message' => 'Brand Update Successfully',
+                'message' => 'Modal Update Successfully',
                 'alert-type' => 'success'
             );
     
@@ -138,6 +139,18 @@ class BrandModalController extends Controller
      */
     public function destroy($id)
     {
-        //
+        $modals = BrandModal::find($id);
+        $oldimg = File::where('id', $modals->modal_img)->get();
+                foreach($oldimg as $img){
+                    File::deleteFile($img);
+                    $img->delete();
+                }
+        $modals->delete();
+
+        $notification = array (
+            'message' => 'Modal Data Delete Successfully',
+            'alert-type' => 'info'
+        );
+        return redirect()->route('admin.modals.index')->with($notification);
     }
 }

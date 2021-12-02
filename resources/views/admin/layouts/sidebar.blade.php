@@ -27,6 +27,14 @@
                     </span>
                 </a>
             </li>
+            <li class=" nav-item">
+                <a href="{{route('admin.issues.index')}}">
+                    <i class="la la-mobile"></i>
+                    <span class="menu-title" data-i18n="nav.dash.main">
+                        All Issues
+                    </span>
+                </a>
+            </li>
         </ul>
     </div>
 </div>
