@@ -29,6 +29,7 @@ class IssueController extends Controller
      */
     public function create()
     {
+        $issues = Issue::all();
         $brands = Brand::all();
         $modals = BrandModal::all();
         return view('admin.issues.create', compact('brands', 'modals'));
@@ -94,7 +95,19 @@ class IssueController extends Controller
      */
     public function update(Request $request, $id)
     {
-        //
+        $issues = Issue::findOrFail($id);
+        $issues->brand_id = $request->brand;
+        $issues->modal_id = $request->modal;
+        $issues->issue = $request->issue;
+        $issues->price = $request->price;
+        $issues->description = $request->description;
+        $issues->update();
+
+        $notification = array (
+            'message' => 'Brand Data Add Successfully',
+            'alert-type' => 'success'
+        );
+        return redirect()->route('admin.issues.index')->with($notification);
     }
 
     /**
@@ -105,6 +118,13 @@ class IssueController extends Controller
      */
     public function destroy($id)
     {
-        //
+        $issues = Issue::findOrFail($id);
+        $issues->delete();
+
+        $notification = array (
+            'message' => 'Brand Data Delete Successfully',
+            'alert-type' => 'info'
+        );
+        return redirect()->route('admin.issues.index')->with($notification);
     }
 }

@@ -56,7 +56,7 @@
                     @error('description')
                         <div class="text-danger">{{$message}}</div>
                     @enderror
-                    <button type="submit" class="btn btn-success float-right">Update Issue</button>
+                    <button type="submit" class="btn btn-success float-right ml-1">Update Issue</button>
                     <a  class="btn btn-danger float-right" href="{{route('admin.issues.index')}}">Cancel</a>
 
                 </form>
