@@ -11,6 +11,7 @@
                <div class="card-body">
                 <form action="{{ route('admin.issues.update',$issues->id)}}" method="POST" enctype="multipart/form-data">
                     @csrf
+                    @method('put')
                     <div class="mb-1">
                         <label for="brand" class="form-label">Brand</label>
                         <select class="form-select-sm form-control"  name="brand" required>
