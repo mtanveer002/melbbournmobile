@@ -9,7 +9,8 @@
 
     <title>MELBOURNE || Home</title>
 
-    @include('website.layout.css');
+    @include('website.layout.css')
+
 
   
 </head>
@@ -175,7 +176,7 @@
 
     <!-- Placed JS at the end of the document so the pages load faster -->
 
-    @include('website.layout.js');
+    @include('website.layout.js')
 
 
     <script>
