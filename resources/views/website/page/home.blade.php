@@ -5,6 +5,7 @@
 <section class="hero-section">
     <div class="container">
         <div class="row">
+            <!-- tablet design -->
             <div class="col-xl-8 col-lg-8 col-md-12 col-sm-12">
                 <div class="carousel-background">
                     <div id="carouselExampleControls" class="carousel slide" data-bs-ride="carousel">
@@ -58,18 +59,27 @@
                       </div>
                 </div>
             </div>
+            <!-- mobile form -->
             <div class="col-xl-4 col-lg-4 col-md-12 col-sm-12">
                 <div class="booking-form" onclick="">
                     <div class="dark">
                          <div class="form">
                     <h5 class="get-quote-button">Get Free Quote</h5>
                     <p>We will get in touch with you shortly</p>
-                    <form action="#">
+                    <form action="{{route('saveQuote')}}"  method="post">
+            {{csrf_field()}}
+
                     <div id="first-form" class="first-form">
                         <div class="select-option">
                             <label for="label-title">Device:</label>
-                            <select name="sources" id="sources" class="booking-select sources" placeholder="Source Type">
+                            <select name="brand" id="brand" class="booking-select sources" placeholder="Source Type">
                                 <option>Select your Device</option>
+
+                                @isset($brands)
+                                @foreach($brands as $brand)
+                                 <option value="{{$brand->brand}}">{{$brand->brand}}</option>
+                                @endforeach
+                                @endisset
                                                                                                                     <option value="Iphone">Iphone</option>
                                                                             <option value="Samsung">Samsung</option>
                                                                             <option value="Oppo">Oppo</option>
@@ -96,8 +106,14 @@
                         </div>
                         <div class="select-option">
                             <label for="label-title">Model:</label>
-                            <select name="sources" id="sources" class="booking-select sources" placeholder="Source Type">
+                            <select name="modal" id="modal" class="booking-select sources" placeholder="Source Type">
                                 <option>Select your Model</option>
+
+                                @isset($modals)
+                                @foreach($modals as $modal)
+                                 <option value="{{$modal->name}}">{{$modal->name}}</option>
+                                @endforeach
+                                @endisset
                                                                                                                     <option value="iPhone 4">iPhone 4</option>
                                                                             <option value="iPhone 4s">iPhone 4s</option>
                                                                             <option value="iPhone 5">iPhone 5</option>
@@ -889,8 +905,13 @@
                         </div>
                         <div class="select-option">
                             <label for="label-title">Device Issue:</label>
-                            <select name="sources" id="sources" class="booking-select sources" placeholder="Source Type">
+                            <select name="issue" id="issue" class="booking-select sources" placeholder="Source Type">
                                 <option>Select Device Issue</option>
+                                @isset($issues)
+                                @foreach($issues as $issue)
+                                 <option value="{{$issue->issue}}">{{$issue->issue}}</option>
+                                @endforeach
+                                @endisset
                                     <option value="Front Camera Replacemen">Front Camera Replacemen</option>
                                     <option value="Back camera Replacement">Back camera Replacement</option>
                                     <option value="Sim Tray Replacement">Sim Tray Replacement</option>
@@ -933,7 +954,7 @@
                                     <option value="Water Damage">Water Damage</option>
                               </select>
                         </div>
-                        <button onclick="secondForm()"><i class="fas fa-angle-double-right"></i></button>
+                        <div class="button" onclick="secondForm()"><i class="fas fa-angle-double-right" style="margin: 3%;"></i></div>
                     </div>
 
                         <div id="second-form" class="second-form" style="display: none;" >
@@ -941,16 +962,16 @@
                             <p>We will get in touch with you shortly</p> -->
                            
                                 <div class="select-option">
-                                    <label for="label-title">Name:</label>
-                                    <input type="text" name="" id="">
+                                    <label for="name">Name:</label>
+                                    <input type="text" name="name" id="name">
                                 </div>
                                 <div class="select-option">
-                                    <label for="label-title">Email:</label>
-                                    <input type="email" name="" id="">
+                                    <label for="email">Email:</label>
+                                    <input type="email" name="email" id="email">
                                 </div>
                                 <div class="select-option">
-                                    <label for="label-title">Phone:</label>
-                                    <input type="number" name="" id="">
+                                    <label for="number">Phone:</label>
+                                    <input type="number" name="number" id="number">
                                 </div>
                                 <button type="submit">SUBMIT</button>
                                 

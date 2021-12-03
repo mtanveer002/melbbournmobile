@@ -2475,4 +2475,24 @@ span.timing{
 }
 
 
+.button {
+  display: block;
+  font-size: 14px;
+  text-transform: uppercase;
+  background: #fb6128;
+  border-radius: 2px;
+  color: #ffffff;
+  font-weight: bold;
+  width: 100%;
+  height: 46px;
+  margin-top: 30px;
+  transition: all .3s ease;
+      text-align: -webkit-center;
+}
+
+.button:hover{
+  background: transparent;
+  border: 1px solid #fb6128;
+  color: #fb6128;
+}
 

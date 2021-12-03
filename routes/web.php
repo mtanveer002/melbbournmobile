@@ -25,6 +25,8 @@ Route::get('/', [WebsiteController::class, 'index'])->name('index.home');
 Route::get('/aboutus', [WebsiteController::class, 'aboutus'])->name('about.us');
 
 
+Route::post('/saveQuote', [WebsiteController::class, 'saveQuote'])->name('saveQuote');
+
 Auth::routes();
 Route::get('/dashboard', function () {
     return view('admin.layouts.page');
