@@ -28,6 +28,15 @@ class WebsiteController extends Controller
         return view('website.page.aboutus');
     }
 
+    public function shop()
+    {
+        return view('website.page.shop');
+    }
+
+    public function contact()
+    {
+        return view('website.page.contact');
+    }
 
     public function saveQuote(Request $request)
     {

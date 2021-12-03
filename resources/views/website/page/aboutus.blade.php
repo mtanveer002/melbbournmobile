@@ -1,6 +1,26 @@
 @extends('website.master')
 @section('web_content')
+ <!-- BREADCRUMBS SETCTION START -->
+        <div class="breadcrumbs-section plr-200 mb-80 section">
+            <div class="breadcrumbs overlay-bg">
+                <div class="container">
+                    <div class="row">
+                        <div class="col-lg-12">
+                            <div class="breadcrumbs-inner">
+                                <h1 class="breadcrumbs-title">About</h1>
+                                <ul class="breadcrumb-list">
+                                    <li><a href="index.html">Home</a></li>
+                                    <li>About</li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- BREADCRUMBS SETCTION END -->
 
+         <!-- Start page content -->
 <section id="page-content" class="page-wrapper section">
 
     <!-- ABOUT SECTION START -->
@@ -17,7 +37,7 @@
             <div class="row">
                 <div class="col-lg-5">
                     <div class="about-photo p-20 bg-img-1">
-                        <img src="img/others/about.jpg" alt="">
+                        <img src="{{ asset('frontend/assets/img/others/about.jpg') }}" alt="">
                     </div>
                 </div>
                 <div class="col-lg-7">
@@ -55,7 +75,7 @@
                         <div class="team-member-item">
                             <div class="team-member box-shadow bg-shape">
                                 <div class="team-member-photo">
-                                    <img src="img/team/1.png" alt="">
+                                    <img src="{{ asset('frontend/assets/img/team/1.png') }}" alt="">
                                 </div>
                                 <div class="team-member-info pt-20">
                                     <h5 class="member-name"><a href="#">Waqar Hafeez</a></h5>
@@ -83,7 +103,7 @@
                         <div class="team-member-item">
                             <div class="team-member box-shadow bg-shape">
                                 <div class="team-member-photo">
-                                    <img src="img/team/2.png" alt="">
+                                    <img src="{{ asset('frontend/assets/img/team/2.png') }}" alt="">
                                 </div>
                                 <div class="team-member-info pt-20">
                                     <h5 class="member-name"><a href="#">Waqar Hafeez</a></h5>
@@ -111,7 +131,7 @@
                         <div class="team-member-item">
                             <div class="team-member box-shadow bg-shape">
                                 <div class="team-member-photo">
-                                    <img src="img/team/3.png" alt="">
+                                    <img src="{{ asset('frontend/assets/img/team/3.png') }}" alt="">
                                 </div>
                                 <div class="team-member-info pt-20">
                                     <h5 class="member-name"><a href="#">Waqar Hafeez</a></h5>
@@ -139,7 +159,7 @@
                         <div class="team-member-item">
                             <div class="team-member box-shadow bg-shape">
                                 <div class="team-member-photo">
-                                    <img src="img/team/1.png" alt="">
+                                    <img src="{{ asset('frontend/assets/img/team/1.png') }}" alt="">
                                 </div>
                                 <div class="team-member-info pt-20">
                                     <h5 class="member-name"><a href="#">Waqar Hafeez</a></h5>
