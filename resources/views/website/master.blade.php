@@ -217,18 +217,40 @@
     });
     </script>
 
+<script src="https://code.jquery.com/jquery-3.5.1.min.js"></script>
+<script>
+    // $(document).ready(function(){
+    //     var boxWidth = $(".box").width();
+    //     $(".slide-left").click(function(){
+    //         $(".box").animate({
+    //             width: 0
+    //         });
+    //     });
+    //     $(".slide-right").click(function(){
+    //         $(".box").animate({
+    //             width: boxWidth
+    //         });
+    //     });
+    // });
 
-    <script>
         // $( document ).ready(function() {
         //     console.log( "ready!" );
         // });
 
         function secondForm() {
            document.getElementById("first-form").style.display= "none";
+
+            // $("#first-form").animate({
+            //     width: 0
+            // });
+        
             document.getElementById("second-form").style.display = "unset";
         }
 
+
     </script>
+
+
 
 </body>
 

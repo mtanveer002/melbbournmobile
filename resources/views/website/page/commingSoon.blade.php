@@ -22,7 +22,7 @@
              
             </div>
             <div class="coming-back">
-                <h1>Melbourne Mobile Phone Repairs </h1>
+                <h1>Melbourne Mobile Online Shop </h1>
                 <p class="t-text">We are launching soon the online shop in Melbourne</p>
                 <div class="countdown">
                     <div class="countdown-days">
