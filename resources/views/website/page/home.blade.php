@@ -88,11 +88,7 @@
                             <select name="modal" id="modal" class="booking-select sources" placeholder="Source Type">
                                 <option>Select your Model</option>
 
-                                @isset($modals)
-                                @foreach($modals as $modal)
-                                 <option value="{{$modal->name}}">{{$modal->name}}</option>
-                                @endforeach
-                                @endisset
+                                
                                                                                                                    
                               </select>
                         </div>
