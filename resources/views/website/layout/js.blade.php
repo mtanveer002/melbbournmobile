@@ -6,3 +6,7 @@
   <script src="{{ asset('frontend/assets/js/plugins.js') }}"></script>
   <!-- Main js file that contents all jQuery plugins activation. -->
   <script src="{{ asset('frontend/assets/js/main.js') }}"></script>
+
+  
+    <script src="{{ asset('frontend/assets/js/vendor/jquery-migrate-3.3.2.min.js') }}"></script>
+   
