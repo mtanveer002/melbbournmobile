@@ -6,3 +6,5 @@
 <script src="{{ asset('app-assets/js/core/app.js') }}"></script>
 <!-- END: Theme JS-->
 
+
+

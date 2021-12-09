@@ -144,7 +144,7 @@ class BrandsController extends Controller
 
         $notification = array (
             'message' => 'Brand Data Delete Successfully',
-            'alert-type' => 'info'
+            'alert-type' => 'warning'
         );
         return redirect()->route('admin.brands.index')->with($notification);
     }

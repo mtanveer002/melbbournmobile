@@ -20,11 +20,7 @@ class User extends Authenticatable
      *
      * @var array
      */
-    protected $fillable = [
-        'name',
-        'email',
-        'password',
-    ];
+    protected $guarded = [];
 
     /**
      * The attributes that should be hidden for arrays.
@@ -47,7 +43,7 @@ class User extends Authenticatable
 
     public function image()
     {
-        return $this->belongsTo(File::class, 'brand_img');
+        return $this->belongsTo(File::class, 'image_id');
     }
 
      public function getImage()
