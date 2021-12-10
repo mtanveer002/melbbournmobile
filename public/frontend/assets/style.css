@@ -1936,6 +1936,7 @@ span.timing{
 
 }
 
+
 /* 19. tips */
 .tips{
   background: #fb6128;
@@ -2177,7 +2178,7 @@ span.timing{
   background-position: center;
   padding: 50px;
   width: 100%;
-  top: -30px;
+  top: -7px;
   
 }
 .carousel {
@@ -2228,6 +2229,12 @@ span.timing{
     background-size: contain;
     width: fit-content;
     position: relative;
+}
+.next{
+  font-size: 1.7rem !important;
+  margin: 0 !important;
+  margin-left: 10px !important;
+  color: #fb6128 !important;
 }
 .booking-form .dark{
     border-radius: 4px;
