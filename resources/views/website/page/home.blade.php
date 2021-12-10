@@ -61,11 +61,11 @@
             </div>
             <!-- mobile form -->
             <div class="col-xl-4 col-lg-4 col-md-12 col-sm-12">
-                <div class="booking-form" onclick="">
+                <div class="booking-form" >
                     <div class="dark">
-                         <div class="form">
-                    <h5 class="get-quote-button">Get Free Quote</h5>
-                    <p>We will get in touch with you shortly</p>
+                        <div class="form">
+                    <h5 class="get-quote-button ">Get Free Quote</h5>
+                   
                     <form action="{{route('saveQuote')}}"  method="post">
             {{csrf_field()}}
 
@@ -107,8 +107,13 @@
                                 @endisset
                                     
                               </select>
+                            <div class="select-option">
+                                <label for="label-title">Description:</label>
+                                <input type="text" placeholder="add description" name="" id="">
+                            </div>
                         </div>
-                        <div class="button" onclick="secondForm()"><i class="fas fa-angle-double-right" style="margin: 3%;"></i></div>
+
+                        <h3 class="next" onclick="secondForm()">Go Next <i class="fas fa-arrow-circle-right" style="margin: 3%;"></i></h3>
                     </div>
 
                         <div id="second-form" class="second-form" style="display: none;" >
@@ -117,17 +122,20 @@
                            
                                 <div class="select-option">
                                     <label for="name">Name:</label>
-                                    <input type="text" name="name" id="name">
+                                    <input type="text" name="name" placeholder="enter name" id="name" required>
                                 </div>
                                 <div class="select-option">
                                     <label for="email">Email:</label>
-                                    <input type="email" name="email" id="email">
+                                    <input type="email" placeholder="enter email" name="email" id="email" required>
                                 </div>
                                 <div class="select-option">
                                     <label for="number">Phone:</label>
-                                    <input type="number" name="number" id="number">
+                                    <input type="number" placeholder="enter number" name="number" id="number" required>
                                 </div>
+                                
+                        <h3 class="next"><i class="fas fa-arrow-circle-left"></i> Go Back</h3>
                                 <button type="submit">SUBMIT</button>
+                                
                                 
                             
                         </div>
@@ -277,9 +285,9 @@
                                             <i class="zmdi zmdi-check"></i><span>Charging Port ...</span>
                                         </li>
                                     </ul>
-                                    <div class="banner-button">
+                                    <!-- <div class="banner-button">
                                        <a href="#">Discover <i class="zmdi zmdi-long-arrow-right"></i></a> 
-                                    </div>
+                                    </div> -->
                                 </div>
                             </div>
                         </div>
@@ -311,9 +319,9 @@
                                         <i class="zmdi zmdi-check"></i><span>Speaker Replacement ...</span>
                                     </li>
                                 </ul>
-                                <div class="banner-button">
+                                <!-- <div class="banner-button">
                                    <a href="#">Discover <i class="zmdi zmdi-long-arrow-right"></i></a> 
-                                </div>
+                                </div> -->
                             </div>
                             </div>
                         </div>
@@ -345,9 +353,9 @@
                                         <i class="zmdi zmdi-check"></i><span>Charging Port Replacement ...</span>
                                     </li>
                                 </ul>
-                                <div class="banner-button">
+                                <!-- <div class="banner-button">
                                    <a href="#">Discover <i class="zmdi zmdi-long-arrow-right"></i></a> 
-                                </div>
+                                </div> -->
                             </div>
                             </div>
                         </div>
@@ -360,11 +368,11 @@
 
         
         <!-- Section: Features v.4 -->
-        <div class="container">
+        <div class="banner-section container">
             <section class="my-5">
 
                 <!-- Section heading -->
-                <h2 class="h1-responsive font-weight-bold text-center my-5">DEVICE ISSUES WE FIX</h2>
+                <h2 class="  font-weight-bold text-center my-5">DEVICE ISSUES WE FIX</h2>
                 <!-- Section description -->
                 <p class="lead grey-text text-center w-responsive mx-auto mb-5">BEST SERVICES AT DISCOUNTED PRICES</p>
             
@@ -597,7 +605,7 @@
 
 
         <!-- FEATURED PRODUCT SECTION START -->
-        <div class="featured-product-section section-bg-tb pt-80 pb-55">
+        <!-- <div class="featured-product-section section-bg-tb pt-80 pb-55">
             <div class="container">
                 <div class="row">
                     <div class="col-lg-12">
@@ -752,7 +760,7 @@
                     </div>
                 </div>
             </div>            
-        </div>
+        </div> -->
         <!-- FEATURED PRODUCT SECTION END -->
 
 

@@ -608,15 +608,14 @@ input[type="password"],
 input[type="email"],
 input[type="number"] {
   background: #fff none repeat scroll 0 0;
-  border: 1px solid transparent;
-  box-shadow: 0 0 4px rgba(0, 0, 0, 0.1);
-  color: #999999;
-  font-size: 13px;
-  height: 40px;
+  border: 1.5px solid #e2e1e1;
   margin-bottom: 10px;
-  padding-left: 20px;
-  padding-right: 20px;
+  font-size: 1.7rem;
+    font-weight: 300;
+    color: #7e7e7e;
+  padding: 1rem;
   width: 100%;
+  border-radius: 5px;
 }
 button {
   background: rgba(0, 0, 0, 0) none repeat scroll 0 0;
@@ -656,9 +655,9 @@ textarea:focus {
 .height-80 {
     height: 80px;
 }
-::-moz-placeholder {
-    color: #444;
-    font-size: 13px;
+::placeholder {
+    color: #c4c4c4;
+    font-size: 1.7rem;
 }
 .submit-btn-1 {
   background: rgb(255, 127, 0) none repeat scroll 0 0;
