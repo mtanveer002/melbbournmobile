@@ -1,6 +1,7 @@
 @extends('admin.master')
 @section('content')
 
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
 <div class="container">
     <div class="row">
         <div class="col-8">
@@ -66,6 +67,30 @@
     </div>
 </div>
 
-
+{{-- for auto selection select box --}}
+<script type="text/javascript">
+    $(document).ready(function() {
+    $('select[name="brand"]').on('change', function(){
+        var brand = $(this).val();
+        
+        if(brand) {
+            $.ajax({
+                url: "{{  url('/brand/modal/ajax/') }}/"+brand,
+                type:"GET",
+                dataType:"json",
+                success:function(data) {
+                    console.log(data);
+                    var d =$('select[name="modal"]').empty();
+                        $.each(data, function(key, value){
+                            $('select[name="modal"]').append('<option value="'+ value.id +'">' + value.modal + '</option>');
+                        });
+                },
+            });
+        } else {
+            alert('danger');
+        }
+    });
+});
+</script>
 
 @endsection

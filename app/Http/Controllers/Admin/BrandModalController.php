@@ -153,4 +153,5 @@ class BrandModalController extends Controller
         );
         return redirect()->route('admin.modals.index')->with($notification);
     }
+
 }

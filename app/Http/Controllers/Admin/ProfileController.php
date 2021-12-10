@@ -54,8 +54,12 @@ class ProfileController extends Controller
                     'password'=>bcrypt($request->password)
                 ]);
             }
-       
-        return redirect()->back();
+
+            $notification = array (
+                'message' => 'Admin Profile Update Successfully',
+                'alert-type' => 'success'
+            );
+        return redirect()->back()-with($notification);
     }
 
     /**

@@ -48,8 +48,8 @@ Route::prefix('admin')->as('admin.')->middleware(['auth'])->group(function() {
     Route::resource('issues', IssueController::class);
 });
 
-
-
+//auto select box
+Route::get('/modal/ajax/{brand}', [IssueController::class, 'getModals']);
 
 
 //image

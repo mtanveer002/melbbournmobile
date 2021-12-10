@@ -104,7 +104,7 @@ class IssueController extends Controller
         $issues->update();
 
         $notification = array (
-            'message' => 'Brand Data Add Successfully',
+            'message' => 'Brand Data Update Successfully',
             'alert-type' => 'success'
         );
         return redirect()->route('admin.issues.index')->with($notification);
@@ -126,5 +126,12 @@ class IssueController extends Controller
             'alert-type' => 'info'
         );
         return redirect()->route('admin.issues.index')->with($notification);
+    }
+
+    public function getModals($brand_id)
+    {
+        $modals = BrandModal::where('brand_id', $brand_id)->get();
+        dd($modals);
+        return json_encode($modals);
     }
 }
