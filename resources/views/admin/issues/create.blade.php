@@ -73,14 +73,14 @@
         
         if(brand) {
             $.ajax({
-                url: "{{  url('/brand/modal/ajax/') }}/"+brand,
+                url: "{{  url('/modal/ajax') }}/"+brand,
                 type:"GET",
                 dataType:"json",
                 success:function(data) {
-                    console.log(data);
+                    
                     var d =$('select[name="modal"]').empty();
                         $.each(data, function(key, value){
-                            $('select[name="modal"]').append('<option value="'+ value.id +'">' + value.modal + '</option>');
+                            $('select[name="modal"]').append('<option value="'+ value.id +'">' + value.name + '</option>');
                         });
                 },
             });

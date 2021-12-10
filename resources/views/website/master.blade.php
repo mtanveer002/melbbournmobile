@@ -237,7 +237,7 @@
         //     console.log( "ready!" );
         // });
 
-        function secondForm() {
+        function goNext() {
            document.getElementById("first-form").style.display= "none";
 
             // $("#first-form").animate({
@@ -245,6 +245,11 @@
             // });
         
             document.getElementById("second-form").style.display = "unset";
+        }
+
+        function goBack() {
+            document.getElementById("first-form").style.display= "unset";
+            document.getElementById("second-form").style.display = "none";
         }
 
 

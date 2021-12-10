@@ -64,88 +64,68 @@
                 <div class="booking-form" >
                     <div class="dark">
                         <div class="form">
-                    <h5 class="get-quote-button ">Get Free Quote</h5>
-                   
-                    <form action="{{route('saveQuote')}}"  method="post">
-            {{csrf_field()}}
+                            <h5 class="get-quote-button ">Get Free Quote</h5>
+                            <form action="{{route('saveQuote')}}"  method="post">
+                                @csrf
+                                <div id="first-form" class="first-form">
+                                    <div class="select-option">
+                                        <label for="label-title">Device:</label>
+                                        <select name="brand" id="brand" class="booking-select sources" placeholder="Source Type">
+                                            <option>Select your Device</option>
 
-                    <div id="first-form" class="first-form">
-                        <div class="select-option">
-                            <label for="label-title">Device:</label>
-                            <select name="brand" id="brand" class="booking-select sources" placeholder="Source Type">
-                                <option>Select your Device</option>
+                                        
+                                            @foreach($brands as $brand)
+                                            <option value="{{$brand->brand}}">{{$brand->brand}}</option>
+                                            @endforeach
+                                        
+                                                                                                                            
+                                        </select>
+                                    </div>
+                                    <div class="select-option">
+                                        <label for="label-title">Model:</label>
+                                        <select name="modal" id="modal" class="booking-select sources" placeholder="Source Type">
+                                            <option>Select your Model</option>
+                                            @foreach($modals as $modal)
+                                            <option value="{{$modal->name}}">{{$modal->name}}</option>
+                                            @endforeach                                                                             
+                                        </select>
+                                    </div>
+                                    <div class="select-option">
+                                        <label for="label-title">Device Issue:</label>
+                                        <select name="issue" id="issue" class="booking-select sources" placeholder="Source Type">
+                                            <option>Select Device Issue</option>
+                                            @foreach($issues as $issue)
+                                            <option value="{{$issue->issue}}">{{$issue->issue}}</option>
+                                            @endforeach
+                                        </select>
+                                        <div class="select-option">
+                                            <label for="label-title">Description:</label>
+                                            <input type="text" placeholder="Description" name="description" id="">
+                                        </div>
+                                    </div>
 
-                                @isset($brands)
-                                @foreach($brands as $brand)
-                                 <option value="{{$brand->brand}}">{{$brand->brand}}</option>
-                                @endforeach
-                                @endisset
-                                                                                                                   
-                              </select>
-                        </div>
-                        <div class="select-option">
-                            <label for="label-title">Model:</label>
-                            <select name="modal" id="modal" class="booking-select sources" placeholder="Source Type">
-                                <option>Select your Model</option>
-
-                                @isset($modals)
-                                @foreach($modals as $modal)
-                                 <option value="{{$modal->name}}">{{$modal->name}}</option>
-                                @endforeach
-                                @endisset
-                                                                                                                   
-                              </select>
-                        </div>
-                        <div class="select-option">
-                            <label for="label-title">Device Issue:</label>
-                            <select name="issue" id="issue" class="booking-select sources" placeholder="Source Type">
-                                <option>Select Device Issue</option>
-                                @isset($issues)
-                                @foreach($issues as $issue)
-                                 <option value="{{$issue->issue}}">{{$issue->issue}}</option>
-                                @endforeach
-                                @endisset
-                                    
-                              </select>
-                            <div class="select-option">
-                                <label for="label-title">Description:</label>
-                                <input type="text" placeholder="add description" name="" id="">
-                            </div>
-                        </div>
-
-                        <h3 class="next" onclick="secondForm()">Go Next <i class="fas fa-arrow-circle-right" style="margin: 3%;"></i></h3>
+                                    <h3 class="next" onclick="goNext()">Go Next <i class="fas fa-arrow-circle-right" style="margin: 3%;"></i></h3>
+                                </div>
+                                <div id="second-form" class="second-form" style="display: none;" >
+                                        <div class="select-option">
+                                            <label for="name">Name:</label>
+                                            <input type="text" name="name" placeholder="enter name" id="name" required>
+                                        </div>
+                                        <div class="select-option">
+                                            <label for="email">Email:</label>
+                                            <input type="email" placeholder="enter email" name="email" id="email" required>
+                                        </div>
+                                        <div class="select-option">
+                                            <label for="number">Phone:</label>
+                                            <input type="number" placeholder="enter number" name="number" id="number" required>
+                                        </div>
+                                        
+                                        <h3 class="next" onclick="goBack()">Go Back <i class="fas fa-arrow-circle-right"></i></h3>
+                                        <button type="submit">SUBMIT</button>
+                                </div>
+                            </form>
+                        </div> 
                     </div>
-
-                        <div id="second-form" class="second-form" style="display: none;" >
-                            <!-- <h5 class="get-quote-button">Personal Info</h5>
-                            <p>We will get in touch with you shortly</p> -->
-                           
-                                <div class="select-option">
-                                    <label for="name">Name:</label>
-                                    <input type="text" name="name" placeholder="enter name" id="name" required>
-                                </div>
-                                <div class="select-option">
-                                    <label for="email">Email:</label>
-                                    <input type="email" placeholder="enter email" name="email" id="email" required>
-                                </div>
-                                <div class="select-option">
-                                    <label for="number">Phone:</label>
-                                    <input type="number" placeholder="enter number" name="number" id="number" required>
-                                </div>
-                                
-                        <h3 class="next"><i class="fas fa-arrow-circle-left"></i> Go Back</h3>
-                                <button type="submit">SUBMIT</button>
-                                
-                                
-                            
-                        </div>
-                        
-                    </form>
-                        </div > 
-                        
-                    </div>
-                
-                
                 </div>
             </div>
         </div>
