@@ -1,6 +1,7 @@
 @extends('website.master')
 @section('web_content')
     
+<link href="https://cdnjs.cloudflare.com/ajax/libs/select2/4.0.13/css/select2.min.css" rel="stylesheet" />
 
 <section class="hero-section">
     <div class="container">
@@ -70,29 +71,23 @@
                                 <div id="first-form" class="first-form">
                                     <div class="select-option">
                                         <label for="label-title">Device:</label>
-                                        <select name="brand" id="brand" class="booking-select sources" placeholder="Source Type">
-                                            <option>Select your Device</option>
+                                        <select name="brand"  id="brand_device">
+                                           <option value="">Select Brand</option>
                                             @foreach($brands as $brand)
-                                                <option value="{{$brand->brand}}">{{$brand->brand}}</option>
+                                                <option value="{{$brand->id}}">{{$brand->brand}}</option>
                                             @endforeach                                                                              
                                         </select>
                                     </div>
                                     <div class="select-option">
                                         <label for="label-title">Model:</label>
-                                        <select name="modal" id="modal" class="booking-select sources" placeholder="Source Type">
-                                            <option>Select your Model</option>
-                                            @foreach($modals as $modal)
-                                                <option value="{{$modal->name}}">{{$modal->name}}</option>
-                                            @endforeach                                                                             
+                                        <select name="modal" id="modal_device">
+                                                                                                                      
                                         </select>
                                     </div>
                                     <div class="select-option">
                                         <label for="label-title">Device Issue:</label>
-                                        <select name="issue" id="issue" class="booking-select sources" placeholder="Source Type">
-                                            <option>Select Device Issue</option>
-                                            @foreach($issues as $issue)
-                                                <option value="{{$issue->issue}}">{{$issue->issue}}</option>
-                                            @endforeach
+                                        <select name="issue" id="issue_device">
+                                            <option value="">Select Issue</option>
                                         </select>
                                         <div class="select-option">
                                             <label for="label-title">Description:</label>
@@ -575,170 +570,6 @@
 
 
 
-        <!-- PRODUCT TAB SECTION START -->
-        
-        <!-- PRODUCT TAB SECTION END -->
-
-
-        <!-- FEATURED PRODUCT SECTION START -->
-        <!-- <div class="featured-product-section section-bg-tb pt-80 pb-55">
-            <div class="container">
-                <div class="row">
-                    <div class="col-lg-12">
-                        <div class="section-title text-left mb-20">
-                            <h2 class="uppercase">OUR SHOP</h2>
-                            <h6>There are many variations of passages of brands available,</h6>
-                            <div class="featured-product">
-                                <div class="active-featured-product slick-arrow-2">
-                                    <div class="product-item product-item-2">
-                                        <div class="product-img">
-                                            <a href="single-product.html">
-                                                <img src="{{ asset('frontend/assets/img/product-2/1.png') }}" alt=""/>
-                                            </a>
-                                        </div>
-                                        <div class="product-info">
-                                            <h6 class="product-title">
-                                                <a href="single-product.html">Product Name</a>
-                                            </h6>
-                                            <h6 class="brand-name">Sumsung</h6>
-                                            <h3 class="pro-price">$ 869.00</h3>
-                                        </div>
-                                        <ul class="action-button">
-                                            <li>
-                                                <a href="#" title="Wishlist"><i class="zmdi zmdi-favorite"></i></a>
-                                            </li>
-                                            <li>
-                                                <a href="#" data-bs-toggle="modal"  data-bs-target="#productModal" title="Quickview"><i class="zmdi zmdi-zoom-in"></i></a>
-                                            </li>
-                                            <li>
-                                                <a href="#" title="Compare"><i class="zmdi zmdi-refresh"></i></a>
-                                            </li>
-                                            <li>
-                                                <a href="#" title="Add to cart"><i class="zmdi zmdi-shopping-cart-plus"></i></a>
-                                            </li>
-                                        </ul>
-                                    </div>
-                                    <div class="product-item product-item-2">
-                                        <div class="product-img">
-                                            <a href="single-product.html">
-                                                <img src="{{ asset('frontend/assets/img/product-2/1.png') }}" alt=""/>
-                                            </a>
-                                        </div>
-                                        <div class="product-info">
-                                            <h6 class="product-title">
-                                                <a href="single-product.html">Product Name</a>
-                                            </h6>
-                                            <h6 class="brand-name">Sumsung</h6>
-                                            <h3 class="pro-price">$ 869.00</h3>
-                                        </div>
-                                        <ul class="action-button">
-                                            <li>
-                                                <a href="#" title="Wishlist"><i class="zmdi zmdi-favorite"></i></a>
-                                            </li>
-                                            <li>
-                                                <a href="#" data-bs-toggle="modal"  data-bs-target="#productModal" title="Quickview"><i class="zmdi zmdi-zoom-in"></i></a>
-                                            </li>
-                                            <li>
-                                                <a href="#" title="Compare"><i class="zmdi zmdi-refresh"></i></a>
-                                            </li>
-                                            <li>
-                                                <a href="#" title="Add to cart"><i class="zmdi zmdi-shopping-cart-plus"></i></a>
-                                            </li>
-                                        </ul>
-                                    </div>
-                                    <div class="product-item product-item-2">
-                                        <div class="product-img">
-                                            <a href="single-product.html">
-                                                <img src="{{ asset('frontend/assets/img/product-2/1.png') }}" alt=""/>
-                                            </a>
-                                        </div>
-                                        <div class="product-info">
-                                            <h6 class="product-title">
-                                                <a href="single-product.html">Product Name</a>
-                                            </h6>
-                                            <h6 class="brand-name">Sumsung</h6>
-                                            <h3 class="pro-price">$ 869.00</h3>
-                                        </div>
-                                        <ul class="action-button">
-                                            <li>
-                                                <a href="#" title="Wishlist"><i class="zmdi zmdi-favorite"></i></a>
-                                            </li>
-                                            <li>
-                                                <a href="#" data-bs-toggle="modal"  data-bs-target="#productModal" title="Quickview"><i class="zmdi zmdi-zoom-in"></i></a>
-                                            </li>
-                                            <li>
-                                                <a href="#" title="Compare"><i class="zmdi zmdi-refresh"></i></a>
-                                            </li>
-                                            <li>
-                                                <a href="#" title="Add to cart"><i class="zmdi zmdi-shopping-cart-plus"></i></a>
-                                            </li>
-                                        </ul>
-                                    </div>
-                                    <div class="product-item product-item-2">
-                                        <div class="product-img">
-                                            <a href="single-product.html">
-                                                <img src="{{ asset('frontend/assets/img/product-2/1.png') }}" alt=""/>
-                                            </a>
-                                        </div>
-                                        <div class="product-info">
-                                            <h6 class="product-title">
-                                                <a href="single-product.html">Product Name</a>
-                                            </h6>
-                                            <h6 class="brand-name">Sumsung</h6>
-                                            <h3 class="pro-price">$ 869.00</h3>
-                                        </div>
-                                        <ul class="action-button">
-                                            <li>
-                                                <a href="#" title="Wishlist"><i class="zmdi zmdi-favorite"></i></a>
-                                            </li>
-                                            <li>
-                                                <a href="#" data-bs-toggle="modal"  data-bs-target="#productModal" title="Quickview"><i class="zmdi zmdi-zoom-in"></i></a>
-                                            </li>
-                                            <li>
-                                                <a href="#" title="Compare"><i class="zmdi zmdi-refresh"></i></a>
-                                            </li>
-                                            <li>
-                                                <a href="#" title="Add to cart"><i class="zmdi zmdi-shopping-cart-plus"></i></a>
-                                            </li>
-                                        </ul>
-                                    </div>
-                                    <div class="product-item product-item-2">
-                                        <div class="product-img">
-                                            <a href="single-product.html">
-                                                <img src="{{ asset('frontend/assets/img/product-2/1.png') }}" alt=""/>
-                                            </a>
-                                        </div>
-                                        <div class="product-info">
-                                            <h6 class="product-title">
-                                                <a href="single-product.html">Product Name</a>
-                                            </h6>
-                                            <h6 class="brand-name">Sumsung</h6>
-                                            <h3 class="pro-price">$ 869.00</h3>
-                                        </div>
-                                        <ul class="action-button">
-                                            <li>
-                                                <a href="#" title="Wishlist"><i class="zmdi zmdi-favorite"></i></a>
-                                            </li>
-                                            <li>
-                                                <a href="#" data-bs-toggle="modal"  data-bs-target="#productModal" title="Quickview"><i class="zmdi zmdi-zoom-in"></i></a>
-                                            </li>
-                                            <li>
-                                                <a href="#" title="Compare"><i class="zmdi zmdi-refresh"></i></a>
-                                            </li>
-                                            <li>
-                                                <a href="#" title="Add to cart"><i class="zmdi zmdi-shopping-cart-plus"></i></a>
-                                            </li>
-                                        </ul>
-                                    </div>
-                                </div>
-                            </div>          
-                        </div>
-                    </div>
-                </div>
-            </div>            
-        </div> -->
-        <!-- FEATURED PRODUCT SECTION END -->
-
 
         <!-- BLOG SECTION START -->
         <div class="blog-section-2 pt-60 pb-30">
@@ -848,5 +679,77 @@
         </div>
         <!-- NEWSLETTER SECTION END=== -->            
     </section>
+
+
+    
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/select2/4.0.13/js/select2.min.js"></script>
+
+ 
+
+<script type="text/javascript">
+// auto search from select box
+    $("#brand_device").select2({
+          placeholder: "Select Brand",
+          allowClear: true
+      });
+
+      $("#modal_device").select2({
+          placeholder: "Select Modal",
+          allowClear: true
+      });
+
+      $("#issue_device").select2({
+          placeholder: "Select Issue",
+          allowClear: true
+      });
+
+//auto slect modal according modal
+      $('#brand_device').on('select2:selecting', function(e){
+        var brand = e.params.args.data.id;
+          if(brand) {
+              $.ajax({
+                  url: "{{  url('/admin/modal/ajax') }}/"+brand,
+                  type:"GET",
+                  dataType:"json",
+                  success:function(data) {
+                    $('select[name="issue"]').html('');
+                     var d =$('select[name="modal"]').empty();
+                        $.each(data, function(key, value){
+                            $('select[name="modal"]').append('<option value="'+ value.id +'">' + value.name + '</option>');
+                        });
+                  },
+              });
+             
+          } else {
+              alert('danger');
+          }
+      });
+
+//auto select issues according modals
+$('#modal_device').on('select2:selecting', function(e){
+   
+        var modal = e.params.args.data.id;
+       console.log(modal)
+          if(modal) {
+              $.ajax({
+                  url: "{{  url('/issue/modal/ajax') }}/"+modal,
+                  type:"GET",
+                  dataType:"json",
+                  success:function(data) {
+                     var d =$('select[name="issue"]').html('');
+                        $.each(data, function(key, value){
+                            $('select[name="issue"]').append('<option value="'+ value.id +'">' + value.issue + '</option>');
+                        });
+                  },
+              });
+              
+          } else {
+              alert('danger');
+          }
+      });
+</script>
+
+{{-- for auto select box --}}
 
     @endsection

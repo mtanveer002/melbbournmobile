@@ -131,7 +131,6 @@ class IssueController extends Controller
     public function getModals($brand)
     {
         $modals = BrandModal::where('brand_id', $brand)->get();
-        dd($modals);
         return json_encode($modals);
     }
 }

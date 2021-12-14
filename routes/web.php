@@ -49,8 +49,8 @@ Route::prefix('admin')->as('admin.')->middleware(['auth'])->group(function() {
 });
 
 //auto select box
-Route::get('/modal/ajax/{brand}', [IssueController::class, 'getModals']);
-
+Route::get('/admin/modal/ajax/{brand}', [IssueController::class, 'getModals']);
+Route::get('/issue/modal/ajax/{modal}', [WebsiteController::class, 'getIssue']);
 
 //image
 Route::get('media/get/{file}', function (File $file) {

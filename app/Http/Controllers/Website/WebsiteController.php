@@ -40,7 +40,8 @@ class WebsiteController extends Controller
 
     public function saveQuote(Request $request)
     {
-       
+     
+        
         $booking = new Quote();
         $booking->name = $request->name;
         $booking->email = $request->email;
@@ -67,5 +68,12 @@ class WebsiteController extends Controller
 
 
         return back()->with($notification);
+    }
+
+    public function getIssue($modal)
+    {
+        $issue = Issue::where('modal_id', $modal)->get();
+        // dd($issue);
+        return json_encode($issue);
     }
 }
