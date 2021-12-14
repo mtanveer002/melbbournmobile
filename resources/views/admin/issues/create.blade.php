@@ -28,7 +28,9 @@
                         <label for="modal" class="form-label">Modals</label>
                         <select class="form-select-sm form-control"  name="modal" required>
                             <option selected>select Modals</option>
-                           
+                            @foreach ($modals as $modal)
+                                <option value="{{$modal->id}}">{{$modal->name}}</option>
+                            @endforeach
                         </select>
                     </div>
                     @error('modal')

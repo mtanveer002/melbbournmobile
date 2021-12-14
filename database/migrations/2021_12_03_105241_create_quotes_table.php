@@ -19,6 +19,7 @@ class CreateQuotesTable extends Migration
             $table->string('modal');
             $table->string('issue');
             $table->string('name');
+            $table->string('describtion')->nullable();
             $table->string('email');
             $table->string('number');
 

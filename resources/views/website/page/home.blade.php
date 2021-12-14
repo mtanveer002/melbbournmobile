@@ -65,20 +65,16 @@
                     <div class="dark">
                         <div class="form">
                             <h5 class="get-quote-button ">Get Free Quote</h5>
-                            <form action="{{route('saveQuote')}}"  method="post">
+                            <form action="{{route('saveQuote')}}"  method="post" enctype="multipart/form-data">
                                 @csrf
                                 <div id="first-form" class="first-form">
                                     <div class="select-option">
                                         <label for="label-title">Device:</label>
                                         <select name="brand" id="brand" class="booking-select sources" placeholder="Source Type">
                                             <option>Select your Device</option>
-
-                                        
                                             @foreach($brands as $brand)
-                                            <option value="{{$brand->brand}}">{{$brand->brand}}</option>
-                                            @endforeach
-                                        
-                                                                                                                            
+                                                <option value="{{$brand->brand}}">{{$brand->brand}}</option>
+                                            @endforeach                                                                              
                                         </select>
                                     </div>
                                     <div class="select-option">
@@ -86,7 +82,7 @@
                                         <select name="modal" id="modal" class="booking-select sources" placeholder="Source Type">
                                             <option>Select your Model</option>
                                             @foreach($modals as $modal)
-                                            <option value="{{$modal->name}}">{{$modal->name}}</option>
+                                                <option value="{{$modal->name}}">{{$modal->name}}</option>
                                             @endforeach                                                                             
                                         </select>
                                     </div>
@@ -95,12 +91,12 @@
                                         <select name="issue" id="issue" class="booking-select sources" placeholder="Source Type">
                                             <option>Select Device Issue</option>
                                             @foreach($issues as $issue)
-                                            <option value="{{$issue->issue}}">{{$issue->issue}}</option>
+                                                <option value="{{$issue->issue}}">{{$issue->issue}}</option>
                                             @endforeach
                                         </select>
                                         <div class="select-option">
                                             <label for="label-title">Description:</label>
-                                            <input type="text" placeholder="Description" name="description" id="">
+                                                <input type="text" placeholder="Description" name="description" id="">
                                         </div>
                                     </div>
 
@@ -109,15 +105,15 @@
                                 <div id="second-form" class="second-form" style="display: none;" >
                                         <div class="select-option">
                                             <label for="name">Name:</label>
-                                            <input type="text" name="name" placeholder="enter name" id="name" required>
+                                            <input type="text" name="name" placeholder="Name" id="name" required>
                                         </div>
                                         <div class="select-option">
                                             <label for="email">Email:</label>
-                                            <input type="email" placeholder="enter email" name="email" id="email" required>
+                                            <input type="email" placeholder="Email" name="email" id="email" required>
                                         </div>
                                         <div class="select-option">
                                             <label for="number">Phone:</label>
-                                            <input type="number" placeholder="enter number" name="number" id="number" required>
+                                            <input type="number" placeholder="Phone Number" name="number" id="number" required>
                                         </div>
                                         
                                         <h3 class="next" onclick="goBack()">Go Back <i class="fas fa-arrow-circle-right"></i></h3>
