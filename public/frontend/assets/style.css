@@ -2266,14 +2266,13 @@ span.timing{
 } 
 .select2-container--default .select2-selection--single{
   border: 1.5px solid #e2e1e1 !important;
-  display: inline;
 }
 
 .select2-container{
-  display: contents !important;
+  display: inline !important;
 }
 .select2-container--default .select2-selection--single .select2-selection__arrow {
-  top:40px !important;
+  left: 180px;
 }
 .booking-form .get-quote-button{
   background: #fb6128;
