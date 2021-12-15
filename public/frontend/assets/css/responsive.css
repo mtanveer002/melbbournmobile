@@ -1,7 +1,7 @@
 /*xtra large */
 @media (min-width:  1400px) {
   .booking-form .form {
-    padding: 40px 65px;
+    padding: 32px 65px;
   }
   .logo img {
     width: 70%;
@@ -24,9 +24,7 @@
   padding-left: 45px;
   padding-right: 45px;
 }
-.booking-form .form {
-  padding: 30px 65px;
-}
+
 /*mega-menu*/
 .mega-menu-area {
  /* right: -190px;*/

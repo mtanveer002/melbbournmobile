@@ -64,7 +64,7 @@
             <div class="col-xl-4 col-lg-4 col-md-12 col-sm-12">
                 <div class="booking-form" >
                     <div class="dark">
-                        <div class="form">
+                        <div class="form form1">
                             <h5 class="get-quote-button ">Get Free Quote</h5>
                             <form action="{{route('saveQuote')}}"  method="post" enctype="multipart/form-data">
                                 @csrf
@@ -128,19 +128,6 @@
     </div>
 </section>
 
-<style>
-    /* Auto Select box */
-.select2-container{
-  width: 210px !important;
-}
-.select2-container--default .select2-selection--single {
-  height: 40px !important;
-  padding: 6px !important;
-}
-.select2-container--default .select2-selection--single .select2-selection__arrow {
-  padding: 20px;
-}
-</style>
     <!-- START PAGE CONTENT -->
     <section id="page-content" class="page-wrapper section">
 
