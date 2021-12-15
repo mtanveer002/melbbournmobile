@@ -2270,7 +2270,10 @@ span.timing{
 }
 
 .select2-container{
-  display: inline !important;
+  display: contents !important;
+}
+.select2-container--default .select2-selection--single .select2-selection__arrow {
+  top:40px !important;
 }
 .booking-form .get-quote-button{
   background: #fb6128;
