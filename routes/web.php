@@ -6,6 +6,7 @@ use Illuminate\Support\Facades\Auth;
 use Illuminate\Support\Facades\Route;
 use Illuminate\Support\Facades\Storage;
 use App\Http\Controllers\Admin\BrandsController;
+use App\Http\Controllers\Admin\InqueryController;
 use App\Http\Controllers\Admin\IssueController;
 use App\Http\Controllers\Admin\ProfileController;
 use App\Http\Controllers\Website\WebsiteController;
@@ -46,6 +47,7 @@ Route::prefix('admin')->as('admin.')->middleware(['auth'])->group(function() {
     Route::resource('brands', BrandsController::class);
     Route::resource('modals', BrandModalController::class);
     Route::resource('issues', IssueController::class);
+    Route::resource('inquery', InqueryController::class);
 });
 
 //auto select box

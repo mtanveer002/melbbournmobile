@@ -13,7 +13,7 @@
             </li>
             <li class=" nav-item">
                 <a href="{{ route('admin.brands.index')}}">
-                    <i class="la la-mobile"></i>
+                    <i class="la la-android"></i>
                     <span class="menu-title" data-i18n="nav.dash.main">
                         Brands
                     </span>
@@ -21,7 +21,7 @@
             </li>
             <li class=" nav-item">
                 <a href="{{route('admin.modals.index')}}">
-                    <i class="la la-mobile"></i>
+                    <i class="la la-android"></i>
                     <span class="menu-title" data-i18n="nav.dash.main">
                         Modals
                     </span>
@@ -32,6 +32,14 @@
                     <i class="la la-mobile"></i>
                     <span class="menu-title" data-i18n="nav.dash.main">
                         All Issues
+                    </span>
+                </a>
+            </li>
+            <li class=" nav-item">
+                <a href="{{route('admin.inquery.index')}}">
+                    <i class="la la-bullhorn"></i>
+                    <span class="menu-title" data-i18n="nav.dash.main">
+                        All inqueries
                     </span>
                 </a>
             </li>

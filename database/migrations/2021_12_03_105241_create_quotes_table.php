@@ -15,13 +15,13 @@ class CreateQuotesTable extends Migration
     {
         Schema::create('quotes', function (Blueprint $table) {
             $table->id();
-            $table->string('brand');
-            $table->string('modal');
-            $table->string('issue');
+            $table->bigInteger('brand_id');
+            $table->bigInteger('modal_id');
+            $table->bigInteger('issue_id')->nullable();
             $table->string('name');
             $table->string('describtion')->nullable();
             $table->string('email');
-            $table->string('number');
+            $table->string('number')->nullable();
 
             $table->timestamps();
         });
