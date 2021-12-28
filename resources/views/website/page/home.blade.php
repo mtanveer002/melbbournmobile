@@ -81,7 +81,7 @@
                                     <div class="select-option">
                                         <label for="label-title">Model:</label>
                                         <select name="modal" id="modal_device">
-                                                                                                                      
+                                                                                                       
                                         </select>
                                     </div>
                                     <div class="select-option">
@@ -712,8 +712,9 @@
                   type:"GET",
                   dataType:"json",
                   success:function(data) {
-                    $('select[name="issue"]').html('');
+                    
                      var d =$('select[name="modal"]').empty();
+                     $('select[name="modal"]').append('<option value="">Select Model</option>');
                         $.each(data, function(key, value){
                             $('select[name="modal"]').append('<option value="'+ value.id +'">' + value.name + '</option>');
                         });
@@ -736,7 +737,9 @@ $('#modal_device').on('select2:selecting', function(e){
                   type:"GET",
                   dataType:"json",
                   success:function(data) {
-                     var d =$('select[name="issue"]').html('');
+                   
+                     var d =$('select[name="issue"]').empty();
+                     $('select[name="issue"]').append('<option value="">Select Issue</option>');
                         $.each(data, function(key, value){
                             $('select[name="issue"]').append('<option value="'+ value.id +'">' + value.issue + '</option>');
                         });
