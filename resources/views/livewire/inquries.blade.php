@@ -31,7 +31,7 @@
             <div class="card">
                <div class="card-body">
                 @foreach ($inquery as $inqr)
-                <li {{$active == $inqr->id ? 'border border-danger' : ''}} wire:click="$emit('customerSelected', {{$inqr->id}})">
+                <li class="list-group-item  {{$active == $inqr->id ? 'border border-danger' : ''}} mt-1" wire:click="info">
                     {{ $inqr->name }}
                 </li>
            @endforeach

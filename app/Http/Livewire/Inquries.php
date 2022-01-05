@@ -7,17 +7,11 @@ use Livewire\Component;
 
 class Inquries extends Component
 {
-    public $active = 0;
+    public $active = 2;
 
     protected $listeners = [
         'customerSelected',
     ];
-
-    public function render()
-    {
-        $inquery = Quote::all();
-        return view('livewire.inquries', compact('inquery'));
-    }
 
     public function customerSelected($inqrId)
     {
@@ -25,4 +19,14 @@ class Inquries extends Component
         $this->active = $inqrId;
         
     }
+
+   
+    public function render()
+    {
+       
+        $inquery = Quote::all();
+        return view('livewire.inquries', compact('inquery'));
+    }
+
+    
 }
