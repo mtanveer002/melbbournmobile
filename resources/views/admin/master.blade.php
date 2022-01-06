@@ -32,11 +32,12 @@
                 </div>
             </div>
         </div>
-
+        <livewire:scripts />
         @include('admin.layouts.footer')
         @include('admin.layouts.js')
         @include('admin.layouts.toaster')
         @stack('js')
+        
     </body>
 
 </html>
