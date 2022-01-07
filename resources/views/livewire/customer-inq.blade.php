@@ -33,12 +33,12 @@
                     <div class="card-body">
                         
                             @foreach ($inquery as $inqr)
-                                <li class="list-group-item {{ $active == $inqr->id ? 'border border-danger' : '' }} mt-1" wire:click="$emit('cusSelected', {{$inqr->id}})">
+                                <li class="list-group-item {{ $active == $inqr->id ? 'border border-success' : '' }} mt-1" wire:click="$emit('cusSelected', {{$inqr->id}})">
                                     
                                     {{ $inqr->name }}
                                 </li>
                             @endforeach
-                       
+                       {{$inquery->links()}}
                     </div>
                 </div>
             </div>
@@ -80,11 +80,11 @@
                             <div class="col-12">
                                 <div class="send_message">
                                     <div class="input_message">
-                                        <input type="text" placeholder="Send Message">
+                                        <input type="text" placeholder="Send Message" wire:model="mail">
                                     </div>
     
                                     <div class="send_button">
-                                        <a href=""><i class="fa fa-lg fa-paper-plane" aria-hidden="true"></i></a>
+                                        <a href="#" wire:click="sendMail"><i class="fa fa-lg fa-paper-plane" aria-hidden="true"></i></a>
                                     </div>
                                 </div>
                             </div>

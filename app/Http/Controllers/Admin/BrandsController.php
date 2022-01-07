@@ -39,19 +39,17 @@ class BrandsController extends Controller
     public function store(Request $request)
     {
         $validated = $request->validate([
-            'brand' => 'required|unique:brands|min:2',
-            'brand_img' => 'required|image|mimes:jpeg,png,jpg,gif,svg|max:2048',
+            'brand' => 'required|unique:brands|min:2'
             
         ]);
+        $brands = new Brand();
 
         if(request()->hasFile('brand_img')){
             $image =  File::uploadFile(request()->file('brand_img'));
-           
+            $brands->brand_img = $image->id;
         }
 
-        $brands = new Brand();
         $brands->brand = $request->brand;
-        $brands->brand_img = $image->id;
         $brands->save();
 
         $notification = array(

@@ -43,19 +43,16 @@ class BrandModalController extends Controller
         
         $validated = $request->validate([
             'brand' => 'required',
-            'modal_img' => 'required|image|mimes:jpeg,png,jpg,gif,svg|max:2048',
             
         ]);
 
+        $modals = new BrandModal();
         if(request()->hasFile('modal_img')){
             $image =  File::uploadFile(request()->file('modal_img'));
-           
+            $modals->modal_img = $image->id;
         }
-
-        $modals = new BrandModal();
         $modals->brand_id = $request->brand;
         $modals->name = $request->modal_name;
-        $modals->modal_img = $image->id;
         $modals->save();
 
         $notification = array(

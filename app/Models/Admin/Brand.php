@@ -20,7 +20,7 @@ class Brand extends Model
      public function getImage()
     {
         if ( ! $this->image || ! Storage::exists($this->image->getStoragePath())){
-            return asset('backend/images/avatar/avatar-2.png');
+            return asset('backend/images/mmpr_logo.png');
         }
         
         return $this->image->getPath();
