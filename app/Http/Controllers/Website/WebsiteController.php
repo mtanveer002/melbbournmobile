@@ -53,19 +53,6 @@ class WebsiteController extends Controller
         $booking->save();
 
 
-        $clientBooking = Quote::latest()->first();
-        
-        if($booking->save()){
-            $userdata=array('email'=>$booking->email,'name'=>$booking->name,'number'=>$booking->number,'brand'=>$clientBooking->brand->brand,'modal'=>$clientBooking->modal->name,'issue'=>$clientBooking->issues->issue, 'description'=>$booking->describtion);
-            
-            Mail::send('/email/quoteMail',['userdata' => $userdata]
-                      , function($message) use ($userdata)
-                  {
-                      $message->to('mmpr.sales@gmail.com')->subject('MMPR Repair Inquiry');
-                  });
-                        } 
-
-
         $notification = array (
             'message' => 'Inqury Sent Successfully',
             'alert-type' => 'success'

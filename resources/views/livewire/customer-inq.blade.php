@@ -27,18 +27,21 @@
     
     </style>
     <div class="container">
+        @if (session()->has('message'))
+            <div class="alert alert-success">
+                {{ session('message') }}
+            </div>
+        @endif
         <div class="row">
             <div class="col-3">
                 <div class="card">
                     <div class="card-body">
-                        
-                            @foreach ($inquery as $inqr)
-                                <li class="list-group-item {{ $active == $inqr->id ? 'border border-success' : '' }} mt-1" wire:click="$emit('cusSelected', {{$inqr->id}})">
-                                    
-                                    {{ $inqr->name }}
-                                </li>
-                            @endforeach
-                       {{$inquery->links()}}
+                        @foreach ($inquery as $inqr)
+                            <li class="list-group-item {{ $active == $inqr->id ? 'border border-success' : '' }} mt-1" wire:click="$emit('cusSelected', {{$inqr->id}})">
+                                {{ $inqr->name }}
+                            </li>
+                        @endforeach
+                        {{$inquery->links()}}
                     </div>
                 </div>
             </div>
@@ -80,7 +83,7 @@
                             <div class="col-12">
                                 <div class="send_message">
                                     <div class="input_message">
-                                        <input type="text" placeholder="Send Message" wire:model="mail">
+                                        <input type="text" placeholder="Send Message" wire:model="cus_reply">
                                     </div>
     
                                     <div class="send_button">

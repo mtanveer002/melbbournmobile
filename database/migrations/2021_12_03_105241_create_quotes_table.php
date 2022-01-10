@@ -22,6 +22,8 @@ class CreateQuotesTable extends Migration
             $table->string('describtion')->nullable();
             $table->string('email');
             $table->string('number')->nullable();
+            $table->string('status')->default(0);
+            $table->string('reply')->nullable();
 
             $table->timestamps();
         });
