@@ -45,7 +45,7 @@
                     </tbody>
                 </table>
                 <div class="d-flex">
-                    {{-- {!! $modals->links() !!} --}}
+                    {{ $issues->links() }}
                 </div>
                </div>
             </div>

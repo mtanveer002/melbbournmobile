@@ -4,6 +4,7 @@
             width: 100%;
             display: inline-block;
         }
+
     
         .input_message {
             width: 85%;
@@ -24,6 +25,18 @@
             padding: 0 15px;
             color: #000;
         }
+        .content {
+            position: relative;
+        }
+        .left-card{
+            position: absolute;
+            height: 450px;
+            overflow-y: scroll
+        }
+        .list-group-item:hover{
+            background: azure;
+        }
+       
     
     </style>
     <div class="container">
@@ -34,14 +47,15 @@
         @endif
         <div class="row">
             <div class="col-4">
-                <div class="card">
+                <div class="card left-card">
                     <div class="card-body">
+                        <input type="text" class="form-control" placeholder="Search" wire:model="searchTerm">
                         @foreach ($inquery as $inqr)
-                            <li class="list-group-item {{ $active == $inqr->id ? 'border border-success' : '' }} mt-1" wire:click="$emit('cusSelected', {{$inqr->id}})">
-                              <p> {{$inqr->id}}  {{ $inqr->name }} <span class="{{ $inqr->status == 0 ? 'badge badge-danger' : 'badge badge-success'}}">.</span> </p>
+                            <li class="list-group-item {{ $active == $inqr->id ? 'border border-success' : '' }} mt-1" wire:click="$emit('cusSelected', {{$inqr->id}})" style="height: 50px;">
+                              <p> <b>{{$loop->iteration}}.</b>  {{ $inqr->name }} <span class="{{ $inqr->status == 0 ? 'badge badge-danger' : 'badge badge-success'}} float-right">status</span> </p>
                             </li>
                         @endforeach
-                        {{$inquery->links()}}
+                      
                     </div>
                 </div>
             </div>
@@ -57,7 +71,7 @@
                         <hr>
                         <div class="row">
                             <div class="col-1"></div>
-                            <div class="col-2 ">
+                            <div class="col-3 ">
                                 <h5>Brand:</h5>
                                 <hr>
                                 <h5>Modal:</h5>
