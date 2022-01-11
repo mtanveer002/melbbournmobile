@@ -10,6 +10,7 @@ class CustomerInq extends Component
 {
     public $active;
     public $cus_reply;
+    public $searchTerm = '';
 
    protected $listeners = [
     'cusSelected',
@@ -34,14 +35,19 @@ class CustomerInq extends Component
 
         $this->cus_reply = "";
 
+        $status = Quote::findOrFail($this->active);
+        $status->status = 1;
+        $status->update();
+
         session()->flash('message', 'Message Sent Successfully');
     }
 
     public function render()
     {   
+        $searchTerm = '%' .$this->searchTerm . '%';
         $customer_info = Quote::where('id', $this->active)->get();
-        $inquery = Quote::latest()->paginate(5);
-       
+        $inquery = Quote::latest()->get();
+        
         return view('livewire.customer-inq', compact('inquery', 'customer_info'));
     }
 }
