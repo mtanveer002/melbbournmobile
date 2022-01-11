@@ -33,12 +33,12 @@
             </div>
         @endif
         <div class="row">
-            <div class="col-3">
+            <div class="col-4">
                 <div class="card">
                     <div class="card-body">
                         @foreach ($inquery as $inqr)
                             <li class="list-group-item {{ $active == $inqr->id ? 'border border-success' : '' }} mt-1" wire:click="$emit('cusSelected', {{$inqr->id}})">
-                                {{ $inqr->name }}
+                              <p> {{$inqr->id}}  {{ $inqr->name }} <span class="{{ $inqr->status == 0 ? 'badge badge-danger' : 'badge badge-success'}}">.</span> </p>
                             </li>
                         @endforeach
                         {{$inquery->links()}}
@@ -46,7 +46,7 @@
                 </div>
             </div>
             
-            <div class="col-9">
+            <div class="col-8">
                 @foreach ($customer_info as $info)
                 <div class="card">
                     <div class="card-body">
