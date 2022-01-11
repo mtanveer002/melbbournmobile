@@ -85,7 +85,7 @@ class IssueController extends Controller
 
         return view('admin.issues.edit', compact('issues', 'brands', 'modals'));
     }
-
+    
     /**
      * Update the specified resource in storage.
      *

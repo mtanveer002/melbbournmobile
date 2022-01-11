@@ -25,5 +25,5 @@ class Quote extends Model
     {
         return $this->belongsTo(Issue::class, 'issue_id');
     }
- 
+    
 }

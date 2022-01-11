@@ -26,11 +26,11 @@
                         @foreach ($issues as $issue)
                             <tr>
                                 <td>{{ $loop->iteration }}</td>
-                                <td>{{$issue->brand->brand}}</td>
-                                <td>{{$issue->modal->name}}</td>
-                                <td>{{ $issue->issue}}</td>
-                                <td>{{ $issue->price}}</td>
-                                <td>{{ $issue->description}}</td>
+                                <td>{{ $issue->brand->brand }}</td>
+                                <td>{{ $issue->modal->name }}</td>
+                                <td>{{ $issue->issue }}</td>
+                                <td>{{ $issue->price }}</td>
+                                <td>{{ $issue->description }}</td>
                                
                                 <td>
                                     <form  action="{{ route('admin.issues.destroy',$issue->id)}}" method="POST" enctype="multipart/form-data">
@@ -45,7 +45,7 @@
                     </tbody>
                 </table>
                 <div class="d-flex">
-                    {{-- {!! $modals->links() !!} --}}
+                    {{ $issues->links() }}
                 </div>
                </div>
             </div>
