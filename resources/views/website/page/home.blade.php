@@ -121,8 +121,8 @@
                                             <label for="label-title">Shop:</label>
                                             <select name="shop">
                                                 <option value="">Select Shop</option>
-                                                <option value="">Hampton Park</option>
-                                                <option value="">Blackburn</option>
+                                                <option value="Hampton Park">Hampton Park</option>
+                                                <option value="Blackburn">Blackburn</option>
                                             </select>
                                         </div>
                                         <!-- <h3 class="next" onclick="goBack()">Go Back <i class="fas fa-arrow-circle-right"></i></h3> -->

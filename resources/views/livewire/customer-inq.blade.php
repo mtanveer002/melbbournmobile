@@ -98,7 +98,7 @@
                                 <hr>
                                 <h6 class="mt-1"><strong>{{ $info->describtion}}</strong></h6>
                                 <hr>
-                                <h6 class="mt-1"><strong>Hipton Aus</strong></h6>
+                                <h6 class="mt-1"><strong>{{ $info->shop}}</strong></h6>
                                 <hr>
                             </div>
                         </div>
