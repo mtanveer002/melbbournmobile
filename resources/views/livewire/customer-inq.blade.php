@@ -30,7 +30,7 @@
         }
         .left-card{
             position: absolute;
-            height: 450px;
+            height: 500px;
             overflow-y: scroll
         }
         .list-group-item:hover{
@@ -49,12 +49,18 @@
             <div class="col-4">
                 <div class="card left-card">
                     <div class="card-body">
-                        <input type="text" class="form-control" placeholder="Search" wire:model="searchTerm">
-                        @foreach ($inquery as $inqr)
+                        <form action="">
+                            <input type="text" class="form-control border border-info" placeholder="Search" wire:model="searchTerm" style="border-radius: 50px;">
+                        </form>
+                        @if ($inquery && $inquery->count() > 0)
+                            @foreach ($inquery as $inqr)
                             <li class="list-group-item {{ $active == $inqr->id ? 'border border-success' : '' }} mt-1" wire:click="$emit('cusSelected', {{$inqr->id}})" style="height: 50px;">
-                              <p> <b>{{$loop->iteration}}.</b>  {{ $inqr->name }} <span class="{{ $inqr->status == 0 ? 'badge badge-danger' : 'badge badge-success'}} float-right">status</span> </p>
+                            <p> <b>{{$loop->iteration}}.</b>  {{ $inqr->name }} <span class="{{ $inqr->status == 0 ? 'badge badge-danger' : 'badge badge-success'}} float-right">status</span> </p>
                             </li>
-                        @endforeach
+                            @endforeach
+                        @else 
+                            <p class="text-danger mt-3 ml-1">Record not found</p>
+                        @endif
                       
                     </div>
                 </div>
@@ -80,8 +86,10 @@
                                 <hr>
                                 <h5>Description:</h5>
                                 <hr>
+                                <h5>Shop:</h5>
+                                <hr>
                             </div>
-                            <div class="col-4">
+                            <div class="col-8">
                                 <h6 class="mt-0"><strong>{{ $info->brand->brand}}</strong></h6>
                                 <hr>
                                 <h6 class="mt-2"><strong>{{ $info->modal->name}}</strong></h6>
@@ -89,6 +97,8 @@
                                 <h6 class="mt-1"><strong>{{ $info->issues->issue}}</strong></h6>
                                 <hr>
                                 <h6 class="mt-1"><strong>{{ $info->describtion}}</strong></h6>
+                                <hr>
+                                <h6 class="mt-1"><strong>Hipton Aus</strong></h6>
                                 <hr>
                             </div>
                         </div>
