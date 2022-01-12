@@ -117,7 +117,7 @@
                                             <input type="number" placeholder="Phone Number" name="number" id="number"
                                                 required>
                                         </div>
-                                        <div class="select-option s">
+                                        <div class="select-option op">
                                             <label for="label-title">Shop:</label>
                                             <select name="shop">
                                                 <option value="">Select Shop</option>
