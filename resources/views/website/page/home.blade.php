@@ -98,20 +98,28 @@
                                     <h3 class="next" onclick="goNext()">Go Next <i class="fas fa-arrow-circle-right" style="margin: 3%;"></i></h3>
                                 </div>
                                 <div id="second-form" class="second-form" style="display: none;" >
-                                        <div class="select-option">
+                                        <div class="select-option s">
                                             <label for="name">Name:</label>
                                             <input type="text" name="name" placeholder="Name" id="name" required>
                                         </div>
-                                        <div class="select-option">
+                                        <div class="select-option s">
                                             <label for="email">Email:</label>
                                             <input type="email" placeholder="Email" name="email" id="email" required>
                                         </div>
-                                        <div class="select-option">
+                                        <div class="select-option s">
                                             <label for="number">Phone:</label>
                                             <input type="number" placeholder="Phone Number" name="number" id="number" required>
                                         </div>
-                                        
-                                        <h3 class="next" onclick="goBack()">Go Back <i class="fas fa-arrow-circle-right"></i></h3>
+                                        <div class="select-option op">
+                                        <label for="label-title">Our branches:</label>
+                                        <select name="brand"  id="brand_device">
+                                           <option value="">Select Shop</option>
+                                            <option value="">Hampton Park</option>
+                                            <option value="">Blackburn</option>
+                                                                                                                        
+                                        </select>
+                                        </div>
+                                        <!-- <h3 class="next" onclick="goBack()">Go Back <i class="fas fa-arrow-circle-right"></i></h3> -->
                                         <button type="submit">SUBMIT</button>
                                 </div>
                             </form>

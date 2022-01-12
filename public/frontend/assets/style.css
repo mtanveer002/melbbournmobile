@@ -2274,6 +2274,20 @@ span.timing{
 .select2-container--default .select2-selection--single .select2-selection__arrow {
   left: 180px;
 }
+.s input[type="number"],.s input[type="text"], .s input[type="email"]{
+  height:  40px !important;
+  margin-bottom: 0px !important;
+}
+.op select{
+  border: 1.5px solid #e2e1e1;
+  font-size: 1.7rem;
+  font-weight: 300;
+  color: #c8cdd8;
+  width: 100%;
+  height: 40px;
+  padding: 0;
+  border-radius: 5px;
+}
 .booking-form .get-quote-button{
   background: #fb6128;
   padding: 1rem;
@@ -2482,6 +2496,20 @@ span.timing{
 	margin-top: 0;
 	width: 100%;
 }
+.s input[type="number"],.s input[type="text"], .s input[type="email"]{
+  height:  40px !important;
+  margin-bottom: 0px !important;
+}
+.op select{
+  border: 1.5px solid #e2e1e1;
+  font-size: 1.7rem;
+  font-weight: 300;
+  color: #c8cdd8;
+  width: 100%;
+  height: 40px;
+  padding: 0;
+  border-radius: 5px;
+}
 .booking-form form button {
 	display: block;
 	font-size: 14px;
@@ -2491,7 +2519,7 @@ span.timing{
 	color: #ffffff;
 	font-weight: bold;
 	width: 100%;
-	height: 46px;
+	height: 37px;
 	margin-top: 19px;
   transition: all .3s ease;
 }
