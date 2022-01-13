@@ -149,9 +149,9 @@
         <div class="tips container-fluid">
             <div class="container">
                 <div class="text-center">
-                    <h2>WE COME TO YOU</h2>
-                    <p>Mobile repairing usually takes longer than expected but here at MMPR, We repair your mobile device in
-                        three easy steps:</p>
+                    <h2>GET YOUR DEVICE REPAIRED TODAY</h2>
+                    <p>With 3 easy ways to get your device repaired, you'll have it back in no time! Just walk in, mail in, or have us come to you!
+                    </p>
                     <div class="row process">
                         <div class="col-lg-3">
                             <div class="icon"><i class="fas fa-info-circle" data-toggle="modal"
@@ -180,10 +180,10 @@
                                 </div>
                             </div>
                             <i class="fas fa-shuttle-van repair-icon"></i>
-                            <p>Providing van services to you</p>
+                            <p>We'll Come To You</p>
                         </div>
                         <div class="col-lg-1">
-                            <i class="fas fa-ellipsis-h"></i>
+                            <!-- <i class="fas fa-ellipsis-h"></i> -->
                         </div>
                         <div class="col-lg-3">
                             <div class="icon"><i class="fas fa-info-circle" data-toggle="modal"
@@ -212,10 +212,10 @@
                                 </div>
                             </div>
                             <i class="fas fa-store-alt repair-icon"></i>
-                            <p>Choose Our Nearest Shop</p>
+                            <p>Walk In To Our Site</p>
                         </div>
                         <div class="col-lg-1">
-                            <i class="fas fa-ellipsis-h"></i>
+                            <!-- <i class="fas fa-ellipsis-h"></i> -->
                         </div>
                         <div class="col-lg-3">
                             <div class="icon"><i class="fas fa-info-circle" data-toggle="modal"
@@ -244,8 +244,8 @@
                                     </div>
                                 </div>
                             </div>
-                            <i class="fas fa-globe repair-icon"></i>
-                            <p>Registered on the website</p>
+                            <i class="fas fa-envelope repair-icon"></i>
+                            <p>Mail In Your Device</p>
                         </div>
                     </div>
                 </div>
