@@ -51,13 +51,13 @@ Route::prefix('admin')->as('admin.')->middleware(['auth'])->group(function() {
     Route::resource('issues', IssueController::class);
     Route::resource('inquery', InqueryController::class);
     Route::resource('leads', LeadsController::class);
-    Route::resource('sendmails', SendMailController::class); //for multiple mail
+    
 });
 
 //auto select box
 Route::get('/admin/modal/ajax/{brand}', [IssueController::class, 'getModals']);
 Route::get('/issue/modal/ajax/{modal}', [WebsiteController::class, 'getIssue']);
-
+Route::get('/leadsMails', [LeadsController::class, 'leadMail'])->name('lead.mail'); //send lead mail
 //image
 Route::get('media/get/{file}', function (File $file) {
     if (!Storage::exists($file->getStoragePath())) {

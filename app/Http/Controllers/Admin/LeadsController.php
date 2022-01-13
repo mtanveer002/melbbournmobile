@@ -41,14 +41,7 @@ class LeadsController extends Controller
      */
     public function store(Request $request)
     {
-        $email = Quote::all()->pluck('email');
-        dispatch(new emailsendingjob($request->data, $email));
-        Artisan::call('queue:work --once');
-        $notification = array (
-        'message' => 'Message send Successfully',
-        'alert-type' => 'success'
-        );
-        return redirect()->route('admin.leads.index')->with($notification);
+        
     }
 
     /**
@@ -94,5 +87,19 @@ class LeadsController extends Controller
     public function destroy($id)
     {
         //
+    }
+
+    public function leadMail(Request $request)
+    {
+       
+        $email = Quote::all()->pluck('email');
+        dispatch(new emailsendingjob($request->data, $email));
+        
+
+        $notification = array (
+        'message' => 'Message send Successfully',
+        'alert-type' => 'success'
+        );
+        return redirect()->route('admin.leads.index')->with($notification);
     }
 }

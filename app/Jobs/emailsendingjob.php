@@ -21,7 +21,7 @@ class emailsendingjob implements ShouldQueue
      * @return void
      */
     public $data, $email;
-    public function __construct($data="", $email="")
+    public function __construct($data, $email)
     {
         $this->data = $data;
         $this->email = $email;

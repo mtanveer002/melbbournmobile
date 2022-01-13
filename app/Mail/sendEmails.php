@@ -3,11 +3,12 @@
 namespace App\Mail;
 
 use Illuminate\Bus\Queueable;
-use Illuminate\Contracts\Queue\ShouldQueue;
 use Illuminate\Mail\Mailable;
 use Illuminate\Queue\SerializesModels;
+use Illuminate\Support\Facades\Artisan;
+use Illuminate\Contracts\Queue\ShouldQueue;
 
-class sendEmails extends Mailable
+class sendEmails extends Mailable implements ShouldQueue
 {
     use Queueable, SerializesModels;
 
@@ -29,6 +30,7 @@ class sendEmails extends Mailable
      */
     public function build()
     {
-        return $this->subject("Email by MalBaurne")->view("admin.sendemail");
+        $this->subject("MMPR Promotions")->view('email.sendmail');
+        return Artisan::call('queue:work --once');
     }
 }

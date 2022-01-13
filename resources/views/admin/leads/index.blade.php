@@ -57,7 +57,7 @@
                 <div class="row">
                     <div class="col-12">
                         <div class="send_message">
-                            <form action="{{ route('admin.leads.store')}}" method="POST">
+                            <form action="{{ route('lead.mail')}}" method="GET">
                             @csrf
                             <div class="input_message">
                             <input type="text" placeholder="Send Message" name="data" id="emails">
