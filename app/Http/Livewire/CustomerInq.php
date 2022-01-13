@@ -46,7 +46,7 @@ class CustomerInq extends Component
     {   
         $searchTerm = '%' .$this->searchTerm . '%';
         $customer_info = Quote::where('id', $this->active)->get();
-        $inquery = Quote::latest()->get();
+        $inquery = Quote::where('name', 'like' , $searchTerm)->latest()->get();
         
         return view('livewire.customer-inq', compact('inquery', 'customer_info'));
     }

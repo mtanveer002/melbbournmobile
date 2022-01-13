@@ -46,6 +46,7 @@ class WebsiteController extends Controller
         $booking->name = $request->name;
         $booking->email = $request->email;
         $booking->number = $request->number;
+        $booking->shop = $request->shop;
         $booking->describtion = $request->description;
         $booking->brand_id = $request->brand;
         $booking->modal_id = $request->modal;
