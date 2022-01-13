@@ -51,7 +51,7 @@ Route::prefix('admin')->as('admin.')->middleware(['auth'])->group(function() {
     Route::resource('issues', IssueController::class);
     Route::resource('inquery', InqueryController::class);
     Route::resource('leads', LeadsController::class);
-    Route::resource('sendmails', SendMailController::class);
+    Route::resource('sendmails', SendMailController::class); //for multiple mail
 });
 
 //auto select box
