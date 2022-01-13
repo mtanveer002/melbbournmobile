@@ -7,6 +7,7 @@ use App\Models\Admin\Brand;
 use App\Models\Admin\BrandModal;
 use App\Models\Admin\Issue;
 use App\Models\Quote;
+use App\Notifications\InquiryNotification;
 use Mail;
 
 use Illuminate\Http\Request;
@@ -52,7 +53,6 @@ class WebsiteController extends Controller
         $booking->modal_id = $request->modal;
         $booking->issue_id = $request->issue;
         $booking->save();
-
 
         $notification = array (
             'message' => 'Inqury Sent Successfully',

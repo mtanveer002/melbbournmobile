@@ -10,7 +10,7 @@
                         </a>
                     </li>
                     <li class="nav-item mr-auto"><a class="navbar-brand" href="/">
-                        <img class="brand-logo" style="width:150px; hight:40px;" alt="modern admin logo" src="{{ asset('app-assets/images/logo/expreco.png') }}">
+                        <img class="brand-logo" style="width:150px; height:40px;" alt="modern admin logo" src="{{ asset('app-assets/images/logo/expreco.png') }}">
                             <h3 class="brand-text">
                                
                             </h3>
@@ -40,7 +40,7 @@
                     <ul class="nav navbar-nav float-right">
                        
                        {{-- @livewire('components.language') --}}
-                       {{-- <livewire:components.notification/> --}}
+                       <livewire:components.notification/>
                         {{-- @livewire('components.message') --}}
                         <livewire:components.user/>
                     </ul>
