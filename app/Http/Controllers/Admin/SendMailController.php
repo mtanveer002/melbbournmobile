@@ -1,16 +1,13 @@
 <?php
 
 namespace App\Http\Controllers\Admin;
-
 use App\Http\Controllers\Controller;
 use App\Jobs\emailsendingjob;
 use App\Models\Quote;
 use Illuminate\Http\Request;
-use Illuminate\Support\Facades\Artisan;
 
-class LeadsController extends Controller
+class SendMailController extends Controller
 {
-   
     /**
      * Display a listing of the resource.
      *
@@ -18,9 +15,7 @@ class LeadsController extends Controller
      */
     public function index()
     {
-
-        $leads = Quote::paginate(5);
-        return view('admin.leads.index', compact('leads'));
+        return view('admin.leads.sendmails');
     }
 
     /**
@@ -41,14 +36,7 @@ class LeadsController extends Controller
      */
     public function store(Request $request)
     {
-        $email = Quote::all()->pluck('email');
-        dispatch(new emailsendingjob($request->data, $email));
-        Artisan::call('queue:work --once');
-        $notification = array (
-        'message' => 'Message send Successfully',
-        'alert-type' => 'success'
-        );
-        return redirect()->route('admin.leads.index')->with($notification);
+        
     }
 
     /**

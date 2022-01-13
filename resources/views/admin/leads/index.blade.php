@@ -57,13 +57,18 @@
                 <div class="row">
                     <div class="col-12">
                         <div class="send_message">
+                            <form action="{{ route('admin.leads.store')}}" method="POST">
+                            @csrf
                             <div class="input_message">
-                                <input type="text" placeholder="Send Message" wire:model="cus_reply">
+                            <input type="text" placeholder="Send Message" name="data" id="emails">
                             </div>
-
+                            @error('emails')
+                            <div class="text-danger">{{$message}}</div>
+                            @enderror
                             <div class="send_button">
-                                <a href="#" wire:click="sendMail"><i class="fa fa-lg fa-paper-plane" aria-hidden="true"></i></a>
+                                <button type="submit" style="background: transparent;border: none;"><i class="fa fa-lg fa-paper-plane" aria-hidden="true"></i></button>
                             </div>
+                            </form>
                         </div>
                     </div>
                 </div>
