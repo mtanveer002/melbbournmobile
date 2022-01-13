@@ -99,7 +99,6 @@ class BrandModalController extends Controller
         $validated = $request->validate([
             'brand' => 'required',
             
-            
         ]);
 
         $modals =  BrandModal::find($id);
