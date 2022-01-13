@@ -1,5 +1,6 @@
 @extends('admin.master')
 @section('content')
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
 
 <div class="container">
     <div class="row">
@@ -28,9 +29,9 @@
                         <label for="modal" class="form-label">Modals</label>
                         <select class="form-select-sm form-control"  name="modal" required>
                             <option selected>select Modals</option>
-                            @foreach ($modals as $modal)
+                            {{-- @foreach ($modals as $modal)
                                 <option value="{{$modal->id}}">{{$modal->name}}</option>
-                            @endforeach
+                            @endforeach --}}
                         </select>
                     </div>
                     @error('modal')
@@ -67,6 +68,30 @@
     </div>
 </div>
 
+{{-- for auto selection select box --}}
+<script type="text/javascript">
+    $(document).ready(function() {
+      $('select[name="brand"]').on('change', function(){
+          var brand = $(this).val();
+          if(brand) {
+              $.ajax({
+                  url: "{{  url('/admin/modal/ajax') }}/"+brand,
+                  type:"GET",
+                  dataType:"json",
+                  success:function(data) {
+                     var d =$('select[name="modal"]').empty();
+                        $.each(data, function(key, value){
+                            $('select[name="modal"]').append('<option value="'+ value.id +'">' + value.name + '</option>');
+                        });
+                  },
+              });
+              console.log(brand)
+          } else {
+              alert('danger');
+          }
+      });
+  });
+  </script>
 
 
 @endsection

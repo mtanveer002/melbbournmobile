@@ -82,7 +82,6 @@ class IssueController extends Controller
         $brands = Brand::all();
         $modals = BrandModal::all();
         $issues = Issue::findOrFail($id);
-
         return view('admin.issues.edit', compact('issues', 'brands', 'modals'));
     }
     
