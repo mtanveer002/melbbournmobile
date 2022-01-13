@@ -30,8 +30,10 @@
                                     <form  action="{{ route('admin.modals.destroy',$modal->id)}}" method="POST" enctype="multipart/form-data">
                                         @csrf
                                         @method('DELETE')
+                                        <div style="display: flex;">
                                         <a href="{{route('admin.modals.edit', $modal->id)}}" class="btn-sm btn btn-success"><i class="fa fa-edit"></i></a>
-                                        <button type="submit"  class="btn-sm btn btn-danger" id="delete"><i class="fa fa-trash"></i></button>
+                                        <button style="margin-left: 4%;" type="submit"  class="btn-sm btn btn-danger" id="delete"><i class="fa fa-trash"></i></button>
+                                        </div>
                                     </form> 
                                 </td>
                             </tr>

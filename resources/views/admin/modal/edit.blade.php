@@ -16,7 +16,7 @@
                         <label for="brand" class="form-label">Brand</label>
                         <select class="form-select-sm form-control"  name="brand" required>
                             @foreach ($brands as $brand)
-                                <option value="{{$brand->brand}}">{{$brand->brand}}</option>
+                                <option value="{{$brand->id}}">{{$brand->brand}}</option>
                             @endforeach
                         </select>
                     </div>

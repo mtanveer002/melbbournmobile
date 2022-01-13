@@ -16,7 +16,6 @@
                     <div class="mb-1">
                         <label for="brand" class="form-label">Brand</label>
                         <select class="form-select-sm form-control"  name="brand" required>
-                            <option selected>select brand</option>
                             @foreach ($brands as $brand)
                                 <option value="{{$brand->id}}">{{$brand->brand}}</option>
                             @endforeach
@@ -28,10 +27,9 @@
                     <div class="mb-1">
                         <label for="modal" class="form-label">Modals</label>
                         <select class="form-select-sm form-control"  name="modal" required>
-                            <option selected>select Modals</option>
-                            {{-- @foreach ($modals as $modal)
+                             @foreach ($modals as $modal)
                                 <option value="{{$modal->id}}">{{$modal->name}}</option>
-                            @endforeach --}}
+                            @endforeach
                         </select>
                     </div>
                     @error('modal')
