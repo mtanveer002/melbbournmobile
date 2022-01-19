@@ -30,7 +30,7 @@ class sendEmails extends Mailable implements ShouldQueue
      */
     public function build()
     {
-        $this->subject("MMPR Promotions")->view('email.sendmail');
+        $this->subject("MMPR Sales")->view('email.sendmail');
         return Artisan::call('queue:work --once');
     }
 }
