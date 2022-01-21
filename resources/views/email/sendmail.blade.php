@@ -12,8 +12,8 @@
         .data {
             padding-left: 200px;
             padding-top: 0%;
-            margin-left: -47px;
-            margin-top: -80px;
+            margin-left: -100px;
+            margin-top: -90px;
              }
         .fab{
             font-size: 2rem;
@@ -45,7 +45,7 @@
     <p class="p1"><i><strong>Customer Services</strong></i></p>
     <br>
         <h4>Reply:</h4> <hr>
-        <p> {{$data}}</p>
+        <p> {{ $data }}</p>
     <br>
     <hr>
     
@@ -56,10 +56,8 @@
                 Tel: (03) 8845 7222 <br>
                 Mail: <a href="mmpr.sales@gmail.com">mmpr.sales@gmail.com</a>
                 <br>
-                Web: <a class="melbournemobilephonerepairs.com.a" href="#">melbournemobilephonerepairs.com.au/</a>
-                3 Lawrence St, Blackburn South, VIC 3130
-                <br>
-                Add: 82 Somerville Rd, Hampton Park VIC 3976, Australia</p> 
+                Web: <a class="melbournemobilephonerepairs.com.a" href="#">melbournemobilephonerepairs.com.au/</a> <br>
+                Add: 3 Lawrence St, Blackburn South, VIC 3130 82 Somerville Rd, Hampton Park VIC 3976, Australia</p> 
                 <i class="fab fa-facebook-square"></i>&nbsp;&nbsp;<i class="fab fa-instagram-square"></i>
             </div>
             </div>
