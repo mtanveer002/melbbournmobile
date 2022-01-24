@@ -53,7 +53,7 @@
                                         <div style="display: flex;">
                                             <a href="{{route('admin.van.edit', $inqury->id)}}" class="btn-sm btn btn-success"><i class="fa fa-edit"></i></a>
                                             <button type="submit"  class="btn-sm btn btn-danger" id="delete"><i class="fa fa-trash"></i></button>
-                                            <a href="{{route('admin.chkStatus', $inqury->id)}}" type="button"  class="btn-sm btn btn-primary"><i class="{{$inqury->status == 0 ? "fa fa-times" : "fa fa-check"}}"></i></a>
+                                            <a href="{{route('admin.chkStatus', $inqury->id)}}" type="button"  class="btn-sm btn btn-primary"><i class="{{$inqury->status == 0 ? "fa fa-check" : "fa fa-times"}}"></i></a>
                                         </div>
                                     </form> 
                                     

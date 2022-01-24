@@ -1,10 +1,8 @@
 <?php
 
-namespace App\Http\Controllers\admin;
+namespace App\Http\Controllers\Admin;
 
 use App\Http\Controllers\Controller;
-use App\Jobs\Inquiry;
-use App\Jobs\inquiryjob;
 use App\Mail\inquiryMail;
 use App\Models\Admin\van;
 use Illuminate\Http\Request;

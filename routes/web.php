@@ -10,8 +10,7 @@ use App\Http\Controllers\Admin\InqueryController;
 use App\Http\Controllers\Admin\IssueController;
 use App\Http\Controllers\Admin\LeadsController;
 use App\Http\Controllers\Admin\ProfileController;
-use App\Http\Controllers\Admin\SendMailController;
-use App\Http\Controllers\admin\VanController;
+use App\Http\Controllers\Admin\VanController;
 use App\Http\Controllers\Website\WebsiteController;
 
 /*

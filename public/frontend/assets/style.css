@@ -1746,6 +1746,7 @@ table {width: 100%}
     13.1 Team member
 ------------------------------------- */
 .active-team-member{
+  margin: 0 auto;
   margin-left: -15px;
   margin-right: -15px;
 }
