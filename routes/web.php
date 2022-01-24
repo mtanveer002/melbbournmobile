@@ -11,6 +11,7 @@ use App\Http\Controllers\Admin\IssueController;
 use App\Http\Controllers\Admin\LeadsController;
 use App\Http\Controllers\Admin\ProfileController;
 use App\Http\Controllers\Admin\SendMailController;
+use App\Http\Controllers\admin\VanController;
 use App\Http\Controllers\Website\WebsiteController;
 
 /*
@@ -51,7 +52,8 @@ Route::prefix('admin')->as('admin.')->middleware(['auth'])->group(function() {
     Route::resource('issues', IssueController::class);
     Route::resource('inquery', InqueryController::class);
     Route::resource('leads', LeadsController::class);
-    
+    Route::resource('van', VanController::class);
+    Route::get('chkStatus/{id}', [VanController::class, 'chkStatus'])->name('chkStatus');
 });
 
 //auto select box

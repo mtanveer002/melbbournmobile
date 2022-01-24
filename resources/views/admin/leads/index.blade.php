@@ -60,7 +60,7 @@
                             <form action="{{ route('lead.mail')}}" method="GET">
                             @csrf
                             <div class="input_message">
-                            <input type="text" placeholder="Send Message" name="data" id="emails">
+                            <input type="text" placeholder="Send Message" name="data" id="emails" required>
                             </div>
                             @error('emails')
                             <div class="text-danger">{{$message}}</div>

@@ -94,7 +94,6 @@ class LeadsController extends Controller
        
         $email = Quote::all()->pluck('email');
         dispatch(new emailsendingjob($request->data, $email));
-        
 
         $notification = array (
         'message' => 'Message send Successfully',
