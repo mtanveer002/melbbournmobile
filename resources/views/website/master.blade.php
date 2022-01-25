@@ -226,9 +226,14 @@
             document.getElementById("second-form").style.display = "unset";
         }
 
+        function goNext1() {
+            document.getElementById("second-form").style.display= "none";
+            document.getElementById("third-form").style.display = "unset";
+        }
         function goBack() {
             document.getElementById("first-form").style.display= "unset";
             document.getElementById("second-form").style.display = "none";
+            document.getElementById("third-form").style.display = "none";
         }
 
 

@@ -71,7 +71,7 @@
                     <div class="booking-form">
                         <div class="dark">
                             <div class="form form1">
-                                <h5 class="get-quote-button ">Get Free Quote</h5>
+                                <h5 class="get-quote-button ">Get A Free Quote</h5>
                                 <form action="{{ route('saveQuote') }}" method="post" enctype="multipart/form-data">
                                     @csrf
                                     <div id="first-form" class="first-form">
@@ -118,15 +118,37 @@
                                             <input type="number" placeholder="Phone Number" name="number" id="number"
                                                 required>
                                         </div>
-                                        <div class="select-option op">
+                                        {{-- <div class="select-option op">
                                             <label for="label-title">Shop:</label>
                                             <select name="shop">
                                                 <option value="">Select Shop</option>
                                                 <option value="Hampton Park">Hampton Park</option>
                                                 <option value="Blackburn">Blackburn</option>
                                             </select>
+                                        </div> --}}
+                                       <h3 class="next" onclick="goNext1()">Go Next1 <i class="fas fa-arrow-circle-right"></i></h3> 
+                                    </div>
+                                    <div id="third-form" class="third-form" style="display: none;">
+                                       <div class="select-option op">
+                                            <label for="label-title">Contact Perferce:</label>
+                                            <select name="shop">
+                                                <option value="">Select</option>
+                                                <option value="Hampton Park">Email</option>
+                                                <option value="Blackburn">Phone</option>
+                                            </select>
                                         </div>
-                                        <!-- <h3 class="next" onclick="goBack()">Go Back <i class="fas fa-arrow-circle-right"></i></h3> -->
+                                        <div class="select-option op">
+                                            <label for="label-title">Repairing Mehtod:</label>
+                                            <select name="shop">
+                                                <option value="">Select</option>
+                                                <option value="Hampton Park">Van</option>
+                                                <option value="Blackburn">Walk In</option>
+                                                <option value="Blackburn">Mail</option>
+                                            </select>
+                                        </div>
+                                       
+                                        
+                                       <h3 class="next" onclick="goBack()">Go Back <i class="fas fa-arrow-circle-right"></i></h3> 
                                         <button type="submit">SUBMIT</button>
                                     </div>
                                 </form>
