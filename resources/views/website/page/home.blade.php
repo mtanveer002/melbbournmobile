@@ -22,11 +22,12 @@
                                 <div class="carousel-item active  item-1">
 
                                     <div class="hero-text">
-                                        <h1>PROVIDING</h1>
-                                        <h2>VAN SERVICES</h2>
+                                        <h1>Introducing</h1>
+                                        <h2>Moving Mobile Repairs!</h2>
                                         <p class="h5 aa mb-4 pb-3 text-white-50">
-                                            Choose our store pickup option and have your phone picked up and delivered to
-                                            your doorstep hassle-free! Check out how here.
+                                            Now get your phone repaired from the comfort of your home. 
+                                            We pick up and deliver your fixed phone to your doorstep! Click here
+                                             to check it out.
                                         </p>
                                     </div>
                                 </div>
@@ -605,9 +606,11 @@
                     <img id="loading" src="{{ asset('frontend/assets/img/banner/guaranteed.png') }}" alt="">
                 </div>
                 <div class="col-lg-5">
-                    <h6>We take pride in providing our customers with the highest quality of service repairs and after
-                        purchase support.If you’re not happy with our repair or the parts used bring it back within a week
-                        for a full refund *Conditions apply*.</h6>
+                    <h6>Our Tech Teams are super fast with repairs and stringent with
+                         quality. We are confident that our superior quality and service 
+                         will win you over. And if you are not happy with our work,
+                          we provide a full refund.*
+                    </h6>
                 </div>
             </div>
         </div>

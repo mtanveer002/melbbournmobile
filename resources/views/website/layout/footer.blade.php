@@ -107,7 +107,6 @@
                             <div class="copyright-text">
                                 <p class="copy-text"> © 2021 <strong>Melbourne</strong>. All Rights Reserved. Developed By <a class="company-name" href="https://themeforest.net/user/codecarnival/portfolio">
                         <strong>FocusDMT</strong></a>.</p>
-
                             </div>
                         </div>
                         <div class="col-md-6">
@@ -126,6 +125,44 @@
                                 </li>
                             </ul>
                         </div>
+                        <div class="container" style="text-align: center;">
+                            <!-- Button to Open the Modal -->
+                            <button type="button" class="btn btn-outline-secondary text-white" style="border: 2px dotted white" data-toggle="modal" data-target="#myModal">
+                                --- Terms and conditions apply ---
+                            </button>
+                          
+                            <!-- The Modal -->
+                            <div class="modal" id="myModal">
+                              <div class="modal-dialog">
+                                <div class="modal-content">
+                                  <!-- Modal Header -->
+                                  <div class="modal-header">
+                                    <h4 class="modal-title">Modal Heading</h4>
+                                    <button type="button" class="close" data-dismiss="modal">&times;</button>
+                                  </div>
+                                  
+                                  <!-- Modal body -->
+                                  <div class="modal-body">
+                                    <h3><b>Terms & Conditions</b></h3><hr>
+                                    <br>
+                                    <p style="color: black">Lorem ipsum dolor sit amet consectetur adipisicing 
+                                        elit. Aliquam molestias numquam fugiat et doloribus
+                                         laudantium eum. Voluptate reiciendis suscipit porro
+                                          modi maiores laudantium culpa perspiciatis, omnis 
+                                          illum doloribus! Nam, temporibus?</p>
+                                  </div>
+                                  
+                                  <!-- Modal footer -->
+                                  <div class="modal-footer">
+                                    <button type="button" class="btn btn-danger" data-dismiss="modal">Close</button>
+                                  </div>
+                                  
+                                </div>
+                              </div>
+                            </div>
+                            
+                          </div>
+                        <br><br>
                     </div>
                 </div>
             </div>

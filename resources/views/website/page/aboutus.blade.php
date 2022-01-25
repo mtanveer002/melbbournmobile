@@ -70,9 +70,9 @@
                         <h2 class="uppercase">team member</h2>
                         <h6 class="mb-40">We have a best and professional repairing staff.</h6>
                     </div>
-                    <div class="active-team-member section">
+                    <div class="active-team-member section" style="margin: 0 auto !important">
                         <!-- team-member start -->
-                        <div class="team-member-item">
+                        <div class="team-member-item  col-md-4 col-sm-12 ">
                             <div class="team-member box-shadow bg-shape">
                                 <div class="team-member-photo">
                                     <img src="{{ asset('frontend/assets/img/team/1.png') }}" alt="">
@@ -100,13 +100,13 @@
                         </div>
                         <!-- team-member end -->
                         <!-- team-member start -->
-                        <div class="team-member-item">
+                        <div class="team-member-item col-md-4 col-sm-12">
                             <div class="team-member box-shadow bg-shape">
                                 <div class="team-member-photo">
-                                    <img src="{{ asset('frontend/assets/img/team/2.png') }}" alt="">
+                                    <img src="{{ asset('frontend/assets/img/team/1.png') }}" alt="">
                                 </div>
                                 <div class="team-member-info pt-20">
-                                    <h5 class="member-name"><a href="#">Waqar Hafeez</a></h5>
+                                    <h5 class="member-name"><a href="#">Andy Guan</a></h5>
                                     <p class="member-position">Manager</p>
                                     <p class="mb-20">There are many variations of passage of Lorem Ipsum available, but the in majority have suffered.</p>
                                     <ul class="footer-social">
@@ -128,14 +128,14 @@
                         </div>
                         <!-- team-member end -->
                         <!-- team-member start -->
-                        <div class="team-member-item">
+                        <div class="team-member-item col-md-4 col-sm-12">
                             <div class="team-member box-shadow bg-shape">
                                 <div class="team-member-photo">
                                     <img src="{{ asset('frontend/assets/img/team/3.png') }}" alt="">
                                 </div>
                                 <div class="team-member-info pt-20">
-                                    <h5 class="member-name"><a href="#">Waqar Hafeez</a></h5>
-                                    <p class="member-position">Team Lead</p>
+                                    <h5 class="member-name"><a href="#">Usman Khan</a></h5>
+                                    <p class="member-position">Head Technician</p>
                                     <p class="mb-20">There are many variations of passage of Lorem Ipsum available, but the in majority have suffered.</p>
                                     <ul class="footer-social">
                                         <li>
@@ -155,34 +155,7 @@
                             </div>
                         </div>
                         <!-- team-member end -->
-                        <!-- team-member start -->
-                        <div class="team-member-item">
-                            <div class="team-member box-shadow bg-shape">
-                                <div class="team-member-photo">
-                                    <img src="{{ asset('frontend/assets/img/team/1.png') }}" alt="">
-                                </div>
-                                <div class="team-member-info pt-20">
-                                    <h5 class="member-name"><a href="#">Waqar Hafeez</a></h5>
-                                    <p class="member-position">Programmer</p>
-                                    <p class="mb-20">There are many variations of passage of Lorem Ipsum available, but the in majority have suffered.</p>
-                                    <ul class="footer-social">
-                                        <li>
-                                            <a class="facebook" href="" title="Facebook"><i class="zmdi zmdi-facebook"></i></a>
-                                        </li>
-                                        <li>
-                                            <a class="google-plus" href="" title="Google Plus"><i class="zmdi zmdi-google-plus"></i></a>
-                                        </li>
-                                        <li>
-                                            <a class="twitter" href="" title="Twitter"><i class="zmdi zmdi-twitter"></i></a>
-                                        </li>
-                                        <li>
-                                            <a class="rss" href="" title="RSS"><i class="zmdi zmdi-rss"></i></a>
-                                        </li>
-                                    </ul>                                     
-                                </div>
-                            </div>
-                        </div>
-                        <!-- team-member end -->
+                        
                     </div>
                 </div>
             </div>
