@@ -768,17 +768,23 @@
     <script>
         function timer(){
             // $("#time").text("Time until new year:\nDays: " + days + " Hours: " + hours + " Minutes: " + minutes + " Seconds: " + seconds);
-            var date_future = new Date();
-                var expiryDate = new Date(new Date().setHours(new Date().getHours() + 8));   
+                var aus = new Date().toLocaleString("en-US", {timeZone: "Australia/Sydney"});
+                var date_future = new Date(aus);
+                console.log("start time " + date_future);
+                
+                var expiryDate = new Date(date_future.setHours(date_future.getHours() + 3)); 
+                endDate = new Date(expiryDate);
+                
+                console.log("endTime" + endDate );
                 var hours = date_future.getHours();
                 var minutes = date_future.getMinutes();
                 var seconds = date_future.getSeconds();
-                var newformat = hours >= 12 ? 'PM' : 'AM'; 
-                hours = hours % 12; 
-                hours = hours ? hours : 12; 
-                minutes = minutes < 10 ? '0' + minutes : minutes;
+                // var newformat = hours >= 12 ? 'PM' : 'AM'; 
+                // hours = hours % 12; 
+                // hours = hours ? hours : 12; 
+                // minutes = minutes < 10 ? '0' + minutes : minutes;
+              
 
-                
                 if(hours >= 09 && minutes >= 59 && seconds >= '59' && newformat === 'PM'){
                     if(expiryDate > date_future){
                         var calcNewYear = setInterval(function(){
