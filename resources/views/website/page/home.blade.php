@@ -574,80 +574,8 @@
                                 <p>We provide facility to repair every part of iWatches including all internal and external
                                     damages. We do the best in a very short period of time within 10 - 20 mins. </p>
                                 <div class="up-comming-time-2 clearfix">
-                                    <script>
-                                        // var datetime = new Date();
-                                        // var startTime = datetime.setUTCHours(14,59,00,00);
-                                        
-                                        // var endTime = datetime.setUTCHours(21,59,59,999);
-
-
-                                        // console.log(startTime)
-
-                                        // console.log(endTime.getHour())
-
-                                        // if(start < end){
-                                        //     console.log("hi there")
-                                        // }else{
-                                        //     console.log("expaired")
-                                        // }
-
-                                        // setInterval(() => {
-                                        // var date = new Date();
-                                        // var hours = date.getHours();
-                                        // var minutes = date.getMinutes();
-                                        // var seconds = date.getSeconds();
-                                        // var newformat = hours >= 12 ? 'PM' : 'AM'; 
-                                        // hours = hours % 12; 
-                                        // hours = hours ? hours : 12; 
-                                        // minutes = minutes < 10 ? '0' + minutes : minutes;
-                                        // if(hours == 3 && newformat == 'PM'){
-                                        //     console.log(seconds);
-                                        // }else if(hours >= 6 && hours <= 9 && newformat == 'AM'){
-                                        //     console.log(seconds);
-                                        // }   
-                                        // }, 1000);
-                                        // console.log(hours, minutes);
-
-                                        function timer(){
-                                            // $("#time").text("Time until new year:\nDays: " + days + " Hours: " + hours + " Minutes: " + minutes + " Seconds: " + seconds);
-                                            var date_future = new Date();
-                                                var expiryDate = new Date(new Date().setHours(new Date().getHours() + 8));   
-                                                var hours = date_future.getHours();
-                                                var minutes = date_future.getMinutes();
-                                                var seconds = date_future.getSeconds();
-                                                var newformat = hours >= 12 ? 'PM' : 'AM'; 
-                                                hours = hours % 12; 
-                                                hours = hours ? hours : 12; 
-                                                minutes = minutes < 10 ? '0' + minutes : minutes;
-
-                                                
-                                                // if(hours == 09 && minutes == 59 && seconds == '59' && newformat === 'AM'){
-                                                if(hours == 04 && minutes == 08 && seconds == '59' && newformat === 'PM'){
-                                                    if(expiryDate > date_future){
-                                                        var calcNewYear = setInterval(function(){
-                                                        date_now = new Date();
-                                                        seconds = Math.floor((expiryDate - (date_now))/1000);
-                                                        minutes = Math.floor(seconds/60);
-                                                        hours = Math.floor(minutes/60);
-                                                        days = Math.floor(hours/24);
-
-                                                        hours = hours-(days*24);
-                                                        minutes = minutes-(days*24*60)-(hours*60);
-                                                        seconds = seconds-(days*24*60*60)-(hours*60*60)-(minutes*60);
-
-                                                        $("#time").text("Time until new year:\nHours: " + hours + " Minutes: " + minutes + " Seconds: " + seconds);
-                                                        },1000);
-                                                    }
-                                                }
-
-                                        }
-                                        setInterval(function(){
-                                            timer()
-                                        },1000)
-                                    
-                                    </script>
                                     <div>
-                                        <p id="time">Time Expaired</p>
+                                        <h3 id="time">Time Expaired</h3>
                                     </div>
                                 </div>
                             </div>
@@ -836,7 +764,45 @@
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/select2/4.0.13/js/select2.min.js"></script>
 
+    {{-- shop timer --}}
+    <script>
+        function timer(){
+            // $("#time").text("Time until new year:\nDays: " + days + " Hours: " + hours + " Minutes: " + minutes + " Seconds: " + seconds);
+            var date_future = new Date();
+                var expiryDate = new Date(new Date().setHours(new Date().getHours() + 8));   
+                var hours = date_future.getHours();
+                var minutes = date_future.getMinutes();
+                var seconds = date_future.getSeconds();
+                var newformat = hours >= 12 ? 'PM' : 'AM'; 
+                hours = hours % 12; 
+                hours = hours ? hours : 12; 
+                minutes = minutes < 10 ? '0' + minutes : minutes;
 
+                
+                if(hours >= 09 && minutes >= 59 && seconds >= '59' && newformat === 'PM'){
+                    if(expiryDate > date_future){
+                        var calcNewYear = setInterval(function(){
+                        date_now = new Date();
+                        seconds = Math.floor((expiryDate - (date_now))/1000);
+                        minutes = Math.floor(seconds/60);
+                        hours = Math.floor(minutes/60);
+                        days = Math.floor(hours/24);
+
+                        hours = hours-(days*24);
+                        minutes = minutes-(days*24*60)-(hours*60);
+                        seconds = seconds-(days*24*60*60)-(hours*60*60)-(minutes*60);
+
+                        $("#time").text("Time To close:\n " + hours + ":" + minutes + ":" + seconds);
+                        },1000);
+                    }
+                }
+
+        }
+        setInterval(function(){
+            timer()
+        },1000)
+    
+    </script>
 
     <script type="text/javascript">
         // auto search from select box
