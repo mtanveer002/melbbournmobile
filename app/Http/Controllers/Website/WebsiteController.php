@@ -7,8 +7,6 @@ use App\Models\Admin\Brand;
 use App\Models\Admin\BrandModal;
 use App\Models\Admin\Issue;
 use App\Models\Quote;
-use App\Notifications\InquiryNotification;
-use Mail;
 
 use Illuminate\Http\Request;
 
@@ -47,7 +45,8 @@ class WebsiteController extends Controller
         $booking->name = $request->name;
         $booking->email = $request->email;
         $booking->number = $request->number;
-        $booking->shop = $request->shop;
+        $booking->contact_preference = $request->contact_preference;
+        $booking->repairing_methods = $request->repairing_methods;
         $booking->describtion = $request->description;
         $booking->brand_id = $request->brand;
         $booking->modal_id = $request->modal;
