@@ -820,13 +820,13 @@
       date_now = new Date(current_date);
       
       var c_month = current_date.getMonth() + 1;
-      var currentDatTime = current_date.getFullYear() +'/'+c_month+'/'+current_date.getDate()+' 03:00:00';
+      var currentDatTime = current_date.getFullYear() +'/'+c_month+'/'+current_date.getDate()+' 17:00:00';
       
       var expiryDate = new Date(currentDatTime); 
     
         date_future = new Date(currentDatTime);
         
-        console.log(date_now.getHours());
+        console.log(date_now.getHours(), );
         
 
         seconds = Math.floor((date_future - (date_now))/1000);
@@ -839,11 +839,14 @@
         minutes = minutes-(days*24*60)-(hours*60);
         seconds = seconds-(days*24*60*60)-(hours*60*60)-(minutes*60);
         
-        
-        if(date_now.getHours() >= 2){
+        console.log(date_now.getHours());
+        if(date_now.getHours() >= 10 ){
             $("#time").text("Time until new year:\nDays: " + days + " Hours: " + hours + " Minutes: " + minutes + " Seconds: " + seconds);
         }
-        if(date_now.getHours() >= 4){
+        if(date_now.getHours() >= 18){
+            $("#time").text("Shop Close Please add your inquery we get you soon");
+        }
+        else{
             $("#time").text("Shop Close Please add your inquery we get you soon");
         }
     },1000);
