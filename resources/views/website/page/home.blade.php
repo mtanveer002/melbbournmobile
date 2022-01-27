@@ -766,49 +766,90 @@
 
     {{-- shop timer --}}
     <script>
-        function timer(){
-            // $("#time").text("Time until new year:\nDays: " + days + " Hours: " + hours + " Minutes: " + minutes + " Seconds: " + seconds);
-                var aus = new Date().toLocaleString("en-US", {timeZone: "Australia/Sydney"});
-                var date_future = new Date(aus);
-                console.log("start time " + date_future);
+        // function timer(){
+        //     // $("#time").text("Time until new year:\nDays: " + days + " Hours: " + hours + " Minutes: " + minutes + " Seconds: " + seconds);
+        //         var aus = new Date().toLocaleString("en-US", {timeZone: "Australia/Sydney"});
+        //         var date_future = new Date(aus);
+        //         // console.log("start time " + date_future);
                 
-                var expiryDate = new Date(date_future.setHours(date_future.getHours() + 3)); 
-                endDate = new Date(expiryDate);
+        //         var expiryDate = new Date(date_future.setHours(date_future.getHours() + 3)); 
+        //         endDate = new Date(expiryDate);
                 
-                console.log("endTime" + endDate );
-                var hours = date_future.getHours();
-                var minutes = date_future.getMinutes();
-                var seconds = date_future.getSeconds();
-                // var newformat = hours >= 12 ? 'PM' : 'AM'; 
-                // hours = hours % 12; 
-                // hours = hours ? hours : 12; 
-                // minutes = minutes < 10 ? '0' + minutes : minutes;
+        //         // console.log("endTime" + endDate );
+        //         var hours = date_future.getHours();
+        //         var minutes = date_future.getMinutes();
+        //         var seconds = date_future.getSeconds();
+        //         // var newformat = hours >= 12 ? 'PM' : 'AM'; 
+        //         // hours = hours % 12; 
+        //         // hours = hours ? hours : 12; 
+        //         // minutes = minutes < 10 ? '0' + minutes : minutes;
               
+        //         console.log(expiryDate , date_future)
+        //         if(hours >= 0 ){
+        //             if(expiryDate >= date_future){
+        //                 console.log("if statement")
+        //                 var calcNewYear = setInterval(function(){
+        //                 date_now = new Date();
+        //                 seconds = Math.floor((expiryDate - (date_now))/1000);
+        //                 minutes = Math.floor(seconds/60);
+        //                 hours = Math.floor(minutes/60);
+        //                 days = Math.floor(hours/24);
 
-                if(hours >= 09 && minutes >= 59 && seconds >= '59' && newformat === 'PM'){
-                    if(expiryDate > date_future){
-                        var calcNewYear = setInterval(function(){
-                        date_now = new Date();
-                        seconds = Math.floor((expiryDate - (date_now))/1000);
-                        minutes = Math.floor(seconds/60);
-                        hours = Math.floor(minutes/60);
-                        days = Math.floor(hours/24);
+        //                 hours = hours-(days*24);
+        //                 minutes = minutes-(days*24*60)-(hours*60);
+        //                 seconds = seconds-(days*24*60*60)-(hours*60*60)-(minutes*60);
 
-                        hours = hours-(days*24);
-                        minutes = minutes-(days*24*60)-(hours*60);
-                        seconds = seconds-(days*24*60*60)-(hours*60*60)-(minutes*60);
+        //                 $("#time").text("Time To close:\n " + hours + ":" + minutes + ":" + seconds);
+        //                 },1000);
+        //             }
+        //         }
 
-                        $("#time").text("Time To close:\n " + hours + ":" + minutes + ":" + seconds);
-                        },1000);
-                    }
-                }
-
-        }
-        setInterval(function(){
-            timer()
-        },1000)
+        // }
+        // setInterval(function(){
+        //     timer()
+        // },1000)
     
     </script>
+
+    <script>
+      $(function(){
+    var calcNewYear = setInterval(function(){
+    		
+      var datetimezone = new Date().toLocaleString("en-US", {timeZone: "Australia/Sydney"});
+      var current_date = new Date(datetimezone);
+      date_now = new Date(current_date);
+      
+      var c_month = current_date.getMonth() + 1;
+      var currentDatTime = current_date.getFullYear() +'/'+c_month+'/'+current_date.getDate()+' 03:00:00';
+      
+      var expiryDate = new Date(currentDatTime); 
+    
+        date_future = new Date(currentDatTime);
+        
+        console.log(date_now.getHours());
+        
+
+        seconds = Math.floor((date_future - (date_now))/1000);
+        minutes = Math.floor(seconds/60);
+        hours = Math.floor(minutes/60);
+        days = Math.floor(hours/24);
+        console.log(seconds);
+        
+        hours = hours-(days*24);
+        minutes = minutes-(days*24*60)-(hours*60);
+        seconds = seconds-(days*24*60*60)-(hours*60*60)-(minutes*60);
+        
+        
+        if(date_now.getHours() >= 2){
+            $("#time").text("Time until new year:\nDays: " + days + " Hours: " + hours + " Minutes: " + minutes + " Seconds: " + seconds);
+        }
+        if(date_now.getHours() >= 4){
+            $("#time").text("Shop Close Please add your inquery we get you soon");
+        }
+    },1000);
+});
+    </script>
+
 
     <script type="text/javascript">
         // auto search from select box
