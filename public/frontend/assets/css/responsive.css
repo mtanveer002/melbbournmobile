@@ -1,8 +1,8 @@
 /*xtra large */
 @media (min-width:  1400px) {
-  .booking-form .form {
+  /* .booking-form .form {
     padding: 32px 65px;
-  }
+  } */
   .logo img {
     width: 70%;
   }
@@ -95,9 +95,9 @@
   padding-left: 0;
   padding-right: 0;
 }
-.booking-form .form {
+/* .booking-form .form {
   padding: 50px 65px;
-}
+} */
 /*slick-arrow*/
 .slick-arrow-2 .slick-arrow {
   left: 15px;
@@ -292,9 +292,9 @@
   padding-left: 0;
   padding-right: 0;
 }
-.booking-form .form {
+/* .booking-form .form {
   padding: 50px 65px;
-}
+} */
 /*slick-arrow*/
 .slick-arrow-2 .slick-arrow {
   left: 15px;

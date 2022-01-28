@@ -2561,4 +2561,29 @@ span.timing{
  
 
 
-/* add new style */
+/* add new style
+@media only screen and (max-width: 1024px) {
+  .booking-form {
+    background: url(img/header/apple-iphone-12-pro.png);
+    border-radius: 4px;
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: contain;
+    width: 245px;
+    max-width: 250;
+    position: relative;
+    height: 500px;
+    max-height: 500;
+}
+  .booking-form .dark {
+    border-radius: 4px;
+    max-width: 240px;
+    height: 480px;
+    width: 220px;
+    padding: 23px 0px 0 17px;
+  }
+  .booking-form .form {
+    width: 100%;
+    height: 100%;
+  }
+} */
