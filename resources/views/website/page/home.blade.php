@@ -125,7 +125,7 @@
                                                 required>
                                                 <br>
                                         </div>
-                                       <h3 class="next" onclick="goNext1()" style="cursor: pointer">Go Next1 <i class="fas fa-arrow-circle-right"></i></h3> 
+                                       <h3 class="next" onclick="goNext1()" style="cursor: pointer">Go Next <i class="fas fa-arrow-circle-right"></i></h3> 
                                     </div>
                                     <div id="third-form" class="third-form" style="display: none;padding: 10%;">
                                         <div class="select-option op">
@@ -152,7 +152,7 @@
                                             <p id="hidden_div" style="text-align: center;display: none;">82 Somerville <br> Hampton Park VIC 3976</p>
                                         </div>
                                         <br><br>
-                                       <h3 class="next" onclick="goBack()" style="cursor: pointer">Go Back <i class="fas fa-arrow-circle-right"></i></h3> 
+                                       <h3 class="next" onclick="goBack()" style="cursor: pointer">Go Back <i class="fas fa-arrow-circle-left"></i></h3> 
                                         <button type="submit">SUBMIT</button>
                                     </div>
                                    

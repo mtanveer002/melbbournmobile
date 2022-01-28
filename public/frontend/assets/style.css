@@ -2238,8 +2238,11 @@ span.timing{
     background-repeat: no-repeat;
     background-position: center;
     background-size: contain;
-    width: fit-content;
+    width: 245px;
+    max-width: 250;
     position: relative;
+    height: 500px;
+    max-height: 500;
 }
 .next{
   font-size: 1.7rem !important;
