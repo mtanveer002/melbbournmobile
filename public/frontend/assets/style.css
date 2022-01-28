@@ -1305,7 +1305,7 @@ input.cart-plus-minus-box {
   color: #ff7f00;
 }
 .cart-tab li a.active span {
-  box-shadow: 0 0 4px rgba(255, 127, 0, 0.1);
+  box-shadow: 0 0 4px #ff7f001a;
   border: 1px solid #ff7f00;
 }
 /* -------------------------------------

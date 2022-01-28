@@ -35,9 +35,9 @@
     </div>
 </div>
 <!-- header-middle-area -->
-<div id="sticky-header" class="header-middle-area plr-185">
+<div id="sticky-header" class="header-middle-area plr-185" style="height: 80px;">
     <div class="container-fluid">
-        <div class="full-width-mega-dropdown">
+        <div class="full-width-mega-dropdown"style="margin-top: -10px">
             <div class="row">
                 <!-- logo -->
                 <div class="col-lg-2 col-md-2 col-sm-4">
@@ -49,7 +49,7 @@
                 </div>
                 <!-- primary-menu -->
                 <div class="col-lg-8 col-md-8 d-none d-lg-block">
-                    <nav id="primary-menu">
+                    <nav id="primary-menu" >
                         <ul class="main-menu text-center">
                             <li><a href="{{route('index.home')}}">Home</a>
                             </li>
@@ -59,13 +59,18 @@
                             <li><a href="{{route('commingSoon')}}">Online Shop</a>
                             <li><a href="{{route('contact')}}">Contact</a>
                             </li>
+                            <a class="btn btn-primary btn-xlg" href="tel:713-992-0916" style="background-color:#fb6128;color:black;border-radius: 15px;margin-left: 10%">
+                                Click to Call <span class="glyphicon glyphicon-earphone" style="padding-left:10px; padding-right:10px;"></span>(03) 8595 6677
+                             </a>
                         </ul>
                     </nav>
                 </div>
                 <!-- header-search & total-cart -->
                 <div class="col-lg-2 col-md-2 col-sm-8">
-                    <div class="search-top-cart  f-right">
-                        <!-- header-search -->
+                    <div class="search-top-cart  f-right" >
+                        
+                        
+                        <!-- header-search 
                         <div class="header-search f-left">
                             <div class="header-search-inner">
                                <button class="search-toggle">
@@ -80,8 +85,8 @@
                                     </div>
                                 </form> 
                             </div>
-                        </div>
-                        <!-- total-cart -->
+                        </div>-->
+                        <!-- total-cart 
                         <div class="total-cart f-left">
                             <div class="total-cart-in">
                                 <div class="cart-toggler">
@@ -91,7 +96,7 @@
                                             <i class="zmdi zmdi-shopping-cart-plus"></i>
                                         </span>
                                     </a>                            
-                                </div>
+                                </div> -->
                                 <!-- <ul>
                                     <li>
                                         <div class="top-cart-inner your-cart">
@@ -178,9 +183,9 @@
                                             </h4>
                                         </div>
                                     </li>
-                                </ul> -->
+                                </ul> 
                             </div>
-                        </div>
+                        </div>-->
                     </div>
                 </div>
             </div>

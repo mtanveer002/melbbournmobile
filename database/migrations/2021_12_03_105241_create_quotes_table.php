@@ -22,7 +22,8 @@ class CreateQuotesTable extends Migration
             $table->string('describtion')->nullable();
             $table->string('email');
             $table->string('number')->nullable();
-            $table->string('shop')->nullable();
+            $table->string('contact_preference');
+            $table->string('repairing_methods');
             $table->string('status')->default(0);
             $table->string('reply')->nullable();
 

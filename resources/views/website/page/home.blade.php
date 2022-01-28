@@ -22,8 +22,7 @@
                                 <div class="carousel-item active  item-1">
 
                                     <div class="hero-text">
-                                        <h1>Introducing</h1>
-                                        <h2>Moving Mobile Repairs!</h2>
+                                        <h1>IPAD</h1>
                                         <p class="h5 aa mb-4 pb-3 text-white-50">
                                             Now get your phone repaired from the comfort of your home. 
                                             We pick up and deliver your fixed phone to your doorstep! Click here
@@ -34,8 +33,7 @@
                                 <div class="carousel-item item-2">
 
                                     <div class="hero-text">
-                                        <h1>PROVIDING</h1>
-                                        <h2>SHOP SERVICES</h2>
+                                        <h1>IPHONE</h1>
                                         <p class="h5 aa mb-4 pb-3 text-white-50">
                                             Book an appointment at either our Blackburn or Hampton Park branch and stay
                                             within your 5 mile radius. Stay safe, get your phone fixed!
@@ -44,8 +42,16 @@
                                 </div>
                                 <div class="carousel-item item-3">
                                     <div class="hero-text">
-                                        <h1>PROVIDING</h1>
-                                        <h2>WEB SERVICES</h2>
+                                        <h1>LAPTOP</h1>
+                                        <p class="h5 aa mb-4 pb-3 text-white-50">
+                                            Get your phone fixed in no time by booking at your convenient timeframe. Contact
+                                            us and let us know on <a href="tel:(03) 8595 6677">(03) 8595 6677</a>
+                                        </p>
+                                    </div>
+                                </div>
+                                <div class="carousel-item item-4">
+                                    <div class="hero-text">
+                                        <h1>COMPUTER</h1>
                                         <p class="h5 aa mb-4 pb-3 text-white-50">
                                             Get your phone fixed in no time by booking at your convenient timeframe. Contact
                                             us and let us know on <a href="tel:(03) 8595 6677">(03) 8595 6677</a>
@@ -101,56 +107,55 @@
                                             </div>
                                         </div>
 
-                                        <h3 class="next" onclick="goNext()">Go Next <i
+                                        <h3 class="next" onclick="goNext()" style="cursor: pointer">Go Next <i
                                                 class="fas fa-arrow-circle-right" style="margin: 3%;"></i></h3>
                                     </div>
-                                    <div id="second-form" class="second-form" style="display: none;">
-                                        <div class="select-option s">
-                                            <label for="name">Name:</label>
+                                    <div id="second-form" class="second-form" style="display: none;padding: 10%;">
+                                        <div class="select-option">
+                                            <label for="label-title">Name:</label>
                                             <input type="text" name="name" placeholder="Name" id="name" required>
                                         </div>
-                                        <div class="select-option s">
-                                            <label for="email">Email:</label>
+                                        <div class="select-option">
+                                            <label for="label-title">Email:</label>
                                             <input type="email" placeholder="Email" name="email" id="email" required>
                                         </div>
-                                        <div class="select-option s">
-                                            <label for="number">Phone:</label>
+                                        <div class="select-option">
+                                            <label for="label-title">Phone:</label>
                                             <input type="number" placeholder="Phone Number" name="number" id="number"
                                                 required>
+                                                <br>
                                         </div>
-                                        {{-- <div class="select-option op">
-                                            <label for="label-title">Shop:</label>
-                                            <select name="shop">
-                                                <option value="">Select Shop</option>
-                                                <option value="Hampton Park">Hampton Park</option>
-                                                <option value="Blackburn">Blackburn</option>
-                                            </select>
-                                        </div> --}}
-                                       <h3 class="next" onclick="goNext1()">Go Next1 <i class="fas fa-arrow-circle-right"></i></h3> 
+                                       <h3 class="next" onclick="goNext1()" style="cursor: pointer">Go Next1 <i class="fas fa-arrow-circle-right"></i></h3> 
                                     </div>
-                                    <div id="third-form" class="third-form" style="display: none;">
-                                       <div class="select-option op">
-                                            <label for="label-title">Contact Perferce:</label>
-                                            <select name="shop">
+                                    <div id="third-form" class="third-form" style="display: none;padding: 10%;">
+                                        <div class="select-option op">
+                                            <label for="label-title"style="padding: 2%;">Contact Preference:</label>
+                                            <select name="contact_preference">
                                                 <option value="">Select</option>
-                                                <option value="Hampton Park">Email</option>
-                                                <option value="Blackburn">Phone</option>
+                                                <option value="Email">Email</option>
+                                                <option value="Phone">Phone</option>
                                             </select>
                                         </div>
                                         <div class="select-option op">
                                             <label for="label-title">Repairing Mehtod:</label>
-                                            <select name="shop">
-                                                <option value="">Select</option>
-                                                <option value="Hampton Park">Van</option>
-                                                <option value="Blackburn">Walk In</option>
-                                                <option value="Blackburn">Mail</option>
+                                            <select name="repairing_methods" id="test" onchange="showDiv(this)">
+                                                <option value="shop" >Select</option>
+                                                <option value="Van">Van</option>
+                                                <option value="Mail In">Mail In</option>
+                                                <optgroup label="Walk In" value="walk In">
+                                                    <option value="Blackburn">Blackburn</option>
+                                                    <option value="Hampton Park">Hampton Park</option>
+                                                  </optgroup>
                                             </select>
                                         </div>
-                                       
-                                        
-                                       <h3 class="next" onclick="goBack()">Go Back <i class="fas fa-arrow-circle-right"></i></h3> 
+                                        <div style="height: 40px;width: 100%; ">
+                                            <p id="hidden_div" style="text-align: center;display: none;">82 Somerville <br> Hampton Park VIC 3976</p>
+                                        </div>
+                                        <br><br>
+                                       <h3 class="next" onclick="goBack()" style="cursor: pointer">Go Back <i class="fas fa-arrow-circle-right"></i></h3> 
                                         <button type="submit">SUBMIT</button>
                                     </div>
+                                   
                                 </form>
                             </div>
                         </div>
@@ -876,7 +881,21 @@
                 alert('danger');
             }
         });
+
+        //show text
+        function getddl(){
+
+        }
     </script>
+    <script type="text/javascript">
+        function showDiv(select){
+           if(select.value== 'Mail In'){
+            document.getElementById('hidden_div').style.display = "block";
+           } else{
+            document.getElementById('hidden_div').style.display = "none";
+           }
+        } 
+        </script>
 
     {{-- for auto select box --}}
 
