@@ -575,7 +575,7 @@
                                     damages. We do the best in a very short period of time within 10 - 20 mins. </p>
                                 <div class="up-comming-time-2 clearfix">
                                     <div>
-                                        <h3 id="time">Time Expaired</h3>
+                                        <h3 id="time"></h3>
                                     </div>
                                 </div>
                             </div>
@@ -765,51 +765,6 @@
     <script src="https://cdnjs.cloudflare.com/ajax/libs/select2/4.0.13/js/select2.min.js"></script>
 
     {{-- shop timer --}}
-    <script>
-        // function timer(){
-        //     // $("#time").text("Time until new year:\nDays: " + days + " Hours: " + hours + " Minutes: " + minutes + " Seconds: " + seconds);
-        //         var aus = new Date().toLocaleString("en-US", {timeZone: "Australia/Sydney"});
-        //         var date_future = new Date(aus);
-        //         // console.log("start time " + date_future);
-                
-        //         var expiryDate = new Date(date_future.setHours(date_future.getHours() + 3)); 
-        //         endDate = new Date(expiryDate);
-                
-        //         // console.log("endTime" + endDate );
-        //         var hours = date_future.getHours();
-        //         var minutes = date_future.getMinutes();
-        //         var seconds = date_future.getSeconds();
-        //         // var newformat = hours >= 12 ? 'PM' : 'AM'; 
-        //         // hours = hours % 12; 
-        //         // hours = hours ? hours : 12; 
-        //         // minutes = minutes < 10 ? '0' + minutes : minutes;
-              
-        //         console.log(expiryDate , date_future)
-        //         if(hours >= 0 ){
-        //             if(expiryDate >= date_future){
-        //                 console.log("if statement")
-        //                 var calcNewYear = setInterval(function(){
-        //                 date_now = new Date();
-        //                 seconds = Math.floor((expiryDate - (date_now))/1000);
-        //                 minutes = Math.floor(seconds/60);
-        //                 hours = Math.floor(minutes/60);
-        //                 days = Math.floor(hours/24);
-
-        //                 hours = hours-(days*24);
-        //                 minutes = minutes-(days*24*60)-(hours*60);
-        //                 seconds = seconds-(days*24*60*60)-(hours*60*60)-(minutes*60);
-
-        //                 $("#time").text("Time To close:\n " + hours + ":" + minutes + ":" + seconds);
-        //                 },1000);
-        //             }
-        //         }
-
-        // }
-        // setInterval(function(){
-        //     timer()
-        // },1000)
-    
-    </script>
 
     <script>
       $(function(){
@@ -840,8 +795,8 @@
         seconds = seconds-(days*24*60*60)-(hours*60*60)-(minutes*60);
         
         console.log(date_now.getHours());
-        if(date_now.getHours() >= 10 ){
-            $("#time").text("Time until new year:\nDays: " + days + " Hours: " + hours + " Minutes: " + minutes + " Seconds: " + seconds);
+        if(date_now.getHours() >= 5 ){
+            $("#time").text("Time To Close: " + hours + ":" + minutes + ":" + seconds);
         }
         if(date_now.getHours() >= 18){
             $("#time").text("Shop Close Please add your inquery we get you soon");
@@ -849,6 +804,7 @@
         else{
             $("#time").text("Shop Close Please add your inquery we get you soon");
         }
+      
     },1000);
 });
     </script>
