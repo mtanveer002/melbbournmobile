@@ -3,7 +3,7 @@
 
     <link href="https://cdnjs.cloudflare.com/ajax/libs/select2/4.0.13/css/select2.min.css" rel="stylesheet" />
 
-    <section class="hero-section">
+    <section class="hero-section" id="goUp">
         <div class="container">
             <div class="row">
                 <!-- tablet design -->
@@ -581,6 +581,10 @@
                                 <div class="up-comming-time-2 clearfix">
                                     <div>
                                         <h3 id="time">Time Expaired</h3>
+                                        <br>
+                                        <a class="btn btn-primary btn-xlg" href="#goUp" style="background-color:#fb6128;color:white;border-radius: 15px;margin-left: 10%;border-color:azure;height:60px;width: 80%;padding-top: 16px;font-size: 20px">
+                                           <span style="text-align: center;font-size: 20px;"></span>Book Now
+                                        </a>
                                     </div>
                                 </div>
                             </div>

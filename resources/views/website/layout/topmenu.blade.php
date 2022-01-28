@@ -2,12 +2,12 @@
  <div class="header-top-bar plr-185">
     <div class="container-fluid">
         <div class="row">
-            <div class="col-lg-6 col-md-6 d-none d-md-block">
+            {{-- <div class="col-lg-6 col-md-6 d-none d-md-block">
                 <div class="call-us">
                     <p class="mb-0 roboto"><a href="tel:(03) 8595 6677">tel:(03) 8595 6677</a></p>
                 </div>
-            </div>
-            <div class="col-lg-6 col-md-6">
+            </div> --}}
+            <div class="col-lg-7 col-md-7">
                 <div class="top-link clearfix">
                     <ul class="link f-right">
                         <li>
@@ -59,9 +59,9 @@
                             <li><a href="{{route('commingSoon')}}">Online Shop</a>
                             <li><a href="{{route('contact')}}">Contact</a>
                             </li>
-                            <a class="btn btn-primary btn-xlg" href="tel:713-992-0916" style="background-color:#fb6128;color:black;border-radius: 15px;margin-left: 10%">
+                            <a class="btn btn-primary btn-xlg" href="tel:713-992-0916" style="background-color:#fb6128;color:white;border-radius: 15px;margin-left: 10%;border-color:azure">
                                 Click to Call <span class="glyphicon glyphicon-earphone" style="padding-left:10px; padding-right:10px;"></span>(03) 8595 6677
-                             </a>
+                            </a>
                         </ul>
                     </nav>
                 </div>
