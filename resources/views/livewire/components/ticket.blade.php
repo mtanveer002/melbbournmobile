@@ -55,7 +55,7 @@
                         @if ($ticket && $ticket->count() > 0)
                             @foreach ($ticket as $inqr)
                             <li style="height: 20%" class="list-group-item {{ $active == $inqr->id ? 'border border-success' : '' }} mt-1" wire:click="$emit('cusSelected', {{$inqr->id}})" style="height: 50px;" >
-                            <p> <b>{{$loop->iteration}}.</b>  {{ $inqr->name }}  <span class="{{ $inqr->status == 0 ? 'badge badge-danger' : 'badge badge-success'}} float-right">status</span> <br> {{ $inqr->email }}
+                            <p> <b>{{$loop->iteration}}.</b><b>{{ $inqr->name }} </b> <span class="{{ $inqr->status == 0 ? 'badge badge-danger' : 'badge badge-success'}} float-right">status</span> <br><i>{{ $inqr->email }}</i>
                             </p>
                             </li>
                             @endforeach
