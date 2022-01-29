@@ -1,5 +1,6 @@
 <?php
 
+use App\Http\Controllers\Admin\AddTicket;
 use App\Http\Controllers\Admin\BrandModalController;
 use App\Models\File;
 use Illuminate\Support\Facades\Auth;
@@ -10,6 +11,7 @@ use App\Http\Controllers\Admin\InqueryController;
 use App\Http\Controllers\Admin\IssueController;
 use App\Http\Controllers\Admin\LeadsController;
 use App\Http\Controllers\Admin\ProfileController;
+use App\Http\Controllers\Admin\TicketController;
 use App\Http\Controllers\Admin\VanController;
 use App\Http\Controllers\Website\WebsiteController;
 
@@ -28,6 +30,7 @@ Route::get('/', [WebsiteController::class, 'index'])->name('index.home');
 Route::get('/aboutus', [WebsiteController::class, 'aboutus'])->name('about.us');
 Route::get('/shop', [WebsiteController::class, 'shop'])->name('shop');
 Route::get('/contact', [WebsiteController::class, 'contact'])->name('contact');
+Route::resource('/tickets', TicketController::class);
 
 Route::get('/commingSoon', function(){
 	return view('website.page.commingSoon');
@@ -52,6 +55,7 @@ Route::prefix('admin')->as('admin.')->middleware(['auth'])->group(function() {
     Route::resource('inquery', InqueryController::class);
     Route::resource('leads', LeadsController::class);
     Route::resource('van', VanController::class);
+    Route::resource('ticket', AddTicket::class);
     Route::get('chkStatus/{id}', [VanController::class, 'chkStatus'])->name('chkStatus');
 });
 
@@ -66,3 +70,5 @@ Route::get('media/get/{file}', function (File $file) {
     }
     return Storage::response($file->getStoragePath(), $file->name);
 })->name('media.get');
+
+

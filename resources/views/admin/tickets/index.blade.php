@@ -1,7 +1,7 @@
 @extends('admin.master')
 @section('content')
 
-<livewire:customer-inq>
+<livewire:components.ticket>
 
 
 
