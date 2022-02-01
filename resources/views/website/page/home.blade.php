@@ -808,10 +808,10 @@
             $("#time").text("Time To Close: " + hours + ":" + minutes + ":" + seconds);
         }
         if(date_now.getHours() >= 18){
-            $("#time").text("Shop Close Please add your inquery we get you soon");
+            $("#time").text("you're running out of time for same day repair");
         }
         else{
-            $("#time").text("Shop Close Please add your inquery we get you soon");
+            $("#time").text("you're running out of time for same day repair");
         }
       
     },1000);
