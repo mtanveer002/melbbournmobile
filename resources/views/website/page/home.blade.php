@@ -91,7 +91,7 @@
                                             </select>
                                         </div>
                                         <div class="select-option">
-                                            <label for="label-title">Model:</label>
+                                            <label for="label-title">Modal:</label>
                                             <select name="modal" id="modal_device">
 
                                             </select>
