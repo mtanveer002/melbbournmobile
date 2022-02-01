@@ -208,7 +208,7 @@
                                 </div>
                             </div>
                             <i class="fas fa-shuttle-van repair-icon"></i>
-                            <p>We'll Come To You</p>
+                            <p>We Come To You</p>
                         </div>
                         <div class="col-lg-1">
                             <!-- <i class="fas fa-ellipsis-h"></i> -->
@@ -240,7 +240,7 @@
                                 </div>
                             </div>
                             <i class="fas fa-store-alt repair-icon"></i>
-                            <p>Walk In To Our Site</p>
+                            <p>In Store</p>
                         </div>
                         <div class="col-lg-1">
                             <!-- <i class="fas fa-ellipsis-h"></i> -->
@@ -273,7 +273,7 @@
                                 </div>
                             </div>
                             <i class="fas fa-envelope repair-icon"></i>
-                            <p>Mail In Your Device</p>
+                            <p>Mail In </p>
                         </div>
                     </div>
                 </div>
