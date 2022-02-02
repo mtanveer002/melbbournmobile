@@ -107,8 +107,8 @@
                                             </div>
                                         </div>
 
-                                        <h3 class="next" onclick="goNext()" style="cursor: pointer">Go Next <i
-                                                class="fas fa-arrow-circle-right" style="margin: 3%;"></i></h3>
+                                        <h3 class="next" onclick="goNext()" style="cursor: pointer" >Go Next <i
+                                                class="fas fa-arrow-circle-right"></i></h3>
                                     </div>
                                     <div id="second-form" class="second-form" style="display: none;padding: 10%;">
                                         <div class="select-option">
@@ -123,7 +123,7 @@
                                             <label for="label-title">Phone:</label>
                                             <input type="number" placeholder="Phone Number" name="number" id="number"
                                                 required>
-                                                <br>
+                                               
                                         </div>
                                        <h3 class="next" onclick="goNext1()" style="cursor: pointer">Go Next <i class="fas fa-arrow-circle-right"></i></h3> 
                                     </div>
