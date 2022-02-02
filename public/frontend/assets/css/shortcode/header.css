@@ -189,7 +189,8 @@
   top: 0;
   width: 100%;
   background: rgba(255,255,255,0.99);
-  box-shadow: 0 1px 3px rgba(50, 50, 50, 0.4)
+  box-shadow: 0 1px 3px rgba(50, 50, 50, 0.4);
+  height:47px !important;
 }
 .sticky .main-menu > li {
   padding: 22px 0;

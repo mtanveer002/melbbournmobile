@@ -1,10 +1,10 @@
 /*xtra large */
 @media (min-width:  1400px) {
   /* .booking-form .form {
-    padding: 32px 65px;
+    
   } */
   .logo img {
-    width: 70%;
+    width: 36%;
   }
 }
 
@@ -293,7 +293,7 @@
   padding-right: 0;
 }
 /* .booking-form .form {
-  padding: 50px 65px;
+ 
 } */
 /*slick-arrow*/
 .slick-arrow-2 .slick-arrow {
