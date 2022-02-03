@@ -127,18 +127,16 @@
                                         </div>
                                        <h3 class="next" onclick="goNext1()" style="cursor: pointer">Go Next <i class="fas fa-arrow-circle-right"></i></h3> 
                                     </div>
-                                    <div id="third-form" class="third-form" style="display: none;padding: 10%;">
-                                        <div class="select-option op">
-                                            <label for="label-title"style="padding: 2%;">Contact Preference:</label>
-                                            <select name="contact_preference">
+                                    <div id="third-form" class="third-form" style="display: none;">
+                                        <div class="third_field">
+                                            <label for="label-title">Contact Preference:</label>
+                                            <select name="contact_preference" class="form-control">
                                                 <option value="">Select</option>
                                                 <option value="Email">Email</option>
                                                 <option value="Phone">Phone</option>
-                                            </select>
-                                        </div>
-                                        <div class="select-option op">
+                                            </select> <br>
                                             <label for="label-title">Repairing Mehtod:</label>
-                                            <select name="repairing_methods" id="test" onchange="showDiv(this)">
+                                            <select name="repairing_methods" id="test" onchange="showDiv(this)" class="form-control">
                                                 <option value="shop" >Select</option>
                                                 <option value="Van">Van</option>
                                                 <option value="Mail In">Mail In</option>

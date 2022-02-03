@@ -46,7 +46,7 @@
             </div>
         @endif
         <div class="row">
-            <div class="col-4">
+            <div class="col-5">
                 <div class="card left-card">
                     <div class="card-body">
                         <form action="">
@@ -66,7 +66,7 @@
                 </div>
             </div>
             
-            <div class="col-8">
+            <div class="col-7">
                 @foreach ($customer_info as $info)
                 <div class="card">
                     <div class="card-body">
@@ -77,7 +77,7 @@
                         <hr>
                         <div class="row">
                             <div class="col-1"></div>
-                            <div class="col-4 ">
+                            <div class="col-5 ">
                                 <h5>Brand:</h5>
                                 <hr>
                                 <h5>Modal:</h5>
@@ -91,7 +91,7 @@
                                 <h5>repairing_methods:</h5>
                                 <hr>
                             </div>
-                            <div class="col-7">
+                            <div class="col-6">
                                 <h6 class="mt-0"><strong>{{ $info->brand->brand}}</strong></h6>
                                 <hr>
                                 <h6 class="mt-2"><strong>{{ $info->modal->name}}</strong></h6>

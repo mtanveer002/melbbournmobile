@@ -2517,17 +2517,29 @@ span.timing{
   padding: 0;
   border-radius: 5px;
 }
+.third_field{
+  margin-top: 30px;
+  margin-bottom: 60px;
+}
+.third_field label{
+  color: #000;
+  font-size: 2rem;
+}
+form h3:hover{
+  transform: scale(1.1);
+    color: #fb6128;
+    margin-left: 50px;
+}
 .booking-form form button {
 	display: block;
 	font-size: 14px;
 	text-transform: uppercase;
 	background: #fb6128;
-	border-radius: 2px;
+	border-radius: 4px;
 	color: #ffffff;
 	font-weight: bold;
 	width: 100%;
 	height: 37px;
-	margin-top: 50px;
   transition: all .3s ease;
 }
 

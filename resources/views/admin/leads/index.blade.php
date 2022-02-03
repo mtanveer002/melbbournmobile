@@ -38,6 +38,7 @@
                             <th style="width: 10%;">Sr.</th>
                             <th style="width: 30%;">Name</th>
                             <th>Email</th>
+                            <th>Phone</th>
                         </tr>
                     </thead>
                     <tbody>
@@ -46,6 +47,7 @@
                             <td>{{ $loop->iteration }}</td>
                             <td>{{ $lead->name }}</td>
                             <td>{{ $lead->email }}</td>
+                            <td>{{$lead->number}}</td>
                         </tr>
                         @endforeach
                     </tbody>

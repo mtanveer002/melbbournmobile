@@ -51,14 +51,14 @@
                     </span>
                 </a>
             </li>
-            <li class=" nav-item">
+            {{-- <li class=" nav-item">
                 <a href="{{route('admin.van.index')}}">
                     <i class="la la-bus"></i>
                     <span class="menu-title" data-i18n="nav.dash.main">
                         Van
                     </span>
                 </a>
-            </li>
+            </li> --}}
         </ul>
     </div>
 </div>
