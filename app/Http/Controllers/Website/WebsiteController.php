@@ -6,6 +6,7 @@ use App\Http\Controllers\Controller;
 use App\Models\Admin\Brand;
 use App\Models\Admin\BrandModal;
 use App\Models\Admin\Issue;
+use App\Models\Counter;
 use App\Models\Quote;
 
 use Illuminate\Http\Request;
@@ -18,8 +19,9 @@ class WebsiteController extends Controller
         $brands = Brand::all();
         $modals = BrandModal::all();
         $issues = Issue::all();
-
-        return view('website.page.home', compact('brands', 'modals', 'issues'));
+        $counters = Counter::get();
+        Counter::increment('views');
+        return view('website.page.home', compact('brands', 'modals', 'issues', 'counters'));
     }
 
     public function aboutus()

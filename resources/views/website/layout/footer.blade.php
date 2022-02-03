@@ -2,15 +2,10 @@
     <div class="footer-top">
                 <div class="footer-top-inner gray-bg">
                     <div class="row">
-                        <div class="col-xl-3 col-lg-5 col-md-5">
+                        <div class="col-xl-3 col-lg-3 col-md-3">
                             <div class="single-footer footer-about">
                                 <div class="footer-logo">
-                                    <img src="{{ asset('frontend/assets/img/logo/MMPR_logo.png') }}" alt="">
-                                </div>
-                                <div class="footer-brief">
-                                    <p>We aim to offer outstanding services straight to repair or troubleshoot your smartphones. We have trained technicians who can repair all damaged parts. Experts are giving quality service within minutes. Contact us for a quotation.
-                                    </p>
-                                    
+                                   <a href="http://dev.melbournemobilephonerepairs.com.au/"> <img src="{{ asset('frontend/assets/img/logo/MMPR_logo.png') }}" alt=""></a>
                                 </div>
                                 <ul class="footer-social">
                                     <li>
@@ -30,7 +25,7 @@
                                 </ul>
                             </div>
                         </div>
-                        <div class="col-xl-2 d-block d-xl-block d-lg-none d-md-none">
+                        <div class="col-xl-3 col-lg-3 col-md-3 d-block d-xl-block d-lg-none d-md-none">
                             <div class="single-footer">
                                 <h4 class="footer-title border-left">OUR SERVICES</h4>
                                 <ul class="footer-menu">
@@ -53,34 +48,34 @@
                                 </ul>
                             </div>
                         </div>
-                        <div class="col-xl-4 col-lg-4">
+                        <div class="col-xl-3 col-lg-3 col-md-3">
                             <div class="single-footer">
                                 <h4 class="footer-title border-left">CONTACT INFO</h4>
                                 <ul class="footer-menu">
-                                    
-                                    
+                                    <strong style="font-size: 15px">Hampton Park</strong>
                                     <li>
+                                        <b>Address</b>
                                         <a href="contact.html"><i class="zmdi zmdi-circle"></i><span>82 Somerville Hampton Park VIC 3976</span></a>
-                                        <br><a href="contact.html"><span class="timing">&nbsp;&nbsp;&nbsp;&nbsp; Mon to Sat : 10:00am – 6:00pm</span></a>
+                                        <br>
+                                        <b>Timing</b><a href="contact.html"><span class="timing">&nbsp;&nbsp;&nbsp;&nbsp; Mon to Sat : 10:00am – 6:00pm</span></a>
                                     </li>
-                                    
+                                    <strong >Blackburn</strong>
                                     <li>
+                                        <b>Address</b>
                                         <a href="contact.html"><i
-                                                class="zmdi zmdi-circle"></i><span>3 Lawrence Street, Blackburn South VIC 3130</span></a>
-                                                <br><a href="contact.html"><span class="timing">&nbsp;&nbsp;&nbsp;&nbsp; Mon to Sun : 10:00am – 6:00pm</span></a>
+                                        class="zmdi zmdi-circle"></i><span>3 Lawrence Street, Blackburn South VIC 3130</span></a>
+                                        <br>
+                                        <b>Timing</b><a href="contact.html"><span class="timing">&nbsp;&nbsp;&nbsp;&nbsp; Mon to Sun : 10:00am – 6:00pm</span></a>
                                     </li>
-
+                                    <strong style="font-size: 15px">Support :</strong>
                                     <li>
-                                        
-                                        <a href="contact.html"><i class="zmdi zmdi-circle"></i><span>Support :(03) 8595 6677</span></a>
-                                    </li>
-                                    <li>
-                                        <a href="contact.html"><i class="zmdi zmdi-circle"></i><span>Privacy Policy</span></a>
-                                    </li>
+                                    <b>Contact</b>
+                                    <a href="contact.html"><i class="zmdi zmdi-circle"></i><span>(03) 8595 6677</span></a></li>
+                                    
                                 </ul>
                             </div>
                         </div>
-                        <div class="col-xl-3 col-lg-3">
+                        <div class="col-xl-3 col-lg-3 col-md-3">
                             <div class="single-footer">
                                 <h4 class="footer-title border-left">Get in touch</h4>
                                 <div class="footer-message">
