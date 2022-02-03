@@ -2,7 +2,6 @@
 @section('web_content')
 
     <link href="https://cdnjs.cloudflare.com/ajax/libs/select2/4.0.13/css/select2.min.css" rel="stylesheet" />
-
     <section class="hero-section" id="goUp">
         <div class="container">
             <div class="row">
@@ -22,7 +21,7 @@
                                 <div class="carousel-item active  item-1">
 
                                     <div class="hero-text">
-                                        <h1>IPAD</h1>
+                                        <h1>iPAD Repair</h1>
                                         <p class="h5 aa mb-4 pb-3 text-white-50">
                                             Now get your phone repaired from the comfort of your home. 
                                             We pick up and deliver your fixed phone to your doorstep! Click here
@@ -33,7 +32,7 @@
                                 <div class="carousel-item item-2">
 
                                     <div class="hero-text">
-                                        <h1>IPHONE</h1>
+                                        <h1>iPHONE Repair</h1>
                                         <p class="h5 aa mb-4 pb-3 text-white-50">
                                             Book an appointment at either our Blackburn or Hampton Park branch and stay
                                             within your 5 mile radius. Stay safe, get your phone fixed!
@@ -42,22 +41,29 @@
                                 </div>
                                 <div class="carousel-item item-3">
                                     <div class="hero-text">
-                                        <h1>LAPTOP</h1>
+                                        <h1>LAPTOP Repair</h1>
                                         <p class="h5 aa mb-4 pb-3 text-white-50">
                                             Get your phone fixed in no time by booking at your convenient timeframe. Contact
                                             us and let us know on <a href="tel:(03) 8595 6677">(03) 8595 6677</a>
+                                        </p>
+                                    </div>
+                                </div>
+                                {{-- <div class="carousel-item item-4">
+                                    <div class="hero-text">
+                                        <h1 style="font-size: 26px">iPhone Screen Replacements </h1>
+                                        <p class="h5 aa mb-4 pb-3 text-white-50">
+                                            For as low as $59, we fix your iPhones in under an hour. Click here to book an appointment.
                                         </p>
                                     </div>
                                 </div>
                                 <div class="carousel-item item-4">
                                     <div class="hero-text">
-                                        <h1>COMPUTER</h1>
+                                        <h1>Introducing Moving Mobile Repairs!</h1>
                                         <p class="h5 aa mb-4 pb-3 text-white-50">
-                                            Get your phone fixed in no time by booking at your convenient timeframe. Contact
-                                            us and let us know on <a href="tel:(03) 8595 6677">(03) 8595 6677</a>
+                                            Now get your phone repaired from the comfort of your home. We pick up and deliver your fixed phone to your doorstep! Click here to check it out.
                                         </p>
                                     </div>
-                                </div>
+                                </div> --}}
                             </div>
                             <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleControls"
                                 data-bs-slide="prev">
@@ -177,8 +183,9 @@
         <div class="tips container-fluid">
             <div class="container">
                 <div class="text-center">
-                    <h2>GET YOUR DEVICE REPAIRED TODAY</h2>
-                    <p>With 3 easy ways to get your device repaired, you'll have it back in no time! Just walk in, mail in, or have us come to you!
+                    <h2>Hassle Free Repairs At Your Doorstep!</h2>
+                    <p>Get your device fixed in no time with a number of preferences that suit you most.
+
                     </p>
                     <div class="row process">
                         <div class="col-lg-3">
@@ -207,7 +214,7 @@
                                     </div>
                                 </div>
                             </div>
-                            <i class="fas fa-shuttle-van repair-icon"></i>
+                            <a href="#goUp" style="text-decoration: none"><i class="fas fa-shuttle-van repair-icon"></i></a>
                             <p>We Come To You</p>
                         </div>
                         <div class="col-lg-1">
@@ -239,7 +246,7 @@
                                     </div>
                                 </div>
                             </div>
-                            <i class="fas fa-store-alt repair-icon"></i>
+                            <a href="#goUp" style="text-decoration: none"><i class="fas fa-store-alt repair-icon"></i></a>
                             <p>In Store</p>
                         </div>
                         <div class="col-lg-1">
@@ -272,7 +279,7 @@
                                     </div>
                                 </div>
                             </div>
-                            <i class="fas fa-envelope repair-icon"></i>
+                            <a href="#goUp" style="text-decoration: none"><i class="fas fa-envelope repair-icon"></i></a>
                             <p>Mail In </p>
                         </div>
                     </div>
@@ -807,11 +814,11 @@
         if(date_now.getHours() >= 5 ){
             $("#time").text("Time To Close: " + hours + ":" + minutes + ":" + seconds);
         }
-        if(date_now.getHours() >= 18){
-            $("#time").text("you're running out of time for same day repair");
+        if(date_now.getHours() <= 18){
+            $("#time").text("Get your device repair Tomorrow");
         }
         else{
-            $("#time").text("you're running out of time for same day repair");
+            $("#time").text("Get your device repair Tomorrow");
         }
       
     },1000);

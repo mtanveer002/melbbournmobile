@@ -13,6 +13,7 @@ use App\Http\Controllers\Admin\LeadsController;
 use App\Http\Controllers\Admin\ProfileController;
 use App\Http\Controllers\Admin\TicketController;
 use App\Http\Controllers\Admin\VanController;
+use App\Http\Controllers\HomeController;
 use App\Http\Controllers\Website\WebsiteController;
 
 /*
@@ -41,9 +42,7 @@ Route::get('/commingSoon', function(){
 Route::post('/saveQuote', [WebsiteController::class, 'saveQuote'])->name('saveQuote');
 
 Auth::routes();
-Route::get('/dashboard', function () {
-    return view('admin.layouts.page');
-})->middleware('auth');
+Route::get('/dashboard', [HomeController::class, 'index'])->middleware('auth');
 
 
 Route::prefix('admin')->as('admin.')->middleware(['auth'])->group(function() {
