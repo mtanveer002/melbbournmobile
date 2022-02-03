@@ -7,7 +7,7 @@
             <div class="card">
                 <div class="card-header">
                     <h1>All Brand Issues</h1>
-                    <a href="{{route('admin.issues.create')}}" class="btn btn-success float-right">Create Issues</a>
+                    <a href="{{route('admin.issuess.create')}}" class="btn btn-success float-right">Create Issues</a>
                 </div>
                <div class="card-body">
                 <table class="table">
@@ -33,10 +33,10 @@
                                 <td>{{ $issue->description }}</td>
                                
                                 <td>
-                                    <form  action="{{ route('admin.issues.destroy',$issue->id)}}" method="POST" enctype="multipart/form-data">
+                                    <form  action="{{ route('admin.issuess.destroy',$issue->id)}}" method="POST" enctype="multipart/form-data">
                                         @csrf
                                         @method('DELETE')
-                                        <a href="{{route('admin.issues.edit', $issue->id)}}" class="btn-sm btn btn-success"><i class="fa fa-edit"></i></a>
+                                        <a href="{{route('admin.issuess.edit', $issue->id)}}" class="btn-sm btn btn-success"><i class="fa fa-edit"></i></a>
                                         <button type="submit"  class="btn-sm btn btn-danger" id="delete"><i class="fa fa-trash"></i></button>
                                     </form> 
                                 </td>
