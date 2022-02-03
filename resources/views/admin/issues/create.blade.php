@@ -10,7 +10,7 @@
                     <h1>Create Issues</h1>
                 </div>
                <div class="card-body">
-                <form action="{{ route('admin.issues.store')}}" method="POST" enctype="multipart/form-data">
+                <form action="{{ route('admin.issuess.store')}}" method="POST" enctype="multipart/form-data">
                     @csrf
                     <div class="mb-1">
                         <label for="brand" class="form-label">Brand</label>
@@ -58,7 +58,7 @@
                         <div class="text-danger">{{$message}}</div>
                     @enderror
                     <button type="submit" class="btn btn-success float-right">Create Issue</button>
-                    <a  class="btn btn-danger float-right mr-1" href="{{route('admin.issues.index')}}">Cancel</a>
+                    <a  class="btn btn-danger float-right mr-1" href="{{route('admin.issuess.index')}}">Cancel</a>
                     
                 </form>
                </div>

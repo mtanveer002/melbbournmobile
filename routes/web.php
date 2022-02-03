@@ -50,7 +50,7 @@ Route::prefix('admin')->as('admin.')->middleware(['auth'])->group(function() {
     Route::resource('profile', ProfileController::class)->only('index', 'store');
     Route::resource('brands', BrandsController::class);
     Route::resource('modals', BrandModalController::class);
-    Route::resource('issues', IssueController::class);
+    Route::resource('issuess', IssueController::class);
     Route::resource('inquery', InqueryController::class);
     Route::resource('leads', LeadsController::class);
     Route::resource('van', VanController::class);

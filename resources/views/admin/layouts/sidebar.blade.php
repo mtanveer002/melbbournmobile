@@ -28,7 +28,7 @@
                 </a>
             </li>
             <li class=" nav-item">
-                <a href="{{route('admin.issues.index')}}">
+                <a href="{{route('admin.issuess.index')}}">
                     <i class="la la-mobile"></i>
                     <span class="menu-title" data-i18n="nav.dash.main">
                         All Issues
