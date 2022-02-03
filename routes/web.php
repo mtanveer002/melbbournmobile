@@ -44,6 +44,9 @@ Route::post('/saveQuote', [WebsiteController::class, 'saveQuote'])->name('saveQu
 Auth::routes();
 Route::get('/dashboard', [HomeController::class, 'index'])->middleware('auth');
 
+//auto select box
+Route::get('/admin/modal/ajax/{brand}', [IssueController::class, 'getModals']);
+Route::get('/issuess/modal/ajax/{modal}', [WebsiteController::class, 'getIssue']);
 
 Route::prefix('admin')->as('admin.')->middleware(['auth'])->group(function() {
     
@@ -58,9 +61,6 @@ Route::prefix('admin')->as('admin.')->middleware(['auth'])->group(function() {
     Route::get('chkStatus/{id}', [VanController::class, 'chkStatus'])->name('chkStatus');
 });
 
-//auto select box
-Route::get('/admin/modal/ajax/{brand}', [IssueController::class, 'getModals']);
-Route::get('/issue/modal/ajax/{modal}', [WebsiteController::class, 'getIssue']);
 Route::get('/leadsMails', [LeadsController::class, 'leadMail'])->name('lead.mail'); //send lead mail
 //image
 Route::get('media/get/{file}', function (File $file) {
