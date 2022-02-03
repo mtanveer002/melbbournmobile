@@ -126,9 +126,9 @@ class IssueController extends Controller
         return redirect()->route('admin.issues.index')->with($notification);
     }
 
-    // public function getModals($brand)
-    // {
-    //     $modals = BrandModal::where('brand_id', $brand)->get();
-    //     return json_encode($modals);
-    // }
+    public function getModals($brand)
+    {
+        $modals = BrandModal::where('brand_id', $brand)->get();
+        return json_encode($modals);
+    }
 }
