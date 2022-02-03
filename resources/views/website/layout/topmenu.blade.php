@@ -23,9 +23,9 @@
                         
                             <li><a href="{{route('commingSoon')}}">Online Shop</a>
                             <li><a href="{{route('contact')}}">Contact</a>
-                                <li>
+                                {{-- <li>
                                     <a  href="{{route('tickets.index')}}" class="btn btn-warning btn-xlg">TICKET</a>
-                                </li>
+                                </li> --}}
                             </li>
                             <a class="btn btn-primary btn-xlg" href="tel:713-992-0916" style="background-color:#fb6128;color:white;border-radius: 15px;margin-left: 0;border-color:azure;font-size: 16px">
                                 <span class="glyphicon glyphicon-earphone" style="padding-left:10px; padding-right:10px;"></span>&nbsp;(03) 8595 6677
