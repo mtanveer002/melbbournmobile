@@ -45,7 +45,7 @@ Auth::routes();
 Route::get('/dashboard', [HomeController::class, 'index'])->middleware('auth');
 
 //auto select box
-Route::get('/admin/modal/ajax/{brand}', [IssueController::class, 'getModals']);
+// Route::get('/admin/modal/ajax/{brand}', [IssueController::class, 'getModals']);
 Route::get('/issuess/modal/ajax/{modal}', [WebsiteController::class, 'getIssue']);
 
 Route::prefix('admin')->as('admin.')->middleware(['auth'])->group(function() {
