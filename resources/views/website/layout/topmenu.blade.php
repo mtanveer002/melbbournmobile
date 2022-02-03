@@ -58,10 +58,14 @@
                         
                             <li><a href="{{route('commingSoon')}}">Online Shop</a>
                             <li><a href="{{route('contact')}}">Contact</a>
+                                <li>
+                                    <a  href="{{route('tickets.index')}}" class="btn btn-warning btn-xlg">TICKET</a>
+                                </li>
                             </li>
-                            <a class="btn btn-primary btn-xlg" href="tel:713-992-0916" style="background-color:#fb6128;color:white;border-radius: 15px;margin-left: 10%;border-color:azure">
+                            <a class="btn btn-primary btn-xlg" href="tel:713-992-0916" style="background-color:#fb6128;color:white;border-radius: 15px;margin-left: 0;border-color:azure">
                                 Click to Call <span class="glyphicon glyphicon-earphone" style="padding-left:10px; padding-right:10px;"></span>(03) 8595 6677
                             </a>
+                           
                         </ul>
                     </nav>
                 </div>

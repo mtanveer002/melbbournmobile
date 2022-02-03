@@ -45,7 +45,7 @@
             </li>
             <li class=" nav-item">
                 <a href="{{route('admin.leads.index')}}">
-                    <i class="la la-bullhorn"></i>
+                    <i class="la la-book"></i>
                     <span class="menu-title" data-i18n="nav.dash.main">
                         Leads
                     </span>
