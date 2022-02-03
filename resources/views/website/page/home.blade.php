@@ -2,7 +2,11 @@
 @section('web_content')
 
     <link href="https://cdnjs.cloudflare.com/ajax/libs/select2/4.0.13/css/select2.min.css" rel="stylesheet" />
-
+<style>
+    .select2-container--default .select2-selection--single .select2-selection__arrow b {
+    margin-left: -20px !important;
+}
+</style>
     <section class="hero-section" id="goUp">
         <div class="container">
             <div class="row">
