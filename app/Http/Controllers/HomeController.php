@@ -3,6 +3,7 @@
 namespace App\Http\Controllers;
 
 use App\Models\Counter;
+use App\Models\Quote;
 use Illuminate\Http\Request;
 
 class HomeController extends Controller
@@ -24,7 +25,11 @@ class HomeController extends Controller
      */
     public function index()
     {
-        $counters = Counter::get();
-        return view('admin.layouts.page', compact('counters'));
+        $counters = Counter::latest()->paginate(5);
+        Counter::increment('views');
+        $inquiries = Quote::get()->count();
+        $approvedInquiries = Quote::where('status', 1)->get()->count();
+        $pendingInquiries = Quote::where('status', 0)->get()->count();
+        return view('admin.layouts.page', compact('counters','inquiries','approvedInquiries','pendingInquiries'));
     }
 }

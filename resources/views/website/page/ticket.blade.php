@@ -4,14 +4,11 @@
     <div class="container">
         <div class="row">
             <!-- tablet design -->
-            <div class="col-xl-8 col-lg-8 col-md-12 col-sm-12">
+            <div class="col-xl-10 col-lg-10 col-md-12 col-sm-12">
                 <div class="carousel-background">
-                    <div id="carouselExampleControls" class="carousel slide" data-bs-ride="carousel">
-                        
+                    <div id="carouselExampleControls" class="carousel slide" data-bs-ride="carousel">   
                         <div class="carousel-inner">
-
-                            <div class="carousel-item active  item-1">
-
+                            <div class="carousel-item active item-1">
                                 <div class="hero-text">
                                     <form method="post" style="text-align: left" action="{{ route('tickets.store') }}">
                                         @csrf
@@ -29,7 +26,7 @@
                                           <textarea type="text" name="message" class="form-control" id="exampleInputMessage1" rows="5" cols="5" placeholder="Message">
                                           </textarea>
                                         </div><br>
-                                        <button type="submit" class="btn btn-warning btn-block" style="height: 30px;background-color: #fb6128">Submit</button>
+                                        <button type="submit" class="btn btn-warning btn-block" style="height: 30px;background-color: #fb6128;">Submit</button>
                                       </form>
                                 </div>
                             </div>

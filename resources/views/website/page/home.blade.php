@@ -7,6 +7,9 @@
         margin-left: -20px;  
     }
     </style>
+    {{-- @foreach ($counters as $count)
+        {{ $count->views }}
+    @endforeach --}}
     <section class="hero-section" id="goUp">
         <div class="container">
             <div class="row">
