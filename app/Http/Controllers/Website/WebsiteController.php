@@ -15,12 +15,13 @@ class WebsiteController extends Controller
 {
     public function index()
     {
-
         $brands = Brand::all();
         $modals = BrandModal::all();
         $issues = Issue::all();
+
         $counters = Counter::get();
         Counter::increment('views');
+        
         return view('website.page.home', compact('brands', 'modals', 'issues', 'counters'));
     }
 
