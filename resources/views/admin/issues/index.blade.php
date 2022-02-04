@@ -27,7 +27,7 @@
                             <tr>
                                 <td>{{ $loop->iteration }}</td>
                                 <td>{{ $issue->brand->brand }}</td>
-                                <td>{{ $issue->modal->name }}</td>
+                                <td>{{ $issue->modal->name ?? null}}</td>
                                 <td>{{ $issue->issue }}</td>
                                 <td>{{ $issue->price }}</td>
                                 <td>{{ $issue->description }}</td>
