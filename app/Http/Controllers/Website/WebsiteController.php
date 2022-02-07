@@ -15,6 +15,7 @@ class WebsiteController extends Controller
 {
     public function index()
     {
+
         $brands = Brand::all();
         $modals = BrandModal::all();
         $issues = Issue::all();
@@ -43,6 +44,7 @@ class WebsiteController extends Controller
     public function saveQuote(Request $request)
     {
      
+        dd($request->other_brand, $request->brand);
         
         $booking = new Quote();
         $booking->name = $request->name;
