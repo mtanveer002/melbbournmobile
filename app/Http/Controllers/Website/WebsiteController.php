@@ -15,7 +15,6 @@ class WebsiteController extends Controller
 {
     public function index()
     {
-
         $brands = Brand::all();
         $modals = BrandModal::all();
         $issues = Issue::all();

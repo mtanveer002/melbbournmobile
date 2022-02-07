@@ -29,7 +29,7 @@
                                 <div class="carousel-item active  item-1">
 
                                     <div class="hero-text">
-                                        <h1>iPAD Repair</h1>
+                                        <h1>iPAD Repairs</h1>
                                         <p class="h5 aa mb-4 pb-3 text-white-50">
                                             Now get your phone repaired from the comfort of your home. 
                                             We pick up and deliver your fixed phone to your doorstep! Click here
@@ -40,7 +40,7 @@
                                 <div class="carousel-item item-2">
 
                                     <div class="hero-text">
-                                        <h1>iPHONE Repair</h1>
+                                        <h1>iPHONE Repairs</h1>
                                         <p class="h5 aa mb-4 pb-3 text-white-50">
                                             Book an appointment at either our Blackburn or Hampton Park branch and stay
                                             within your 5 mile radius. Stay safe, get your phone fixed!
@@ -49,7 +49,7 @@
                                 </div>
                                 <div class="carousel-item item-3">
                                     <div class="hero-text">
-                                        <h1>LAPTOP Repair</h1>
+                                        <h1>LAPTOP Repairs</h1>
                                         <p class="h5 aa mb-4 pb-3 text-white-50">
                                             Get your phone fixed in no time by booking at your convenient timeframe. Contact
                                             us and let us know on <a href="tel:(03) 8595 6677">(03) 8595 6677</a>
@@ -108,7 +108,7 @@
                                             </select>
                                         </div>
                                         <div class="select-option">
-                                            <label for="label-title">Modal:</label>
+                                            <label for="label-title">Model:</label>
                                             <select name="modal" id="modal_device">
 
                                             </select>
@@ -278,8 +278,8 @@
                                         </div>
                                         <div class="modal-body">
                                             <img src="{{ asset('frontend/assets/img/modal/website_g.gif') }}" alt="">
-                                            <p>Get your phone fixed in no time by booking at your convenient timeframe.
-                                                Contact us and let us know your issue on this number: <br><a
+                                            <p>Just click ‘Book Now’ below! 
+                                                One of our experienced representatives will contact you and guide you through our mail-in repair service or let us know your issue on this number: <br><a
                                                     href="tel:(03) 8595 6677">tel:(03) 8595 6677</a></p>
                                         </div>
                                         <div class="modal-footer">
@@ -806,20 +806,17 @@
     
         date_future = new Date(currentDatTime);
         
-        console.log(date_now.getHours(), );
-        
 
         seconds = Math.floor((date_future - (date_now))/1000);
         minutes = Math.floor(seconds/60);
         hours = Math.floor(minutes/60);
         days = Math.floor(hours/24);
-        console.log(seconds);
         
         hours = hours-(days*24);
         minutes = minutes-(days*24*60)-(hours*60);
         seconds = seconds-(days*24*60*60)-(hours*60*60)-(minutes*60);
         
-        console.log(date_now.getHours());
+        
         if(date_now.getHours() >= 5 ){
             $("#time").text("Time To Close: " + hours + ":" + minutes + ":" + seconds);
         }
@@ -843,7 +840,7 @@
         });
 
         $("#modal_device").select2({
-            placeholder: "Select Modal",
+            placeholder: "Select Model",
             allowClear: true
         });
 
@@ -853,8 +850,9 @@
         });
 
         //auto slect modal according modal
-        $('#brand_device').on('select2:selecting', function(e) {
-            var brand = e.params.args.data.id;
+        $('#brand_device').on('select2:selecting select2:clear', function(e) {
+            console.log(e)
+            var brand = ((e.params.args || {}).data || {}).id;
             if (brand) {
                 $.ajax({
                     url: "{{ url('/admin/modal/ajax') }}/" + brand,
@@ -872,15 +870,15 @@
                 });
 
             } else {
-                alert('danger');
+                $('select[name="modal"]').empty();
+                alert('Please Select Brand First');
             }
         });
 
         //auto select issues according modals
-        $('#modal_device').on('select2:selecting', function(e) {
-
-            var modal = e.params.args.data.id;
-            console.log(modal)
+        $('#modal_device').on('select2:selecting select2:clear', function(e) {
+            var modal = ((e.params.args || {}).data || {}).id;
+            
             if (modal) {
                 $.ajax({
                     url: "{{ url('/issue/modal/ajax') }}/" + modal,
@@ -898,7 +896,8 @@
                 });
 
             } else {
-                alert('danger');
+                var d = $('select[name="issue"]').empty();
+                alert('Please Select Model first');
             }
         });
 
