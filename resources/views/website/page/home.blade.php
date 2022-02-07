@@ -96,11 +96,14 @@
                                     @csrf
                                     <div id="first-form" class="first-form">
                                         <div class="select-option">
+                                           
+                                            <input type="text" name="color" id="color" style='display:none;'/>
                                             <label for="label-title">Device:</label>
-                                            <select name="brand" id="brand_device">
+                                            <select name="brand" id="brand_device" name="bname"  onchange='CheckColors(this.value);' id="bname">
                                                 <option value="">Select Brand</option>
                                                 @foreach ($brands as $brand)
                                                     <option value="{{ $brand->id }}">{{ $brand->brand }}</option>
+                                                    <option value="others">others</option>
                                                 @endforeach
                                             </select>
                                         </div>
@@ -915,5 +918,19 @@
         </script>
 
     {{-- for auto select box --}}
+    
+    <script type="text/javascript">
+        function CheckColors(val){
+        var element=document.getElementById('color');
+        if(val=='pick a color'||val=='others'){
+        element.style.display='block';
+        element.placeholder="Enter required Modal";
+        }
+        else  {
+        element.style.display='none';
+        }
+    }
+
+    </script> 
 
 @endsection
