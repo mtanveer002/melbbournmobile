@@ -128,7 +128,7 @@ element.style {
                                 <form action="{{ route('saveQuote') }}" method="post" enctype="multipart/form-data" style="padding:20px 8px 9px 3px;">
                                     @csrf
                                         {{-- Device Brand --}}
-                                    <div class="select-option">
+                                    {{-- <div class="select-option">
                                         <label for="label-title">Brand:</label>
                                         <select name="brand" onchange='CheckColors(this.value);' id="brand_device"> 
                                             <option>Select Brand</option>  
@@ -139,9 +139,9 @@ element.style {
                                             
                                         </select>
                                         <input type="text" name="other_brand" id="brand" style='display:none;'/>
-                                    </div>
+                                    </div> --}}
                                         {{-- model --}}
-                                    <div class="select-option">
+                                    {{-- <div class="select-option">
                                     <label for="label-title">Model:</label>
                                     <select name="modal" onchange='CheckModel(this.value);' id="modal_device"> 
                                         <option>Select Model</option>  
@@ -149,23 +149,24 @@ element.style {
                                         
                                         </select>
                                     <input type="text" name="other_model" id="model" style='display:none;'/>
-                                    </div>
-                                        {{-- <div class="select-option">
-                                            <label for="label-title">Device:</label>
-                                            <select name="brand" id="brand_device" name="bname"  onchange='CheckColors(this.value);' id="bname">
-                                                <option value="">Select Brand</option>
-                                                @foreach ($brands as $brand)
-                                                    <option value="{{ $brand->id }}">{{ $brand->brand }}</option>
-                                                    <option value="others">others</option>
-                                                @endforeach
-                                            </select>
-                                        </div>
-                                        <div class="select-option">
-                                            <label for="label-title">Model:</label>
-                                            <select name="modal" id="modal_device">
+                                    </div> --}}
 
-                                            </select>
-                                        </div> --}}
+                                    {{-- ======================Previous select bxo============================= --}}
+                                    <div class="select-option">
+                                        <label for="label-title">Device:</label>
+                                        <select name="brand" id="brand_device">
+                                            <option value="">Select Brand</option>
+                                            @foreach ($brands as $brand)
+                                                <option value="{{ $brand->id }}">{{ $brand->brand }}</option>
+                                            @endforeach
+                                        </select>
+                                    </div>
+                                    <div class="select-option">
+                                        <label for="label-title">Model:</label>
+                                        <select name="modal" id="modal_device">
+
+                                        </select>
+                                    </div>
                                     <div class="select-option">
                                         <label for="label-title">Brand Issue:</label>
                                         <select name="issue" id="issue_device">
@@ -176,7 +177,7 @@ element.style {
                                         </select>
                                         <div class="select-option">
                                             <label for="label-title">Description:</label>
-                                            <input type="text" placeholder="Description" name="description" id="">
+                                            <input type="text" placeholder="Description Of Your Device" name="description" id="">
                                         </div>
                                     </div>
                                     <div class="select-option">
@@ -973,22 +974,9 @@ element.style {
 
     {{-- for auto select box --}}
     
-    <script type="text/javascript">
-        function CheckColors(val){
-        var element=document.getElementById('color');
-        if(val=='pick a color'||val=='others'){
-        element.style.display='block';
-        element.placeholder="Enter required Modal";
-        }
-        else  {
-        element.style.display='none';
-        }
-    }
+  
 
-    </script> 
-
-
-    <script type="text/javascript">
+    {{-- <script type="text/javascript">
         function CheckColors(val){
          var element=document.getElementById('brand');
          if(val=='pick a color'||val=='others')
@@ -1004,5 +992,5 @@ element.style {
          else  
            element.style.display='none';
         }
-        </script> 
+        </script>  --}}
     @endsection
