@@ -17,7 +17,7 @@ class CreateQuotesTable extends Migration
             $table->id();
             $table->bigInteger('brand_id');
             $table->bigInteger('modal_id');
-            $table->bigInteger('issue_id')->nullable();
+            $table->string('issue')->nullable();
             $table->string('name');
             $table->string('describtion')->nullable();
             $table->string('email');

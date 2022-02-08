@@ -15,11 +15,7 @@ class CreateIssuesTable extends Migration
     {
         Schema::create('issues', function (Blueprint $table) {
             $table->id();
-            $table->bigInteger('brand_id');
-            $table->bigInteger('modal_id');
             $table->string('issue')->nullable();
-            $table->bigInteger('price')->nullable();
-            $table->text('description')->nullable();
             $table->timestamps();
         });
     }
