@@ -39,12 +39,8 @@
                                         <a href="#"><i class="zmdi zmdi-circle"></i><span>Tablet Repairs</span></a>
                                     </li>
                                     <li>
-                                        <a href="#"><i class="zmdi zmdi-circle"></i><span>iWatch Repairs</span></a>
+                                        <a href="#"><i class="zmdi zmdi-circle"></i><span>Apple Watch Repairs</span></a>
                                     </li>
-                                    <li>
-                                        <a href="#"><i class="zmdi zmdi-circle"></i><span>iPod Repairs</span></a>
-                                    </li>
-                                    
                                 </ul>
                             </div>
                         </div>
@@ -65,12 +61,15 @@
                                         <a href="contact.html"><i
                                         class="zmdi zmdi-circle"></i><span>3 Lawrence Street, Blackburn South VIC 3130</span></a>
                                         <br>
-                                        <b>Timing</b><a href="contact.html"><span class="timing">&nbsp;&nbsp;&nbsp;&nbsp; Mon to Sun : 10:00am – 6:00pm</span></a>
+                                        <b>Timing</b>
+                                        <a href="contact.html"><span class="timing">&nbsp;&nbsp;&nbsp;&nbsp; Mon to Fri : 10:00am – 6:00pm </span>
+                                        </a>
+                                        <span class="timing">&nbsp;&nbsp;&nbsp;&nbsp; Sat : 10:00am – 5:00pm </span>
                                     </li>
-                                    <strong style="font-size: 15px">Support :</strong>
+                                    <strong style="font-size: 15px">Support</strong>
                                     <li>
                                     <b>Contact</b>
-                                    <a href="contact.html"><i class="zmdi zmdi-circle"></i><span>(03) 8595 6677</span></a></li>
+                                    <a href="contact.html"><span>(03) 8595 6677</span></a></li>
                                     
                                 </ul>
                             </div>
@@ -130,48 +129,9 @@
                         </div>
                         <div class="container" style="text-align: center;">
                             <!-- Button to Open the Modal -->
-                            <button type="button" class="btn btn-outline-secondary text-white" style="border: 2px dotted white" data-toggle="modal" data-target="#myModal">
-                                --- Terms and conditions apply ---
-                            </button>
-                          
-                            <!-- The Modal -->
-                            <div class="modal" id="myModal">
-                                <div class="modal-dialog">
-                                  <div class="modal-content">
-                                    <!-- Modal Header -->
-                                    <div class="modal-header">
-                                      <h2 class="modal-title">Privacy Policy</h2>
-                                      <button type="button" class="close" data-dismiss="modal">&times;</button>
-                                    </div>
-                                    
-                                    <!-- Modal body -->
-                                    <div class="modal-body">
-                                        <h3><b>Privacy</b></h3><hr>
-                                      <br>
-                                      <p style="color: black">We may collect, use, store and disclose your personal information as required to administer your Membership and provide you with Benefits.
-                    
-                                        We will only collect, use, store and disclose your personal information in accordance with our privacy policy available.
-                                        
-                                        You acknowledge that failure to provide personal information may affect your ability to register as a Member and access Benefits.
-                                        
-                                        We may disclose your personal information to third parties for the purposes of [melbourne mobile phone repairs to insert]. This may include disclosing information to:
-                                        
-                                        Force Technology Internation PTY LTD ((03) 8595 6677)</p>
-                                    <br>
-                                      <h3><b>Security</b></h3><hr>
-                                      <br>
-                                      <p style="color: black">We are committed to ensuring that your information is secure. In order to prevent unauthorised access or disclosure, we have put in place suitable physical, electronic and managerial procedures to safeguard and secure the information we collect online.</p>
-                                    </div>
-                                    
-                                    <!-- Modal footer -->
-                                    <div class="modal-footer">
-                                      <button type="button" class="btn btn-danger" data-dismiss="modal">Close</button>
-                                    </div>
-                                    
-                                  </div>
-                                </div>
-                              </div>
-                            
+                            <a href="{{route('terms.Condition')}}" class="btn btn-outline-secondary text-white" style="border: 2px dotted white">
+                                --- Terms and conditions ---
+                            </a>
                           </div>
                         <br><br>
                     </div>

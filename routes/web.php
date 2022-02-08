@@ -31,6 +31,7 @@ Route::get('/', [WebsiteController::class, 'index'])->name('index.home');
 Route::get('/aboutus', [WebsiteController::class, 'aboutus'])->name('about.us');
 Route::get('/shop', [WebsiteController::class, 'shop'])->name('shop');
 Route::get('/contact', [WebsiteController::class, 'contact'])->name('contact');
+Route::get('/terms', [WebsiteController::class, 'termsCondition'])->name('terms.Condition');
 Route::resource('/tickets', TicketController::class);
 
 Route::get('/commingSoon', function(){

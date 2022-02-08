@@ -37,6 +37,10 @@ class WebsiteController extends Controller
     {
         return view('website.page.contact');
     }
+    public function termsCondition()
+    {
+        return view('website.page.termsCondition');
+    }
 
     public function saveQuote(Request $request)
     {
