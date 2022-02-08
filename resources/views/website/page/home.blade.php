@@ -18,41 +18,43 @@
                     <div class="carousel-background">
                         <div id="carouselExampleControls" class="carousel slide" data-bs-ride="carousel">
                             <div class="tab-bottom-bar">
-                                <a href="#"><i class="fas fa-home"></i></a>
-                                <a href="/contact.html"><i class="fas fa-portrait"></i></a>
-                                <a href="/shop.html"><i class="fas fa-cart-arrow-down"></i></a>
-                                <a href="#"><i class="fas fa-shield-alt"></i></a>
-                                <a href="#"><i class="fas fa-question-circle"></i></a>
+                                <a href="{{route('index.home')}}"><i class="fas fa-home"></i></a>
+                                <a href="{{route('contact')}}"><i class="fas fa-portrait"></i></a>
+                                <a href="{{route('commingSoon')}}"><i class="fas fa-cart-arrow-down"></i></a>
+                                <a data-toggle="modal" data-target="#myModal" style="cursor: pointer"><i class="fas fa-shield-alt"></i></a>
+                                <a href="#news"><i class="fas fa-question-circle"></i></a>
                             </div>
                             <div class="carousel-inner">
 
                                 <div class="carousel-item active  item-1">
 
                                     <div class="hero-text">
-                                        <h1>iPAD Repairs</h1>
+                                        <h1>Moving Mobile Repairs!</h1>
                                         <p class="h5 aa mb-4 pb-3 text-white-50">
-                                            Now get your phone repaired from the comfort of your home. 
-                                            We pick up and deliver your fixed phone to your doorstep! Click here
-                                             to check it out.
+                                            Get your phone repaired from the comfort of your home.
+                                             We pick up and deliver your fixed phone to your doorstep!
+                                              Click here to check it out.
                                         </p>
                                     </div>
                                 </div>
                                 <div class="carousel-item item-2">
 
                                     <div class="hero-text">
-                                        <h1>iPHONE Repairs</h1>
+                                        <h1>iPhone Screen Replacements</h1>
                                         <p class="h5 aa mb-4 pb-3 text-white-50">
-                                            Book an appointment at either our Blackburn or Hampton Park branch and stay
-                                            within your 5 mile radius. Stay safe, get your phone fixed!
+                                            For as low as $59, we fix your iPhones in an hour.
+                                             Click here to book an appointment.
+                                             <br>  <br>
                                         </p>
                                     </div>
                                 </div>
                                 <div class="carousel-item item-3">
                                     <div class="hero-text">
-                                        <h1>LAPTOP Repairs</h1>
+                                        <h1>Android Repairs</h1>
                                         <p class="h5 aa mb-4 pb-3 text-white-50">
-                                            Get your phone fixed in no time by booking at your convenient timeframe. Contact
-                                            us and let us know on <a href="tel:(03) 8595 6677">(03) 8595 6677</a>
+                                            Melbourne Mobile Phone Repairs can replace screens of Android 
+                                            devices as well as any other hardware and software issues.
+                                            <br>  <br><br> 
                                         </p>
                                     </div>
                                 </div>
@@ -694,8 +696,8 @@
                                     <div class="col-lg-6">
                                         <div class="blog-desc">
                                             <h5 class="blog-title-2"><a href="#">iPhone 12</a></h5>
-                                            <p>There are many variations of passages of in psum available, but the majority
-                                                have sufe ered on in some form...</p>
+                                            <p>We repair all sorts of screen issues for iPhones as well as speaker, mic and other replacements. Battery issues and cracked screens can be fixed the same day.
+                                            </p>
                                             <div class="read-more">
                                                 <a href="#">Read more</a>
                                             </div>
@@ -717,9 +719,9 @@
                                     </div>
                                     <div class="col-lg-6">
                                         <div class="blog-desc">
-                                            <h5 class="blog-title-2"><a href="#">iPhone 12</a></h5>
-                                            <p>There are many variations of passages of in psum available, but the majority
-                                                have sufe ered on in some form...</p>
+                                            <h5 class="blog-title-2"><a href="#">Samsung</a></h5>
+                                            <p>Melbourne Mobile Phone Repairs can replace LCDs and glasses of Samsung devices as well as any other hardware and software issues that your phone may be experiencing.
+                                            </p>
                                             <div class="read-more">
                                                 <a href="#">Read more</a>
                                             </div>
@@ -760,11 +762,11 @@
         <!-- BLOG SECTION END -->
 
         <!-- NEWSLETTER SECTION START -->
-        <div class="newsletter-section section-bg-tb pt-60 pb-80">
+        <div class="newsletter-section section-bg-tb pt-60 pb-80"id="news">
             <div class="container">
                 <div class="row">
                     <div class="col-lg-8 offset-lg-2">
-                        <div class="newsletter">
+                        <div class="newsletter" >
                             <div class="newsletter-info text-center">
                                 <h2 class="newsletter-title">get a newsletter</h2>
                                 <p>Make sure that you never miss our interesting news <br class="hidden-xs">by joining
@@ -773,7 +775,7 @@
                             <div class="subcribe clearfix">
                                 <form action="#">
                                     <input type="text" name="email" placeholder="Enter your email here..." />
-                                    <button class="submit-btn-2 btn-hover-2" type="submit">subcribe</button>
+                                    <button class="submit-btn-2 btn-hover-2" type="submit">subscribe</button>
                                 </form>
                             </div>
                         </div>
@@ -782,6 +784,43 @@
             </div>
         </div>
         <!-- NEWSLETTER SECTION END=== -->
+         <!-- The Modal -->
+         <div class="modal" id="myModal">
+            <div class="modal-dialog">
+              <div class="modal-content">
+                <!-- Modal Header -->
+                <div class="modal-header">
+                  <h2 class="modal-title">Privacy Policy</h2>
+                  <button type="button" class="close" data-dismiss="modal">&times;</button>
+                </div>
+                
+                <!-- Modal body -->
+                <div class="modal-body">
+                    <h3><b>Privacy</b></h3><hr>
+                  <br>
+                  <p style="color: black">We may collect, use, store and disclose your personal information as required to administer your Membership and provide you with Benefits.
+
+                    We will only collect, use, store and disclose your personal information in accordance with our privacy policy available.
+                    
+                    You acknowledge that failure to provide personal information may affect your ability to register as a Member and access Benefits.
+                    
+                    We may disclose your personal information to third parties for the purposes of [melbourne mobile phone repairs to insert]. This may include disclosing information to:
+                    
+                    Force Technology Internation PTY LTD ((03) 8595 6677)</p>
+                <br>
+                  <h3><b>Security</b></h3><hr>
+                  <br>
+                  <p style="color: black">We are committed to ensuring that your information is secure. In order to prevent unauthorised access or disclosure, we have put in place suitable physical, electronic and managerial procedures to safeguard and secure the information we collect online.</p>
+                </div>
+                
+                <!-- Modal footer -->
+                <div class="modal-footer">
+                  <button type="button" class="btn btn-danger" data-dismiss="modal">Close</button>
+                </div>
+                
+              </div>
+            </div>
+          </div>
     </section>
 
 

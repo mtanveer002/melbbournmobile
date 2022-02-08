@@ -9,18 +9,18 @@
                                 </div>
                                 <ul class="footer-social">
                                     <li>
-                                        <a class="facebook" href="" title="Facebook"><i
+                                        <a class="facebook" href="https://www.facebook.com/MelbourneMobilePhoneRepairs" title="Facebook"><i
                                                 class="zmdi zmdi-facebook"></i></a>
                                     </li>
                                     <li>
-                                        <a class="google-plus" href="" title="Google Plus"><i
+                                        <a class="google-plus" href="https://www.google.com/maps/uv?pb=!1s0x6ad6110260b77de1%3A0xf826d47e43dacc83!3m1!7e115!4s%2Fmaps%2Fplace%2FMelbourne%2BMobile%2BPhone%2BRepairs%2F%40-38.0308328%2C145.257226%2C3a%2C75y%2C203.27h%2C90t%2Fdata%3D*213m4*211e1*213m2*211seRzi3RgoulnB3kDODh45Sg*212e0*214m2*213m1*211s0x6ad6110260b77de1%3A0xf826d47e43dacc83%3Fsa%3DX!5sMelbourne%20Mobile%20Phone%20Repairs%20-%20Google%20Search!15sCgIgAQ&imagekey=!1e2!2seRzi3RgoulnB3kDODh45Sg&hl=en&sa=X&ved=2ahUKEwjswdWuyO31AhUQ9aQKHaA6DQMQpx96BAgoEAg" title="Google Plus"><i
                                                 class="zmdi zmdi-google-plus"></i></a>
                                     </li>
                                     <li>
-                                        <a class="twitter" href="" title="Twitter"><i class="zmdi zmdi-twitter"></i></a>
+                                        <a class="twitter" href="https://twitter.com/MmprTech" title="Twitter"><i class="zmdi zmdi-twitter"></i></a>
                                     </li>
                                     <li>
-                                        <a class="rss" href="" title="RSS"><i class="zmdi zmdi-rss"></i></a>
+                                        <a class="rss" href="https://www.instagram.com/mmpr.tech/" title="Instagram"><i class="zmdi zmdi-instagram"></i></a>
                                     </li>
                                 </ul>
                             </div>
@@ -100,23 +100,31 @@
                     <div class="row">
                         <div class="col-md-6">
                             <div class="copyright-text">
-                                <p class="copy-text"> © 2021 <strong>Melbourne</strong>. All Rights Reserved. Developed By <a class="company-name" href="https://themeforest.net/user/codecarnival/portfolio">
+                                <p class="copy-text"> © 2022 <strong>Melbourne</strong>. All Rights Reserved. Developed By <a class="company-name" href="https://themeforest.net/user/codecarnival/portfolio">
                         <strong>FocusDMT</strong></a>.</p>
                             </div>
                         </div>
                         <div class="col-md-6">
                             <ul class="footer-payment text-right">
                                 <li>
-                                    <a href="#"><img src="{{ asset('frontend/assets/img/payment/1.jpg') }}" alt=""></a>
+                                    {{-- <a href="#"> --}}
+                                        <img src="{{ asset('frontend/assets/img/payment/1.jpg') }}" alt="">
+                                    {{-- </a> --}}
                                 </li>
                                 <li>
-                                    <a href="#"><img src="{{ asset('frontend/assets/img/payment/2.jpg') }}" alt=""></a>
+                                    {{-- <a href="#"> --}}
+                                        <img src="{{ asset('frontend/assets/img/payment/2.jpg') }}" alt="">
+                                    {{-- </a> --}}
                                 </li>
                                 <li>
-                                    <a href="#"><img src="{{ asset('frontend/assets/img/payment/3.jpg') }}" alt=""></a>
+                                    {{-- <a href="#"> --}}
+                                        <img src="{{ asset('frontend/assets/img/payment/3.jpg') }}" alt="">
+                                    {{-- </a> --}}
                                 </li>
                                 <li>
-                                    <a href="#"><img src="{{ asset('frontend/assets/img/payment/4.jpg') }}" alt=""></a>
+                                    {{-- <a href="#"> --}}
+                                        <img src="{{ asset('frontend/assets/img/payment/4.jpg') }}" alt="">
+                                    {{-- </a> --}}
                                 </li>
                             </ul>
                         </div>
@@ -128,33 +136,41 @@
                           
                             <!-- The Modal -->
                             <div class="modal" id="myModal">
-                              <div class="modal-dialog">
-                                <div class="modal-content">
-                                  <!-- Modal Header -->
-                                  <div class="modal-header">
-                                    <h4 class="modal-title">Modal Heading</h4>
-                                    <button type="button" class="close" data-dismiss="modal">&times;</button>
-                                  </div>
-                                  
-                                  <!-- Modal body -->
-                                  <div class="modal-body">
-                                    <h3><b>Terms & Conditions</b></h3><hr>
+                                <div class="modal-dialog">
+                                  <div class="modal-content">
+                                    <!-- Modal Header -->
+                                    <div class="modal-header">
+                                      <h2 class="modal-title">Privacy Policy</h2>
+                                      <button type="button" class="close" data-dismiss="modal">&times;</button>
+                                    </div>
+                                    
+                                    <!-- Modal body -->
+                                    <div class="modal-body">
+                                        <h3><b>Privacy</b></h3><hr>
+                                      <br>
+                                      <p style="color: black">We may collect, use, store and disclose your personal information as required to administer your Membership and provide you with Benefits.
+                    
+                                        We will only collect, use, store and disclose your personal information in accordance with our privacy policy available.
+                                        
+                                        You acknowledge that failure to provide personal information may affect your ability to register as a Member and access Benefits.
+                                        
+                                        We may disclose your personal information to third parties for the purposes of [melbourne mobile phone repairs to insert]. This may include disclosing information to:
+                                        
+                                        Force Technology Internation PTY LTD ((03) 8595 6677)</p>
                                     <br>
-                                    <p style="color: black">Lorem ipsum dolor sit amet consectetur adipisicing 
-                                        elit. Aliquam molestias numquam fugiat et doloribus
-                                         laudantium eum. Voluptate reiciendis suscipit porro
-                                          modi maiores laudantium culpa perspiciatis, omnis 
-                                          illum doloribus! Nam, temporibus?</p>
+                                      <h3><b>Security</b></h3><hr>
+                                      <br>
+                                      <p style="color: black">We are committed to ensuring that your information is secure. In order to prevent unauthorised access or disclosure, we have put in place suitable physical, electronic and managerial procedures to safeguard and secure the information we collect online.</p>
+                                    </div>
+                                    
+                                    <!-- Modal footer -->
+                                    <div class="modal-footer">
+                                      <button type="button" class="btn btn-danger" data-dismiss="modal">Close</button>
+                                    </div>
+                                    
                                   </div>
-                                  
-                                  <!-- Modal footer -->
-                                  <div class="modal-footer">
-                                    <button type="button" class="btn btn-danger" data-dismiss="modal">Close</button>
-                                  </div>
-                                  
                                 </div>
                               </div>
-                            </div>
                             
                           </div>
                         <br><br>
