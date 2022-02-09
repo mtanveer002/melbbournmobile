@@ -265,8 +265,8 @@ element.style {
                                     <div class="modal-content">
                                         <div class="modal-header">
                                             <h5 class="modal-title">Providing Van Services</h5>
-                                            <button type="button" class="btn-close" data-bs-dismiss="modal"
-                                                aria-label="Close"></button>
+                                            <button type="button" class="btn-close" data-dismiss="modal"
+                                                aria-label="Close" style="font-size: 26px;margin-top: -5%">x</button>
                                         </div>
                                         <div class="modal-body">
                                             <img src="{{ asset('frontend/assets/img/modal/van.gif') }}" alt="">
@@ -298,8 +298,8 @@ element.style {
                                     <div class="modal-content">
                                         <div class="modal-header">
                                             <h5 class="modal-title">Choose Our Branches</h5>
-                                            <button type="button" class="btn-close" data-bs-dismiss="modal"
-                                                aria-label="Close"></button>
+                                            <button type="button" class="btn-close" data-dismiss="modal"
+                                                aria-label="Close" style="font-size: 26px;margin-top: -5%">x</button>
                                         </div>
                                         <div class="modal-body">
                                             <img src="{{ asset('frontend/assets/img/modal/BRANCHES.gif') }}" alt="">
@@ -330,8 +330,8 @@ element.style {
                                     <div class="modal-content">
                                         <div class="modal-header">
                                             <h5 class="modal-title">Book an appointment with our team!</h5>
-                                            <button type="button" class="btn-close" data-bs-dismiss="modal"
-                                                aria-label="Close"></button>
+                                            <button type="button" class="btn-close" data-dismiss="modal"
+                                                aria-label="Close" style="font-size: 26px;margin-top: -5%">x</button>
                                         </div>
                                         <div class="modal-body">
                                             <img src="{{ asset('frontend/assets/img/modal/website_g.gif') }}" alt="">

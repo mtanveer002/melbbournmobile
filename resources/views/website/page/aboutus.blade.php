@@ -108,7 +108,7 @@
                                 <div class="team-member-info pt-20">
                                     <h5 class="member-name"><a href="#">Andy Guan</a></h5>
                                     <p class="member-position">Manager</p>
-                                    <p class="mb-20"> Handles All Operations of all MMPR branches</p>
+                                    <p class="mb-20"> Handles all Operations of the all MMPR branches</p>
                                     <ul class="footer-social">
                                         <li>
                                             <a class="facebook" href="" title="Facebook"><i class="zmdi zmdi-facebook"></i></a>
