@@ -29,9 +29,7 @@ class IssueController extends Controller
     public function create()
     {
         $issues = Issue::all();
-        $brands = Brand::all();
-        $modals = BrandModal::all();
-        return view('admin.issues.create', compact('brands', 'modals'));
+        return view('admin.issues.create', compact('issues'));
     }
 
     /**
@@ -43,11 +41,7 @@ class IssueController extends Controller
     public function store(Request $request)
     {
         $issues = new Issue();
-        $issues->brand_id = $request->brand;
-        $issues->modal_id = $request->modal;
         $issues->issue = $request->issue;
-        $issues->price = $request->price;
-        $issues->description = $request->description;
         $issues->save();
 
         $notification = array (
@@ -78,10 +72,8 @@ class IssueController extends Controller
      */
     public function edit($id)
     {
-        $brands = Brand::all();
-        $modals = BrandModal::all();
         $issues = Issue::findOrFail($id);
-        return view('admin.issues.edit', compact('issues', 'brands', 'modals'));
+        return view('admin.issues.edit', compact('issues'));
     }
     
     /**
@@ -94,11 +86,7 @@ class IssueController extends Controller
     public function update(Request $request, $id)
     {
         $issues = Issue::findOrFail($id);
-        $issues->brand_id = $request->brand;
-        $issues->modal_id = $request->modal;
         $issues->issue = $request->issue;
-        $issues->price = $request->price;
-        $issues->description = $request->description;
         $issues->update();
 
         $notification = array (

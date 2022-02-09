@@ -96,7 +96,7 @@
                                 <hr>
                                 <h6 class="mt-2"><strong>{{ $info->modal->name}}</strong></h6>
                                 <hr>
-                                <h6 class="mt-1"><strong>{{ $info->issues->issue}}</strong></h6>
+                                <h6 class="mt-1"><strong>{{ $info->issue}}</strong></h6>
                                 <hr>
                                 <h6 class="mt-1"><strong>{{ $info->describtion}}</strong></h6>
                                 <hr>

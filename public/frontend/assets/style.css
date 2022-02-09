@@ -1890,6 +1890,7 @@ span.timing{
 /* wrapper */
 .wrapper {
   background: #fff none repeat scroll 0 0;
+  overflow-x: hidden;
 }
 /* -------------------------------------
   16. Bankground youtube video
@@ -2255,7 +2256,7 @@ span.timing{
   border-radius: 4px;
   max-width: 240px;
   height: 480px;
-  width: 220px;
+  /* width: 220px; */
   padding: 23px 0px 0 17px;
 }
 .booking-form .form {
@@ -2303,6 +2304,8 @@ span.timing{
   font-size: 2rem;
   color: #ffffff;
   margin-top:20px;
+  margin-right: 10px;
+  margin-left: 5px;
 }
 
 

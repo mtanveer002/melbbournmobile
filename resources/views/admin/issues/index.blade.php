@@ -14,11 +14,9 @@
                     <thead>
                         <tr>
                             <th>Sr.</th>
-                            <th>Brand</th>
-                            <th>Modal</th>
+                           
                             <th>issue</th>
-                            <th>Price</th>
-                            <th>Descripctions</th>
+                           
                             <th>Action</th>
                         </tr>
                     </thead>
@@ -26,11 +24,9 @@
                         @foreach ($issues as $issue)
                             <tr>
                                 <td>{{ $loop->iteration }}</td>
-                                <td>{{ $issue->brand->brand }}</td>
-                                <td>{{ $issue->modal->name ?? null}}</td>
+                               
                                 <td>{{ $issue->issue }}</td>
-                                <td>{{ $issue->price }}</td>
-                                <td>{{ $issue->description }}</td>
+                                
                                
                                 <td>
                                     <form  action="{{ route('admin.issues.destroy',$issue->id)}}" method="POST" enctype="multipart/form-data">

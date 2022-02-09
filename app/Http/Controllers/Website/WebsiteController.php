@@ -15,7 +15,8 @@ class WebsiteController extends Controller
 {
     public function index()
     {
-        $brands = Brand::all();
+
+        $brands = Brand::orderBy('brand', 'asc')->get();
         $modals = BrandModal::all();
         $issues = Issue::all();
         // $counters = Counter::latest()->paginate(5);
@@ -44,8 +45,7 @@ class WebsiteController extends Controller
 
     public function saveQuote(Request $request)
     {
-     
-        
+    //    dd($request->all());
         $booking = new Quote();
         $booking->name = $request->name;
         $booking->email = $request->email;
@@ -55,7 +55,7 @@ class WebsiteController extends Controller
         $booking->describtion = $request->description;
         $booking->brand_id = $request->brand;
         $booking->modal_id = $request->modal;
-        $booking->issue_id = $request->issue;
+        $booking->issue = $request->issue;
         $booking->save();
 
         $notification = array (

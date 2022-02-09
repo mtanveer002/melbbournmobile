@@ -5,6 +5,38 @@
     .select2-container--default .select2-selection--single .select2-selection__arrow b {
         margin-left: -20px;  
     }
+
+    .scrollbarWrapper {
+        overflow-y: scroll;
+        overflow-x: hidden;
+    }
+
+    .scrollbarWrapper::-webkit-scrollbar {
+  width: 10px;
+}
+
+/* Track */
+.scrollbarWrapper::-webkit-scrollbar-track {
+  background: #000; 
+  border-radius: 20px 0 0 20px;
+  margin: 20px 0 60px 0;
+}
+ 
+/* Handle */
+.scrollbarWrapper::-webkit-scrollbar-thumb {
+  background: #fb6128; 
+  /* border-radius: 0 20px 0 20px; */
+  border-radius: 20px 0 0 20px;
+}
+
+/* Handle on hover */
+.scrollbarWrapper::-webkit-scrollbar-thumb:hover {
+  background: #fb6128; 
+}
+element.style {
+    padding-bottom: 12px;
+    padding-top: 25px;
+}
     </style>
     {{-- @foreach ($counters as $count)
         {{ $count->views }}
@@ -91,86 +123,110 @@
                 <div class="col-xl-4 col-lg-4 col-md-12 col-sm-12">
                     <div class="booking-form">
                         <div class="dark">
-                            <div class="form form1">
+                            <div class="form form1 scrollbarWrapper">
                                 <h5 class="get-quote-button ">Get A Free Quote</h5>
-                                <form action="{{ route('saveQuote') }}" method="post" enctype="multipart/form-data">
+                                
+                                <form action="{{ route('saveQuote') }}" method="post" enctype="multipart/form-data" style="padding:20px 8px 9px 3px;">
                                     @csrf
-                                    <div id="first-form" class="first-form">
-                                        <div class="select-option">
-                                           
-                                            <input type="text" name="color" id="color" style='display:none;'/>
-                                            <label for="label-title">Device:</label>
-                                            <select name="brand" id="brand_device" name="bname"  onchange='CheckColors(this.value);' id="bname">
-                                                <option value="">Select Brand</option>
-                                                @foreach ($brands as $brand)
+                                        {{-- Device Brand --}}
+                                    {{-- <div class="select-option">
+                                        <label for="label-title">Brand:</label>
+                                        <select name="brand" onchange='CheckColors(this.value);' id="brand_device"> 
+                                            <option>Select Brand</option>  
+                                            <option value="others">O    thers</option>
+                                            @foreach ($brands as $brand)
                                                     <option value="{{ $brand->id }}">{{ $brand->brand }}</option>
-                                                    <option value="others">others</option>
                                                 @endforeach
-                                            </select>
-                                        </div>
-                                        <div class="select-option">
-                                            <label for="label-title">Model:</label>
-                                            <select name="modal" id="modal_device">
+                                            
+                                        </select>
+                                        <input type="text" name="other_brand" id="brand" style='display:none;'/>
+                                    </div> --}}
+                                        {{-- model --}}
+                                    {{-- <div class="select-option">
+                                    <label for="label-title">Model:</label>
+                                    <select name="modal" onchange='CheckModel(this.value);' id="modal_device"> 
+                                        <option>Select Model</option>  
+                                        <option value="others">Others</option>
+                                        
+                                        </select>
+                                    <input type="text" name="other_model" id="model" style='display:none;'/>
+                                    </div> --}}
 
-                                            </select>
-                                        </div>
-                                        <div class="select-option">
-                                            <label for="label-title">Device Issue:</label>
-                                            <select name="issue" id="issue_device">
-                                                <option value="">Select Issue</option>
-                                            </select>
-                                            <div class="select-option">
-                                                <label for="label-title">Description:</label>
-                                                <input type="text" placeholder="Description" name="description" id="">
-                                            </div>
-                                        </div>
+                                    {{-- ======================Previous select bxo============================= --}}
+                                    <div class="select-option">
+                                        <label for="label-title">Device:</label>
+                                        <select name="brand" id="brand_device">
+                                            <option value="">Select Brand</option>
+                                            @foreach ($brands as $brand)
+                                                <option value="{{ $brand->id }}">{{ $brand->brand }}</option>
+                                            @endforeach
+                                        </select>
+                                    </div>
+                                    <div class="select-option">
+                                        <label for="label-title">Model:</label>
+                                        <select name="modal" id="modal_device">
 
-                                        <h3 class="next" onclick="goNext()" style="cursor: pointer" >Go Next <i
-                                                class="fas fa-arrow-circle-right"></i></h3>
+                                        </select>
                                     </div>
-                                    <div id="second-form" class="second-form" style="display: none;padding: 10%;">
+                                    <div class="select-option">
+                                        <label for="label-title">Brand Issue:</label>
+                                        <select name="issue" id="issue_device">
+                                            <option value="">Select Issue</option>
+                                            @foreach ($issues as $item)
+                                                <option value="{{$item->issue}}">{{$item->issue}}</option>
+                                            @endforeach
+                                        </select>
                                         <div class="select-option">
-                                            <label for="label-title">Name:</label>
-                                            <input type="text" name="name" placeholder="Name" id="name" required>
+                                            <label for="label-title">Description:</label>
+                                            <input type="text" placeholder="Description Of Your Device" name="description" id="">
                                         </div>
-                                        <div class="select-option">
-                                            <label for="label-title">Email:</label>
-                                            <input type="email" placeholder="Email" name="email" id="email" required>
-                                        </div>
-                                        <div class="select-option">
-                                            <label for="label-title">Phone:</label>
-                                            <input type="number" placeholder="Phone Number" name="number" id="number"
-                                                required>
-                                               
-                                        </div>
-                                       <h3 class="next" onclick="goNext1()" style="cursor: pointer">Go Next <i class="fas fa-arrow-circle-right"></i></h3> 
                                     </div>
-                                    <div id="third-form" class="third-form" style="display: none;">
-                                        <div class="third_field">
-                                            <label for="label-title">Contact Preference:</label>
-                                            <select name="contact_preference" class="form-control">
-                                                <option value="">Select</option>
-                                                <option value="Email">Email</option>
-                                                <option value="Phone">Phone</option>
-                                            </select> <br>
-                                            <label for="label-title">Repairing Mehtod:</label>
-                                            <select name="repairing_methods" id="test" onchange="showDiv(this)" class="form-control">
-                                                <option value="shop" >Select</option>
-                                                <option value="Van">Van</option>
-                                                <option value="Mail In">Mail In</option>
-                                                <optgroup label="Walk In" value="walk In">
-                                                    <option value="Blackburn">Blackburn</option>
-                                                    <option value="Hampton Park">Hampton Park</option>
-                                                  </optgroup>
-                                            </select>
-                                        </div>
-                                        <div style="height: 40px;width: 100%; ">
-                                            <p id="hidden_div" style="text-align: center;display: none;">82 Somerville <br> Hampton Park VIC 3976</p>
-                                        </div>
-                                        <br><br>
-                                       <h3 class="next" onclick="goBack()" style="cursor: pointer">Go Back <i class="fas fa-arrow-circle-left"></i></h3> 
+                                    <div class="select-option">
+                                        <label for="label-title">Name:</label>
+                                        <input type="text" name="name" placeholder="Name" id="name" required>
+                                    </div>
+                                    <div class="select-option">
+                                        <label for="label-title">Email:</label>
+                                        <input type="email" placeholder="Email" name="email" id="email" required>
+                                    </div>
+                                    <div class="select-option">
+                                        <label for="label-title">Phone:</label>
+                                        <input type="number" placeholder="Phone Number" name="number" id="number"
+                                            required>  
+                                    </div>
+                                    <div class="select-option">
+                                        <label for="label-title">Contact Preference:</label>
+                                        <select name="contact_preference" class="form-control">
+                                            <option value="">Select</option>
+                                            <option value="Email">Email</option>
+                                            <option value="Phone">Phone</option>
+                                        </select> <br>
+                                        <label for="label-title">Repairing Mehtod:</label>
+                                        <select name="repairing_methods" id="test" onchange="showDiv(this)" class="form-control">
+                                            <option value="shop" >Select</option>
+                                            <option value="Van">Van</option>
+                                            <option value="Mail In">Mail In</option>
+                                            <optgroup label="Walk In" value="walk In">
+                                                <option value="Blackburn">Blackburn</option>
+                                                <option value="Hampton Park">Hampton Park</option>
+                                                </optgroup>
+                                        </select>
+                                    </div>
+                                    <div style="width: 100%; ">
+                                        <p id="hidden_div" style="text-align: center;display: none;">82 Somerville <br> Hampton Park VIC 3976</p>
+                                    </div>
+                                    <br><br>
+                                       {{-- <h3 class="next" onclick="goBack()" style="cursor: pointer">Go Back <i class="fas fa-arrow-circle-left"></i></h3>  --}}
                                         <button type="submit">SUBMIT</button>
-                                    </div>
+
+                                        {{-- <h3 class="next" onclick="goNext()" style="cursor: pointer" >Go Next <i class="fas fa-arrow-circle-right"></i></h3> --}}
+                                    {{-- <div id="second-form" class="second-form" style="display: none;padding: 10%;">
+                                        
+                                       <h3 class="next" onclick="goNext1()" style="cursor: pointer">Go Next <i class="fas fa-arrow-circle-right"></i></h3> 
+                                    </div> --}}
+                                    {{-- <div id="third-form" class="third-form" style="display: none;">
+                                        
+                                    </div> --}}
                                    
                                 </form>
                             </div>
@@ -967,18 +1023,23 @@
 
     {{-- for auto select box --}}
     
-    <script type="text/javascript">
+  
+
+    {{-- <script type="text/javascript">
         function CheckColors(val){
-        var element=document.getElementById('color');
-        if(val=='pick a color'||val=='others'){
-        element.style.display='block';
-        element.placeholder="Enter required Modal";
+         var element=document.getElementById('brand');
+         if(val=='pick a color'||val=='others')
+           element.style.display='block';
+         else  
+           element.style.display='none';
         }
-        else  {
-        element.style.display='none';
+        
+        function CheckModel(val){
+         var element=document.getElementById('model');
+         if(val=='other modal'||val=='others')
+           element.style.display='block';
+         else  
+           element.style.display='none';
         }
-    }
-
-    </script> 
-
-@endsection
+        </script>  --}}
+    @endsection
