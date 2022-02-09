@@ -10,10 +10,8 @@
                     <div class="row">
                         <div class="col-lg-12">
                             <div class="breadcrumbs-inner">
-                                <h1 class="breadcrumbs-title">Contact</h1>
+                                <h1 class="breadcrumbs-title"></h1>
                                 <ul class="breadcrumb-list">
-                                    <li><a href="index.html">Home</a></li>
-                                    <li>Contact</li>
                                 </ul>
                             </div>
                         </div>

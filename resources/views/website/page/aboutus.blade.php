@@ -7,10 +7,10 @@
                     <div class="row">
                         <div class="col-lg-12">
                             <div class="breadcrumbs-inner">
-                                <h1 class="breadcrumbs-title">About</h1>
+                                <h1 class="breadcrumbs-title"></h1>
                                 <ul class="breadcrumb-list">
-                                    <li><a href="index.html">Home</a></li>
-                                    <li>About</li>
+                                    {{-- <li><a href="index.html">Home</a></li>
+                                    <li>About</li> --}}
                                 </ul>
                             </div>
                         </div>
@@ -80,7 +80,7 @@
                                 <div class="team-member-info pt-20">
                                     <h5 class="member-name"><a href="#">Waqar Hafeez</a></h5>
                                     <p class="member-position">CEO</p>
-                                    <p class="mb-20">There are many variations of passage of Lorem Ipsum available, but the in majority have suffered.</p>
+                                    <p class="mb-20"> The brains of the organization and CEO of MMPR</p>
                                     <ul class="footer-social">
                                         <li>
                                             <a class="facebook" href="" title="Facebook"><i class="zmdi zmdi-facebook"></i></a>
@@ -108,7 +108,7 @@
                                 <div class="team-member-info pt-20">
                                     <h5 class="member-name"><a href="#">Andy Guan</a></h5>
                                     <p class="member-position">Manager</p>
-                                    <p class="mb-20">There are many variations of passage of Lorem Ipsum available, but the in majority have suffered.</p>
+                                    <p class="mb-20"> Handles All Operations of all MMPR branches</p>
                                     <ul class="footer-social">
                                         <li>
                                             <a class="facebook" href="" title="Facebook"><i class="zmdi zmdi-facebook"></i></a>
@@ -136,7 +136,7 @@
                                 <div class="team-member-info pt-20">
                                     <h5 class="member-name"><a href="#">Usman Khan</a></h5>
                                     <p class="member-position">Head Technician</p>
-                                    <p class="mb-20">There are many variations of passage of Lorem Ipsum available, but the in majority have suffered.</p>
+                                    <p class="mb-20">Chief Technician at Hampton Park Branch</p>
                                     <ul class="footer-social">
                                         <li>
                                             <a class="facebook" href="" title="Facebook"><i class="zmdi zmdi-facebook"></i></a>

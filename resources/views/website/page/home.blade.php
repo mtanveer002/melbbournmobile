@@ -52,7 +52,7 @@ element.style {
                                 <a href="{{route('index.home')}}"><i class="fas fa-home"></i></a>
                                 <a href="{{route('contact')}}"><i class="fas fa-portrait"></i></a>
                                 <a href="{{route('commingSoon')}}"><i class="fas fa-cart-arrow-down"></i></a>
-                                <a data-toggle="modal" data-target="#myModal" style="cursor: pointer"><i class="fas fa-shield-alt"></i></a>
+                                <a href="{{route('terms.Condition')}}"><i class="fas fa-shield-alt"></i></a>
                                 <a href="#news"><i class="fas fa-question-circle"></i></a>
                             </div>
                             <div class="carousel-inner">
@@ -839,54 +839,7 @@ element.style {
             </div>
         </div>
         <!-- NEWSLETTER SECTION END=== -->
-         <!-- The Modal -->
-         <div class="modal" id="myModal">
-            <div class="modal-dialog">
-              <div class="modal-content">
-                <!-- Modal Header -->
-                <div class="modal-header">
-                  <h2 class="modal-title">Terms & Conditions</h2>
-                  <button type="button" class="close" data-dismiss="modal">&times;</button>
-                </div>
-                
-                <!-- Modal body -->
-                <div class="modal-body">
-                    <h4><b>General Return and Exchange</b></h4><hr>
-                  <br>
-                  <p style="color: black">We would like to be your preferred partner for smart device accessories and repairs by delivering the best advice, service, and convenience – at competitive prices. If you are not fully satisfied with your purchase, let us help you with an exchange, refund or other services.
-                    You can return the product(s) within 28 days of purchasing the product for an exchange or a full refund. Simply bring the product to us with all contents and packaging, tax invoice or proof of purchase, and we will process your exchange or refund.
-                    However, MMPR offers the 14 days’ change of mind exchange policy to give customers a great service experience from Happytel.
-                    If the product is not in a good condition (un-used, packed, no damages or accidents), the offer will not be accepted.
-                    </p>
-                <br>
-                  <h5><b>Free Part Replacement Offer</b></h5><hr>
-                  <br>
-                  <p style="color: black"> 
-                    Through the screen repair service, the device needs to be fully diagnosed in perspectives of its function.
-                    <br>• Screen lock passcode needs to be provided or disabled in order for technicians to perform full diagnosis (customers may choose to change the passcode to 00000)
-                    <br>• Free parts replacement offer will be in place when a further faulty issue is confirmed during the full diagnosis process (technicians need to access every function of diagnosis).
-                    <br>• Free parts replacement will be in place when a further faulty issue is confirmed of the following parts – Please note, the free parts replacement is only valid to screen repair customers:
-                    Front Camera
-                    Rear Camera
-                    Charging Port (Dock Connector)
-                    Battery (if battery health is under < 80%) *Battery replacement offer is only valid for iPhone 6, 7, 8 series.
-                    <br>• Customers do not have to provide a screen lock passcode if they do not require the free parts replacement offer is needed on their device.
-                    <br>• The functionality of the device cannot be fully guaranteed if the passcode is not provided.
-                    <br>• $30.00AUD inspection fee may incur if the customer does not wish to proceed with the repair.
-                    Refund policy:
-                    Returns are not redeemable for cash, only for store credit.
-                    Refunds for change of mind are not available on sale and promotional items.
-                    </p>
-                </div>
-                
-                <!-- Modal footer -->
-                <div class="modal-footer">
-                  <button type="button" class="btn btn-danger" data-dismiss="modal">Close</button>
-                </div>
-                
-              </div>
-            </div>
-          </div>
+        
     </section>
 
 
