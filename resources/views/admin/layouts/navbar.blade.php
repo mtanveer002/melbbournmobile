@@ -9,7 +9,7 @@
                             <i class="ft-menu font-large-1"></i>
                         </a>
                     </li>
-                    <li class="nav-item mr-auto"><a class="navbar-brand" href="/">
+                    <li class="nav-item mr-auto"><a class="navbar-brand" href="/dashboard">
                         <img class="brand-logo" style="width:150px; height:40px;" alt="modern admin logo" src="{{ asset('app-assets/images/logo/expreco.png') }}">
                             <h3 class="brand-text">
                                
