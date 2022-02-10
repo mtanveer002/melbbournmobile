@@ -154,7 +154,7 @@ element.style {
                                     {{-- ======================Previous select bxo============================= --}}
                                     <div class="select-option">
                                         <label for="label-title">Device:</label>
-                                        <select name="brand" id="brand_device">
+                                        <select name="brand" id="brand_device" required>
                                             <option value="">Select Brand</option>
                                             @foreach ($brands as $brand)
                                                 <option value="{{ $brand->id }}">{{ $brand->brand }}</option>
@@ -163,7 +163,7 @@ element.style {
                                     </div>
                                     <div class="select-option">
                                         <label for="label-title">Model:</label>
-                                        <select name="modal" id="modal_device">
+                                        <select name="modal" id="modal_device" required>
 
                                         </select>
                                     </div>
@@ -898,7 +898,12 @@ element.style {
 
         $("#modal_device").select2({
             placeholder: "Select Model",
-            allowClear: true
+            allowClear: true,
+            language: {
+    noResults: function (params) {
+      return "Please Select Brand First.";
+    }
+  }
         });
 
         $("#issue_device").select2({
