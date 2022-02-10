@@ -280,7 +280,6 @@ body{
 
 .banner-item {
   z-index: -1;
-  position: relative;
   height: 300px;
   margin-bottom: 3rem;
 }

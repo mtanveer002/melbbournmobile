@@ -367,7 +367,7 @@ CREATE TABLE `quotes` (
   `created_at` timestamp NULL DEFAULT NULL,
   `updated_at` timestamp NULL DEFAULT NULL,
   PRIMARY KEY (`id`)
-) ENGINE=InnoDB AUTO_INCREMENT=3 DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_unicode_ci;
+) ENGINE=InnoDB AUTO_INCREMENT=8 DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_unicode_ci;
 /*!40101 SET character_set_client = @saved_cs_client */;
 
 --
@@ -376,7 +376,6 @@ CREATE TABLE `quotes` (
 
 LOCK TABLES `quotes` WRITE;
 /*!40000 ALTER TABLE `quotes` DISABLE KEYS */;
-INSERT INTO `quotes` VALUES (1,1,2,'Battery Replacement','Muhammad Tanveer','screen dim','mtanveerraj002@gmail.com','36656654662','Email','Mail In','0',NULL,'2022-02-10 03:30:49','2022-02-10 03:30:49'),(2,15,30,'Front Camera Replacement','Muhammad Tanveer','change this','mtanveerraj002@gmail.com','5645645456','Email','Van','0',NULL,'2022-02-10 03:59:03','2022-02-10 03:59:03');
 /*!40000 ALTER TABLE `quotes` ENABLE KEYS */;
 UNLOCK TABLES;
 
@@ -537,4 +536,4 @@ UNLOCK TABLES;
 /*!40101 SET COLLATION_CONNECTION=@OLD_COLLATION_CONNECTION */;
 /*!40111 SET SQL_NOTES=@OLD_SQL_NOTES */;
 
--- Dump completed on 2022-02-10 14:14:40
+-- Dump completed on 2022-02-10 15:40:22
