@@ -2,14 +2,15 @@
 
 namespace App\Http\Controllers\Website;
 
-use App\Http\Controllers\Controller;
-use App\Models\Admin\Brand;
-use App\Models\Admin\BrandModal;
-use App\Models\Admin\Issue;
-use App\Models\Counter;
 use App\Models\Quote;
-
+use App\Models\Counter;
+use App\Models\Admin\Brand;
+use App\Models\Admin\Issue;
 use Illuminate\Http\Request;
+use App\Models\Admin\BrandModal;
+
+use App\Http\Controllers\Controller;
+use Illuminate\Support\Facades\Mail;
 
 class WebsiteController extends Controller
 {
@@ -57,6 +58,15 @@ class WebsiteController extends Controller
         $booking->modal_id = $request->modal;
         $booking->issue = $request->issue;
         $booking->save();
+
+        $inq = Quote::first();
+        $userdata=array('email'=>$inq->email,'name'=>$inq->name,'number'=>$inq->number,'device'=>$inq->brand->brand,'model'=>$inq->modal->name,'issue'=>$inq->issue,'message'=>$inq->describtion,'contact_preference'=>$inq->contact_preference, 'repairing_methods' => $inq->repairing_methods);
+            Mail::send('/email/saveinqery',['userdata' => $userdata]
+                        , function($message) use ($userdata)
+                    {
+                        $message->to('mmpr.sales@gmail.com')->subject('MMPR Repair Inquiry');
+                    });
+       
 
         $notification = array (
             'message' => 'Inqury Sent Successfully',
