@@ -80,21 +80,7 @@
                                 <div class="team-member-info pt-20">
                                     <h5 class="member-name"><a href="#">Waqar Hafeez</a></h5>
                                     <p class="member-position">CEO</p>
-                                    <p class="mb-20"> The brains of the organization and CEO of MMPR</p>
-                                    <ul class="footer-social">
-                                        <li>
-                                            <a class="facebook" href="" title="Facebook"><i class="zmdi zmdi-facebook"></i></a>
-                                        </li>
-                                        <li>
-                                            <a class="google-plus" href="" title="Google Plus"><i class="zmdi zmdi-google-plus"></i></a>
-                                        </li>
-                                        <li>
-                                            <a class="twitter" href="" title="Twitter"><i class="zmdi zmdi-twitter"></i></a>
-                                        </li>
-                                        <li>
-                                            <a class="rss" href="" title="RSS"><i class="zmdi zmdi-rss"></i></a>
-                                        </li>
-                                    </ul>                                     
+                                    <p class="mb-20"> The brains of the organization and CEO of MMPR</p>                                  
                                 </div>
                             </div>
                         </div>
@@ -109,20 +95,7 @@
                                     <h5 class="member-name"><a href="#">Andy Guan</a></h5>
                                     <p class="member-position">Manager</p>
                                     <p class="mb-20"> Handles all Operations of the all MMPR branches</p>
-                                    <ul class="footer-social">
-                                        <li>
-                                            <a class="facebook" href="" title="Facebook"><i class="zmdi zmdi-facebook"></i></a>
-                                        </li>
-                                        <li>
-                                            <a class="google-plus" href="" title="Google Plus"><i class="zmdi zmdi-google-plus"></i></a>
-                                        </li>
-                                        <li>
-                                            <a class="twitter" href="" title="Twitter"><i class="zmdi zmdi-twitter"></i></a>
-                                        </li>
-                                        <li>
-                                            <a class="rss" href="" title="RSS"><i class="zmdi zmdi-rss"></i></a>
-                                        </li>
-                                    </ul>                                     
+                                                                      
                                 </div>
                             </div>
                         </div>
@@ -137,20 +110,7 @@
                                     <h5 class="member-name"><a href="#">Usman Khan</a></h5>
                                     <p class="member-position">Head Technician</p>
                                     <p class="mb-20">Chief Technician at Hampton Park Branch</p>
-                                    <ul class="footer-social">
-                                        <li>
-                                            <a class="facebook" href="" title="Facebook"><i class="zmdi zmdi-facebook"></i></a>
-                                        </li>
-                                        <li>
-                                            <a class="google-plus" href="" title="Google Plus"><i class="zmdi zmdi-google-plus"></i></a>
-                                        </li>
-                                        <li>
-                                            <a class="twitter" href="" title="Twitter"><i class="zmdi zmdi-twitter"></i></a>
-                                        </li>
-                                        <li>
-                                            <a class="rss" href="" title="RSS"><i class="zmdi zmdi-rss"></i></a>
-                                        </li>
-                                    </ul>                                     
+                                                                      
                                 </div>
                             </div>
                         </div>
