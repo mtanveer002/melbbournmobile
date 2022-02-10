@@ -60,8 +60,8 @@ element.style {
                                 <div class="carousel-item active  item-1">
 
                                     <div class="hero-text">
-                                        <h1>Moving Mobile Repairs!</h1>
-                                        <p class="h5 aa mb-4 pb-3 text-white-50">
+                                        <h1 style="font-size: 40px">Moving Mobile<br> Repairs!</h1>
+                                        <p class="h5 aa mb-4 pb-3 pt-1 text-white-50">
                                             Get your phone repaired from the comfort of your home.
                                              We pick up and deliver your fixed phone to your doorstep!
                                               Click here to check it out.
@@ -71,22 +71,21 @@ element.style {
                                 <div class="carousel-item item-2">
 
                                     <div class="hero-text">
-                                        <h1>iPhone Screen Replacements</h1>
-                                        <p class="h5 aa mb-4 pb-3 text-white-50">
+                                        <h1 style="font-size: 40px">iPhone Screen Replacements</h1>
+                                        <p class="h5 aa mb-4 pb-3 pt-1 text-white-50">
                                             For as low as $59, we fix your iPhones in an hour.
                                              Click here to book an appointment.
-                                             <br>  <br>
+                                             <br><br>
                                         </p>
                                     </div>
                                 </div>
                                 <div class="carousel-item item-3">
                                     <div class="hero-text">
-                                        <h1>Android Repairs</h1>
-                                        <p class="h5 aa mb-4 pb-3 text-white-50">
+                                        <h1 style="font-size: 40px">Android Repairs</h1>
+                                        <p class="h5 aa mb-4 pb-3 pt-2 text-white-50">
                                             Melbourne Mobile Phone Repairs can replace screens of Android 
-                                            devices as well as any other hardware and software issues.
-                                            <br>  <br><br> 
-                                        </p>
+                                            devices and any other hardware and software issues.
+                                        </p><br><br>
                                     </div>
                                 </div>
                                 {{-- <div class="carousel-item item-4">
