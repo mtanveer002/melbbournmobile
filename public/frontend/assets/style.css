@@ -1962,13 +1962,12 @@ span.timing{
 
 .tips .text-center{
   color: white;
-  padding: 5rem;
 }
 
 .tips h2{
   color: white;
   font-weight: bold;
-  font-size: 4rem;
+  font-size: 3rem;
 }
 
 .tips p{
@@ -2078,7 +2077,7 @@ span.timing{
   text-align: center;
 }
 .warranty h2{
-  font-size: 6rem;
+  font-size: 4rem;
   margin: 150px 0 0 30px;
   text-align: left;
   font-family: "nunito";
@@ -2093,7 +2092,7 @@ span.timing{
 .warranty h6{
   font-size: 2rem;
   font-weight: bold;
-  margin: 150px 0px 150px 0px;
+  margin: 100px 0px 150px 0px;
   line-height: 2;
   color: white;
   text-align: left;

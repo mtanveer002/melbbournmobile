@@ -273,7 +273,9 @@ element.style {
                                                 your doorstep hassle-free! Check out how here.</p>
                                         </div>
                                         <div class="modal-footer">
-
+                                        <a class="btn btn-primary btn-lg" href="" style="background-color:#fb6128;color:white;border-radius: 15px;border-color:azure;height:30px;width: 20%;padding-top: 6px;text-align: center;font-size: 14px">
+                                            <span onclick="document.getElementById('#goUp').style.display='none'"></span>Book Now
+                                        </a>
 
                                         </div>
                                     </div>
@@ -306,7 +308,9 @@ element.style {
                                                 within your 5 mile radius. Stay safe, get your phone fixed!</p>
                                         </div>
                                         <div class="modal-footer">
-
+                                            <a class="btn btn-primary btn-lg" href="" style="background-color:#fb6128;color:white;border-radius: 15px;border-color:azure;height:30px;width: 20%;padding-top: 6px;text-align: center;font-size: 14px">
+                                                <span onclick="document.getElementById('#goUp').style.display='none'"></span>Book Now
+                                            </a>
                                         </div>
                                     </div>
                                 </div>
@@ -339,7 +343,9 @@ element.style {
                                                     href="tel:(03) 8595 6677">tel:(03) 8595 6677</a></p>
                                         </div>
                                         <div class="modal-footer">
-
+                                            <a class="btn btn-primary btn-lg" href="" style="background-color:#fb6128;color:white;border-radius: 15px;border-color:azure;height:30px;width: 20%;padding-top: 6px;text-align: center;font-size: 14px">
+                                                <span onclick="document.getElementById('#goUp').style.display='none'"></span>Book Now
+                                            </a>
                                         </div>
                                     </div>
                                 </div>
@@ -352,7 +358,7 @@ element.style {
             </div>
 
         </div>
-        <!-- end steps repairing section -->y
+        <!-- end steps repairing section -->
         <!-- BANNER-SECTION START -->
         <div class="banner-section ptb-60">
             <div class="container">
@@ -658,6 +664,7 @@ element.style {
                                            <span style="text-align: center;font-size: 20px;"></span>Book Now
                                         </a>
                                     </div>
+                                    <br>
                                 </div>
                             </div>
                         </div>
