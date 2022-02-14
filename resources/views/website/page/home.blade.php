@@ -153,7 +153,7 @@ element.style {
 
                                     {{-- ======================Previous select bxo============================= --}}
                                     <div class="select-option">
-                                        <label for="label-title">Device:</label>
+                                        <label for="label-title">Brand:</label>
                                         <select name="brand" id="brand_device" required>
                                             <option value="">Select Brand</option>
                                             @foreach ($brands as $brand)
