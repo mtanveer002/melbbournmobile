@@ -907,10 +907,12 @@ element.style {
             placeholder: "Select Model",
             allowClear: true,
             language: {
-    noResults: function (params) {
-      return "Please Select Brand First.";
-    }
-  }
+            noResults: function (params) {
+            return "Please Select Brand First.";
+            
+                }
+            }
+           
         });
 
         $("#issue_device").select2({
@@ -920,7 +922,7 @@ element.style {
 
         //auto slect modal according modal
         $('#brand_device').on('select2:selecting select2:clear', function(e) {
-            console.log(e)
+            
             var brand = ((e.params.args || {}).data || {}).id;
             if (brand) {
                 $.ajax({
@@ -939,8 +941,7 @@ element.style {
                 });
 
             } else {
-                $('select[name="modal"]').empty();
-                alert('Please Select Brand First');
+                $('select[name="modal"]').empty();   
             }
         });
 
@@ -966,7 +967,7 @@ element.style {
 
             } else {
                 var d = $('select[name="issue"]').empty();
-                alert('Please Select Model first');
+                
             }
         });
 

@@ -1322,13 +1322,14 @@ hr {
     width: 100%;
 }
 .hero-text h1{
-  font-size: 3rem !important;
+  font-size: 1rem !important;
 }
 .hero-text h2{
-  font-size: 2rem !important;
+  font-size: 1rem !important;
 }
 .hero-text p{
   font-size: 1rem !important;
+  display: none;
 }
 .carousel {
   padding: 0px !important;
