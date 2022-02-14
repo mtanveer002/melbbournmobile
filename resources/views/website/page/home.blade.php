@@ -168,7 +168,7 @@ element.style {
                                         </select>
                                     </div>
                                     <div class="select-option">
-                                        <label for="label-title">Brand Issue:</label>
+                                        <label for="label-title">Issue:</label>
                                         <select name="issue" id="issue_device">
                                             <option value="">Select Issue</option>
                                             @foreach ($issues as $item)
@@ -274,7 +274,7 @@ element.style {
                                         </div>
                                         <div class="modal-footer">
                                         <a class="btn btn-primary btn-lg" href="" style="background-color:#fb6128;color:white;border-radius: 15px;border-color:azure;height:30px;width: 20%;padding-top: 6px;text-align: center;font-size: 14px">
-                                            <span onclick="document.getElementById('#goUp').style.display='none'"></span>Book Now
+                                            <span onclick="document.getElementById('#goUp').style.display='none'"></span>Book me
                                         </a>
 
                                         </div>
@@ -309,7 +309,7 @@ element.style {
                                         </div>
                                         <div class="modal-footer">
                                             <a class="btn btn-primary btn-lg" href="" style="background-color:#fb6128;color:white;border-radius: 15px;border-color:azure;height:30px;width: 20%;padding-top: 6px;text-align: center;font-size: 14px">
-                                                <span onclick="document.getElementById('#goUp').style.display='none'"></span>Book Now
+                                                <span onclick="document.getElementById('#goUp').style.display='none'"></span>Book me
                                             </a>
                                         </div>
                                     </div>
@@ -338,13 +338,13 @@ element.style {
                                         </div>
                                         <div class="modal-body">
                                             <img src="{{ asset('frontend/assets/img/modal/website_g.gif') }}" alt="">
-                                            <p>Just click ‘Book Now’ below! 
+                                            <p>Just click ‘Book me’ below! 
                                                 One of our experienced representatives will contact you and guide you through our mail-in repair service or let us know your issue on this number: <br><a
                                                     href="tel:(03) 8595 6677">tel:(03) 8595 6677</a></p>
                                         </div>
                                         <div class="modal-footer">
                                             <a class="btn btn-primary btn-lg" href="" style="background-color:#fb6128;color:white;border-radius: 15px;border-color:azure;height:30px;width: 20%;padding-top: 6px;text-align: center;font-size: 14px">
-                                                <span onclick="document.getElementById('#goUp').style.display='none'"></span>Book Now
+                                                <span onclick="document.getElementById('#goUp').style.display='none'"></span>Book me
                                             </a>
                                         </div>
                                     </div>
