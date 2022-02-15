@@ -154,12 +154,14 @@ element.style {
                                     {{-- ======================Previous select bxo============================= --}}
                                     <div class="select-option">
                                         <label for="label-title">Brand:</label>
-                                        <select name="brand" id="brand_device" required>
-                                            <option value="">Select Brand</option>
-                                            @foreach ($brands as $brand)
-                                                <option value="{{ $brand->id }}">{{ $brand->brand }}</option>
-                                            @endforeach
-                                        </select>
+                                        <div class="sborder">
+                                            <select name="brand" id="brand_device" required>
+                                                <option value="">Select Brand</option>
+                                                @foreach ($brands as $brand)
+                                                    <option value="{{ $brand->id }}">{{ $brand->brand }}</option>
+                                                @endforeach
+                                            </select>
+                                        </div>
                                     </div>
                                     <div class="select-option">
                                         <label for="label-title">Model:</label>
@@ -920,6 +922,12 @@ element.style {
             allowClear: true
         });
 
+        $('#brand_device').on('select2:selecting select2:clear', function(e) {
+          var device = document.getElementById('brand_device');
+          if(device){
+            console.log("show brand", device);  
+          }
+        });
         //auto slect modal according modal
         $('#brand_device').on('select2:selecting select2:clear', function(e) {
             

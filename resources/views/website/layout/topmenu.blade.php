@@ -7,7 +7,7 @@
                 <!-- logo -->
                 <div class="col-lg-2 col-md-2 col-sm-4">
                     <div class="logo">
-                        <a href="http://dev.melbournemobilephonerepairs.com.au/">
+                        <a href="http://www.mmprepairs.com.au/">
                             <img src="{{ asset('frontend/assets/img/logo/company_logo.png') }}" alt="main logo" style="height: 55px;width: auto;margin-top: -5px">
                         </a>
                     </div>

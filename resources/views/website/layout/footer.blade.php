@@ -5,7 +5,7 @@
                         <div class="col-xl-3 col-lg-3 col-md-3">
                             <div class="single-footer footer-about">
                                 <div class="footer-logo">
-                                   <a href="http://dev.melbournemobilephonerepairs.com.au/"> <img src="{{ asset('frontend/assets/img/logo/MMPR_logo.png') }}" alt=""></a>
+                                   <a href="http://www.mmprepairs.com.au/> <img src="{{ asset('frontend/assets/img/logo/MMPR_logo.png') }}" alt=""></a>
                                 </div>
                                 <ul class="footer-social">
                                     <li>
