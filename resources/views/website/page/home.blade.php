@@ -867,7 +867,7 @@ element.style {
       
       var c_month = current_date.getMonth() + 1;
       var currentDatTime = current_date.getFullYear() +'/'+c_month+'/'+current_date.getDate()+' 17:00:00';
-      
+     
       var expiryDate = new Date(currentDatTime); 
     
         date_future = new Date(currentDatTime);
@@ -881,17 +881,19 @@ element.style {
         hours = hours-(days*24);
         minutes = minutes-(days*24*60)-(hours*60);
         seconds = seconds-(days*24*60*60)-(hours*60*60)-(minutes*60);
-        
-        
-        if(date_now.getHours() >= 5 ){
+
+        console.log(expiryDate.getHours(), "end time")
+        console.log(date_now.getHours(), "current")
+
+        if(date_now.getHours() >= 10 && date_now.getHours() <= 17){
             $("#time").text("Time To Close: " + hours + ":" + minutes + ":" + seconds);
-        }
-        if(date_now.getHours() <= 18){
-            $("#time").text("Get your device repair Tomorrow");
         }
         else{
             $("#time").text("Get your device repair Tomorrow");
         }
+        // else{
+        //     $("#time").text("Get your device repair Tomorrow");
+        // }
       
     },1000);
 });
