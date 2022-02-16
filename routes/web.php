@@ -28,7 +28,7 @@ use App\Http\Controllers\Website\WebsiteController;
 */
 
 Route::get('/', [WebsiteController::class, 'index'])->name('index.home');
-Route::get('/aboutus', [WebsiteController::class, 'aboutus'])->name('about.us');
+Route::get('/about-us', [WebsiteController::class, 'aboutus'])->name('about.us');
 Route::get('/shop', [WebsiteController::class, 'shop'])->name('shop');
 Route::get('/contact', [WebsiteController::class, 'contact'])->name('contact');
 Route::get('/terms', [WebsiteController::class, 'termsCondition'])->name('terms.Condition');

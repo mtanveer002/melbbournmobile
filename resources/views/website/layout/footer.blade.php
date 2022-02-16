@@ -5,7 +5,7 @@
                         <div class="col-xl-3 col-lg-3 col-md-3">
                             <div class="single-footer footer-about">
                                 <div class="footer-logo">
-                                   <a href="http://www.mmprepairs.com.au/> <img src="{{ asset('frontend/assets/img/logo/MMPR_logo.png') }}" alt=""></a>
+                                   <a href="http://www.mmprepairs.com.au/">  <img src="{{ asset('frontend/assets/img/logo/MMPR_logo.png') }}" alt=""> </a>
                                 </div>
                                 <ul class="footer-social">
                                     <li>
@@ -23,6 +23,9 @@
                                         <a class="rss" href="https://www.instagram.com/mmpr.tech/" title="Instagram"><i class="zmdi zmdi-instagram"></i></a>
                                     </li>
                                 </ul>
+                               <div class="footer_logo">
+                                <img src="{{ asset('frontend/assets/img/logo/MMPR_logo.png') }}" alt="" class="mt-5">
+                               </div>
                             </div>
                         </div>
                         <div class="col-xl-3 col-lg-3 col-md-3 d-block d-xl-block d-lg-none d-md-none">

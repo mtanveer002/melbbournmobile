@@ -21,7 +21,7 @@
                             <li class="mega-parent"><a href="{{route('about.us')}}">About Us</a>
                             </li>
                         
-                            <li><a href="{{route('commingSoon')}}">Online Shop</a>
+                            {{-- <li><a href="{{route('commingSoon')}}">Online Shop</a> --}}
                             <li><a href="{{route('contact')}}">Contact</a>
                                 {{-- <li>
                                     <a  href="{{route('tickets.index')}}" class="btn btn-warning btn-xlg">TICKET</a>

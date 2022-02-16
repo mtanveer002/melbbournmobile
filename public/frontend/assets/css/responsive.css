@@ -77,10 +77,16 @@
   .container{
     max-width: 1170px;
   }
+  /* .footer_logo img {
+    display: none;
+  } */
 }
 @media (max-width: 1200px) {
   .carousel-inner{
     padding: 20px;
+  }
+  .footer_logo img {
+    display: none;
   }
 }
 
@@ -95,6 +101,9 @@
   padding-left: 0;
   padding-right: 0;
 }
+/* .footer_logo img {
+  display: none;
+} */
 /* .booking-form .form {
   padding: 50px 65px;
 } */
