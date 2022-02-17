@@ -574,8 +574,7 @@ hr {
   #sticky-header{
     height: 58px;
   }
-  
-  }
+}
   @media (min-width: 480px) and (max-width: 500px) {
     .hasseleBus {
       position: relative;
