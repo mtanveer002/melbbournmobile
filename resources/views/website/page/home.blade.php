@@ -179,32 +179,32 @@ element.style {
                                         </select>
                                         <div class="select-option">
                                             <label for="label-title">Description:</label>
-                                            <input type="text" placeholder="Description Of Your Device" name="description" id="">
+                                            <input type="text" placeholder="Add description" name="description" id="">
                                         </div>
                                     </div>
                                     <div class="select-option">
                                         <label for="label-title">Name:</label>
-                                        <input type="text" name="name" placeholder="Name" id="name" required>
+                                        <input type="text" name="name" placeholder="Enter your name" id="name" required>
                                     </div>
                                     <div class="select-option">
                                         <label for="label-title">Email:</label>
-                                        <input type="email" placeholder="Email" name="email" id="email" required>
+                                        <input type="email" placeholder="Enter your email" name="email" id="email" required>
                                     </div>
                                     <div class="select-option">
                                         <label for="label-title">Phone:</label>
-                                        <input type="number" placeholder="Phone Number" name="number" id="number"
+                                        <input type="number" placeholder="Enter your phone number" name="number" id="number"
                                             required>  
                                     </div>
                                     <div class="select-option">
                                         <label for="label-title">Contact Preference:</label>
-                                        <select name="contact_preference" class="form-control">
-                                            <option value="">Select</option>
+                                        <select name="contact_preference" class="form-control" >
+                                            <option value="" >Choose your preference </option>
                                             <option value="Email">Email</option>
                                             <option value="Phone">Phone</option>
                                         </select> <br>
                                         <label for="label-title">Repairing Mehtod:</label>
-                                        <select name="repairing_methods" id="test" onchange="showDiv(this)" class="form-control">
-                                            <option value="shop" >Select</option>
+                                        <select name="repairing_methods" id="test" onchange="showDiv(this)" class="form-control" >
+                                            <option value="shop" >Choose your method</option>
                                             <option value="Van">Van</option>
                                             <option value="Mail In">Mail In</option>
                                             <optgroup label="Walk In" value="walk In">

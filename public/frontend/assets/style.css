@@ -505,7 +505,12 @@ transform: scale(1);
   font-size: 2.5rem;
   font-weight: 800;
 }
-
+input,
+input::-webkit-input-placeholder {
+    font-size: 14px;
+    font-weight:400;
+    
+}
 .banner-2 .banner-title-2 {
   position: absolute;
   right: 18px;
@@ -2285,6 +2290,7 @@ span.timing{
 .s input[type="number"],.s input[type="text"], .s input[type="email"]{
   height:  10px !important;
   margin-bottom: 0px !important;
+
 }
 .op select{
   border: 1.5px solid #e2e1e1;
