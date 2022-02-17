@@ -247,15 +247,16 @@ element.style {
     <section id="page-content" class="page-wrapper section">
 
         <!-- steps repairing section -->
+        <!-- steps repairing section -->
         <div class="tips container-fluid">
             <div class="container">
                 <div class="text-center">
                     <h2>Hassle Free Repairs At Your Doorstep!</h2>
                     <p>Get your device fixed in no time with a number of preferences that suit you most.
-
                     </p>
                     <div class="row process">
                         <div class="col-lg-3">
+                            <div class="hasseleBus">
                             <div class="icon"><i class="fas fa-info-circle" data-toggle="modal"
                                     data-target="#van"></i>
                                 <span>Van Details</span>
@@ -275,8 +276,8 @@ element.style {
                                                 your doorstep hassle-free! Check out how here.</p>
                                         </div>
                                         <div class="modal-footer">
-                                        <a class="btn btn-primary btn-lg" href="" style="background-color:#fb6128;color:white;border-radius: 15px;border-color:azure;height:30px;width: 20%;padding-top: 6px;text-align: center;font-size: 14px">
-                                            <span onclick="document.getElementById('#goUp').style.display='none'"></span>Book me
+                                        <a class="btn btn-primary btn-lg" href="" style="background-color:#fb6128;color:white;border-radius: 15px;border-color:azure;height:30px;width: 30%;padding-top: 6px;text-align: center;font-size: 14px">
+                                            <span onclick="document.getElementById('#goUp').style.display='none'"></span><b style="font-size: 1.5rem">Book me</b>
                                         </a>
 
                                         </div>
@@ -284,12 +285,16 @@ element.style {
                                 </div>
                             </div>
                             <a href="#goUp" style="text-decoration: none"><i class="fas fa-shuttle-van repair-icon"></i></a>
-                            <p>We Come To You</p>
+                            </div>
+                            <div class="hasseleText">
+                                <h3>We Come To You</h3>
+                            </div>
                         </div>
                         <div class="col-lg-1">
                             <!-- <i class="fas fa-ellipsis-h"></i> -->
                         </div>
                         <div class="col-lg-3">
+                            <div class="hasseleBus">
                             <div class="icon"><i class="fas fa-info-circle" data-toggle="modal"
                                     data-target="#shop"></i>
                                 <span>Shop Details</span>
@@ -318,12 +323,16 @@ element.style {
                                 </div>
                             </div>
                             <a href="#goUp" style="text-decoration: none"><i class="fas fa-store-alt repair-icon"></i></a>
-                            <p>In Store</p>
+                            </div>
+                            <div class="hasseleText">
+                                <h3>In Store</h3>
+                            </div>
                         </div>
                         <div class="col-lg-1">
                             <!-- <i class="fas fa-ellipsis-h"></i> -->
                         </div>
                         <div class="col-lg-3">
+                            <div class="hasseleBus">
                             <div class="icon"><i class="fas fa-info-circle" data-toggle="modal"
                                     data-target="#website"></i>
                                 <span>Website Details</span>
@@ -353,13 +362,17 @@ element.style {
                                 </div>
                             </div>
                             <a href="#goUp" style="text-decoration: none"><i class="fas fa-envelope repair-icon"></i></a>
-                            <p>Mail In </p>
+                        </div>
+                        <div class="hasseleText">
+                            <h3>Mail In </h3>
+                        </div>
                         </div>
                     </div>
                 </div>
             </div>
 
         </div>
+
         <!-- end steps repairing section -->
         <!-- BANNER-SECTION START -->
         <div class="banner-section ptb-60">
@@ -538,7 +551,7 @@ element.style {
 
                             <!-- Grid column -->
                             <div class="col-2">
-                                <i class="fas fa-2x fa-water deep-purple-text"></i>
+                                <i class="fas fa-2x fas fa-tint deep-purple-text"></i>
                             </div>
                             <!-- Grid column -->
 
@@ -655,9 +668,6 @@ element.style {
                                 </a>
                             </div>
                             <div class="up-comming-pro-info f-left">
-                                <h3><a href="#">Apple Repairs</a></h3>
-                                <p>We provide facility to repair every part of iWatches including all internal and external
-                                    damages. We do the best in a very short period of time within 10 - 20 mins. </p>
                                 <div class="up-comming-time-2 clearfix">
                                     <div>
                                         <h3 id="time">Time Expaired</h3>

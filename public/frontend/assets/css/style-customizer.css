@@ -28,7 +28,9 @@ div.style-customizer {
 .style-customizer a.button {
     z-index: 9;
 }
-
+header{
+    height: 80px;
+}
 .style-customizer a.button.button-border {
   background: #ff7f00 none repeat scroll 0 0;
   font-size: 15px;

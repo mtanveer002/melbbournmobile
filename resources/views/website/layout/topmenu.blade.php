@@ -1,6 +1,6 @@
 
 <!-- header-middle-area -->
-<div id="sticky-header" class="header-middle-area plr-185" style="height: 80px;">
+<div id="sticky-header" class="header-middle-area plr-185">
     <div class="container-fluid">
         <div class="full-width-mega-dropdown"style="margin-top: -10px">
             <div class="row">

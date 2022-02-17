@@ -22,7 +22,7 @@
                         <h4><strong>General Return and Exchange</strong></h4>
                         <p>We would like to be your preferred partner for smart device accessories and repairs by delivering the best advice, service, and convenience – at competitive prices. If you are not fully satisfied with your purchase, let us help you with an exchange, refund or other services.
                             You can return the product(s) within 28 days of purchasing the product for an exchange or a full refund. Simply bring the product to us with all contents and packaging, tax invoice or proof of purchase, and we will process your exchange or refund.
-                            However, MMPR offers the 14 days’ change of mind exchange policy to give customers a great service experience from Happytel.
+                            However, MMPR offers the 14 days’ change of mind exchange policy to give customers a great service experience from MMPR.
                             If the product is not in a good condition (un-used, packed, no damages or accidents), the offer will not be accepted.
                         </p>                            
                         <b>Free Part Replacement Offer</b>
@@ -50,9 +50,6 @@
                                 </li>
                                 <li><i class="fas fa-hand-point-right"></i>
                                     The functionality of the device cannot be fully guaranteed if the passcode is not provided.
-                                </li>
-                                <li><i class="fas fa-hand-point-right"></i>
-                                    $30.00AUD inspection fee may incur if the customer does not wish to proceed with the repair.
                                 </li>
                                 <b>Refund policy:</b>
                                 <li><i class="fas fa-hand-point-right"></i>

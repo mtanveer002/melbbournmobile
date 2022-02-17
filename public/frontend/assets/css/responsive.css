@@ -301,6 +301,10 @@
   padding-left: 0;
   padding-right: 0;
 }
+#sticky-header{
+  height: 56px;
+}
+
 /* .booking-form .form {
  
 } */
@@ -510,7 +514,7 @@ hr {
 
 /* =========== */
 .logo {
-  padding: 38px 0;
+  padding: 14px 0;
 }
 .logo img {
   width: 100px;
@@ -565,11 +569,129 @@ hr {
 }
 
 
-
-
 }
+@media (min-width: 200px) and (max-width: 500px) {
+  #sticky-header{
+    height: 58px;
+  }
+  
+  }
+  @media (min-width: 480px) and (max-width: 500px) {
+    .hasseleBus {
+      position: relative;
+      min-height: 1px;
+      padding-right: 15px;
+      padding-left: 15px;
+      display: flex;
+      flex-wrap: nowrap;
+      align-content: center;
+      align-items: center;
+      flex-direction: row-reverse;
+      justify-content: center;
+  }
+    .hasseleBus a {
+      text-decoration: none;
+      padding: 2em;
+    }
+    .tips .process p {
+      font-weight: bold;
+      font-size: 2.2rem;
+      color: white;
+      margin-top: 0rem;
+  }
+  .tips .icon {
+    position: relative;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    cursor: pointer;
+    margin-top: 20px;
+  }
+    
+  }
+  @media (min-width: 500px) and (max-width: 990px) {
+    .hasseleBus {
+      position: relative;
+      min-height: 1px;
+      padding-right: 15px;
+      padding-left: 15px;
+      display: flex;
+      flex-wrap: nowrap;
+      justify-content: center;
+      align-content: center;
+      align-items: center;
+      flex-direction: row-reverse;
+  }
+    .hasseleBus a {
+      text-decoration: none;
+      padding: 2em;
+    }
+    .tips .process p {
+      font-weight: bold;
+      font-size: 2.2rem;
+      color: white;
+      margin-top: 0rem;
+  }
+  .tips .icon {
+    position: relative;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    cursor: pointer;
+    margin-top: 20px;
+  }
+    
+  }
+  
+  @media (min-width: 200px) and (max-width: 480px) {
+    .hasseleBus {
+      position: relative;
+      min-height: 1px;
+      padding-right: 15px;
+      padding-left: 15px;
+      display: flex;
+      flex-wrap: nowrap;
+      align-content: center;
+      align-items: center;
+      flex-direction: row-reverse;
+      float: left;
+  }
+  .tips .process h3 {
+    font-weight: bold;
+    font-size: 2.2rem;
+    color: white;
+    margin-top: 18rem;
+}
+    .hasseleBus a {
+      text-decoration: none;
+      padding: 2em;
+    }
+    .tips .process p {
+      font-weight: bold;
+      font-size: 2.2rem;
+      color: white;
+      margin-top: 0rem;
+  }
+  .tips .icon {
+    position: relative;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    cursor: pointer;
+    margin-top: 20px;
+  }
+    
+  }
+  @media (min-width: 300px) and (max-width: 500px) {
+    header{
+      height: 60px;
+    }
+    .logo {
+      padding: 13px 0 10px;
+      text-align: center;
+  }
+  }
 
- 
 /* small mobile :320px. */
 @media (max-width: 767px) {
 .container {width:300px}
@@ -634,7 +756,7 @@ p {
   position: static;
 }
 .logo {
-  padding: 20px 0 10px;
+  padding: 15px 0 10px;
   text-align: center;
 }
 .sticky .logo {
