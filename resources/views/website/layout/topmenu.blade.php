@@ -22,7 +22,7 @@
                             </li>
                         
                             {{-- <li><a href="{{route('commingSoon')}}">Online Shop</a> --}}
-                            <li><a href="{{route('contact')}}">Contact</a>
+                            <li><a href="{{route('contact')}}">Contact Us</a>
                                 {{-- <li>
                                     <a  href="{{route('tickets.index')}}" class="btn btn-warning btn-xlg">TICKET</a>
                                 </li> --}}
