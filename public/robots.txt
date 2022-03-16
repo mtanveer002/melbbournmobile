@@ -1,2 +1,4 @@
 User-agent: *
-Disallow:
+Allow: / 
+Disallow: /cgi-bin/
+Sitemap: https://mmprepairs.com.au/sitemap.xml
