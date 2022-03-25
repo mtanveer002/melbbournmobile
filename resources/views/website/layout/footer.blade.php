@@ -135,6 +135,9 @@
                             <a href="{{route('terms.Condition')}}" class="btn btn-outline-secondary text-white" style="border: 2px dotted white">
                                 --- Terms and conditions ---
                             </a>
+                            <a href="{{route('privacy.policy')}}" class="btn btn-outline-secondary text-white" style="border: 2px dotted white">
+                                --- Privacy Policy ---
+                            </a>
                           </div>
                         <br><br>
                     </div>

@@ -32,6 +32,7 @@ Route::get('/about-us', [WebsiteController::class, 'aboutus'])->name('about.us')
 Route::get('/shop', [WebsiteController::class, 'shop'])->name('shop');
 Route::get('/contact', [WebsiteController::class, 'contact'])->name('contact');
 Route::get('/terms', [WebsiteController::class, 'termsCondition'])->name('terms.Condition');
+Route::get('/policy', [WebsiteController::class, 'privacyPolicy'])->name('privacy.policy');
 Route::resource('/tickets', TicketController::class);
 
 Route::get('/commingSoon', function(){

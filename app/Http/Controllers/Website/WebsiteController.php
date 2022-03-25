@@ -43,6 +43,10 @@ class WebsiteController extends Controller
     {
         return view('website.page.termsCondition');
     }
+    public function privacyPolicy()
+    {
+        return view('website.page.privacyPolicy');
+    }
 
     public function saveQuote(Request $request)
     {
