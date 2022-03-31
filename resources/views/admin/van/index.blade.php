@@ -6,8 +6,8 @@
         <div class="col-12">
             <div class="card">
                 <div class="card-header">
-                    <h1>All Inquiries</h1>
-                    <a href="{{route('admin.van.create')}}" class="btn btn-success float-right">Add new Inquery</a>
+                    <h1>All Inquiries from Van Services</h1>
+                    <!-- <a href="{{route('admin.van.create')}}" class="btn btn-success float-right">Add new Inquery</a> -->
                 </div>
                <div class="card-body" style="overflow-x:auto;">
                 <table class="table">
@@ -18,13 +18,13 @@
                             <th>Email</th>
                             <th>Address</th>
                             <th>Phone</th>
-                            <th>Brand</th>
-                            <th>Model</th>
+                            <th>Issue</th>
+                            <!-- <th>Model</th>
                             <th>Issue</th>
                             <th>Appointment Time</th>
                             <th>Price</th>
                             <th>Status</th>
-                            <th>Action</th>
+                            <th>Action</th> -->
                         </tr>
                     </thead>
                     <tbody> 
@@ -35,8 +35,8 @@
                                 <td>{{ $inqury->email }}</td>
                                 <td>{{ $inqury->address }}</td>
                                 <td>{{ $inqury->phone }}</td>
-                                <td>{{ $inqury->brand }}</td>
-                                <td>{{ $inqury->model }}</td>
+                                <td>{{ $inqury->issue }}</td>
+                                <!-- <td>{{ $inqury->model }}</td>
                                 <td>{{ $inqury->issue }}</td>
                                 <td>{{ $inqury->time }}</td>
                                 <td>{{ $inqury->price }}</td>
@@ -57,7 +57,7 @@
                                         </div>
                                     </form> 
                                     
-                                </td>
+                                </td> -->
                             </tr>
                         @endforeach
                     </tbody>

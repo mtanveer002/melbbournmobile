@@ -10,6 +10,8 @@ use Illuminate\Http\Request;
 use App\Models\Admin\BrandModal;
 
 use App\Http\Controllers\Controller;
+use App\Models\Admin\van;
+use App\Models\InquiryForm;
 use Illuminate\Support\Facades\Mail;
 
 class WebsiteController extends Controller
@@ -34,7 +36,10 @@ class WebsiteController extends Controller
     {
         return view('website.page.shop');
     }
-
+    public function van()
+    {
+        return view('website.page.van');
+    }
     public function contact()
     {
         return view('website.page.contact');
@@ -46,6 +51,35 @@ class WebsiteController extends Controller
     public function privacyPolicy()
     {
         return view('website.page.privacyPolicy');
+    }
+    
+    public function savesVanInquiry(Request $request)
+    {
+    //    dd($request->all());
+        $users = new van();
+        $users->name = $request->name;
+        $users->email = $request->email;
+        $users->phone = $request->phone;
+        $users->address = $request->address;
+        $users->issue = $request->issue;
+        $users->save();
+
+            if($users->save()){
+            $inq = van::latest()->first();
+            $userdata=array('email'=>$inq->email,'name'=>$inq->name,'phone'=>$inq->phone,'address'=>$inq->address,'issue'=>$inq->issue,'issue'=>$inq->issue);
+            Mail::send('/email/inquiryvanmail',['userdata' => $userdata]
+                        , function($message) use ($userdata)
+                    {
+                        $message->to('mmpr.sales@gmail.com')->subject('MMPR Repair Inquiry');
+                    });
+        
+                }
+
+        $notification = array (
+            'message' => 'Inqury Sent Successfully',
+            'alert-type' => 'success'
+        );
+        return back()->with($notification);
     }
 
     public function saveQuote(Request $request)
