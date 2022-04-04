@@ -85,7 +85,120 @@ body{
         justify-content: center;
 }
 
+.wrapperr{
+  height: 100vh;
+  background-image: url(img/bg/van.jpg);
+  background-size: cover;
+  width: 100%
+}
 
+.overlay {
+  width: 100%;
+  height: 100vh;
+  background: rgba(0, 0, 0, 0.8);
+}
+
+.contact-us {
+  margin-top: 150px;
+  margin-bottom: 50px
+}
+
+.contact-us h3,
+p {
+  color: #fff
+}
+
+.address {
+  margin-top: 14px !important;
+  margin-left: 10px
+}
+
+.address span {
+  color: #fb6128
+}
+
+.icons {
+  width: 50px;
+  height: 50px;
+  border-radius: 50%;
+  background-color: #fff;
+  display: inline-block;
+  display: flex;
+  justify-content: center;
+  align-items: center
+}
+
+.icons i {
+  font-size: 20px
+}
+
+.forms {
+  padding: 20px
+}
+
+.inputs input {
+  margin-bottom: 13px;
+  border: none;
+  border-bottom: 2px solid #eee
+}
+
+.inputs input:focus {
+  margin-bottom: 13px;
+  border: none;
+  border-bottom: 2px solid #fb6128;
+  box-shadow: none
+}
+
+.inputs textarea {
+  margin-bottom: 13px;
+  border: none;
+  border-bottom: 2px solid #eee;
+  width: 100%;
+  resize: none
+}
+
+.inputs textarea:focus {
+  margin-bottom: 13px;
+  border: none;
+  border-bottom: 2px solid #fb6128;
+  box-shadow: none;
+  resize: none
+}
+
+.form-control {
+  padding: .375rem .25rem
+}
+
+
+/* Preloader */
+
+#preloader {
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background-color: #fff;
+  /* change if the mask should have another color then white */
+  z-index: 99;
+  /* makes sure it stays on top */
+}
+
+#status {
+  width: 50%;
+  height: 50%;
+  position: absolute;
+  left: 30%;
+  /* centers the loading animation horizontally one the screen */
+  top: 30%;
+  /* centers the loading animation vertically one the screen */
+  background-image: url(img/modal/van_gif_with_name.gif);
+  /* path to your loading animation */
+  background-repeat: no-repeat;
+  background-position: center;
+  margin: -100px 0 0 -100px;
+  /* is width and height divided by two */
+}
 /*************************************
   6. Custom-content all   
  **************************************/
