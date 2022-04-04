@@ -19,12 +19,7 @@ class CreateVansTable extends Migration
             $table->string('email');
             $table->string('address')->nullable();
             $table->string('phone');
-            // $table->string('brand')->nullable();
-            // $table->string('model')->nullable();
-            // $table->string('issue')->nullable();
-            // $table->dateTime('time')->nullable();
             $table->string('issue');
-            // $table->string('status')->default(0);
             $table->timestamps();
         });
     }
