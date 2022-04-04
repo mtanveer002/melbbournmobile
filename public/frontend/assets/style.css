@@ -103,9 +103,8 @@ body{
   margin-bottom: 50px
 }
 
-.contact-us h3,
-p {
-  color: #fff
+.contact-us h3, p{
+  color: grey;
 }
 
 .address {
@@ -2332,7 +2331,7 @@ span.timing{
   position: absolute;
   bottom: 10px;
   z-index: 1;
-  background: rgb(67 67 67 / 25%)00;
+  background: rgb(67 67 67 / 25%);
   border-radius:  5px;
   text-align: center;
   width: 80%;

@@ -24,7 +24,7 @@ class WebsiteController extends Controller
         $issues = Issue::all();
         // $counters = Counter::latest()->paginate(5);
         // Counter::increment('views');
-        return view('website.page.home', compact('brands', 'modals', 'issues'));
+        return view('website.page.index', compact('brands', 'modals', 'issues'));
     }
 
     public function aboutus()

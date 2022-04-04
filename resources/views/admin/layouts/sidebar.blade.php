@@ -23,7 +23,7 @@
                 <a href="{{route('admin.modals.index')}}">
                     <i class="la la-android"></i>
                     <span class="menu-title" data-i18n="nav.dash.main">
-                        Modals
+                        Models
                     </span>
                 </a>
             </li>

@@ -202,14 +202,14 @@ element.style {
                                             <option value="Email">Email</option>
                                             <option value="Phone">Phone</option>
                                         </select> <br>
-                                        <label for="label-title">Repairing Mehtod:</label>
+                                        <label for="label-title">Choose branch/Van :</label>
                                         <select name="repairing_methods" id="test" onchange="showDiv(this)" class="form-control" >
-                                            <option value="shop" >Choose your method</option>
+                                            <option value="shop" >Choose your Service</option>
                                             <option value="Van">Van</option>
                                             <option value="Mail In">Mail In</option>
                                             <optgroup label="Walk In" value="walk In">
-                                                <option value="Blackburn">Blackburn</option>
-                                                <option value="Hampton Park">Hampton Park</option>
+                                                <option value="Blackburn">Blackburn Victoria</option>
+                                                <option value="Hampton Park">Hampton Park Somerville</option>
                                                 </optgroup>
                                         </select>
                                     </div>
