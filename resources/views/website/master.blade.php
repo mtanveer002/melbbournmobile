@@ -4,10 +4,11 @@
 <head>
     <meta charset="utf-8">
     <meta http-equiv="x-ua-compatible" content="ie=edge">
-    <meta name="description" content="">
+    <meta name="description" content="Are you looking for your mobile phone repair in your doorstep? We'll Repair Your Phone Wherever And Whenever You Want.">
+    <meta name="keywords" content="Mobile phone repair hampton park, mobile repair shop blackburn ">
     <meta name="viewport" content="width=device-width, initial-scale=1">
 
-    <title>MELBOURNE || Home</title>
+    <title>Best Mobile Phone Repair in Hampton Park | Mobile Repair Shop Blackburn </title>
 
     @include('website.layout.css')
 
