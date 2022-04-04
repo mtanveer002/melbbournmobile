@@ -1452,7 +1452,8 @@ hr {
     width: 100%;
 }
 .hero-text h1{
-  font-size: 1rem !important;
+  font-size: 3rem !important;
+  margin-left: 40px;
 }
 .hero-text h2{
   font-size: 1rem !important;
@@ -1472,13 +1473,15 @@ hr {
   bottom: -20px;
   width: 95%;
   height: 35px;
+  display: none;
   
 }
 	
 }
 @media (max-width: 479px){
   .hero-text h1{
-    font-size: 1rem !important;
+    font-size: 2rem !important;
+    margin-left: 0;
   }
   .hero-text h2{
     font-size: 1rem !important;

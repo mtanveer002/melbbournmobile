@@ -62,7 +62,7 @@ element.style {
                                 <div class="carousel-item active  item-1">
 
                                     <div class="hero-text">
-                                        <h1 style="font-size: 40px">Moving Mobile<br> Repairs!</h1>
+                                        <h1>Moving Mobile<br> Repairs!</h1>
                                         <p class="h5 aa mb-4 pb-3 pt-1 text-white-50">
                                             Get your phone repaired from the comfort of your home.
                                              We pick up and deliver your fixed phone to your doorstep!
@@ -72,7 +72,7 @@ element.style {
                                 <div class="carousel-item item-2">
 
                                     <div class="hero-text">
-                                        <h1 style="font-size: 40px">iPhone Screen Replacements</h1>
+                                        <h1>iPhone Screen Replacements</h1>
                                         <p class="h5 aa mb-4 pb-3 pt-1 text-white-50">
                                             For as low as $59, we fix your iPhones in an hour.
                                              <br><br>
@@ -81,7 +81,7 @@ element.style {
                                 </div>
                                 <div class="carousel-item item-3">
                                     <div class="hero-text">
-                                        <h1 style="font-size: 40px">Android Repairs</h1>
+                                        <h1>Android Repairs</h1>
                                         <p class="h5 aa mb-4 pb-3 pt-2 text-white-50">
                                             Melbourne Mobile Phone Repairs can replace screens of Android 
                                             devices and any other hardware and software issues.
@@ -899,7 +899,7 @@ element.style {
             $("#time").text("Time To Close: " + hours + ":" + minutes + ":" + seconds);
         }
         else{
-            $("#time").text("Get your device repair Tomorrow");
+            $("#time").text("Get your device repaired Tomorrow");
         }
         // else{
         //     $("#time").text("Get your device repair Tomorrow");
