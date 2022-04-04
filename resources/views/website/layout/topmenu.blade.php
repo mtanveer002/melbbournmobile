@@ -21,7 +21,8 @@
                             <li class="mega-parent"><a href="{{route('about.us')}}">About Us</a>
                             </li>
                             <li><a href="{{route('van')}}">Van Services</a>
-                            {{-- <li><a href="{{route('commingSoon')}}">Online Shop</a> --}}
+                            {{-- <li><a href="{{route('commingSoon')}}">Online Shop</a> 
+                            --}}
                             <li><a href="{{route('contact')}}">Contact Us</a>
                                 {{-- <li>
                                     <a  href="{{route('tickets.index')}}" class="btn btn-warning btn-xlg">TICKET</a>
@@ -49,20 +50,18 @@
                 <div class="mobile-menu">
                     <nav id="dropdown">
                         <ul>
-                            <li><a href="index.html">Home</a>
-                                
+                        <li><a href="{{route('index.home')}}">Home</a>
                             </li>
-                            <li>
-                                <a href="shop.html">Online Shop</a>
+                            <li class="mega-parent"><a href="{{route('about.us')}}">About Us</a>
                             </li>
-                            <li>
-                                <a href="{{route('about.us')}}">About us</a>
+                            <li><a href="{{route('van')}}">Van Services</a>
+                            {{-- <li><a href="{{route('commingSoon')}}">Online Shop</a> 
+                            --}}
+                            <li><a href="{{route('contact')}}">Contact Us</a>
+                                {{-- <li>
+                                    <a  href="{{route('tickets.index')}}" class="btn btn-warning btn-xlg">TICKET</a>
+                                </li> --}}
                             </li>
-                                    
-                            <li>
-                                <a href="contact.html">Contact</a>
-                            </li>
-                            
                         </ul>
                     </nav>
                 </div>
