@@ -11,7 +11,7 @@
         <div class="row d-flex justify-content-center align-items-center">
             <div class="col-md-9">
                 <div class="contact-us text-center">
-                    <h3 style="font-size: 30px;font-weight: 600;text-transform: capitalize;">We come to you</h3><hr>
+                    <h3 style="font-size: 30px;font-weight: 600;text-transform: capitalize;color: #fb6128;">We come to you</h3><hr>
                     <!-- <p class="mb-5">Lorem ipsum is placeholder text commonly used in the graphic, print, and publishing industries for previewing layouts and visual mockups.</p> -->
                     <br><br>
                     <div class="row" style="padding-top: 50px;">
