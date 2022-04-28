@@ -53,11 +53,6 @@ Here are the details:
 <th>contact_preference</th>
 <td>{{$userdata['contact_preference']}}</td>
 </tr>
-<tr>
-    <th>repairing_methods</th>
-    <td>{{$userdata['repairing_methods']}}</td>
-    </tr>
-<tr>
 <th>Message:</th>
 <td>{{$userdata['message']}}</td>
 </tr>

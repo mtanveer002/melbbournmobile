@@ -227,7 +227,7 @@ element.style {
                                             <option value="Email">Email</option>
                                             <option value="Phone">Phone</option>
                                         </select> <br>
-                                        <label for="label-title">Choose branch/Van :</label>
+                                        <!-- <label for="label-title">Choose branch/Van :</label>
                                         <select name="repairing_methods" id="test" onchange="showDiv(this)" class="form-control" >
                                             <option value="shop" >Choose your Service</option>
                                             <option value="Van">Van</option>
@@ -236,7 +236,7 @@ element.style {
                                                 <option value="Blackburn">Blackburn Victoria</option>
                                                 <option value="Hampton Park">Hampton Park Somerville</option>
                                                 </optgroup>
-                                        </select>
+                                        </select> -->
                                     </div>
                                     <div style="width: 100%; ">
                                         <p id="hidden_div" style="text-align: center;display: none;">82 Somerville <br> Hampton Park VIC 3976</p>
