@@ -90,7 +90,7 @@ class WebsiteController extends Controller
         $booking->email = $request->email;
         $booking->number = $request->number;
         $booking->contact_preference = $request->contact_preference;
-        $booking->repairing_methods = $request->repairing_methods;
+        // $booking->repairing_methods = $request->repairing_methods;
         $booking->describtion = $request->description;
         $booking->brand_id = $request->brand;
         $booking->modal_id = $request->modal;
@@ -99,7 +99,7 @@ class WebsiteController extends Controller
 
             if($booking->save()){
             $inq = Quote::latest()->first();
-            $userdata=array('email'=>$inq->email,'name'=>$inq->name,'number'=>$inq->number,'device'=>$inq->brand->brand,'model'=>$inq->modal->name,'issue'=>$inq->issue,'message'=>$inq->describtion,'contact_preference'=>$inq->contact_preference, 'repairing_methods' => $inq->repairing_methods);
+            $userdata=array('email'=>$inq->email,'name'=>$inq->name,'number'=>$inq->number,'device'=>$inq->brand->brand,'model'=>$inq->modal->name,'issue'=>$inq->issue,'message'=>$inq->describtion,'contact_preference'=>$inq->contact_preference);
             Mail::send('/email/saveinqery',['userdata' => $userdata]
                         , function($message) use ($userdata)
                     {
