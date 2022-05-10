@@ -88,8 +88,8 @@
                                 <hr>
                                 <h5>contact_preference:</h5>
                                 <hr>
-                                <h5>repairing_methods:</h5>
-                                <hr>
+                                <!-- <h5>repairing_methods:</h5>
+                                <hr> -->
                             </div>
                             <div class="col-6">
                                 <h6 class="mt-0"><strong>{{ $info->brand->brand}}</strong></h6>
@@ -102,14 +102,14 @@
                                 <hr>
                                 <h6 class="mt-1"><strong>{{ $info->contact_preference}}</strong></h6>
                                 <hr>
-                                <h6 class="mt-1"><strong>
+                                <!-- <h6 class="mt-1"><strong>
                                 @if ($info->repairing_methods === 'Blackburn' || $info->repairing_methods === 'Hampton Park')
                                         <strong>Walk In:{{$info->repairing_methods}}</strong>
                                 @else
                                     <strong>{{$info->repairing_methods}}</strong>
                                 @endif    
                                 </strong></h6>
-                                <hr>
+                                <hr> -->
                             </div>
                         </div>
                         <hr>
