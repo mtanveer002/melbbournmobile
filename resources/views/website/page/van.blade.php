@@ -37,7 +37,8 @@
                     <p class="mb-5">If your device was dropped and broken or just stopped working, you may be in full-on panic mode. If you rely on your mobile cell phone to conduct business or accomplish your daily tasks, you don’t have any time to spare. Instead of driving across town, why not call one of our mobile phone repair experts and let us come to you.
 At Melbourne Mobile Repairs, our service takes the hassle out of getting your mobile device back in working condition. Simply give us a call, and we will send out a mobile cell phone repair technician to your location at an affordable price. This service is available 24/7, and our fee is based on your distance from our location.</p>
                     <ul>
-                        <li style="color: white;font-size: 16px">Melborune Mobile repairs...  Schedule your appointment today. call us at <span style="color: #fb6128;font-weight: bold"> (03) 8595 6677</span></li>
+                        <li style="color: white;font-size: 16px">Melborune Mobile repairs...  Schedule your appointment today. call us at <span style="color: #fb6128;font-weight: bold">(03) 8595 6677
+</span></li>
                         <li style="color: white;font-size: 16px">We Travel To You and Repair Your Device On the Spot</li>
                         <li style="color: white;font-size: 16px">Repairs Completed In Under 30 Minutes</li>
                     </ul>
@@ -46,7 +47,8 @@ At Melbourne Mobile Repairs, our service takes the hassle out of getting your mo
                             <div class="mt-5 text-center px-3">
                                 <div class="d-flex flex-row align-items-center mt-3"> <span class="icons"><i class="fa fa-phone"></i></span>
                                     <div class="address text-left"> <span style="color: #fb6128">Phone</span>
-                                        <p>(03) 8595 6677</p>
+                                        <p>(03) 8595 6677
+</p>
                                     </div>
                                 </div>
                                 <div class="d-flex flex-row align-items-center mt-3"> <span class="icons"><i class="fa fa-envelope"></i></span>
@@ -109,7 +111,7 @@ At Melbourne Mobile Repairs, our service takes the hassle out of getting your mo
                         <div class="modal-product clearfix">
                             <div class="product-images">
                                 <div class="main-image images">
-                                    <img alt="" src="{{ asset('frontend/assets/img/product-2/1.jpg') }}">
+                                    <img alt="iphone repair" src="{{ asset('frontend/assets/img/product-2/1.jpg') }}">
                                 </div>
                             </div><!-- .product-images -->
                             
@@ -178,7 +180,7 @@ At Melbourne Mobile Repairs, our service takes the hassle out of getting your mo
     <!--style-customizer start -->
     <div class="style-customizer closed">
         <div class="buy-button">
-            <a href="index.html" class="customizer-logo"><img src="{{ asset('frontend/assets/img/logo/MMPR_logo.png') }}" alt="Theme Logo"></a>
+            <a href="index.html" class="customizer-logo"><img src="{{ asset('frontend/assets/img/logo/MMPR_logo.png') }}" alt="mobile repair shop blackburn "></a>
             <a class="opener" href="#"><i class="zmdi zmdi-settings"></i></a>
         </div>
         <div class="clearfix content-chooser">
@@ -215,14 +217,14 @@ At Melbourne Mobile Repairs, our service takes the hassle out of getting your mo
             <h3>Background Images</h3>
             <p>Which background image you want to use?</p>
             <ul class="patternChange main-bg-change clearfix">
-                <li class="main-bg-1" data-style="main-bg-1" title="Background 1"> <img src="{{ asset('frontend/assets/images/customizer/bodybg/01.jpg') }}" alt=""></li>
-                <li class="main-bg-2" data-style="main-bg-2" title="Background 2"> <img src="{{ asset('frontend/assets/images/customizer/bodybg/02.jpg') }}" alt=""></li>
-                <li class="main-bg-3" data-style="main-bg-3" title="Background 3"> <img src="{{ asset('frontend/assets/images/customizer/bodybg/03.jpg') }}" alt=""></li>
-                <li class="main-bg-4" data-style="main-bg-4" title="Background 4"> <img src="{{ asset('frontend/assets/images/customizer/bodybg/04.jpg') }}" alt=""></li>
-                <li class="main-bg-5" data-style="main-bg-5" title="Background 5"> <img src="{{ asset('frontend/assets/images/customizer/bodybg/05.jpg') }}" alt=""></li>
-                <li class="main-bg-6" data-style="main-bg-6" title="Background 6"> <img src="{{ asset('frontend/assets/images/customizer/bodybg/06.jpg') }}" alt=""></li>
-                <li class="main-bg-7" data-style="main-bg-7" title="Background 7"> <img src="{{ asset('frontend/assets/images/customizer/bodybg/07.jpg') }}" alt=""></li>
-                <li class="main-bg-8" data-style="main-bg-8" title="Background 8"> <img src="{{ asset('frontend/assets/images/customizer/bodybg/08.jpg') }}" alt=""></li>
+                <li class="main-bg-1" data-style="main-bg-1" title="Background 1"> <img src="{{ asset('frontend/assets/images/customizer/bodybg/01.jpg') }}" alt="mobile phone repair blackburn"></li>
+                <li class="main-bg-2" data-style="main-bg-2" title="Background 2"> <img src="{{ asset('frontend/assets/images/customizer/bodybg/02.jpg') }}" alt="Mobile phone repair hampton park"></li>
+                <li class="main-bg-3" data-style="main-bg-3" title="Background 3"> <img src="{{ asset('frontend/assets/images/customizer/bodybg/03.jpg') }}" alt="mobile repair shop hampton park"></li>
+                <li class="main-bg-4" data-style="main-bg-4" title="Background 4"> <img src="{{ asset('frontend/assets/images/customizer/bodybg/04.jpg') }}" alt="mobile repair shop blackburn "></li>
+                <li class="main-bg-5" data-style="main-bg-5" title="Background 5"> <img src="{{ asset('frontend/assets/images/customizer/bodybg/05.jpg') }}" alt="ipad repair melbourne"></li>
+                <li class="main-bg-6" data-style="main-bg-6" title="Background 6"> <img src="{{ asset('frontend/assets/images/customizer/bodybg/06.jpg') }}" alt="samsung phone repair"></li>
+                <li class="main-bg-7" data-style="main-bg-7" title="Background 7"> <img src="{{ asset('frontend/assets/images/customizer/bodybg/07.jpg') }}" alt="iphone repair"></li>
+                <li class="main-bg-8" data-style="main-bg-8" title="Background 8"> <img src="{{ asset('frontend/assets/images/customizer/bodybg/08.jpg') }}" alt="mobile phone repair booking in hampton park"></li>
             </ul>
             <ul class="resetAll">
                 <li><a class="button button-border button-reset" href="#">Reset All</a></li>

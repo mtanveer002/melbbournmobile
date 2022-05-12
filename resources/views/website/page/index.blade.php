@@ -262,9 +262,9 @@ element.style {
             </div>
         </div>
         <div class="hero-slider owl-carousel">
-            <div class="hs-item set-bg" data-setbg="{{ asset('frontend/assets/img/hero/hero-1.jpg') }}"></div>
-            <div class="hs-item set-bg" data-setbg="{{ asset('frontend/assets/img/hero/hero-2.jpg') }}"></div>
-            <div class="hs-item set-bg" data-setbg="{{ asset('frontend/assets/img/hero/hero-3.jpg') }}"></div>
+            <div class="hs-item set-bg" data-setbg="{{ asset('frontend/assets/img/hero/hero-1.jpg') }}" alt="iphone repair"></div>
+            <div class="hs-item set-bg" data-setbg="{{ asset('frontend/assets/img/hero/hero-2.jpg') }}" alt="samsung phone repair"></div>
+            <div class="hs-item set-bg" data-setbg="{{ asset('frontend/assets/img/hero/hero-3.jpg') }}" alt="ipad repair melbourne"></div>
         </div>
     </section>
 
@@ -296,7 +296,7 @@ element.style {
                                                 aria-label="Close" style="font-size: 26px;margin-top: -5%">x</button>
                                         </div>
                                         <div class="modal-body">
-                                            <img src="{{ asset('frontend/assets/img/modal/van.gif') }}" alt="">
+                                            <img src="{{ asset('frontend/assets/img/modal/van.gif') }}" alt="iphone repair">
                                             <p>Choose our store pickup option and have your phone picked up and delivered to
                                                 your doorstep hassle-free! Check out how here.</p>
                                         </div>
@@ -335,7 +335,7 @@ element.style {
                                                 aria-label="Close" style="font-size: 26px;margin-top: -5%">x</button>
                                         </div>
                                         <div class="modal-body">
-                                            <img src="{{ asset('frontend/assets/img/modal/BRANCHES.gif') }}" alt="">
+                                            <img src="{{ asset('frontend/assets/img/modal/BRANCHES.gif') }}" alt="mobile repair shop blackburn ">
                                             <p>Book an appointment at either our Blackburn or Hampton Park branch and stay
                                                 within your 5 mile radius. Stay safe, get your phone fixed!</p>
                                         </div>
@@ -373,7 +373,7 @@ element.style {
                                                 aria-label="Close" style="font-size: 26px;margin-top: -5%">x</button>
                                         </div>
                                         <div class="modal-body">
-                                            <img src="{{ asset('frontend/assets/img/modal/website_g.gif') }}" alt="">
+                                            <img src="{{ asset('frontend/assets/img/modal/website_g.gif') }}" alt="mobile phone repair blackburn">
                                             <p>Just click ‘Book me’ below! 
                                                 One of our experienced representatives will contact you and guide you through our mail-in repair service or let us know your issue on this number: <br><a
                                                     href="tel:(03) 8595 6677">tel:(03) 8595 6677</a></p>
@@ -409,7 +409,7 @@ element.style {
                     <div class="col-lg-4 col-md-6">
                         <div class="banner-item banner-3">
                             <div class="banner-img">
-                                <a href="#"><img src="{{ asset('frontend/assets/img/banner/2.png') }}" alt=""></a>
+                                <a href="#"><img src="{{ asset('frontend/assets/img/banner/2.png') }}" alt="Mobile phone repair hampton park"></a>
                             </div>
                             <div class="banner-opacity">
                                 <div class="banner-info">
@@ -443,7 +443,7 @@ element.style {
                     <div class="col-lg-4 col-md-6">
                         <div class="banner-item banner-3">
                             <div class="banner-img">
-                                <a href="#"><img src="{{ asset('frontend/assets/img/banner/3.webp') }}" alt=""></a>
+                                <a href="#"><img src="{{ asset('frontend/assets/img/banner/3.webp') }}" alt="iphone repair"></a>
                             </div>
                             <div class="banner-opacity">
                                 <div class="banner-info ">
@@ -477,7 +477,7 @@ element.style {
                     <div class="col-lg-4 col-md-6">
                         <div class="banner-item banner-3">
                             <div class="banner-img">
-                                <a href="#"><img src="{{ asset('frontend/assets/img/banner/4.jpg') }}" alt=""></a>
+                                <a href="#"><img src="{{ asset('frontend/assets/img/banner/4.jpg') }}" alt="mobile phone repair in hampton park"></a>
                             </div>
                             <div class="banner-opacity">
                                 <div class="banner-info">
@@ -598,7 +598,7 @@ element.style {
                     <!-- Grid column -->
                     <div class="col-md-4 text-center">
                         <img class="img-fluid" src="{{ asset('frontend/assets/img/product-2/1.png') }}"
-                            alt="Sample image">
+                            alt="iphone repair">
                     </div>
                     <!-- Grid column -->
 
@@ -689,7 +689,7 @@ element.style {
                         <div class="up-comming-pro gray-bg up-comming-pro-2 clearfix">
                             <div class="up-comming-pro-img f-left">
                                 <a href="#">
-                                    <img src="{{ asset('frontend/assets/img/up-comming/2.jpg') }}" alt="">
+                                    <img src="{{ asset('frontend/assets/img/up-comming/2.jpg') }}" alt="ipad repair melbourne">
                                 </a>
                             </div>
                             <div class="up-comming-pro-info f-left">
@@ -712,7 +712,7 @@ element.style {
                                 <span>FIX IT</span>
                             </div>
                             <div class="banner-img">
-                                <a href="#"><img src="{{ asset('frontend/assets/img/banner/iWatch.png') }}" alt=""></a>
+                                <a href="#"><img src="{{ asset('frontend/assets/img/banner/iWatch.png') }}" alt="mobile repair shop hampton park"></a>
                             </div>
                             <!-- <div class="banner-info">
                                     <h3><a href="#">Product Name</a></h3>
@@ -752,7 +752,7 @@ element.style {
                     <h2 class="heading-2">WARRANTY</h2>
                 </div>
                 <div class="col-lg-3">
-                    <img id="loading" src="{{ asset('frontend/assets/img/banner/guaranteed.png') }}" alt="">
+                    <img id="loading" src="{{ asset('frontend/assets/img/banner/guaranteed.png') }}" alt="samsung repair van in hampton park">
                 </div>
                 <div class="col-lg-5">
                     <h6>Our Tech Teams are super fast with repairs and stringent with
@@ -769,7 +769,7 @@ element.style {
 
 
         <!-- BLOG SECTION START -->
-        <div class="blog-section-2 pt-60 pb-30">
+        <!-- <div class="blog-section-2 pt-60 pb-30">
             <div class="container">
                 <div class="row">
                     <div class="col-lg-12">
@@ -780,9 +780,9 @@ element.style {
                     </div>
                 </div>
                 <div class="blog">
-                    <div class="row active-blog-2">
+                    <div class="row active-blog-2"> -->
                         <!-- blog-item start -->
-                        <div class="col-lg-12">
+                        <!-- <div class="col-lg-12">
                             <div class="blog-item-2">
                                 <div class="row">
                                     <div class="col-lg-6">
@@ -803,10 +803,10 @@ element.style {
                                     </div>
                                 </div>
                             </div>
-                        </div>
+                        </div> -->
                         <!-- blog-item end -->
                         <!-- blog-item start -->
-                        <div class="col-lg-12">
+                        <!-- <div class="col-lg-12">
                             <div class="blog-item-2">
                                 <div class="row">
                                     <div class="col-lg-6">
@@ -827,10 +827,10 @@ element.style {
                                     </div>
                                 </div>
                             </div>
-                        </div>
+                        </div> -->
                         <!-- blog-item end -->
                         <!-- blog-item start -->
-                        <div class="col-lg-12">
+                        <!-- <div class="col-lg-12">
                             <div class="blog-item-2">
                                 <div class="row">
                                     <div class="col-lg-6">
@@ -851,7 +851,7 @@ element.style {
                                     </div>
                                 </div>
                             </div>
-                        </div>
+                        </div> -->
                         <!-- blog-item end -->
                     </div>
                 </div>
@@ -905,7 +905,7 @@ element.style {
                             <div class="modal-product clearfix">
                                 <div class="product-images">
                                     <div class="main-image images">
-                                        <img alt="" src="{{ asset('frontend/assets/img/product-2/1.jpg') }}">
+                                        <img alt="" src="{{ asset('frontend/assets/img/product-2/1.jpg') }}" alt="samsung repair van in blackburn ">
                                     </div>
                                 </div><!-- .product-images -->
                                 
@@ -974,7 +974,7 @@ element.style {
         <!--style-customizer start -->
         <div class="style-customizer closed">
             <div class="buy-button">
-                <a href="index.html" class="customizer-logo"><img src="{{ asset('frontend/assets/img/logo/MMPR_logo.png') }}" alt="Theme Logo"></a>
+                <a href="index.html" class="customizer-logo"><img src="{{ asset('frontend/assets/img/logo/MMPR_logo.png') }}" alt="phone repair van in hampton park"></a>
                 <a class="opener" href="#"><i class="zmdi zmdi-settings"></i></a>
             </div>
             <div class="clearfix content-chooser">
@@ -1011,14 +1011,14 @@ element.style {
                 <h3>Background Images</h3>
                 <p>Which background image you want to use?</p>
                 <ul class="patternChange main-bg-change clearfix">
-                    <li class="main-bg-1" data-style="main-bg-1" title="Background 1"> <img src="{{ asset('frontend/assets/images/customizer/bodybg/01.jpg') }}" alt=""></li>
-                    <li class="main-bg-2" data-style="main-bg-2" title="Background 2"> <img src="{{ asset('frontend/assets/images/customizer/bodybg/02.jpg') }}" alt=""></li>
-                    <li class="main-bg-3" data-style="main-bg-3" title="Background 3"> <img src="{{ asset('frontend/assets/images/customizer/bodybg/03.jpg') }}" alt=""></li>
-                    <li class="main-bg-4" data-style="main-bg-4" title="Background 4"> <img src="{{ asset('frontend/assets/images/customizer/bodybg/04.jpg') }}" alt=""></li>
-                    <li class="main-bg-5" data-style="main-bg-5" title="Background 5"> <img src="{{ asset('frontend/assets/images/customizer/bodybg/05.jpg') }}" alt=""></li>
-                    <li class="main-bg-6" data-style="main-bg-6" title="Background 6"> <img src="{{ asset('frontend/assets/images/customizer/bodybg/06.jpg') }}" alt=""></li>
-                    <li class="main-bg-7" data-style="main-bg-7" title="Background 7"> <img src="{{ asset('frontend/assets/images/customizer/bodybg/07.jpg') }}" alt=""></li>
-                    <li class="main-bg-8" data-style="main-bg-8" title="Background 8"> <img src="{{ asset('frontend/assets/images/customizer/bodybg/08.jpg') }}" alt=""></li>
+                    <li class="main-bg-1" data-style="main-bg-1" title="Background 1"> <img src="{{ asset('frontend/assets/images/customizer/bodybg/01.jpg') }}" alt="Mobile phone repair hampton park"></li>
+                    <li class="main-bg-2" data-style="main-bg-2" title="Background 2"> <img src="{{ asset('frontend/assets/images/customizer/bodybg/02.jpg') }}" alt="mobile phone repair blackburn"></li>
+                    <li class="main-bg-3" data-style="main-bg-3" title="Background 3"> <img src="{{ asset('frontend/assets/images/customizer/bodybg/03.jpg') }}" alt="mobile repair shop hampton park"></li>
+                    <li class="main-bg-4" data-style="main-bg-4" title="Background 4"> <img src="{{ asset('frontend/assets/images/customizer/bodybg/04.jpg') }}" alt="mobile repair shop blackburn "></li>
+                    <li class="main-bg-5" data-style="main-bg-5" title="Background 5"> <img src="{{ asset('frontend/assets/images/customizer/bodybg/05.jpg') }}" alt="ipad repair melbourne"></li>
+                    <li class="main-bg-6" data-style="main-bg-6" title="Background 6"> <img src="{{ asset('frontend/assets/images/customizer/bodybg/06.jpg') }}" alt="samsung phone repair"></li>
+                    <li class="main-bg-7" data-style="main-bg-7" title="Background 7"> <img src="{{ asset('frontend/assets/images/customizer/bodybg/07.jpg') }}" alt="iphone repair"></li>
+                    <li class="main-bg-8" data-style="main-bg-8" title="Background 8"> <img src="{{ asset('frontend/assets/images/customizer/bodybg/08.jpg') }}" alt="iphone repair van in blackburn "></li>
                 </ul>
                 <ul class="resetAll">
                     <li><a class="button button-border button-reset" href="#">Reset All</a></li>
