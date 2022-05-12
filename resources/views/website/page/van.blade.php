@@ -33,9 +33,14 @@
         <div class="row d-flex justify-content-center align-items-center">
             <div class="col-md-9">
                 <div class="contact-us text-center">
-                    <h3 style="font-size: 30px;font-weight: 600;text-transform: capitalize;color: #fb6128;">We come to you</h3><hr>
-                    <!-- <p class="mb-5">Lorem ipsum is placeholder text commonly used in the graphic, print, and publishing industries for previewing layouts and visual mockups.</p> -->
-                    <br><br>
+                    <h3 style="font-size: 30px;font-weight: 600;text-transform: capitalize;color: #fb6128;">Phone Repair At Your Door</h3><hr>
+                    <p class="mb-5">If your device was dropped and broken or just stopped working, you may be in full-on panic mode. If you rely on your mobile cell phone to conduct business or accomplish your daily tasks, you don’t have any time to spare. Instead of driving across town, why not call one of our mobile phone repair experts and let us come to you.
+At Melbourne Mobile Repairs, our service takes the hassle out of getting your mobile device back in working condition. Simply give us a call, and we will send out a mobile cell phone repair technician to your location at an affordable price. This service is available 24/7, and our fee is based on your distance from our location.</p>
+                    <ul>
+                        <li style="color: white;font-size: 16px">Melborune Mobile repairs...  Schedule your appointment today. call us at <span style="color: #fb6128;font-weight: bold"> (03) 8595 6677</span></li>
+                        <li style="color: white;font-size: 16px">We Travel To You and Repair Your Device On the Spot</li>
+                        <li style="color: white;font-size: 16px">Repairs Completed In Under 30 Minutes</li>
+                    </ul>
                     <div class="row" style="padding-top: 50px;">
                         <div class="col-md-6">
                             <div class="mt-5 text-center px-3">
