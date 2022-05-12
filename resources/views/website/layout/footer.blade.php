@@ -33,16 +33,16 @@
                                 <h4 class="footer-title border-left">OUR SERVICES</h4>
                                 <ul class="footer-menu">
                                     <li>
-                                        <a href="#"><i class="zmdi zmdi-circle"></i><span>Apple Repairs</span></a>
+                                        <a><i class="zmdi zmdi-circle"></i><span>Apple Repairs</span></a>
                                     </li>
                                     <li>
-                                        <a href="#"><i class="zmdi zmdi-circle"></i><span>Android Repairs</span></a>
+                                        <a><i class="zmdi zmdi-circle"></i><span>Android Repairs</span></a>
                                     </li>
                                     <li>
-                                        <a href="#"><i class="zmdi zmdi-circle"></i><span>Tablet Repairs</span></a>
+                                        <a><i class="zmdi zmdi-circle"></i><span>Tablet Repairs</span></a>
                                     </li>
                                     <li>
-                                        <a href="#"><i class="zmdi zmdi-circle"></i><span>Apple Watch Repairs</span></a>
+                                        <a><i class="zmdi zmdi-circle"></i><span>Apple Watch Repairs</span></a>
                                     </li>
                                 </ul>
                             </div>
@@ -54,25 +54,25 @@
                                     <strong style="font-size: 15px">Hampton Park</strong>
                                     <li>
                                         <b>Address</b>
-                                        <a href="contact.html"><i class="zmdi zmdi-circle"></i><span>82 Somerville Hampton Park VIC 3976</span></a>
+                                        <a href="{{route('contact')}}"><i class="zmdi zmdi-circle"></i><span>82 Somerville Hampton Park VIC 3976</span></a>
                                         <br>
-                                        <b>Timing</b><a href="contact.html"><span class="timing">&nbsp;&nbsp;&nbsp;&nbsp; Mon to Sat : 10:00am – 6:00pm</span></a>
+                                        <b>Timing</b><a href="{{route('contact')}}"><span class="timing">&nbsp;&nbsp;&nbsp;&nbsp; Mon to Sat : 10:00am – 6:00pm</span></a>
                                     </li>
                                     <strong >Blackburn</strong>
                                     <li>
                                         <b>Address</b>
-                                        <a href="contact.html"><i
+                                        <a href="{{route('contact')}}"><i
                                         class="zmdi zmdi-circle"></i><span>3 Lawrence Street, Blackburn South VIC 3130</span></a>
                                         <br>
                                         <b>Timing</b>
-                                        <a href="contact.html"><span class="timing">&nbsp;&nbsp;&nbsp;&nbsp; Mon to Fri : 10:00am – 6:00pm </span>
+                                        <a href="{{route('contact')}}"><span class="timing">&nbsp;&nbsp;&nbsp;&nbsp; Mon to Fri : 10:00am – 6:00pm </span>
                                         </a>
                                         <span class="timing">&nbsp;&nbsp;&nbsp;&nbsp; Sat : 10:00am – 5:00pm </span>
                                     </li>
                                     <strong style="font-size: 15px">Support</strong>
                                     <li>
                                     <b>Contact</b>
-                                    <a href="contact.html"><span>(03) 8595 6677</span></a></li>
+                                    <a href="{{route('contact')}}"><span>(03) 8595 6677</span></a></li>
                                     
                                 </ul>
                             </div>
