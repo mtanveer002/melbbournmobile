@@ -37,7 +37,7 @@
             <div class="row">
                 <div class="col-lg-5">
                     <div class="about-photo p-20 bg-img-1">
-                        <img src="{{ asset('frontend/assets/img/others/about.jpg') }}" alt="">
+                        <img src="{{ asset('frontend/assets/img/others/about.jpg') }}" alt="iphone repair van in blackburn ">
                     </div>
                 </div>
                 <div class="col-lg-7">
@@ -75,7 +75,7 @@
                         <div class="team-member-item  col-md-4 col-sm-12 ">
                             <div class="team-member box-shadow bg-shape">
                                 <div class="team-member-photo">
-                                    <img src="{{ asset('frontend/assets/img/team/1.png') }}" alt="">
+                                    <img src="{{ asset('frontend/assets/img/team/1.png') }}" alt="samsung phone repair">
                                 </div>
                                 <div class="team-member-info pt-20">
                                     <h5 class="member-name"><a href="#">Waqar Hafeez</a></h5>
@@ -89,7 +89,7 @@
                         <div class="team-member-item col-md-4 col-sm-12">
                             <div class="team-member box-shadow bg-shape">
                                 <div class="team-member-photo">
-                                    <img src="{{ asset('frontend/assets/img/team/1.png') }}" alt="">
+                                    <img src="{{ asset('frontend/assets/img/team/1.png') }}" alt="mobile phone repair blackburn">
                                 </div>
                                 <div class="team-member-info pt-20">
                                     <h5 class="member-name"><a href="#">Andy Guan</a></h5>
@@ -104,7 +104,7 @@
                         <div class="team-member-item col-md-4 col-sm-12">
                             <div class="team-member box-shadow bg-shape">
                                 <div class="team-member-photo">
-                                    <img src="{{ asset('frontend/assets/img/team/3.png') }}" alt="">
+                                    <img src="{{ asset('frontend/assets/img/team/3.png') }}" alt="iphone repair">
                                 </div>
                                 <div class="team-member-info pt-20">
                                     <h5 class="member-name"><a href="#">Usman Khan</a></h5>
