@@ -8,6 +8,32 @@
     <meta name="keywords" content="iphone repair van near me, iphone repair service provider,iphone repair van near hampton park, iphone repair van in hampton park,iphone repair van in blackburn ,Phone repair van in blackburn ,phone repair van in hampton park, samsung repair van in blackburn, samsung repair van in hampton park">
     <title>High-quality iPhone repair service provider | samsung repair van in hampton park</title>
     @include('website.layout.css')
+    <style>
+        .how-section1{
+    margin-top:-15%;
+    padding: 10%;
+}
+.how-section1 h4{
+    color: #ffa500;
+    font-weight: bold;
+    font-size: 30px;
+}
+.how-section1 .subheading{
+    color: #3931af;
+    font-size: 20px;
+}
+.how-section1 .row
+{
+    margin-top: 10%;
+}
+.how-img 
+{
+    text-align: center;
+}
+.how-img img{
+    width: 40%;
+}
+    </style>
 </head>
 <body>
       <!-- Body main wrapper start -->
@@ -34,9 +60,14 @@
             <div class="col-md-9">
                 <div class="contact-us text-center">
                     <h3 style="font-size: 30px;font-weight: 600;text-transform: capitalize;color: #fb6128;">Phone Repair At Your Door</h3><hr>
-                    <p class="mb-5">If your device was dropped and broken or just stopped working, you may be in full-on panic mode. If you rely on your mobile cell phone to conduct business or accomplish your daily tasks, you don’t have any time to spare. Instead of driving across town, why not call one of our mobile phone repair experts and let us come to you.
+                    <p class="mb-5">
+                        <!-- If your device was dropped and broken or just stopped working, you may be in full-on panic mode. If you rely on your mobile cell phone to conduct business or accomplish your daily tasks, you don’t have any time to spare. Instead of driving across town, why not call one of our mobile phone repair experts and let us come to you.
 At Melbourne Mobile Repairs, our service takes the hassle out of getting your mobile device back in working condition. Simply give us a call, and we will send out a mobile cell phone repair technician to your location at an affordable price. This service is available 24/7, and our fee is based on your distance from our location.</p>
-                    <ul>
+                     -->
+                     If you are looking for phone repair vans in Australia or the United Kingdom, MMPR has got your problem solved. With the latest software and hardware tools along with a competent staff, we make sure that your query is addressed and resolved in the shortest possible time. Melbourne Mobile Phone Repairs has its way of making your life easy. No matter what phone you have, with our repair vans, solving the problem will be extremely convenient and easy for you. The motive of MMPR vans is to save you the trouble of going out of the way in order to get your phone fixed. 
+Tired of typing “iPhone repair van near me” in your search bar and never getting a satisfactory answer? We are here to save you from this hassle. MMPR is the best iPhone repair service provider, and you can have our word on this. Along with iPhone, MMPR vans also offer their services for Samsung phones. All you have to do is let us know about your phone type and your query and then you can consider your problem solved. You can visit the website and get to know about the van services that are available. For the convenience of the customer, MMPR enables you to get in touch instantly. So, what are you waiting for?
+
+                     <ul>
                         <li style="color: white;font-size: 16px">Melborune Mobile repairs...  Schedule your appointment today. call us at <span style="color: #fb6128;font-weight: bold">(03) 8595 6677
 </span></li>
                         <li style="color: white;font-size: 16px">We Travel To You and Repair Your Device On the Spot</li>
@@ -93,6 +124,71 @@ At Melbourne Mobile Repairs, our service takes the hassle out of getting your mo
         </div>
     </div>
 </div>
+
+<!-- Text with image -->
+<div class="how-section1">
+                    <div class="row">
+                        <div class="col-md-6 how-img">
+                            <img src="{{ asset('assets/pages/img/works/van4.jpg') }}" class="rounded-circle img-fluid" alt=""/>
+                        </div>
+                        <div class="col-md-6">
+                            <h4>iPhone Repair Van in Hampton Park</h4>
+                                        <!-- <h4 class="subheading">GetLance is a great place to find more clients, and to run and grow your own freelance business.</h4> -->
+                        <p class="text-muted">
+                        If you are looking for an iPhone repair van near Hampton Park or iPhone repair van in Hampton Park, MMPR is your best option. You can schedule your 
+                        appointment by reaching us on our number or through the online appointment system. Instead of driving across town to get your phone fixed, you can 
+                        trust us and let our expert staff come to you. Mostly, our staff will repair your phone in an hour, however, if there is a need for intensive care, 
+                        we can make sure that your phone is picked up and then dropped back at your home when it gets fixed. Being the most competitive phone repair van in 
+                        Hampton Park, MMPR has been able to secure the trust of its customers. </p>
+                        </div>
+                    </div>
+                    <div class="row">
+                        <div class="col-md-6">
+                            <h4>Samsung Repair Van in Hampton Park</h4>
+                                        <!-- <h4 class="subheading">GetLance makes it easy to connect with clients and begin doing great work.</h4> -->
+                                        <p class="text-muted">Our Samsung repair van in Hampton Park will always save your day if you’re going through the problem of a broken
+                                             phone. All you have to do is reach out to us and our team will come to you in the shortest time. Our repair van service aims to
+                                              solve any kind of problem within hours. However, if the problem is more complicated and needs extra time, we will take your phone 
+                                              with us, get it fixed, and deliver it back to your home in due time.</p>
+                        </div>
+                        <div class="col-md-6 how-img">
+                            <img src="{{ asset('assets/pages/img/works/van1.jpg') }}" class="rounded-circle img-fluid" alt=""/>
+                        </div>
+                    </div>
+                    <div class="row">
+                        <div class="col-md-6 how-img">
+                             <img src="{{ asset('assets/pages/img/works/van2.jpg') }}" class="rounded-circle img-fluid" alt=""/>
+                        </div>
+                        <div class="col-md-6">
+                            <h4>iPhone Repair Van in Blackburn</h4>
+                                        <!-- <h4 class="subheading">With GetLance, you have the freedom and flexibility to control when, where, and how you work. Each project includes an online workspace shared by you and your client, allowing you to:</h4> -->
+                                        <p class="text-muted">If you live somewhere near Blackburn and are looking for an iPhone repair van in Blackburn, MMPR repair vans will be at
+                                             your service. At MMPR, we completely understand that lives are dependent on smartphones. Whether you are a student, an employee, or a business
+                                              owner, it is difficult to survive a second without your phone and that’s what makes broken phones so intolerable. To fix this problem, 
+                                              you can avail our services from the comfort of your home or office. </p>
+                        </div>
+                    </div>
+                    <div class="row">
+                        <div class="col-md-6">
+                            <h4>Samsung Repair Van in Blackburn</h4>
+                                        <!-- <h4 class="subheading">All projects include GetLance Payment Protection — helping ensure that you get paid for all work successfully completed through the freelancing website.</h4> -->
+                                        <p class="text-muted">Along with iPhone repair services in Blackburn, MMPR also offers a Samsung repair van in Blackburn. Whether it is 
+                                            a battery problem or a broken screen, you tell us, and we fix it. A broken phone feels like the biggest burden and we have a solution
+                                             for that. Instead of going through the drill of traveling long distances to get your phone fixed, you can get the whole process done
+                                              right at your home. We have the appropriate tools and techniques and most importantly, mobile phone experts that will get to the
+                                               root of the problem and fix it. Not only this, but we will also guarantee that the parts used to get your phone fixed are top
+                                                quality so that you do not face similar situations in the future. 
+                                                Whether you own an iPhone or a Samsung phone, our sole focus is on providing you with extraordinary service. Get rid of your 
+                                                battery problems, screen issues, or any other troubles that your phone is going through. MMPR has a history of fixing gadgets 
+                                                and by providing the best service, it has won the trust of many customers over time. Become one of our valued customers and you 
+                                                will find yourself recommending MMPR to your friends and family. 
+</p>
+                        </div>
+                        <div class="col-md-6 how-img">
+                            <img src="{{ asset('assets/pages/img/works/van3.jpg') }}" class="rounded-circle img-fluid" alt=""/>
+                        </div>
+                    </div>
+                </div>
 
     <!-- START FOOTER AREA -->
    @include('website.layout.footer')
