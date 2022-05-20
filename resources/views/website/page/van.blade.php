@@ -31,7 +31,7 @@
     text-align: center;
 }
 .how-img img{
-    width: 40%;
+    width: 80%;
 }
     </style>
 </head>
