@@ -129,7 +129,7 @@ Tired of typing “iPhone repair van near me” in your search bar and never get
 <div class="how-section1">
                     <div class="row">
                         <div class="col-md-6 how-img">
-                            <img src="{{ asset('assets/pages/img/works/van4.jpg') }}" class="rounded-circle img-fluid" alt=""/>
+                            <img src="{{ asset('assets/pages/img/works/van4.jpg') }}" class=" img-fluid" alt=""/>
                         </div>
                         <div class="col-md-6">
                             <h4>iPhone Repair Van in Hampton Park</h4>
@@ -152,12 +152,12 @@ Tired of typing “iPhone repair van near me” in your search bar and never get
                                               with us, get it fixed, and deliver it back to your home in due time.</p>
                         </div>
                         <div class="col-md-6 how-img">
-                            <img src="{{ asset('assets/pages/img/works/van1.jpg') }}" class="rounded-circle img-fluid" alt=""/>
+                            <img src="{{ asset('assets/pages/img/works/van1.jpg') }}" class=" img-fluid" alt=""/>
                         </div>
                     </div>
                     <div class="row">
                         <div class="col-md-6 how-img">
-                             <img src="{{ asset('assets/pages/img/works/van2.jpg') }}" class="rounded-circle img-fluid" alt=""/>
+                             <img src="{{ asset('assets/pages/img/works/van2.jpg') }}" class=" img-fluid" alt=""/>
                         </div>
                         <div class="col-md-6">
                             <h4>iPhone Repair Van in Blackburn</h4>
@@ -185,7 +185,7 @@ Tired of typing “iPhone repair van near me” in your search bar and never get
 </p>
                         </div>
                         <div class="col-md-6 how-img">
-                            <img src="{{ asset('assets/pages/img/works/van3.jpg') }}" class="rounded-circle img-fluid" alt=""/>
+                            <img src="{{ asset('assets/pages/img/works/van3.jpg') }}" class=" img-fluid" alt=""/>
                         </div>
                     </div>
                 </div>
