@@ -40,6 +40,18 @@ class WebsiteController extends Controller
     {
         return view('website.page.van');
     }
+    public function apple_repairs()
+    {
+        return view('website.page.apple_repairs');
+    }
+    public function android_repairs()
+    {
+        return view('website.page.android_repairs');
+    }
+    public function ipad_repairs()
+    {
+        return view('website.page.ipad_repairs');
+    }
     public function contact()
     {
         return view('website.page.contact');
