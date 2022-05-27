@@ -36,14 +36,17 @@
                                         <a href="{{ route('apple_repairs') }}"><i class="zmdi zmdi-circle"></i><span>Apple Repairs</span></a>
                                     </li>
                                     <li>
-                                        <a><i class="zmdi zmdi-circle"></i><span>Android Repairs</span></a>
+                                        <a href="{{ route('android_repairs') }}"><i class="zmdi zmdi-circle"></i><span>Android Repairs</span></a>
                                     </li>
                                     <li>
-                                        <a><i class="zmdi zmdi-circle"></i><span>Tablet Repairs</span></a>
+                                        <a href="{{ route('ipad_repairs') }}"><i class="zmdi zmdi-circle"></i><span>iPad Repairs</span></a>
                                     </li>
                                     <li>
+                                        <a href="{{ route('van') }}"><i class="zmdi zmdi-circle"></i><span>Van Repairs</span></a>
+                                    </li>
+                                    <!-- <li>
                                         <a><i class="zmdi zmdi-circle"></i><span>Apple Watch Repairs</span></a>
-                                    </li>
+                                    </li> -->
                                 </ul>
                             </div>
                         </div>
