@@ -40,6 +40,10 @@ class WebsiteController extends Controller
     {
         return view('website.page.van');
     }
+    public function apple_repairs()
+    {
+        return view('website.page.apple_repairs');
+    }
     public function contact()
     {
         return view('website.page.contact');

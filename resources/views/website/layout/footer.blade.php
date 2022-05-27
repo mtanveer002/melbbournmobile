@@ -33,7 +33,7 @@
                                 <h4 class="footer-title border-left">OUR SERVICES</h4>
                                 <ul class="footer-menu">
                                     <li>
-                                        <a><i class="zmdi zmdi-circle"></i><span>Apple Repairs</span></a>
+                                        <a href="{{ route('apple_repairs') }}"><i class="zmdi zmdi-circle"></i><span>Apple Repairs</span></a>
                                     </li>
                                     <li>
                                         <a><i class="zmdi zmdi-circle"></i><span>Android Repairs</span></a>
