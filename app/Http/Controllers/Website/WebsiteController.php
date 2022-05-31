@@ -46,7 +46,8 @@ class WebsiteController extends Controller
     }
     public function iphone()
     {
-        $models = BrandModal::where('category_name','Iphone')->orderBy('created_at', 'DESC')->get();
+        // $models = BrandModal::where('category_name','Iphone')->orderBy('created_at', 'DESC')->get();
+        $models = BrandModal::all();
         return view('website.page.iphone', compact('models'));
     }
     public function mac()
