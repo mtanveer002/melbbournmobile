@@ -35,6 +35,8 @@ Route::get('/van', [WebsiteController::class, 'van'])->name('van');
 Route::get('/terms', [WebsiteController::class, 'termsCondition'])->name('terms.Condition');
 Route::get('/policy', [WebsiteController::class, 'privacyPolicy'])->name('privacy.policy');
 Route::get('/apple_repairs', [WebsiteController::class, 'apple_repairs'])->name('apple_repairs');
+Route::get('/iphone', [WebsiteController::class, 'iphone'])->name('iphone');
+Route::get('/mac', [WebsiteController::class, 'mac'])->name('mac');
 Route::get('/android_repairs', [WebsiteController::class, 'android_repairs'])->name('android_repairs');
 Route::get('/ipad_repairs', [WebsiteController::class, 'ipad_repairs'])->name('ipad_repairs');
 Route::resource('/tickets', TicketController::class);

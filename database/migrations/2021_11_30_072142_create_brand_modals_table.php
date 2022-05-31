@@ -17,6 +17,7 @@ class CreateBrandModalsTable extends Migration
             $table->id();
             $table->bigInteger('brand_id');
             $table->string('name');
+            $table->string('category_name');
             $table->bigInteger('modal_img')->nullable();
             $table->timestamps();
         });

@@ -44,6 +44,17 @@ class WebsiteController extends Controller
     {
         return view('website.page.apple_repairs');
     }
+    public function iphone()
+    {
+        $models = BrandModal::where('category_name','Iphone')->orderBy('created_at', 'DESC')->get();
+        return view('website.page.iphone', compact('models'));
+    }
+    public function mac()
+    {
+        $models = BrandModal::all();
+        $brands = Brand::all();
+        return view('website.page.mac', compact('models', 'brands'));
+    }
     public function android_repairs()
     {
         return view('website.page.android_repairs');
