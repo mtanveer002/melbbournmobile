@@ -5,7 +5,7 @@
     <div class="container">
         <div class="row" style="text-align: center">
             <!-- <div class="col-md-6"> -->
-                <h1 style="font-size:40px;text-align: center;color:#fb6128">iPhone</h1>
+                <h1 style="font-size:40px;text-align: center;color:#fb6128">iPod</h1>
                 <hr>
                 <h2 style="font-size:22px;text-align: center">Categories</h2>
             <!-- </div> -->
@@ -18,8 +18,6 @@
       <div class="container">
     <div class="row mt-2 g-4">
         @foreach($models as $model)
-            @foreach($brands as $brand)
-                @if($model->id == $brand->id) 
                 <div class="col-md-3">
                     <a href="">
                     <div class="card p-1">
@@ -29,13 +27,11 @@
                             <span>{{ $model->name }}</span>
                             
                         </div>
-                            <div> <img src="{{ asset('assets/pages/img/works/iphone.jpg') }}" height="100" width="100" /> </div>
+                            <div> <img src="{{ asset('assets/pages/img/works/ipod.jpeg') }}" height="100" width="100" /> </div>
                         </div>
                     </div>
                     </a>
                 </div>
-                @endif
-            @endforeach
         @endforeach
     </div>
 </div>

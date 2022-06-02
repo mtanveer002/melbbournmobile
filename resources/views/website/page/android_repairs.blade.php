@@ -62,7 +62,7 @@
       <div class="container">
     <div class="row mt-2 g-4">
         <div class="col-md-3">
-            <a href="#">
+            <a href="{{ route('samsung') }}">
             <div class="card p-1">
                 <div class="d-flex justify-content-between align-items-center p-2">
                     <div class="flex-column lh-1 imagename"> <span>Samsung</span> <span>Repairs</span> </div>
@@ -72,7 +72,7 @@
             </a>
         </div>
         <div class="col-md-3">
-            <a href="#">
+            <a href="{{ route('sony') }}">
             <div class="card p-2">
                 <div class="d-flex justify-content-between align-items-center p-2">
                     <div class="flex-column lh-1 imagename"> <span>Sony</span> <span>Repairs</span> </div>
@@ -82,7 +82,7 @@
             </a>
         </div>
         <div class="col-md-3">
-            <a href="#">
+            <a href="{{ route('Huawei') }}">
             <div class="card p-2">
                 <div class="d-flex justify-content-between align-items-center p-2">
                     <div class="flex-column lh-1 imagename"> <span>Huawei</span> <span>Repairs</span> </div>
@@ -92,7 +92,7 @@
             </a>
         </div>
         <div class="col-md-3">
-            <a href="#">
+            <a href="{{ route('htc') }}">
             <div class="card p-2tr5">
                 <div class="d-flex justify-content-between align-items-center p-2">
                     <div class="flex-column lh-1 imagename"> <span>HTC</span> <span>Repairs</span> </div>
@@ -102,7 +102,7 @@
             </a>
         </div>
         <div class="col-md-3">
-            <a href="#">
+            <a href="{{ route('Xiaomi') }}">
             <div class="card p-2">
                 <div class="d-flex justify-content-between align-items-center p-2">
                     <div class="flex-column lh-1 imagename"> <span>Xiaomi</span> <span>Repairs</span> </div>
@@ -112,7 +112,7 @@
             </a>
         </div>
         <div class="col-md-3">
-            <a href="#">
+            <a href="{{ route('oppo') }}">
             <div class="card p-2">
                 <div class="d-flex justify-content-between align-items-center p-2">
                     <div class="flex-column lh-1 imagename"> <span>OPPO</span> <span>Repairs</span> </div>
@@ -122,7 +122,7 @@
             </a>
         </div>
         <div class="col-md-3">
-            <a href="#">
+            <a href="{{ route('OnePlus') }}">
             <div class="card p-2">
                 <div class="d-flex justify-content-between align-items-center p-2">
                     <div class="flex-column lh-1 imagename"> <span>One Plus</span> <span>Repairs</span> </div>
@@ -132,7 +132,7 @@
             </a>
         </div>
         <div class="col-md-3">
-            <a href="#">
+            <a href="{{ route('nokia') }}">
             <div class="card p-2">
                 <div class="d-flex justify-content-between align-items-center p-2">
                     <div class="flex-column lh-1 imagename"> <span>Nokia</span> <span>Repairs</span> </div>
@@ -142,7 +142,7 @@
             </a>
         </div>
         <div class="col-md-3">
-            <a href="#">
+            <a href="">
             <div class="card p-2">
                 <div class="d-flex justify-content-between align-items-center p-2">
                     <div class="flex-column lh-1 imagename"> <span>LG</span> <span>Repairs</span> </div>
@@ -152,7 +152,7 @@
             </a>
         </div>
         <div class="col-md-3">
-            <a href="#">
+            <a href="{{ route('BlackBerry') }}">
             <div class="card p-2">
                 <div class="d-flex justify-content-between align-items-center p-2">
                     <div class="flex-column lh-1 imagename"> <span>Black Berry</span> <span>Repairs</span> </div>
@@ -162,7 +162,7 @@
             </a>
         </div>
         <div class="col-md-3">
-            <a href="#">
+            <a href="{{ route('asus') }}">
             <div class="card p-2">
                 <div class="d-flex justify-content-between align-items-center p-2">
                     <div class="flex-column lh-1 imagename"> <span>Asus</span> <span>Repairs</span> </div>
@@ -172,7 +172,7 @@
             </a>
         </div>
         <div class="col-md-3">
-            <a href="#">
+            <a href="{{ route('vivo') }}">
             <div class="card p-2">
                 <div class="d-flex justify-content-between align-items-center p-2">
                     <div class="flex-column lh-1 imagename"> <span>VIVO</span> <span>Repairs</span> </div>
@@ -182,7 +182,7 @@
             </a>
         </div>
         <div class="col-md-3">
-            <a href="#">
+            <a href="{{ route('motorola') }}">
             <div class="card p-2">
                 <div class="d-flex justify-content-between align-items-center p-2">
                     <div class="flex-column lh-1 imagename"> <span>Motorola</span> <span>Repairs</span>  </div>
@@ -192,7 +192,7 @@
             </a>
         </div>
         <div class="col-md-3">
-            <a href="#">
+            <a href="{{ route('MSsurface') }}">
             <div class="card p-2">
                 <div class="d-flex justify-content-between align-items-center p-2">
                     <div class="flex-column lh-1 imagename"> <span>MS Surface</span> <span>Repairs</span>  </div>
@@ -202,7 +202,7 @@
             </a>
         </div>
         <div class="col-md-3">
-            <a href="#">
+            <a href="">
             <div class="card p-2">
                 <div class="d-flex justify-content-between align-items-center p-2">
                     <div class="flex-column lh-1 imagename"> <span>Telstra</span> <span>Repairs</span>  </div>
