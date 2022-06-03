@@ -33,16 +33,16 @@
                                 <h4 class="footer-title border-left">OUR SERVICES</h4>
                                 <ul class="footer-menu">
                                     <li>
-                                        <a href="{{ route('apple_repairs') }}"><i class="zmdi zmdi-circle"></i><span>Apple Repairs</span></a>
+                                        <a href="{{ route('apple_repairs') }}"><i class="zmdi zmdi-circle"></i><span style="font-size: 20px;">Apple Repairs</span></a>
                                     </li>
                                     <li>
-                                        <a href="{{ route('android_repairs') }}"><i class="zmdi zmdi-circle"></i><span>Android Repairs</span></a>
+                                        <a href="{{ route('android_repairs') }}"><i class="zmdi zmdi-circle"></i><span style="font-size: 20px;">Android Repairs</span></a>
                                     </li>
                                     <li>
-                                        <a href="{{ route('ipad_repairs') }}"><i class="zmdi zmdi-circle"></i><span>iPad Repairs</span></a>
+                                        <a href="{{ route('ipad_repairs') }}"><i class="zmdi zmdi-circle"></i><span style="font-size: 20px;">iPad Repairs</span></a>
                                     </li>
                                     <li>
-                                        <a href="{{ route('van') }}"><i class="zmdi zmdi-circle"></i><span>Van Repairs</span></a>
+                                        <a href="{{ route('van') }}"><i class="zmdi zmdi-circle"></i><span style="font-size: 20px;">Van Repairs</span></a>
                                     </li>
                                     <!-- <li>
                                         <a><i class="zmdi zmdi-circle"></i><span>Apple Watch Repairs</span></a>
