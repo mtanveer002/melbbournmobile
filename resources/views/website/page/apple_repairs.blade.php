@@ -75,7 +75,7 @@
             </a>
         </div>
         <div class="col-md-3">
-            <a href="{{ route('mac') }}">
+            <a href="{{ route('macbook') }}">
             <div class="card p-2">
                 <div class="d-flex justify-content-between align-items-center p-2">
                     <div class="flex-column lh-1 imagename"> <span>MacBook</span> <span>Repairs</span> </div>
@@ -85,7 +85,7 @@
             </a>
         </div>
         <div class="col-md-3">
-            <a href="#">
+            <a href="{{ route('ipad') }}">
             <div class="card p-2">
                 <div class="d-flex justify-content-between align-items-center p-2">
                     <div class="flex-column lh-1 imagename"> <span>iPad</span> <span>Repairs</span> </div>
@@ -95,7 +95,7 @@
             </a>
         </div>
         <div class="col-md-3">
-            <a href="#">
+            <a href="{{ route('ipod') }}">
             <div class="card p-2tr5">
                 <div class="d-flex justify-content-between align-items-center p-2">
                     <div class="flex-column lh-1 imagename"> <span>iPod</span> <span>Repairs</span> </div>
@@ -105,7 +105,7 @@
             </a>
         </div>
         <div class="col-md-3">
-            <a href="#">
+            <a href="{{ route('iwatch') }}">
             <div class="card p-2">
                 <div class="d-flex justify-content-between align-items-center p-2">
                     <div class="flex-column lh-1 imagename"> <span>iWatch</span> <span>Repairs</span> </div>

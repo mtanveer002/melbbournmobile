@@ -62,6 +62,26 @@
       </div>
       <br>
 </div>
+<div class="container">
+    <div class="row mt-2 g-4">
+        @foreach($models as $model)
+                <div class="col-md-3">
+                    <a href="">
+                    <div class="card p-1">
+                        <div class="d-flex justify-content-between align-items-center p-2">
+                            <div class="flex-column lh-1 imagename"> 
+        
+                            <span>{{ $model->name }}</span>
+                            
+                        </div>
+                            <div> <img src="{{ asset('assets/pages/img/works/ipad.jpg') }}" height="100" width="100" /> </div>
+                        </div>
+                    </div>
+                    </a>
+                </div>
+        @endforeach
+    </div>
+</div>
 
 <!-- START FOOTER AREA -->
 @include('website.layout.footer')

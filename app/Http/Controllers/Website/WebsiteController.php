@@ -47,22 +47,112 @@ class WebsiteController extends Controller
     public function iphone()
     {
         // $models = BrandModal::where('category_name','Iphone')->orderBy('created_at', 'DESC')->get();
-        $models = BrandModal::all();
+        $models = BrandModal::where('brand_id','1')->orderBy('created_at', 'DESC')->get();
         return view('website.page.iphone', compact('models'));
     }
-    public function mac()
+    public function macbook()
     {
-        $models = BrandModal::all();
-        $brands = Brand::all();
-        return view('website.page.mac', compact('models', 'brands'));
+        $models = BrandModal::where('brand_id','35')->orderBy('created_at', 'DESC')->get();
+        return view('website.page.macbook', compact('models'));
+    }
+    public function ipad()
+    {
+        $models = BrandModal::where('brand_id','34')->orderBy('created_at', 'DESC')->get();
+        return view('website.page.ipad', compact('models'));
+    }
+    public function ipod()
+    {
+        $models = BrandModal::where('brand_id','38')->orderBy('created_at', 'DESC')->get();
+        return view('website.page.ipod', compact('models'));
+    }
+    public function iwatch()
+    {
+        $models = BrandModal::where('brand_id','36')->orderBy('created_at', 'DESC')->get();
+        return view('website.page.iwatch', compact('models'));
     }
     public function android_repairs()
     {
         return view('website.page.android_repairs');
     }
+    public function samsung()
+    {
+        $models = BrandModal::where('brand_id','2')->orderBy('created_at', 'DESC')->get();
+        return view('website.page.samsung', compact('models'));
+    }
+    public function sony()
+    {
+        $models = BrandModal::where('brand_id','4')->orderBy('created_at', 'DESC')->get();
+        return view('website.page.sony', compact('models'));
+    }
+    public function Huawei()
+    {
+        $models = BrandModal::where('brand_id','6')->orderBy('created_at', 'DESC')->get();
+        return view('website.page.Huawei', compact('models'));
+    }
+    public function htc()
+    {
+        $models = BrandModal::where('brand_id','9')->orderBy('created_at', 'DESC')->get();
+        return view('website.page.htc', compact('models'));
+    }
+    public function Xiaomi()
+    {
+        $models = BrandModal::where('brand_id','5')->orderBy('created_at', 'DESC')->get();
+        return view('website.page.Xiaomi', compact('models'));
+    }
+    public function oppo()
+    {
+        $models = BrandModal::where('brand_id','7')->orderBy('created_at', 'DESC')->get();
+        return view('website.page.oppo', compact('models'));
+    }
+    public function OnePlus()
+    {
+        $models = BrandModal::where('brand_id','14')->orderBy('created_at', 'DESC')->get();
+        return view('website.page.OnePlus', compact('models'));
+    }
+    public function nokia()
+    {
+        $models = BrandModal::where('brand_id','11')->orderBy('created_at', 'DESC')->get();
+        return view('website.page.nokia', compact('models'));
+    }
+    public function lg()
+    {
+        $models = BrandModal::where('category_name','lg')->orderBy('created_at', 'DESC')->get();
+        return view('website.page.lg', compact('models'));
+    }
+    public function BlackBerry()
+    {
+        $models = BrandModal::where('brand_id','10')->orderBy('created_at', 'DESC')->get();
+        return view('website.page.BlackBerry', compact('models'));
+    }
+    public function asus()
+    {
+        $models = BrandModal::where('brand_id','15')->orderBy('created_at', 'DESC')->get();
+        return view('website.page.asus', compact('models'));
+    }
+    public function vivo()
+    {
+        $models = BrandModal::where('brand_id','3')->orderBy('created_at', 'DESC')->get();
+        return view('website.page.vivo', compact('models'));
+    }
+    public function motorola()
+    {
+        $models = BrandModal::where('brand_id','8')->orderBy('created_at', 'DESC')->get();
+        return view('website.page.motorola', compact('models'));
+    }
+    public function MSsurface()
+    {
+        $models = BrandModal::where('brand_id','16')->orderBy('created_at', 'DESC')->get();
+        return view('website.page.MSsurface', compact('models'));
+    }
+    public function Telsetra()
+    {
+        $models = BrandModal::where('category_name','Telsetra')->orderBy('created_at', 'DESC')->get();
+        return view('website.page.Telsetra', compact('models'));
+    }
     public function ipad_repairs()
     {
-        return view('website.page.ipad_repairs');
+        $models = BrandModal::where('brand_id','34')->orderBy('created_at', 'DESC')->get();
+        return view('website.page.ipad_repairs', compact('models'));
     }
     public function contact()
     {
