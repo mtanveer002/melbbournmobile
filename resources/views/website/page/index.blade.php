@@ -867,7 +867,7 @@ element.style {
                         <div class="newsletter" >
                             <div class="newsletter-info text-center">
                                 <h2 class="newsletter-title">get a newsletter</h2>
-                                <p>Make sure that you never miss our interesting news <br class="hidden-xs">by joining
+                                <p style="color: grey;">Make sure that you never miss our interesting news <br class="hidden-xs">by joining
                                     our newsletter program.</p>
                             </div>
                             <div class="subcribe clearfix">
@@ -886,7 +886,121 @@ element.style {
     </section>
 
 
+<!-- FAQs -->
+<div class="container ">
+    <h2 class="newsletter-title" style="text-align: center;color: #fb6128;">Read FAQ’s</h2>
+    <hr>
+    <h4 style="color: grey;text-align: center">Your all questions are answered here about our services.</h4>
+    <div class="panel-group" id="faqAccordion">
+        <div class="panel panel-default ">
+            <div class="panel-heading accordion-toggle question-toggle collapsed" data-toggle="collapse" data-parent="#faqAccordion" style="cursor: pointer;" data-target="#question0">
+                 <h4 class="panel-title">
+                    <a class="ing">Q: Is It Cheaper To Repair Or Replace A Phone?</a>
+              </h4>
 
+            </div>
+            <div id="question0" class="panel-collapse collapse" style="height: 0px;">
+                <div class="panel-body">
+                     <h5><span class="label label-primary">Answer</span></h5>
+                    <p style="color: black">This varies based on the model of a device, it’s almost always cheaper to get the device repaired. Our Screen Replacements are usually less than 30% of the device’s retail price!
+                        </p>
+                </div>
+            </div>
+        </div>
+        <div class="panel panel-default ">
+            <div class="panel-heading accordion-toggle collapsed question-toggle" data-toggle="collapse" data-parent="#faqAccordion" style="cursor: pointer;" data-target="#question1">
+                 <h4 class="panel-title">
+                    <a class="ing">Q: What can I do if my phone won’t turn on?</a>
+              </h4>
+
+            </div>
+            <div id="question1" class="panel-collapse collapse" style="height: 0px;">
+                <div class="panel-body">
+                     <h5><span class="label label-primary">Answer</span></h5>
+
+                    <p style="color: black">Many issues such as dead batteries, dirty charge ports, damaged displays and liquid damage can prevent devices from switching on. Bring it in and we’ll happily inspect and quote your device free of charge! </p>
+                </div>
+            </div>
+        </div>
+        <div class="panel panel-default ">
+            <div class="panel-heading accordion-toggle collapsed question-toggle" data-toggle="collapse" data-parent="#faqAccordion" style="cursor: pointer;" data-target="#question2">
+                 <h4 class="panel-title">
+                    <a class="ing">Q: I’m seeing weird lines and black spots on my display, is that repairable?</a>
+              </h4>
+
+            </div>
+            <div id="question2" class="panel-collapse collapse" style="height: 0px;">
+                <div class="panel-body">
+                     <h5><span class="label label-primary">Answer</span></h5>
+
+                    <p style="color: black">Yes! Issues like these are usually caused by damaged LCDs, we can replace the LCD along with the glass. </p>
+                </div>
+            </div>
+        </div>
+        <div class="panel panel-default ">
+            <div class="panel-heading accordion-toggle collapsed question-toggle" data-toggle="collapse" data-parent="#faqAccordion" style="cursor: pointer;" data-target="#question3">
+                 <h4 class="panel-title">
+                    <a class="ing">Q: I’ve dropped my phone in liquid, what should I do?</a>
+              </h4>
+
+            </div>
+            <div id="question3" class="panel-collapse collapse" style="height: 0px;">
+                <div class="panel-body">
+                     <h5><span class="label label-primary">Answer</span></h5>
+
+                    <p style="color: black">We recommend taking the device out of the liquid as soon as possible, turn the device off, remove the battery (if the battery is removable), and dry the device off thoroughly. We DO NOT recommend putting the rice as it can clog up charge ports. Liquid inside devices can take up to 2 weeks to completely dry up by itself. We recommend bringing it in for our trained technicians to disassemble, wash, dry and clean devices to ensure they have the best chance of recovery. </p>
+                </div>
+            </div>
+        </div>
+        <div class="panel panel-default ">
+            <div class="panel-heading accordion-toggle collapsed question-toggle" data-toggle="collapse" data-parent="#faqAccordion" style="cursor: pointer;" data-target="#question4">
+                 <h4 class="panel-title">
+                    <a class="ing">Q: Does my phone need a new battery?</a>
+              </h4>
+
+            </div>
+            <div id="question4" class="panel-collapse collapse" style="height: 0px;">
+                <div class="panel-body">
+                     <h5><span class="label label-primary">Answer</span></h5>
+
+                    <p style="color: black">Batteries wear with age and use, phones over 2 years old are likely to have noticeably poorer battery life compared to new phones. If your battery life is significantly worse than when it was new, we recommend bringing it down for a free battery health check.  </p>
+                </div>
+            </div>
+        </div>
+        <div class="panel panel-default ">
+            <div class="panel-heading accordion-toggle collapsed question-toggle" data-toggle="collapse" data-parent="#faqAccordion" style="cursor: pointer;" data-target="#question5">
+                 <h4 class="panel-title">
+                    <a class="ing">Q: Is my data safe?</a>
+              </h4>
+
+            </div>
+            <div id="question5" class="panel-collapse collapse" style="height: 0px;">
+                <div class="panel-body">
+                     <h5><span class="label label-primary">Answer</span></h5>
+
+                    <p style="color: black">We understand electronic devices contain sensitive data, which is why every team member is trained and monitored daily to ensure we comply with Australian Privacy Laws. As there’s always a small risk of data loss, we always recommend backing up your device before repair or service. </p>
+                </div>
+            </div>
+        </div>
+        <div class="panel panel-default ">
+            <div class="panel-heading accordion-toggle collapsed question-toggle" data-toggle="collapse" data-parent="#faqAccordion" style="cursor: pointer;" data-target="#question6">
+                 <h4 class="panel-title">
+                    <a class="ing">Q: Why should I back up my device before a repair?</a>
+              </h4>
+
+            </div>
+            <div id="question6" class="panel-collapse collapse" style="height: 0px;">
+                <div class="panel-body">
+                     <h5><span class="label label-primary">Answer</span></h5>
+
+                    <p style="color: black">Our team does their best to ensure your data is not lost or modified, but as electronic devices are unpredictable, data can be corrupt, modified or lost during the repair or servicing process. We recommend backing up ALL data on the device prior to repair or service, we are not liable for data loss once the device has entered our locations. </p>
+                </div>
+            </div>
+        </div>
+        
+    </div>
+    <!--/panel-group-->
+</div>
     
           <!-- START FOOTER AREA -->
        @include('website.layout.footer')
