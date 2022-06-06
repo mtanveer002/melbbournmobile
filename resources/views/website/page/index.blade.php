@@ -540,7 +540,7 @@ element.style {
                             <!-- Grid column -->
                             <div class="col-10">
                                 <h5 class="font-weight-bold mb-3">HOME BUTTON ISSUES</h5>
-                                <p class="grey-text">Is your home button stuck, sunken or just not working? We can
+                                <p class="grey-text" style="color: grey">Is your home button stuck, sunken or just not working? We can
                                     replace home buttons, power buttons, volume buttons, almost any button you can think of,
                                     just not the buttons on your shirt!</p>
                             </div>
@@ -561,7 +561,7 @@ element.style {
                             <!-- Grid column -->
                             <div class="col-10">
                                 <h5 class="font-weight-bold mb-3">OVERHEATING ISSUES</h5>
-                                <p class="grey-text">If your phone feels uncomfortably hot, or warms up more than
+                                <p class="grey-text" style="color: grey">If your phone feels uncomfortably hot, or warms up more than
                                     usual doing everyday tasks, you might have a battery or motherboard issue. Small short
                                     circuits in the device can cause certain areas of the phone to heat up, our technicians
                                     face these issues every day!</p>
@@ -583,7 +583,7 @@ element.style {
                             <!-- Grid column -->
                             <div class="col-10">
                                 <h5 class="font-weight-bold mb-3">LIQUID DAMAGE</h5>
-                                <p class="grey-text mb-md-0">Recently dropped your phone in the toilet, ocean or the
+                                <p class="grey-text mb-md-0" style="color: grey">Recently dropped your phone in the toilet, ocean or the
                                     bathtub? We can fix that! We have over 83% success rate on liquid damage repairs, our
                                     technicians do everything possible to recover your data and repair the phone..</p>
                             </div>
@@ -617,7 +617,7 @@ element.style {
                             <!-- Grid column -->
                             <div class="col-10">
                                 <h5 class="font-weight-bold mb-3">SPEAKER ISSUES</h5>
-                                <p class="grey-text">Distorted speakers? You can’t hear your friends on calls?
+                                <p class="grey-text" style="color: grey">Distorted speakers? You can’t hear your friends on calls?
                                     Speakers are very fragile and can be clogged or damaged by dust. To save you money we’ll
                                     try to clean and service your speakers before replacing them.</p>
                             </div>
@@ -638,7 +638,7 @@ element.style {
                             <!-- Grid column -->
                             <div class="col-10">
                                 <h5 class="font-weight-bold mb-3">CRACKED LCD/SCREEN REPAIRS</h5>
-                                <p class="grey-text">Damaged displays can be super annoying! Glass splitters can also
+                                <p class="grey-text" style="color: grey">Damaged displays can be super annoying! Glass splitters can also
                                     stay stuck inside finger tips! We can replace your LCD, OLED, or just the glass, we’ll
                                     replace your screen the right way and have it looking brand new!.</p>
                             </div>
@@ -659,7 +659,7 @@ element.style {
                             <!-- Grid column -->
                             <div class="col-10">
                                 <h5 class="font-weight-bold mb-3">PHONE BATTERY REPLACEMENTS</h5>
-                                <p class="grey-text mb-0">Tired of your battery not lasting all day? Draining quicker than
+                                <p class="grey-text mb-0" style="color: grey">Tired of your battery not lasting all day? Draining quicker than
                                     it used to? Bring it into any of our branches for a free battery health check up and
                                     have your battery replaced.</p>
                             </div>
