@@ -34,7 +34,176 @@
     .zsiq_theme1.zsiq_floatmain {
     margin-right: 50px !important;
 }
+section{
+    padding: 100px 0;
+}
+.details-card {
+	background: #ecf0f1;
+}
+
+.card-content {
+    background: #ffffff;
+    border: 4px;
+    margin-top: 10px;
+    box-shadow: 0 2px 5px 0 rgba(0,0,0,.16), 0 2px 10px 0 rgba(0,0,0,.12);
+}
+
+.card-img {
+	position: relative;
+	overflow: hidden;
+	border-radius: 0;
+	z-index: 1;
+}
+
+.card-img img {
+	width: 100%;
+	height: auto;
+	display: block;
+}
+
+.card-img span {
+	position: absolute;
+    top: 15%;
+    left: 12%;
+    background: #fb6128;
+    padding: 6px;
+    color: #fff;
+    font-size: 12px;
+    border-radius: 4px;
+    -webkit-border-radius: 4px;
+    -moz-border-radius: 4px;
+    -ms-border-radius: 4px;
+    -o-border-radius: 4px;
+    transform: translate(-50%,-50%);
+}
+.card-img span h4{
+        font-size: 12px;
+        margin:0;
+        padding:10px 5px;
+         line-height: 0;
+}
+.card-desc {
+	padding: 1.25rem;
+    text-align: center;
+}
+
+.card-desc h3 {
+	color: #000000;
+    font-weight: 600;
+    font-size: 1.4em;
+    line-height: 1.3em;
+    margin-top: 0;
+    margin-bottom: 5px;
+    padding: 0;
+}
+
+.card-desc p {
+	color: #747373;
+    font-size: 14px;
+	line-height: 1.5;
+	margin: 0px;
+	margin-bottom: 20px;
+    text-align: justify;
+	padding: 0;
+    height: 220px;
+	font-family: 'Raleway', sans-serif;
+}
+.btn-card{
+	background-color: #fb6128;
+	color: #fff;
+	box-shadow: 0 2px 5px 0 rgba(0,0,0,.16), 0 2px 10px 0 rgba(0,0,0,.12);
+    padding: .84rem 2.14rem;
+    font-size: 1.6rem;
+    -webkit-transition: color .15s ease-in-out,background-color .15s ease-in-out,border-color .15s ease-in-out,-webkit-box-shadow .15s ease-in-out;
+    transition: color .15s ease-in-out,background-color .15s ease-in-out,border-color .15s ease-in-out,-webkit-box-shadow .15s ease-in-out;
+    -o-transition: color .15s ease-in-out,background-color .15s ease-in-out,border-color .15s ease-in-out,box-shadow .15s ease-in-out;
+    transition: color .15s ease-in-out,background-color .15s ease-in-out,border-color .15s ease-in-out,box-shadow .15s ease-in-out;
+    transition: color .15s ease-in-out,background-color .15s ease-in-out,border-color .15s ease-in-out,box-shadow .15s ease-in-out,-webkit-box-shadow .15s ease-in-out;
+    margin: 0;
+    border: 0;
+    -webkit-border-radius: .125rem;
+    border-radius: .125rem;
+    cursor: pointer;
+    text-transform: uppercase;
+    white-space: normal;
+    word-wrap: break-word;
+    color: #fff;
+}
+.btn-card:hover {
+    background: orange;
+}
+a.btn-card {
+    text-decoration: none;
+    color: #fff;
+}
+@media (max-width: 1200px) {
+    .card-desc p {
+	color: #747373;
+    font-size: 14px;
+	line-height: 1.5;
+	margin: 0px;
+	margin-bottom: 20px;
+    text-align: justify;
+	padding: 0;
+    height: 300px;
+	font-family: 'Raleway', sans-serif;
+}
+}
+@media (max-width: 990px) {
+    .card-desc h3 {
+	color: #000000;
+    font-weight: 600;
+    font-size: 1em;
+    line-height: 1.3em;
+    margin-top: 0;
+    margin-bottom: 5px;
+    padding: 0;
+}
+    .card-desc p {
+	color: #747373;
+    font-size: 14px;
+	line-height: 1.5;
+	margin: 0px;
+	margin-bottom: 20px;
+    text-align: justify;
+	padding: 0;
+    height: 400px;
+	font-family: 'Raleway', sans-serif;
+}
+}
+@media (max-width: 768px) {
+    
+    .card-desc p {
+	color: #747373;
+    font-size: 14px;
+	line-height: 1.5;
+	margin: 0px;
+	margin-bottom: 20px;
+    text-align: justify;
+	padding: 0;
+    height: 200px;
+	font-family: 'Raleway', sans-serif;
+}
+
+}
+
+@media (max-width: 480px) {
+    .card-desc p {
+	color: #747373;
+    font-size: 14px;
+	line-height: 1.5;
+	margin: 0px;
+	margin-bottom: 20px;
+    text-align: justify;
+	padding: 0;
+    height: 300px;
+	font-family: 'Raleway', sans-serif;
+}
+
+}
+/* End card section */
 </style>
+
 
 <body>
     
@@ -46,6 +215,7 @@
        @include('website.layout.topmenu')
     </header>
 
+<!-- START MOBILE MENU AREA -->
 <div class="jumbotron">
     <div class="container">
         <div class="row" style="text-align: center">
@@ -54,167 +224,216 @@
                 <h2 style="font-size:18px;text-align: justify">Melbourne Mobile Phone Repair has solutions and fixes available for all types of phones. We offer trusted mobile screen replacement services. Our clients and customers trusts our world-class services which makes us to move forward gracefully. </h2>
             </div>
             <div class="col-md-6">
-                <img src="{{ asset('assets/pages/img/works/xiome.png')}}" style="height: 150px"/>
+                <img src="{{ asset('assets/pages/img/works/iphone.png')}}" style="height: 150px" />
             </div>
         </div>
       </div>
-      <br>
-      <div class="container">
-    <div class="row mt-2 g-4">
-        <div class="col-md-3">
-            <a href="{{ route('samsung') }}">
-            <div class="card p-1">
-                <div class="d-flex justify-content-between align-items-center p-2">
-                    <div class="flex-column lh-1 imagename"> <span>Samsung</span> <span>Repairs</span> </div>
-                    <div> <img src="{{ asset('assets/pages/img/works/samsung.jpg') }}" height="100" width="100" /> </div>
+      <!-- details card section starts from here -->
+<section class="details-card">
+    <div class="container">
+        <div class="row">
+            <div class="col-md-4">
+                <div class="card-content">
+                    <div class="card-img">
+                        <img src="{{ asset('assets/pages/img/works/samsung.jpg') }}" alt="" style="height: 250px">
+                        <!-- <span><h4>iPhone Reapirs</h4></span> -->
+                    </div>
+                    <div class="card-desc">
+                        <h3>Samsung Reapirs</h3>
+                        <p>Are you facing problems with your iPhone? We are here to rescue you because we have solutions to all your iPhone related problems. Everything from a
+                             broken screen to a dead battery can be fixed by MMP Repairs. Our staff is skilled at going to the root of the problem and solving the problem in the
+                              shortest time. So be it a memory upgrade problem, an LCD problem, mother board related problem or a faulty iPhone camera, we will take care of
+                               everything for you. Bring your problem to MMP Repairs and get rid of it now!</p>
+                            <a href="{{ route('samsung') }}" class="btn-card">Get Repair</a>   
+                    </div>
                 </div>
             </div>
-            </a>
-        </div>
-        <div class="col-md-3">
-            <a href="{{ route('sony') }}">
-            <div class="card p-2">
-                <div class="d-flex justify-content-between align-items-center p-2">
-                    <div class="flex-column lh-1 imagename"> <span>Sony</span> <span>Repairs</span> </div>
-                    <div> <img src="{{ asset('assets/pages/img/works/sony.jpg') }}" height="100" width="100" /> </div>
+            <div class="col-md-4">
+                <div class="card-content">
+                    <div class="card-img">
+                        <img src="{{ asset('assets/pages/img/works/sony.jpg') }}" alt="" style="height: 250px">
+                        <!-- <span><h4>MacBook Repairs</h4></span> -->
+                    </div>
+                    <div class="card-desc">
+                        <h3>Sony Repairs</h3>
+                        <p>If you’re having trouble with your MacBook, MMPR is your ultimate resort. We deal in motherboard repair and speaker replacement of MacBooks. Along with 
+                            that we also provide our services for optical drive replacements, water damage repair, LED screen replacements, and storage or hard disk upgrade.
+                             With our MacBook repair services, you can get your PC fixed in the shortest time and therefore you will not face any work-related issues.</p>
+                            <a href="{{ route('sony') }}" class="btn-card">Get Repair</a>   
+                    </div>
                 </div>
             </div>
-            </a>
-        </div>
-        <div class="col-md-3">
-            <a href="{{ route('Huawei') }}">
-            <div class="card p-2">
-                <div class="d-flex justify-content-between align-items-center p-2">
-                    <div class="flex-column lh-1 imagename"> <span>Huawei</span> <span>Repairs</span> </div>
-                    <div> <img src="{{ asset('assets/pages/img/works/huawei.jpg') }}" height="100" width="100" /> </div>
+            <div class="col-md-4">
+                <div class="card-content">
+                    <div class="card-img">
+                        <img src="{{ asset('assets/pages/img/works/Huawei.jpg') }}" alt="" style="height: 250px">
+                        <!-- <span><h4>iPad Repairis</h4></span> -->
+                    </div>
+                    <div class="card-desc">
+                        <h3>Huawei Repairs</h3>
+                        <p>We have an expert and skilled staff that will reach to the root of your iPad problem. No matter the nature of problem with your device, we can solve it
+                             in no time. So, whether you are dealing with a broken iPad screen, a broken button, water damage, or any other hardware or software issues, MMPR will 
+                             be at your service. All you have to do is reach out to us, tell us the problem you are facing and handover your device to us. </p>
+                            <a href="{{ route('Huawei') }}" class="btn-card">Get Repair</a>   
+                    </div>
                 </div>
             </div>
-            </a>
-        </div>
-        <div class="col-md-3">
-            <a href="{{ route('htc') }}">
-            <div class="card p-2tr5">
-                <div class="d-flex justify-content-between align-items-center p-2">
-                    <div class="flex-column lh-1 imagename"> <span>HTC</span> <span>Repairs</span> </div>
-                    <div> <img src="{{ asset('assets/pages/img/works/htc.jpg') }}" height="100" width="100" /> </div>
+            <br>
+            <div class="col-md-4">
+                <div class="card-content">
+                    <div class="card-img">
+                        <img src="{{ asset('assets/pages/img/works/htc.jpg') }}" alt="" style="height: 250px">
+                        <!-- <span><h4>iPad Repairis</h4></span> -->
+                    </div>
+                    <div class="card-desc">
+                        <h3>HTC Repairs</h3>
+                        <p>Letting go of our iPods is the hardest thing to do no matter how old and damaged they are. At MMPR we solve all kinds of iPod related problems, so you no 
+                            longer have to worry about a broken device. We will fix everything from the battery to the storage, so you need not discard your precious iPod despite 
+                            how old it is. Get you iPods fixed at the most reasonable price right now! </p>
+                            <a href="{{ route('htc') }}" class="btn-card" >Get Repair</a>   
+                    </div>
                 </div>
             </div>
-            </a>
-        </div>
-        <div class="col-md-3">
-            <a href="{{ route('Xiaomi') }}">
-            <div class="card p-2">
-                <div class="d-flex justify-content-between align-items-center p-2">
-                    <div class="flex-column lh-1 imagename"> <span>Xiaomi</span> <span>Repairs</span> </div>
-                    <div> <img src="{{ asset('assets/pages/img/works/xiome.jpg') }}" height="100" width="100" /> </div>
+            <div class="col-md-4">
+                <div class="card-content">
+                    <div class="card-img">
+                        <img src="{{ asset('assets/pages/img/works/xiome.jpg') }}" alt="" style="height: 250px">
+                        <!-- <span><h4>iPad Repairis</h4></span> -->
+                    </div>
+                    <div class="card-desc">
+                        <h3>Xiaomi Repairs</h3>
+                        <p>If you have a broken iWatch or an iWatch with a defective touch screen, you know what to do! Just bring you device to us and get it fixed in no time. 
+                            All hardware and software related Apple watch problems are dealt with professionally at MMP Repairs. We will fix the issue of broken screen in the least
+                             amount of time so you need not take your watch anywhere else! </p>
+                            <a href="{{ route('Xiaomi') }}" class="btn-card">Get Repair</a>   
+                    </div>
                 </div>
             </div>
-            </a>
-        </div>
-        <div class="col-md-3">
-            <a href="{{ route('oppo') }}">
-            <div class="card p-2">
-                <div class="d-flex justify-content-between align-items-center p-2">
-                    <div class="flex-column lh-1 imagename"> <span>OPPO</span> <span>Repairs</span> </div>
-                    <div> <img src=" {{ asset('assets/pages/img/works/oppo.jpg') }}" height="100" width="100" /> </div>
+            <div class="col-md-4">
+                <div class="card-content">
+                    <div class="card-img">
+                        <img src="{{ asset('assets/pages/img/works/oppo.jpg') }}" alt="" style="height: 250px">
+                        <!-- <span><h4>iPad Repairis</h4></span> -->
+                    </div>
+                    <div class="card-desc">
+                        <h3>Oppo Repairs</h3>
+                        <p>If you have a broken iWatch or an iWatch with a defective touch screen, you know what to do! Just bring you device to us and get it fixed in no time. 
+                            All hardware and software related Apple watch problems are dealt with professionally at MMP Repairs. We will fix the issue of broken screen in the least
+                             amount of time so you need not take your watch anywhere else! </p>
+                            <a href="{{ route('oppo') }}" class="btn-card">Get Repair</a>   
+                    </div>
                 </div>
             </div>
-            </a>
-        </div>
-        <div class="col-md-3">
-            <a href="{{ route('OnePlus') }}">
-            <div class="card p-2">
-                <div class="d-flex justify-content-between align-items-center p-2">
-                    <div class="flex-column lh-1 imagename"> <span>One Plus</span> <span>Repairs</span> </div>
-                    <div> <img src=" {{ asset('assets/pages/img/works/one-plus.jpg') }}" height="100" width="100" /> </div>
+            <div class="col-md-4">
+                <div class="card-content">
+                    <div class="card-img">
+                        <img src="{{ asset('assets/pages/img/works/One-Plus.jpg') }}" alt="" style="height: 250px">
+                        <!-- <span><h4>iPad Repairis</h4></span> -->
+                    </div>
+                    <div class="card-desc">
+                        <h3>One Plus Repairs</h3>
+                        <p>If you have a broken iWatch or an iWatch with a defective touch screen, you know what to do! Just bring you device to us and get it fixed in no time. 
+                            All hardware and software related Apple watch problems are dealt with professionally at MMP Repairs. We will fix the issue of broken screen in the least
+                             amount of time so you need not take your watch anywhere else! </p>
+                            <a href="{{ route('OnePlus') }}" class="btn-card">Get Repair</a>   
+                    </div>
                 </div>
             </div>
-            </a>
-        </div>
-        <div class="col-md-3">
-            <a href="{{ route('nokia') }}">
-            <div class="card p-2">
-                <div class="d-flex justify-content-between align-items-center p-2">
-                    <div class="flex-column lh-1 imagename"> <span>Nokia</span> <span>Repairs</span> </div>
-                    <div> <img src="{{ asset('assets/pages/img/works/nokia.jpg') }}" height="100" width="100" /> </div>
+            <div class="col-md-4">
+                <div class="card-content">
+                    <div class="card-img">
+                        <img src="{{ asset('assets/pages/img/works/nokia.jpg') }}" alt="" style="height: 250px">
+                        <!-- <span><h4>iPad Repairis</h4></span> -->
+                    </div>
+                    <div class="card-desc">
+                        <h3>Nokia Repairs</h3>
+                        <p>If you have a broken iWatch or an iWatch with a defective touch screen, you know what to do! Just bring you device to us and get it fixed in no time. 
+                            All hardware and software related Apple watch problems are dealt with professionally at MMP Repairs. We will fix the issue of broken screen in the least
+                             amount of time so you need not take your watch anywhere else! </p>
+                            <a href="{{ route('nokia') }}" class="btn-card">Get Repair</a>   
+                    </div>
                 </div>
             </div>
-            </a>
-        </div>
-        <div class="col-md-3">
-            <a href="">
-            <div class="card p-2">
-                <div class="d-flex justify-content-between align-items-center p-2">
-                    <div class="flex-column lh-1 imagename"> <span>LG</span> <span>Repairs</span> </div>
-                    <div> <img src=" {{ asset('assets/pages/img/works/lg.jpg') }}" height="100" width="100" /> </div>
+            <div class="col-md-4">
+                <div class="card-content">
+                    <div class="card-img">
+                        <img src="{{ asset('assets/pages/img/works/BlackBerry.jpg') }}" alt="" style="height: 250px">
+                        <!-- <span><h4>iPad Repairis</h4></span> -->
+                    </div>
+                    <div class="card-desc">
+                        <h3>BlackBerry Repairs</h3>
+                        <p>If you have a broken iWatch or an iWatch with a defective touch screen, you know what to do! Just bring you device to us and get it fixed in no time. 
+                            All hardware and software related Apple watch problems are dealt with professionally at MMP Repairs. We will fix the issue of broken screen in the least
+                             amount of time so you need not take your watch anywhere else! </p>
+                            <a href="{{ route('BlackBerry') }}" class="btn-card">Get Repair</a>   
+                    </div>
                 </div>
             </div>
-            </a>
-        </div>
-        <div class="col-md-3">
-            <a href="{{ route('BlackBerry') }}">
-            <div class="card p-2">
-                <div class="d-flex justify-content-between align-items-center p-2">
-                    <div class="flex-column lh-1 imagename"> <span>Black Berry</span> <span>Repairs</span> </div>
-                    <div> <img src="{{ asset('assets/pages/img/works/blackberry.jpg') }}" height="100" width="100" /> </div>
+            <div class="col-md-4">
+                <div class="card-content">
+                    <div class="card-img">
+                        <img src="{{ asset('assets/pages/img/works/asus.jpg') }}" alt="" style="height: 250px">
+                        <!-- <span><h4>iPad Repairis</h4></span> -->
+                    </div>
+                    <div class="card-desc">
+                        <h3>Asus Repairs</h3>
+                        <p>If you have a broken iWatch or an iWatch with a defective touch screen, you know what to do! Just bring you device to us and get it fixed in no time. 
+                            All hardware and software related Apple watch problems are dealt with professionally at MMP Repairs. We will fix the issue of broken screen in the least
+                             amount of time so you need not take your watch anywhere else! </p>
+                            <a href="{{ route('asus') }}" class="btn-card">Get Repair</a>   
+                    </div>
                 </div>
             </div>
-            </a>
-        </div>
-        <div class="col-md-3">
-            <a href="{{ route('asus') }}">
-            <div class="card p-2">
-                <div class="d-flex justify-content-between align-items-center p-2">
-                    <div class="flex-column lh-1 imagename"> <span>Asus</span> <span>Repairs</span> </div>
-                    <div> <img src=" {{ asset('assets/pages/img/works/asus.jpg') }}" height="100" width="100" /> </div>
+            <div class="col-md-4">
+                <div class="card-content">
+                    <div class="card-img">
+                        <img src="{{ asset('assets/pages/img/works/vivo.jpeg') }}" alt="" style="height: 250px">
+                        <!-- <span><h4>iPad Repairis</h4></span> -->
+                    </div>
+                    <div class="card-desc">
+                        <h3>Vivo Repairs</h3>
+                        <p>If you have a broken iWatch or an iWatch with a defective touch screen, you know what to do! Just bring you device to us and get it fixed in no time. 
+                            All hardware and software related Apple watch problems are dealt with professionally at MMP Repairs. We will fix the issue of broken screen in the least
+                             amount of time so you need not take your watch anywhere else! </p>
+                            <a href="{{ route('vivo') }}" class="btn-card">Get Repair</a>   
+                    </div>
                 </div>
             </div>
-            </a>
-        </div>
-        <div class="col-md-3">
-            <a href="{{ route('vivo') }}">
-            <div class="card p-2">
-                <div class="d-flex justify-content-between align-items-center p-2">
-                    <div class="flex-column lh-1 imagename"> <span>VIVO</span> <span>Repairs</span> </div>
-                    <div> <img src=" {{ asset('assets/pages/img/works/vivo.jpeg') }}" height="100" width="100" /> </div>
+            <div class="col-md-4">
+                <div class="card-content">
+                    <div class="card-img">
+                        <img src="{{ asset('assets/pages/img/works/motorola.jpg') }}" alt="" style="height: 250px">
+                        <!-- <span><h4>iPad Repairis</h4></span> -->
+                    </div>
+                    <div class="card-desc">
+                        <h3>Motorola Repairs</h3>
+                        <p>If you have a broken iWatch or an iWatch with a defective touch screen, you know what to do! Just bring you device to us and get it fixed in no time. 
+                            All hardware and software related Apple watch problems are dealt with professionally at MMP Repairs. We will fix the issue of broken screen in the least
+                             amount of time so you need not take your watch anywhere else! </p>
+                            <a href="{{ route('motorola') }}" class="btn-card">Get Repair</a>   
+                    </div>
                 </div>
             </div>
-            </a>
-        </div>
-        <div class="col-md-3">
-            <a href="{{ route('motorola') }}">
-            <div class="card p-2">
-                <div class="d-flex justify-content-between align-items-center p-2">
-                    <div class="flex-column lh-1 imagename"> <span>Motorola</span> <span>Repairs</span>  </div>
-                    <div> <img src="{{ asset('assets/pages/img/works/motorola.jpg') }}" height="100" width="100" /> </div>
+            <div class="col-md-4">
+                <div class="card-content">
+                    <div class="card-img">
+                        <img src="{{ asset('assets/pages/img/works/MSsurface.jpg') }}" alt="" style="height: 250px">
+                        <!-- <span><h4>iPad Repairis</h4></span> -->
+                    </div>
+                    <div class="card-desc">
+                        <h3>MS surface Repairs</h3>
+                        <p>If you have a broken iWatch or an iWatch with a defective touch screen, you know what to do! Just bring you device to us and get it fixed in no time. 
+                            All hardware and software related Apple watch problems are dealt with professionally at MMP Repairs. We will fix the issue of broken screen in the least
+                             amount of time so you need not take your watch anywhere else! </p>
+                            <a href="{{ route('MSsurface') }}" class="btn-card">Get Repair</a>   
+                    </div>
                 </div>
             </div>
-            </a>
-        </div>
-        <div class="col-md-3">
-            <a href="{{ route('MSsurface') }}">
-            <div class="card p-2">
-                <div class="d-flex justify-content-between align-items-center p-2">
-                    <div class="flex-column lh-1 imagename"> <span>MS Surface</span> <span>Repairs</span>  </div>
-                    <div> <img src="{{ asset('assets/pages/img/works/MSSurface.jpg') }}" height="100" width="100" /> </div>
-                </div>
-            </div>
-            </a>
-        </div>
-        <div class="col-md-3">
-            <a href="">
-            <div class="card p-2">
-                <div class="d-flex justify-content-between align-items-center p-2">
-                    <div class="flex-column lh-1 imagename"> <span>Telstra</span> <span>Repairs</span>  </div>
-                    <div> <img src="{{ asset('assets/pages/img/works/telsetra.jpg') }}" height="100" width="100" /> </div>
-                </div>
-            </div>
-            </a>
+            
         </div>
     </div>
+</section>
 </div>
-</div>
-
 <!-- START FOOTER AREA -->
 @include('website.layout.footer')
         <!-- END FOOTER AREA -->
