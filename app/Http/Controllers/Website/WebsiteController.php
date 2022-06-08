@@ -70,7 +70,7 @@ class WebsiteController extends Controller
       	$booking->shop=$request->shop;
       	$booking->message=$request->message;
       	if($booking->save()){
-      	    $userdata=array('name' => $booking->name, email'=>$booking->email,'device'=>$booking->device,'number'=>$booking->number,'device'=>$booking->device,'model'=>$booking->model,'issue'=>$booking->issue,'message'=>$booking->message,'shop'=>$booking->shop);
+      	    $userdata=array('name' => $booking->name, 'email'=>$booking->email,'device'=>$booking->device,'number'=>$booking->number,'device'=>$booking->device,'model'=>$booking->model,'issue'=>$booking->issue,'message'=>$booking->message,'shop'=>$booking->shop);
             
               Mail::send('/email/repairinguser',['userdata' => $userdata]
                         , function($message) use ($userdata)
