@@ -61,7 +61,7 @@ class WebsiteController extends Controller
     public function savebooking(Request $request)
     {
     	$booking=new Booking();
-      	$booking->device=$request->device;
+      	$booking->name=$request->name;
       	$booking->model=$request->model;
       	$booking->email=$request->email;
       	$booking->number=$request->number;
