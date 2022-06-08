@@ -61,7 +61,7 @@ class WebsiteController extends Controller
     public function savebooking(Request $request)
     {
     	$booking=new Booking();
-      	$booking->name=$request->name;
+      	$booking->device=$request->device;
       	$booking->model=$request->model;
       	$booking->email=$request->email;
       	$booking->number=$request->number;
@@ -70,7 +70,7 @@ class WebsiteController extends Controller
       	$booking->shop=$request->shop;
       	$booking->message=$request->message;
       	if($booking->save()){
-      	    $userdata=array('email'=>$booking->email,'name'=>$booking->name,'number'=>$booking->number,'device'=>$booking->device,'model'=>$booking->model,'issue'=>$booking->issue,'message'=>$booking->message,'shop'=>$booking->shop);
+      	    $userdata=array('email'=>$booking->email,'device'=>$booking->device,'number'=>$booking->number,'device'=>$booking->device,'model'=>$booking->model,'issue'=>$booking->issue,'message'=>$booking->message,'shop'=>$booking->shop);
             
               Mail::send('/email/repairinguser',['userdata' => $userdata]
                         , function($message) use ($userdata)
