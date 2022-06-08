@@ -65,7 +65,7 @@ section{
 	position: absolute;
     top: 15%;
     left: 12%;
-    background: #1ABC9C;
+    background: #fb6128;
     padding: 6px;
     color: #fff;
     font-size: 12px;
@@ -84,6 +84,7 @@ section{
 }
 .card-desc {
 	padding: 1.25rem;
+    text-align: center;
 }
 
 .card-desc h3 {
@@ -108,11 +109,11 @@ section{
 	font-family: 'Raleway', sans-serif;
 }
 .btn-card{
-	background-color: #1ABC9C;
+	background-color: #fb6128;
 	color: #fff;
 	box-shadow: 0 2px 5px 0 rgba(0,0,0,.16), 0 2px 10px 0 rgba(0,0,0,.12);
     padding: .84rem 2.14rem;
-    font-size: 1.3rem;
+    font-size: 1.6rem;
     -webkit-transition: color .15s ease-in-out,background-color .15s ease-in-out,border-color .15s ease-in-out,-webkit-box-shadow .15s ease-in-out;
     transition: color .15s ease-in-out,background-color .15s ease-in-out,border-color .15s ease-in-out,-webkit-box-shadow .15s ease-in-out;
     -o-transition: color .15s ease-in-out,background-color .15s ease-in-out,border-color .15s ease-in-out,box-shadow .15s ease-in-out;
@@ -171,6 +172,7 @@ a.btn-card {
 }
 }
 @media (max-width: 768px) {
+    
     .card-desc p {
 	color: #747373;
     font-size: 14px;
@@ -182,6 +184,22 @@ a.btn-card {
     height: 200px;
 	font-family: 'Raleway', sans-serif;
 }
+
+}
+
+@media (max-width: 480px) {
+    .card-desc p {
+	color: #747373;
+    font-size: 14px;
+	line-height: 1.5;
+	margin: 0px;
+	margin-bottom: 20px;
+    text-align: justify;
+	padding: 0;
+    height: 300px;
+	font-family: 'Raleway', sans-serif;
+}
+
 }
 /* End card section */
 </style>
@@ -226,7 +244,7 @@ a.btn-card {
                              broken screen to a dead battery can be fixed by MMP Repairs. Our staff is skilled at going to the root of the problem and solving the problem in the
                               shortest time. So be it a memory upgrade problem, an LCD problem, mother board related problem or a faulty iPhone camera, we will take care of
                                everything for you. Bring your problem to MMP Repairs and get rid of it now!</p>
-                            <a href="{{ route('iphone') }}" class="btn-card">Read</a>   
+                            <a href="{{ route('iphone') }}" class="btn-card">Get Repair</a>   
                     </div>
                 </div>
             </div>
@@ -241,7 +259,7 @@ a.btn-card {
                         <p>If you’re having trouble with your MacBook, MMPR is your ultimate resort. We deal in motherboard repair and speaker replacement of MacBooks. Along with 
                             that we also provide our services for optical drive replacements, water damage repair, LED screen replacements, and storage or hard disk upgrade.
                              With our MacBook repair services, you can get your PC fixed in the shortest time and therefore you will not face any work-related issues.</p>
-                            <a href="{{ route('macbook') }}" class="btn-card">Read</a>   
+                            <a href="{{ route('macbook') }}" class="btn-card">Get Repair</a>   
                     </div>
                 </div>
             </div>
@@ -256,7 +274,7 @@ a.btn-card {
                         <p>We have an expert and skilled staff that will reach to the root of your iPad problem. No matter the nature of problem with your device, we can solve it
                              in no time. So, whether you are dealing with a broken iPad screen, a broken button, water damage, or any other hardware or software issues, MMPR will 
                              be at your service. All you have to do is reach out to us, tell us the problem you are facing and handover your device to us. </p>
-                            <a href="{{ route('ipad') }}" class="btn-card">Read</a>   
+                            <a href="{{ route('ipad') }}" class="btn-card">Get Repair</a>   
                     </div>
                 </div>
             </div>
@@ -272,7 +290,7 @@ a.btn-card {
                         <p>Letting go of our iPods is the hardest thing to do no matter how old and damaged they are. At MMPR we solve all kinds of iPod related problems, so you no 
                             longer have to worry about a broken device. We will fix everything from the battery to the storage, so you need not discard your precious iPod despite 
                             how old it is. Get you iPods fixed at the most reasonable price right now! </p>
-                            <a href="{{ route('ipod') }}" class="btn-card">Read</a>   
+                            <a href="{{ route('ipod') }}" class="btn-card" >Get Repair</a>   
                     </div>
                 </div>
             </div>
@@ -287,7 +305,7 @@ a.btn-card {
                         <p>If you have a broken iWatch or an iWatch with a defective touch screen, you know what to do! Just bring you device to us and get it fixed in no time. 
                             All hardware and software related Apple watch problems are dealt with professionally at MMP Repairs. We will fix the issue of broken screen in the least
                              amount of time so you need not take your watch anywhere else! </p>
-                            <a href="{{ route('iwatch') }}" class="btn-card">Read</a>   
+                            <a href="{{ route('iwatch') }}" class="btn-card">Get Repair</a>   
                     </div>
                 </div>
             </div>

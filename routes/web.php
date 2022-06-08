@@ -34,12 +34,17 @@ Route::get('/contact', [WebsiteController::class, 'contact'])->name('contact');
 Route::get('/van', [WebsiteController::class, 'van'])->name('van');
 Route::get('/terms', [WebsiteController::class, 'termsCondition'])->name('terms.Condition');
 Route::get('/policy', [WebsiteController::class, 'privacyPolicy'])->name('privacy.policy');
+
 Route::get('/apple_repairs', [WebsiteController::class, 'apple_repairs'])->name('apple_repairs');
+
 Route::get('/iphone', [WebsiteController::class, 'iphone'])->name('iphone');
+Route::get('/iphone_repairs', [WebsiteController::class, 'iphone_repairs'])->name('iphone_repairs');
+Route::post('/savebooking', [WebsiteController::class, 'savebooking'])->name('savebooking');
 Route::get('/macbook', [WebsiteController::class, 'macbook'])->name('macbook');
 Route::get('/ipad', [WebsiteController::class, 'ipad'])->name('ipad');
 Route::get('/ipod', [WebsiteController::class, 'ipod'])->name('ipod');
 Route::get('/iwatch', [WebsiteController::class, 'iwatch'])->name('iwatch');
+
 Route::get('/android_repairs', [WebsiteController::class, 'android_repairs'])->name('android_repairs');
 Route::get('/samsung', [WebsiteController::class, 'samsung'])->name('samsung');
 Route::get('/sony', [WebsiteController::class, 'sony'])->name('sony');

@@ -11,7 +11,8 @@ use App\Models\Admin\BrandModal;
 
 use App\Http\Controllers\Controller;
 use App\Models\Admin\van;
-use App\Models\InquiryForm;
+use App\Models\Booking;
+// use App\Models\InquiryForm;
 use Illuminate\Support\Facades\Mail;
 
 class WebsiteController extends Controller
@@ -49,6 +50,40 @@ class WebsiteController extends Controller
         // $models = BrandModal::where('category_name','Iphone')->orderBy('created_at', 'DESC')->get();
         $models = BrandModal::where('brand_id','1')->orderBy('created_at', 'DESC')->get();
         return view('website.page.iphone', compact('models'));
+    }
+    public function iphone_repairs()
+    {
+        // $models = BrandModal::where('category_name','iphone')->orderBy('created_at', 'DESC')->get();
+        $brands = Brand::where('id','1')->orderBy('created_at', 'DESC')->get();
+        $models = BrandModal::get();
+        return view('website.page.iphone_repairs', compact('models', 'brands'));
+    }
+    public function savebooking(Request $request)
+    {
+    	$booking=new Booking();
+      	$booking->name=$request->name;
+      	$booking->model=$request->model;
+      	$booking->email=$request->email;
+      	$booking->number=$request->number;
+      	$booking->issue=$request->issue;
+      	$booking->device=$request->device;
+      	$booking->shop=$request->shop;
+      	$booking->message=$request->message;
+      	if($booking->save()){
+      	    $userdata=array('email'=>$booking->email,'name'=>$booking->name,'number'=>$booking->number,'device'=>$booking->device,'model'=>$booking->model,'issue'=>$booking->issue,'message'=>$booking->message,'shop'=>$booking->shop);
+            
+              Mail::send('/email/repairinguser',['userdata' => $userdata]
+                        , function($message) use ($userdata)
+                    {
+                        $message->to('mmpr.sales@gmail.com')->subject('MMPR Repair Inquiry');
+                    });
+                    
+                    $notification = array (
+                        'message' => 'Inqury Sent Successfully',
+                        'alert-type' => 'success'
+                    );
+                    return back()->with($notification);
+        } 
     }
     public function macbook()
     {
