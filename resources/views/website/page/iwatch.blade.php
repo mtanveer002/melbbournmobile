@@ -19,7 +19,7 @@
     <div class="row mt-2 g-4">
         @foreach($models as $model)
                 <div class="col-md-3">
-                    <a href="">
+                    <a href="{{ route('iwatch_repairs') }}">
                     <div class="card p-1">
                         <div class="d-flex justify-content-between align-items-center p-2">
                             <div class="flex-column lh-1 imagename"> 

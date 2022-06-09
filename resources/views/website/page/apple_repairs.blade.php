@@ -274,7 +274,7 @@ a.btn-card {
                         <p>We have an expert and skilled staff that will reach to the root of your iPad problem. No matter the nature of problem with your device, we can solve it
                              in no time. So, whether you are dealing with a broken iPad screen, a broken button, water damage, or any other hardware or software issues, MMPR will 
                              be at your service. All you have to do is reach out to us, tell us the problem you are facing and handover your device to us. </p>
-                            <a href="{{ route('ipad') }}" class="btn-card">Get Repair</a>   
+                            <a href="{{ route('ipad_repairs') }}" class="btn-card">Get Repair</a>   
                     </div>
                 </div>
             </div>
