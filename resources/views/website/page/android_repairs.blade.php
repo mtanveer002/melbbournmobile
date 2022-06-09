@@ -266,7 +266,7 @@ a.btn-card {
             <div class="col-md-4">
                 <div class="card-content">
                     <div class="card-img">
-                        <img src="{{ asset('assets/pages/img/works/Huawei.jpg') }}" alt="" style="height: 250px">
+                        <img src="{{ asset('assets/pages/img/works/huawei.jpg') }}" alt="" style="height: 250px">
                         <!-- <span><h4>iPad Repairis</h4></span> -->
                     </div>
                     <div class="card-desc">
@@ -327,7 +327,7 @@ a.btn-card {
             <div class="col-md-4">
                 <div class="card-content">
                     <div class="card-img">
-                        <img src="{{ asset('assets/pages/img/works/One-Plus.jpg') }}" alt="" style="height: 250px">
+                        <img src="{{ asset('assets/pages/img/works/one-plus.jpg') }}" alt="" style="height: 250px">
                         <!-- <span><h4>iPad Repairis</h4></span> -->
                     </div>
                     <div class="card-desc">
@@ -357,7 +357,7 @@ a.btn-card {
             <div class="col-md-4">
                 <div class="card-content">
                     <div class="card-img">
-                        <img src="{{ asset('assets/pages/img/works/BlackBerry.jpg') }}" alt="" style="height: 250px">
+                        <img src="{{ asset('assets/pages/img/works/blackberry.jpg') }}" alt="" style="height: 250px">
                         <!-- <span><h4>iPad Repairis</h4></span> -->
                     </div>
                     <div class="card-desc">
@@ -372,7 +372,7 @@ a.btn-card {
             <div class="col-md-4">
                 <div class="card-content">
                     <div class="card-img">
-                        <img src="{{ asset('assets/pages/img/works/asus.jpg') }}" alt="" style="height: 250px">
+                        <img src="{{ asset('assets/pages/img/works/Asus.jpg') }}" alt="" style="height: 250px">
                         <!-- <span><h4>iPad Repairis</h4></span> -->
                     </div>
                     <div class="card-desc">
@@ -417,7 +417,7 @@ a.btn-card {
             <div class="col-md-4">
                 <div class="card-content">
                     <div class="card-img">
-                        <img src="{{ asset('assets/pages/img/works/MSsurface.jpg') }}" alt="" style="height: 250px">
+                        <img src="{{ asset('assets/pages/img/works/MSSurface.jpg') }}" alt="" style="height: 250px">
                         <!-- <span><h4>iPad Repairis</h4></span> -->
                     </div>
                     <div class="card-desc">
