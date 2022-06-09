@@ -27,7 +27,7 @@
                             <span>{{ $model->name }}</span>
                             
                         </div>
-                            <div> <img src="{{ asset('assets/pages/img/works/samsung.jpg') }}" height="100" width="100" /> </div>
+                            <div> <img src="{{ asset('assets/pages/img/works/sony.jpg') }}" height="100" width="100" /> </div>
                         </div>
                     </div>
                     </a>
