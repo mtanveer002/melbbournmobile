@@ -56,7 +56,7 @@
                 <h2 style="font-size:18px;text-align: justify">Melbourne Mobile Phone Repair has solutions and fixes available for all types of phones. We offer trusted mobile screen replacement services. Our clients and customers trusts our world-class services which makes us to move forward gracefully. </h2>
             </div>
             <div class="col-md-6">
-                <img src="{{ asset('assets/pages/img/works/ipad.png')}}" style="height: 200px" />
+                <img src="{{ asset('assets/pages/img/works/iPad.png')}}" style="height: 200px" />
             </div>
         </div>
       </div>
